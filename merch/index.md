@@ -55,6 +55,29 @@ permalink: /merch/
     </div>
   </div>
 
+  <!-- Launching Soon -->
+  <div class="card" style="padding: 0; overflow: hidden;">
+    <a href="https://www.amazon.com/dp/B0HCJM78ZJ" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
+      <img
+        src="{{ '/assets/images/launching_soon.png' | relative_url }}"
+        alt="Launching Soon T-Shirt"
+        style="width: 100%; height: 260px; object-fit: contain; background: #000; display: block;"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      >
+      <div style="display: none; height: 260px; background: #0d1117; align-items: center; justify-content: center; font-size: 4rem;">🪂</div>
+    </a>
+    <div style="padding: 1.25rem;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Pilots & Builders · Premium Tri-Blend</div>
+      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Launching Soon Graphic T-Shirt</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Bold comic-book typography reading "LAUNCHING SOON..." with drop shadows and forward momentum. A clever double-meaning for paraglider and hang glider pilots waiting for the right window — and startup founders working on their next big thing.
+      </p>
+      <a href="https://www.amazon.com/dp/B0HCJM78ZJ" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
+        View on Amazon →
+      </a>
+    </div>
+  </div>
+
   <!-- California Ridgeline Topo -->
   <div class="card" style="padding: 0; overflow: hidden;">
     <a href="https://www.amazon.com/dp/B0HF1MBXXB" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
