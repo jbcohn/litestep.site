@@ -6,12 +6,19 @@ permalink: /speedbar/
 ---
 
 <!-- STOCK / AVAILABILITY ALERT -->
-<div style="background: var(--speedbar-bg); border: 1px solid var(--speedbar-border); border-radius: var(--radius-md); padding: 1rem 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+<div style="background: var(--speedbar-bg); border: 1px solid var(--speedbar-border); border-radius: var(--radius-md); padding: 1.1rem 1.25rem; margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
   <div>
-    <span class="spotlight-tag" style="margin-right: 0.5rem;">Status</span>
-    <strong>Availability:</strong> Inquire for current batch build & lead times (0 light, 0 comp currently pre-built).
+    <span class="spotlight-tag" style="margin-right: 0.5rem;">Inventory Status</span>
+    <span>As of <strong>{{ site.data.inventory.last_updated | date: "%B %-d, %Y" }}</strong>: </span>
+    <span style="display: inline-block; margin-left: 0.25rem;">
+      <span style="color: {% if site.data.inventory.light_stock > 0 %}#3fb950{% else %}var(--speedbar-accent){% endif %}; font-weight: 700;">{{ site.data.inventory.light_stock }} Light</span>,
+      <span style="color: {% if site.data.inventory.comp_stock > 0 %}#3fb950{% else %}var(--speedbar-accent){% endif %}; font-weight: 700;">{{ site.data.inventory.comp_stock }} Comp</span> in stock.
+    </span>
+    {% if site.data.inventory.status_message %}
+      <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.25rem;">{{ site.data.inventory.status_message }}</div>
+    {% endif %}
   </div>
-  <a href="mailto:jbcohn@gmail.com?subject=LiteStep%20Availability%20Inquiry" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.35rem 0.75rem;">Check Availability</a>
+  <a href="mailto:jbcohn@gmail.com?subject=LiteStep%20Availability%20Inquiry" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.35rem 0.75rem;">Check Lead Times</a>
 </div>
 
 <!-- PILOT REVIEWS -->
