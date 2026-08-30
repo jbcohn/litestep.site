@@ -41,35 +41,44 @@ title: Home
   </div>
   
   <div class="grid">
-    <a href="{{ '/projects/' | relative_url }}#race-analyzer" class="card">
-      <img src="{{ '/assets/images/bay_area_flights.png' | relative_url }}" alt="IGC Flight DEM Plotter" class="card-img">
-      <h3 class="card-title">Paragliding Race Analyzer & XC Sim</h3>
-      <p class="card-desc">High-resolution 3D digital elevation model (DEM) plotting and GPS race track analysis for paragliding.</p>
-      <div class="card-meta">
-        <span>Python • Open Source</span>
-        <span>View Project &rarr;</span>
+    <div class="card">
+      <a href="https://jbcohn.github.io/pg-race-analyzer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/bay_area_flights.png' | relative_url }}" alt="IGC Flight DEM Plotter" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Paragliding Race Analyzer</h3>
+        <p class="card-desc">Interactive browser-based competition race analysis and GPS track visualization over 3D terrain.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/pg-race-analyzer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#race-analyzer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
       </div>
-    </a>
+    </div>
 
-    <a href="{{ '/projects/' | relative_url }}#generative-art" class="card">
-      <img src="{{ '/assets/images/form_constant.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img">
-      <h3 class="card-title">Form Constants & 3D Ridgelines</h3>
-      <p class="card-desc">Interactive web tools and algorithmic generators creating intricate geometric mandalas and mathematical forms.</p>
-      <div class="card-meta">
-        <span>JavaScript • WebGL • Math</span>
-        <span>View Project &rarr;</span>
+    <div class="card">
+      <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/form_constant.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Form Constant Visualizer</h3>
+        <p class="card-desc">Real-time procedural visualizer for Klüver form constants, fractal mandalas, and audio-reactive geometry.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🎨 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#form-constants" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
       </div>
-    </a>
+    </div>
 
-    <a href="{{ '/projects/' | relative_url }}#workflows" class="card">
-      <div class="card-img" style="display: flex; align-items: center; justify-content: center; font-size: 3rem; background: var(--bg-surface-elevated);">⚡</div>
-      <h3 class="card-title">Data Workflows & Automation</h3>
-      <p class="card-desc">Automated business logic, digital royalty reconciliation pipelines, and inventory matching systems.</p>
-      <div class="card-meta">
-        <span>Python • Automation</span>
-        <span>View Project &rarr;</span>
+    <div class="card">
+      <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/shasta_ridgeline.png' | relative_url }}" alt="Ridgeline 3D Explorer" class="card-img" style="object-fit: contain; background: #000;">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Ridgeline 3D Explorer</h3>
+        <p class="card-desc">Interactive WebGL elevation explorer transforming USGS DEM rasters into customizable stacked contour ridgelines.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🏔️ Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#ridgeline-explorer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
       </div>
-    </a>
+    </div>
   </div>
 </section>
 
