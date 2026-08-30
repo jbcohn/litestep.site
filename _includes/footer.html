@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="site-container footer-inner">
+    <div>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built by Josh Cohn.</p>
+    </div>
+    <div>
+      <p>
+        <a href="mailto:{{ site.email }}">Contact / Orders</a> &bull;
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a> &bull;
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </p>
+    </div>
+  </div>
+</footer>

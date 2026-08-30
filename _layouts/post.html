@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post-content">
+  <header class="post-header" style="margin-bottom: 2rem;">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta" style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.author %} &bull; {{ page.author }}{% endif %}
+      {% if page.categories %} &bull; in {{ page.categories | join: ', ' }}{% endif %}
+    </div>
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <hr>
+
+  <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center;">
+    <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">&larr; Back to all posts</a>
+    <a href="mailto:{{ site.email }}?subject=Re: {{ page.title | url_encode }}" class="btn btn-secondary">Discuss / Email Josh</a>
+  </div>
+</article>
