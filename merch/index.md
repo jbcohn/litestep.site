@@ -117,7 +117,9 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
         Continuous stacked elevation profiles of Mt. Diablo, Mt. Tamalpais, and the surrounding coastal ranges rendered in high-contrast ridgeline art.
       </p>
-      <span style="font-size: 0.85rem; color: var(--text-muted);">Available on request — see contact info below.</span>
+      <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
+        Browse on Amazon →
+      </a>
     </div>
   </div>
 
@@ -136,7 +138,9 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
         Golden Gate and Bay Area coastal aesthetics for premium tees and hoodies.
       </p>
-      <span style="font-size: 0.85rem; color: var(--text-muted);">Available on request — see contact info below.</span>
+      <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
+        Browse on Amazon →
+      </a>
     </div>
   </div>
 
@@ -144,10 +148,12 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 <hr>
 
-<div class="spec-box" style="text-align: center; padding: 2rem; margin-top: 2rem;">
-  <h2 style="border: none; margin-top: 0;">More designs coming soon</h2>
+<div class="spec-box" style="text-align: center; padding: 2.25rem 1.5rem; margin-top: 2rem;">
+  <h2 style="border: none; margin-top: 0;">Explore All Designs & Latest Drops</h2>
   <p style="max-width: 580px; margin: 0.5rem auto 1.5rem auto; color: var(--text-muted);">
-    Looking for a custom mountain range, specific peak, or club design? Reach out for custom elevation art for your flying club, trail crew, or event.
+    New California peak elevation profiles, colorways, and geometric prints are regularly added to the collection on Amazon.
   </p>
-  <p style="color: var(--text-muted); font-size: 0.9rem;">Reach out via the contact info in the footer.</p>
+  <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1rem; padding: 0.7rem 1.75rem;">
+    View All LiteStep Designs on Amazon &rarr;
+  </a>
 </div>
