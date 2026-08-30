@@ -116,9 +116,7 @@ permalink: /merch/
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
         Continuous stacked elevation profiles of Mt. Diablo, Mt. Tamalpais, and the surrounding coastal ranges rendered in high-contrast ridgeline art.
       </p>
-      <a href="mailto:jbcohn@gmail.com?subject=Bay%20Area%20Ridgeline%20Print%20Inquiry" class="btn btn-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        Inquire via Email →
-      </a>
+      <span style="font-size: 0.85rem; color: var(--text-muted);">Available on request — see contact info below.</span>
     </div>
   </div>
 
@@ -137,9 +135,7 @@ permalink: /merch/
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
         Golden Gate and Bay Area coastal aesthetics for premium tees and hoodies.
       </p>
-      <a href="mailto:jbcohn@gmail.com?subject=Stay%20Golden%20Inquiry" class="btn btn-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        Inquire via Email →
-      </a>
+      <span style="font-size: 0.85rem; color: var(--text-muted);">Available on request — see contact info below.</span>
     </div>
   </div>
 
@@ -152,5 +148,5 @@ permalink: /merch/
   <p style="max-width: 580px; margin: 0.5rem auto 1.5rem auto; color: var(--text-muted);">
     Looking for a custom mountain range, specific peak, or club design? Reach out for custom elevation art for your flying club, trail crew, or event.
   </p>
-  <a href="mailto:jbcohn@gmail.com?subject=Custom%20Apparel%20Inquiry" class="btn btn-primary">Contact Josh</a>
+  <p style="color: var(--text-muted); font-size: 0.9rem;">Reach out via the contact info in the footer.</p>
 </div>

@@ -25,7 +25,7 @@ title: Home
     </p>
     <div class="button-group">
       <a href="{{ '/speedbar/' | relative_url }}" class="btn btn-primary">View Speed Bar Specs & Orders &rarr;</a>
-      <a href="mailto:{{ site.email }}?subject=LiteStep%20Speed%20Bar%20Inquiry" class="btn btn-secondary">Direct Order Inquiry</a>
+      <a href="{{ '/speedbar/' | relative_url }}#rigging-specs" class="btn btn-secondary">Rigging & Setup Guide</a>
     </div>
   </div>
 </div>
