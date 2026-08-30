@@ -43,7 +43,7 @@ title: Home
   <div class="grid">
     <div class="card">
       <a href="https://jbcohn.github.io/pg-race-analyzer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/bay_area_flights.png' | relative_url }}" alt="IGC Flight DEM Plotter" class="card-img">
+        <img src="{{ '/assets/images/pg_race_analyzer.png' | relative_url }}" alt="PG Race Analyzer Interface" class="card-img">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Paragliding Race Analyzer</h3>
         <p class="card-desc">Interactive browser-based competition race analysis and GPS track visualization over 3D terrain.</p>

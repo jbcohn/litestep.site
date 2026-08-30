@@ -26,7 +26,7 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
       An interactive race analyzer for competition paragliding tracklogs. Visualizes GPS trajectories, task turnpoint cylinders, start gates, thermal climbs, and speed-to-fly performance breakdowns in the browser.
     </p>
 
-    <img src="{{ '/assets/images/bay_area_flights.png' | relative_url }}" alt="PG Race Analyzer" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+    <img src="{{ '/assets/images/pg_race_analyzer.png' | relative_url }}" alt="PG Race Analyzer Interface" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
 
     <ul>
       <li><strong>Turnpoint & Task Breakdown</strong>: Automatic detection of turnpoint cylinder entry/exit, start gate timing, and glide speeds.</li>
