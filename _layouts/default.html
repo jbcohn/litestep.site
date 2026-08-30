@@ -16,6 +16,17 @@
 <body>
   {% include nav.html %}
 
+  {% if page.hero_image %}
+    <div class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('{{ page.hero_image | relative_url }}');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+
   <main class="main-content">
     <div class="site-container">
       {{ content }}

@@ -3,13 +3,14 @@ layout: default
 title: Home
 ---
 
-<div class="hero" style="margin-bottom: 2.5rem; text-align: left;">
-  <h1 style="font-size: 2.75rem; margin-bottom: 0.5rem; letter-spacing: -1px;">
-    Hey, I'm <span class="brand-badge">Josh Cohn</span>.
-  </h1>
-  <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 680px; margin-bottom: 1.5rem;">
-    Welcome to <strong>LiteStep</strong> — home of custom ultra-light paragliding speed bars, open-source aviation & data tools, generative apparel, and engineering notes.
-  </p>
+<!-- FULL-BLEED HERO -->
+<div class="site-hero" style="margin: -2.5rem -1.25rem 2.5rem; width: calc(100% + 2.5rem);">
+  <div class="site-hero-bg" style="background-image: url('{{ "/assets/images/hero_mountain.jpg" | relative_url }}');"></div>
+  <div class="site-hero-overlay"></div>
+  <div class="site-hero-content">
+    <h1>Hey, I'm <span style="color: #f0921e; -webkit-text-fill-color: #f0921e;">Josh Cohn</span>.</h1>
+    <p>Welcome to <strong>LiteStep</strong> — custom ultralight paragliding speed bars, open-source aviation tools, generative apparel, and engineering notes.</p>
+  </div>
 </div>
 
 <!-- ================= SPOTLIGHT: LITESTEP SPEED BAR ================= -->
