@@ -119,29 +119,6 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
     </ul>
   </section>
 
-  <hr>
-
-  <!-- ================= DATA WORKFLOWS & AUTOMATION ================= -->
-  <section id="workflows" style="margin-bottom: 3.5rem;">
-    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
-      <h2 style="margin-top: 0; border: none; padding: 0;">Data Workflows & Automation</h2>
-      <a href="https://github.com/jbcohn/CHR-Workflows" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.45rem 0.75rem;">
-        GitHub Source &rarr;
-      </a>
-    </div>
-
-    <p>
-      Automated business logic, digital royalty reconciliation pipelines, inventory matching, and ERP system integrations.
-    </p>
-
-    <ul>
-      <li><strong>Digital Royalty Pipeline</strong>: Automated data extraction, vendor report normalization, and reconciliation across digital distributors.</li>
-      <li><strong>Inventory & PO Matching</strong>: Algorithmic log reconciliation between purchase orders and inventory databases.</li>
-    </ul>
-  </section>
-
-  <hr>
-
   <!-- ================= LITESTEP SPEED SYSTEMS ================= -->
   <section id="custom-speedbars" style="margin-bottom: 2rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
