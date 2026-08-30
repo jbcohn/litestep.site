@@ -28,22 +28,28 @@ function syncVenmoSalesToGitHub() {
     return;
   }
 
-  // Search unread Venmo payment confirmation emails
-  const searchQuery = 'from:venmo@venmo.com is:unread "paid you"';
+  // Get or create custom label so we never touch read/unread status
+  const LABEL_NAME = "LiteStep-Synced";
+  let label = GmailApp.getUserLabelByName(LABEL_NAME);
+  if (!label) {
+    label = GmailApp.createLabel(LABEL_NAME);
+  }
+
+  // Search for Venmo payment confirmation emails that haven't been synced yet
+  // Notice we do NOT check "is:unread" so your inbox read/unread state is left untouched
+  const searchQuery = `from:venmo@venmo.com "paid you" -label:${LABEL_NAME}`;
   const threads = GmailApp.search(searchQuery, 0, 10);
 
   if (threads.length === 0) {
-    Logger.log("No new unread Venmo sales found.");
+    Logger.log("No new unsynced Venmo sales found.");
     return;
   }
 
-  Logger.log(`Found ${threads.length} unread Venmo email(s).`);
+  Logger.log(`Found ${threads.length} unsynced Venmo email(s).`);
 
   for (const thread of threads) {
     const messages = thread.getMessages();
     for (const message of messages) {
-      if (!message.isUnread()) continue;
-
       const subject = message.getSubject();
       const body = message.getPlainBody();
       const fullText = (subject + " " + body).toLowerCase();
@@ -66,11 +72,12 @@ function syncVenmoSalesToGitHub() {
         const itemType = isComp ? "comp" : "light";
         const success = decrementGitHubInventory(token, itemType, subject);
         if (success) {
-          message.markRead();
-          Logger.log(`Successfully decremented ${itemType} stock for: "${subject}"`);
+          // Label the thread as synced WITHOUT changing read/unread status
+          thread.addLabel(label);
+          Logger.log(`Successfully decremented ${itemType} stock for: "${subject}". Email left unread.`);
         }
       } else {
-        Logger.log(`Could not identify LiteStep model in email. Leaving unread.`);
+        Logger.log(`Could not identify LiteStep model in email. Skipping.`);
       }
     }
   }
