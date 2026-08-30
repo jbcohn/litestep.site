@@ -3,6 +3,7 @@ layout: page
 title: "Merch & Apparel"
 description: "Original apparel featuring California topographic elevation art, geometric fractals, and mathematical designs. Available on Amazon."
 permalink: /merch/
+hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">

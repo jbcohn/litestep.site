@@ -3,6 +3,7 @@ layout: page
 title: "Blog & Field Notes"
 description: "Flight analysis, engineering logs, design processes, and software writeups."
 permalink: /blog/
+hero_image: /assets/images/paragliding_sierra_granite.jpg
 ---
 
 <ul class="post-list">

@@ -3,6 +3,7 @@ layout: page
 title: "Projects & Engineering"
 description: "A showcase of aviation software, GIS & elevation modeling, music workflows, and generative art."
 permalink: /projects/
+hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
 ---
 
 <div class="projects-list">

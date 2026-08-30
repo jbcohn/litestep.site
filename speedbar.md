@@ -3,7 +3,7 @@ layout: page
 title: "LiteStep Speed Bar"
 description: "Ultralight, competition-grade paragliding speed bar designed for clean foot placement, zero bulk, and effortless engagement."
 permalink: /speedbar/
-hero_image: /assets/images/hero_aerial.jpg
+hero_image: /assets/images/paragliding_desert_aerial.jpg
 ---
 
 <!-- STOCK / AVAILABILITY ALERT -->

@@ -5,7 +5,7 @@ title: Home
 
 <!-- FULL-BLEED HERO -->
 <div class="site-hero" style="margin: -2.5rem -1.25rem 2.5rem; width: calc(100% + 2.5rem);">
-  <div class="site-hero-bg" style="background-image: url('{{ "/assets/images/hero_mountain.jpg" | relative_url }}');"></div>
+  <div class="site-hero-bg" style="background-image: url('{{ "/assets/images/paragliding_sierra_granite.jpg" | relative_url }}');"></div>
   <div class="site-hero-overlay"></div>
   <div class="site-hero-content">
     <h1>Hey, I'm <span style="color: #f0921e; -webkit-text-fill-color: #f0921e;">Josh Cohn</span>.</h1>
