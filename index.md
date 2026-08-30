@@ -41,33 +41,33 @@ title: Home
   </div>
   
   <div class="grid">
-    <a href="{{ '/projects/' | relative_url }}#igc-plotter" class="card">
+    <a href="{{ '/projects/' | relative_url }}#race-analyzer" class="card">
       <img src="{{ '/assets/images/bay_area_flights.png' | relative_url }}" alt="IGC Flight DEM Plotter" class="card-img">
-      <h3 class="card-title">IGC Flight & DEM Analysis</h3>
+      <h3 class="card-title">Paragliding Race Analyzer & XC Sim</h3>
       <p class="card-desc">High-resolution 3D digital elevation model (DEM) plotting and GPS race track analysis for paragliding.</p>
       <div class="card-meta">
-        <span>Python • GeoTIFF • Aviation</span>
-        <span>&rarr;</span>
+        <span>Python • Open Source</span>
+        <span>View Project &rarr;</span>
       </div>
     </a>
 
     <a href="{{ '/projects/' | relative_url }}#generative-art" class="card">
       <img src="{{ '/assets/images/form_constant.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img">
-      <h3 class="card-title">Generative Art & Form Constants</h3>
+      <h3 class="card-title">Form Constants & 3D Ridgelines</h3>
       <p class="card-desc">Interactive web tools and algorithmic generators creating intricate geometric mandalas and mathematical forms.</p>
       <div class="card-meta">
-        <span>JavaScript • Canvas • Math</span>
-        <span>&rarr;</span>
+        <span>JavaScript • WebGL • Math</span>
+        <span>View Project &rarr;</span>
       </div>
     </a>
 
-    <a href="{{ '/projects/' | relative_url }}#rekordbox-tools" class="card">
-      <div class="card-img" style="display: flex; align-items: center; justify-content: center; font-size: 3rem; background: var(--bg-surface-elevated);">🎧</div>
-      <h3 class="card-title">Rekordbox & DJ Music Workflow</h3>
-      <p class="card-desc">Automated XML library enrichment, metadata extraction, and genre intelligence pipelines for DJ performances.</p>
+    <a href="{{ '/projects/' | relative_url }}#workflows" class="card">
+      <div class="card-img" style="display: flex; align-items: center; justify-content: center; font-size: 3rem; background: var(--bg-surface-elevated);">⚡</div>
+      <h3 class="card-title">Data Workflows & Automation</h3>
+      <p class="card-desc">Automated business logic, digital royalty reconciliation pipelines, and inventory matching systems.</p>
       <div class="card-meta">
-        <span>Python • Audio Metadata</span>
-        <span>&rarr;</span>
+        <span>Python • Automation</span>
+        <span>View Project &rarr;</span>
       </div>
     </a>
   </div>
