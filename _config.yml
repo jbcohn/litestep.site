@@ -3,7 +3,7 @@ email: "josh@litestep.us"
 description: "LiteStep Speed Bars, Paragliding Tools, Generative Art, and Engineering Projects by Josh Cohn."
 baseurl: ""
 url: "https://litestep.us"
-github_username: "joshcohn"
+github_username: "jbcohn"
 
 # Build settings
 markdown: kramdown
