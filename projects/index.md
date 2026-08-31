@@ -51,12 +51,15 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
     </div>
 
     <p>
-      Cross-country flight simulation tool modeling thermal generation, drift, cloud street physics, and decision-making for cross-country pilots.
+      An interactive cross-country flight planning and task scoring web application. Import GPS tracklogs (.IGC, .GPX, .KML) or interactively draw routes to calculate real-time XContest scoring, FAI triangle validation, and closing gap optimizations over high-resolution satellite maps.
     </p>
 
+    <img src="{{ '/assets/images/xc_simulator.png' | relative_url }}" alt="XC Simulator Interface" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+
     <ul>
-      <li><strong>Thermal Modeling</strong>: Real-time simulation of lift strength, sink margins, and wind shear.</li>
-      <li><strong>Flight Path Optimization</strong>: Experiment with speed-to-fly tactics and glide glide-angle calculations under simulated meteorological conditions.</li>
+      <li><strong>Automatic FAI Triangle Validation</strong>: Real-time rendering of FAI turnpoint sectors ensuring shortest leg &ge; 28% perimeter constraints.</li>
+      <li><strong>XContest Rules & Multipliers</strong>: Live point calculation for Free Flights (1.0 pt/km), Free Triangles (1.2–1.4 pts/km), and Closed FAI Triangles (1.6 pts/km).</li>
+      <li><strong>Tracklog Import & Route Export</strong>: Load flight logs or design upcoming XC flights with interactive waypoints.</li>
     </ul>
   </section>
 

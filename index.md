@@ -22,7 +22,7 @@ title: Home
   <div>
     <h2 class="spotlight-title">LiteStep Ultralight Speed Bar</h2>
     <p style="margin: 0.75rem 0 1.25rem 0; font-size: 1.05rem; color: var(--text-main);">
-      Precision-engineered 2-step / 3-step paragliding speed system designed for maximum stiffness, effortless engagement, and minimal weight. Built and flown by pilots worldwide.
+      Precision-engineered 3-step paragliding speed system designed for maximum stiffness, effortless engagement, and minimal weight. Built in Spain and distributed in the US from here.
     </p>
     <div class="button-group">
       <a href="{{ '/speedbar/' | relative_url }}" class="btn btn-primary">View Speed Bar Specs & Orders &rarr;</a>
@@ -68,11 +68,24 @@ title: Home
     </div>
 
     <div class="card">
+      <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/xc_simulator.png' | relative_url }}" alt="Paragliding XC Simulator Interface" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Paragliding XC Simulator</h3>
+        <p class="card-desc">Interactive XC task planning, FAI triangle validation, and real-time XContest flight scoring over satellite maps.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#xc-simulator" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
       <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
         <img src="{{ '/assets/images/shasta_ridgeline.png' | relative_url }}" alt="Ridgeline 3D Explorer" class="card-img" style="object-fit: contain; background: #000;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Ridgeline 3D Explorer</h3>
-        <p class="card-desc">Interactive WebGL elevation explorer transforming USGS DEM rasters into customizable stacked contour ridgelines.</p>
+        <p class="card-desc">Interactive WebGL elevation explorer transforming USGS DEM rasters into customizable stacked contour ridgelines, topographic and finite element mesh 3d maps.</p>
       </a>
       <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
         <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🏔️ Launch App</a>
