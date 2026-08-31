@@ -116,8 +116,8 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
       <div>
-        <img src="{{ '/assets/images/dem_contour_gradient.png' | relative_url }}" alt="3D DEM Contour Gradient" style="width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem; text-align: center;">Topographic elevation gradient contours</p>
+        <img src="{{ '/assets/images/ridgeline_3d_mesh.png' | relative_url }}" alt="3D Triangulated Mesh Peak" style="width: 100%; height: 240px; object-fit: cover; background: #000; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem; text-align: center;">Triangulated 3D terrain mesh & heatmap elevation model</p>
       </div>
       <div>
         <img src="{{ '/assets/images/dem_wireframe_black.png' | relative_url }}" alt="3D DEM Wireframe Mesh" style="width: 100%; height: 240px; object-fit: cover; background: #000; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
