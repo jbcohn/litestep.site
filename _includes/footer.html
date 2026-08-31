@@ -1,7 +1,12 @@
 <footer class="site-footer">
   <div class="site-container footer-inner">
     <div>
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built by Josh Cohn.</p>
+      <p>
+        &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built by Josh Cohn.
+        <span style="display: block; font-size: 0.78rem; opacity: 0.75; margin-top: 0.2rem;">
+          Build: {{ site.time | date: "%Y-%m-%d %H:%M:%S UTC" }} (v{{ site.time | date: "%s" }})
+        </span>
+      </p>
     </div>
     <div>
       <p>
