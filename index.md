@@ -82,7 +82,7 @@ title: Home
 
     <div class="card">
       <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/shasta_ridgeline.png' | relative_url }}" alt="Ridgeline 3D Explorer" class="card-img" style="object-fit: contain; background: #000;">
+        <img src="{{ '/assets/images/dem_contour_gradient.png' | relative_url }}" alt="Ridgeline 3D Explorer" class="card-img" style="object-fit: cover;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Ridgeline 3D Explorer</h3>
         <p class="card-desc">Interactive WebGL elevation explorer transforming USGS DEM rasters into customizable stacked contour ridgelines, topographic and finite element mesh 3d maps.</p>
