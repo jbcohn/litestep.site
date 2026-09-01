@@ -8,8 +8,8 @@ title: Home
   <div class="site-hero-bg" style="background-image: url('{{ "/assets/images/paragliding_sierra_granite.jpg" | relative_url }}');"></div>
   <div class="site-hero-overlay"></div>
   <div class="site-hero-content">
-    <h1>Hey, I'm <span style="color: #f0921e; -webkit-text-fill-color: #f0921e;">Josh Cohn</span>.</h1>
-    <p>Welcome to LiteStep — ultralight paragliding speed bars, open-source aviation tools, generative apparel, and engineering notes.</p>
+    <h1>Welcome to <span style="color: #f0921e; -webkit-text-fill-color: #f0921e;">LiteStep</span></h1>
+    <p>Ultralight paragliding speed bars, open-source aviation tools, generative apparel, and engineering notes.</p>
   </div>
 </div>
 

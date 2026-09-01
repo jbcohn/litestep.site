@@ -4,8 +4,21 @@
       <p>
         &copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built by Josh Cohn.
         <span style="display: block; font-size: 0.78rem; opacity: 0.75; margin-top: 0.2rem;">
-          Build: {{ site.time | date: "%Y-%m-%d %H:%M:%S UTC" }} (v{{ site.time | date: "%s" }})
+          Build: <time id="build-timestamp" datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}</time> (v{{ site.time | date: "%s" }})
         </span>
+        <script>
+          try {
+            const bt = document.getElementById('build-timestamp');
+            if (bt && bt.getAttribute('datetime')) {
+              const d = new Date(bt.getAttribute('datetime'));
+              bt.textContent = d.toLocaleString(undefined, {
+                year: 'numeric', month: '2-digit', day: '2-digit',
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                timeZoneName: 'short'
+              });
+            }
+          } catch(e) {}
+        </script>
       </p>
     </div>
     <div>
