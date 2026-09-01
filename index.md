@@ -9,7 +9,7 @@ title: Home
   <div class="site-hero-overlay"></div>
   <div class="site-hero-content">
     <h1>Hey, I'm <span style="color: #f0921e; -webkit-text-fill-color: #f0921e;">Josh Cohn</span>.</h1>
-    <p>Welcome to <strong>LiteStep</strong> — custom ultralight paragliding speed bars, open-source aviation tools, generative apparel, and engineering notes.</p>
+    <p>Welcome to LiteStep — ultralight paragliding speed bars, open-source aviation tools, generative apparel, and engineering notes.</p>
   </div>
 </div>
 
@@ -17,12 +17,12 @@ title: Home
 <div class="spotlight-card">
   <div class="spotlight-header">
     <span class="spotlight-tag">⭐ Featured Gear</span>
-    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Ultralight • Competition-Grade • Custom Made</span>
+    <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Ultralight • Competition-Grade • Artisanally Made</span>
   </div>
   <div>
     <h2 class="spotlight-title">LiteStep Ultralight Speed Bar</h2>
     <p style="margin: 0.75rem 0 1.25rem 0; font-size: 1.05rem; color: var(--text-main);">
-      Precision-engineered 3-step paragliding speed system designed for maximum stiffness, effortless engagement, and minimal weight. Built in Spain and distributed in the US from here.
+      Precision-engineered 3-step paragliding speed system designed for maximum stiffness, effortless engagement, and minimal weight. Built in Spain and distributed in the US under the LiteStep name.
     </p>
     <div class="button-group">
       <a href="{{ '/speedbar/' | relative_url }}" class="btn btn-primary">View Speed Bar Specs & Orders &rarr;</a>
@@ -72,7 +72,7 @@ title: Home
         <img src="{{ '/assets/images/xc_simulator.png' | relative_url }}" alt="Paragliding XC Simulator Interface" class="card-img">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Paragliding XC Simulator</h3>
-        <p class="card-desc">Interactive XC task planning, FAI triangle validation, and real-time XContest flight scoring over satellite maps.</p>
+        <p class="card-desc">Interactive XC task planning, FAI triangle validation, and XContest flight scoring over satellite maps.</p>
       </a>
       <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
         <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
@@ -104,7 +104,7 @@ title: Home
     <a href="{{ '/merch/' | relative_url }}" style="font-size: 0.95rem; font-weight: 600;">Explore Merch &rarr;</a>
   </div>
   <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-    Original apparel and prints featuring California topographic ridgelines, peak contours (Mt. Shasta, Mt. Diablo, Mt. Tam), and mathematical form constant geometry.
+    Original apparel and prints featuring California topographic ridgelines, peak contours and mathematical form constant geometry.
   </p>
   
   <div class="grid">
