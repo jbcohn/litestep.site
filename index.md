@@ -108,6 +108,13 @@ title: Home
   </p>
   
   <div class="grid">
+    <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" class="card">
+      <img src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}" alt="Mount Diablo Elevation Relief Shirt" class="card-img" style="object-fit: contain; background: #f8fafc;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Featured Design</div>
+      <h3 class="card-title">Mt. Diablo Elevation Relief</h3>
+      <p class="card-desc">Striking 3D elevation contours of Mount Diablo's iconic twin summits on premium apparel.</p>
+    </a>
+
     <a href="{{ '/merch/' | relative_url }}" class="card">
       <img src="{{ '/assets/images/bay_area_ridgeline.png' | relative_url }}" alt="Bay Area Ridgeline Shirt" class="card-img">
       <h3 class="card-title">Bay Area Topo Ridgelines</h3>
@@ -118,12 +125,6 @@ title: Home
       <img src="{{ '/assets/images/shasta_ridgeline.png' | relative_url }}" alt="Mt. Shasta Ridgeline" class="card-img">
       <h3 class="card-title">Mt. Shasta Elevation Relief</h3>
       <p class="card-desc">High-amplitude elevation contours of California's volcanic jewel.</p>
-    </a>
-
-    <a href="{{ '/merch/' | relative_url }}" class="card">
-      <img src="{{ '/assets/images/stay_golden.png' | relative_url }}" alt="Stay Golden Design" class="card-img">
-      <h3 class="card-title">Stay Golden Series</h3>
-      <p class="card-desc">Iconic Bay Area inspired graphic apparel and custom prints.</p>
     </a>
   </div>
 </section>

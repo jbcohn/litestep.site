@@ -12,6 +12,29 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
 
+  <!-- Mt. Diablo Summit Elevation Relief (New Favorite) -->
+  <div class="card" style="padding: 0; overflow: hidden; border: 1.5px solid rgba(240, 146, 30, 0.4);">
+    <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
+      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #f8fafc;">
+        <img
+          src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}"
+          alt="Mount Diablo Elevation Relief T-Shirt"
+          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
+        >
+      </div>
+    </a>
+    <div style="padding: 1.25rem;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #f0921e; margin-bottom: 0.35rem;">⭐ Featured · California Peaks</div>
+      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Mount Diablo Elevation Relief Topographic 3D Graphic T-Shirt</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Striking elevation relief contours of Mount Diablo's iconic twin summits, rendered in vivid warm-to-cool ridgelines on premium apparel.
+      </p>
+      <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
+        View on Amazon →
+      </a>
+    </div>
+  </div>
+
   <!-- Mt. Diablo Topo Wireframe -->
   <div class="card" style="padding: 0; overflow: hidden;">
     <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
