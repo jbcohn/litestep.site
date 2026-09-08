@@ -131,6 +131,38 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
     </ul>
   </section>
 
+  <hr>
+
+  <!-- ================= SOAP BUBBLE STUDIO ================= -->
+  <section id="soap-bubble-studio" style="margin-bottom: 3.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+      <h2 style="margin-top: 0; border: none; padding: 0;">Soap Bubble Surface Studio</h2>
+      <div class="button-group">
+        <a href="https://jbcohn.github.io/Soap-Bubble-Studio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.45rem 0.9rem;">
+          🫧 Launch Studio &rarr;
+        </a>
+        <a href="https://github.com/jbcohn/Soap-Bubble-Studio" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+          GitHub Source
+        </a>
+      </div>
+    </div>
+
+    <p>
+      Real-time interactive physics engine and generative surface design studio simulating 2D foam clusters, Plateau borders, and thin-film optical iridescence directly in the browser.
+    </p>
+
+    <div style="margin: 1.5rem 0; text-align: center;">
+      <img src="{{ '/assets/images/bubble_surface_studio.png' | relative_url }}" alt="Soap Bubble Surface Studio Output" style="width: 100%; max-height: 480px; object-fit: contain; background: #060812; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+    </div>
+
+    <ul>
+      <li><strong>Foam Mechanics & Plateau Laws</strong>: Dual-tier spatial hash grid calculating non-linear capillary attraction, repulsion, and 120&deg; contact junction equilibrium at 60–120 FPS.</li>
+      <li><strong>Michel-L&eacute;vy Optical Iridescence</strong>: Physical thin-film interference simulation with Fresnel edge reflectance and spectral wavelength mapping.</li>
+      <li><strong>Interactive Fluid Tools & Audio</strong>: Swirl fluid currents, blow continuous bubble streams with a wand, pop bubbles with a needle tool, and synthesized cavity resonance audio.</li>
+      <li><strong>High-DPI Master Export</strong>: Vector SVG and transparent 4500&times;5400 PNG export ready for direct-to-garment apparel printing.</li>
+    </ul>
+  </section>
+
   <!-- ================= LITESTEP SPEED SYSTEMS ================= -->
   <section id="custom-speedbars" style="margin-bottom: 2rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
