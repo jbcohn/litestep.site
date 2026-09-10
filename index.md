@@ -56,7 +56,7 @@ title: Home
 
     <div class="card">
       <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/form_constant.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img">
+        <img src="{{ '/assets/images/form_constant_black.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img" style="background: #000; object-fit: contain;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Form Constant Visualizer</h3>
         <p class="card-desc">Real-time procedural visualizer for Klüver form constants, fractal mandalas, and audio-reactive geometry.</p>
