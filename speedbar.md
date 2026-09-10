@@ -74,17 +74,17 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
       <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">Ultralight XC</div>
       <h3 style="margin: 0 0 0.5rem 0; font-size: 1.5rem;">Light Version</h3>
       <div style="font-size: 2rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">
-        $145 <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/ $157 in CA (incl. tax)</span>
+        $155 <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/ $168 in CA (incl. tax)</span>
       </div>
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
         Featherweight <strong>71g</strong> design featuring 25mm steps. Perfect for hike & fly, light XC pods, and clean cockpits.
       </p>
       <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
-        <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=145&note=1%20Light%20Litestep" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
-          Venmo $145 (Non-CA)
+        <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=155&note=1%20Light%20Litestep" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
+          Venmo $155 (Non-CA)
         </a>
-        <a href="https://account.venmo.com/payment-link?audience=private&amount=157&note=1%20Light%20Litestep%20CA&recipients=%2CJosh-Cohn-10&txn=pay" target="_blank" rel="noopener" class="btn btn-secondary" style="text-align: center;">
-          Venmo $157 (California)
+        <a href="https://account.venmo.com/payment-link?audience=private&amount=168&note=1%20Light%20Litestep%20CA&recipients=%2CJosh-Cohn-10&txn=pay" target="_blank" rel="noopener" class="btn btn-secondary" style="text-align: center;">
+          Venmo $168 (California)
         </a>
       </div>
     </div>
@@ -132,7 +132,7 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
     <div>
       <img src="{{ '/assets/images/speedbar_light.png' | relative_url }}" alt="LiteStep Light Version" style="width: 100%; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
       <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">
-        <strong>Fig. 1:</strong> Light version (71g, $145)
+        <strong>Fig. 1:</strong> Light version (71g, $155)
       </p>
     </div>
 

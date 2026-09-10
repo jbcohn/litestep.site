@@ -60,7 +60,7 @@ function syncVenmoSalesToGitHub() {
       let isLight = false;
       let isComp = false;
 
-      if (fullText.includes("157") || fullText.includes("145") || fullText.includes("light")) {
+      if (fullText.includes("168") || fullText.includes("155") || fullText.includes("157") || fullText.includes("145") || fullText.includes("light")) {
         isLight = true;
       }
       if (fullText.includes("195") || fullText.includes("180") || fullText.includes("comp")) {
