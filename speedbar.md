@@ -77,7 +77,7 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
         $155 <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/ $168 in CA (incl. tax)</span>
       </div>
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-        Featherweight <strong>71g</strong> design featuring 25mm steps. Perfect for hike & fly, light XC pods, and clean cockpits.
+        Featherweight <strong>71g</strong> design featuring 25mm steps. Perfect for hike & fly, light XC pods, and clean cockpits. Includes extra-long main lines for riser integration on sub style harnesses.
       </p>
       <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
         <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=155&note=1%20Light%20Litestep" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
@@ -90,15 +90,14 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
     </div>
 
     <!-- COMP VERSION CARD -->
-    <div class="card" style="border: 2px solid var(--speedbar-accent); position: relative;">
-      <div class="spotlight-tag" style="position: absolute; top: 1rem; right: 1rem;">Most Popular</div>
+    <div class="card" style="border: 2px solid var(--border-color); position: relative;">
       <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Competition & Race</div>
       <h3 style="margin: 0 0 0.5rem 0; font-size: 1.5rem;">Comp Version</h3>
       <div style="font-size: 2rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">
         $180 <span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/ $195 in CA (incl. tax)</span>
       </div>
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-        Robust <strong>112g</strong> design with 35mm steps for maximum pushing comfort. Includes extra-long replacement lines for riser integration.
+        Robust <strong>112g</strong> design with 35mm steps for maximum pushing comfort. Includes extra-long main lines for riser integration on sub style harnesses.
       </p>
       <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
         <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=180&note=1%20Comp%20Litestep%20for%20Sub" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
