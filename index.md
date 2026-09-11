@@ -135,22 +135,24 @@ title: Home
   
   <div class="grid">
     <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" class="card">
-      <img src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}" alt="Mount Diablo Elevation Relief Shirt" class="card-img" style="object-fit: contain; background: #f8fafc;">
+      <img src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}" alt="Mount Diablo Elevation Relief Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
       <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Featured Design</div>
       <h3 class="card-title">Mt. Diablo Elevation Relief</h3>
       <p class="card-desc">Striking 3D elevation contours of Mount Diablo's iconic twin summits on premium apparel.</p>
     </a>
 
-    <a href="{{ '/merch/' | relative_url }}" class="card">
-      <img src="{{ '/assets/images/bay_area_ridgeline.png' | relative_url }}" alt="Bay Area Ridgeline Shirt" class="card-img">
-      <h3 class="card-title">Bay Area Topo Ridgelines</h3>
-      <p class="card-desc">Stacked contour relief plotting capturing coastal ranges and bay elevation.</p>
+    <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" class="card">
+      <img src="{{ '/assets/images/diablo_wireframe_shirt.png' | relative_url }}" alt="Mount Diablo Topographic Wireframe Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">California Peaks</div>
+      <h3 class="card-title">Mt. Diablo Topo Wireframe</h3>
+      <p class="card-desc">Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.</p>
     </a>
 
-    <a href="{{ '/merch/' | relative_url }}" class="card">
-      <img src="{{ '/assets/images/shasta_ridgeline.png' | relative_url }}" alt="Mt. Shasta Ridgeline" class="card-img">
-      <h3 class="card-title">Mt. Shasta Elevation Relief</h3>
-      <p class="card-desc">High-amplitude elevation contours of California's volcanic jewel.</p>
+    <a href="https://www.amazon.com/dp/B0HF1MBXXB" target="_blank" rel="noopener" class="card">
+      <img src="{{ '/assets/images/california_ridgeline_shirt_mockup.png' | relative_url }}" alt="California Topographic Ridgeline Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">California State</div>
+      <h3 class="card-title">California Topo Ridgelines</h3>
+      <p class="card-desc">Detailed vector topographic ridgeline map defining California's mountain ranges.</p>
     </a>
   </div>
 </section>
