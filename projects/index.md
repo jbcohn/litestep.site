@@ -136,7 +136,7 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
   <hr>
 
   <!-- ================= XC SIMULATOR ================= -->
-  <section id="xc-simulator" style="margin-bottom: 2rem;">
+  <section id="xc-simulator" style="margin-bottom: 3.5rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
       <h2 style="margin-top: 0; border: none; padding: 0;">Paragliding XC Simulator</h2>
       <div class="button-group">
@@ -159,6 +159,36 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
       <li><strong>Automatic FAI Triangle Validation</strong>: Real-time rendering of FAI turnpoint sectors ensuring shortest leg &ge; 28% perimeter constraints.</li>
       <li><strong>XContest Rules & Multipliers</strong>: Live point calculation for Free Flights (1.0 pt/km), Free Triangles (1.2–1.4 pts/km), and Closed FAI Triangles (1.6 pts/km).</li>
       <li><strong>Tracklog Import & Route Export</strong>: Load flight logs or design upcoming XC flights with interactive waypoints.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- ================= FLIGHT MAP STUDIO ================= -->
+  <section id="flight-map-studio" style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+      <h2 style="margin-top: 0; border: none; padding: 0;">Flight Map Studio</h2>
+      <div class="button-group">
+        <a href="https://jbcohn.github.io/flight-map-studio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.45rem 0.9rem;">
+          🗺️ Launch Flight Map Studio &rarr;
+        </a>
+        <a href="https://github.com/jbcohn/flight-map-studio" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+          GitHub Source
+        </a>
+      </div>
+    </div>
+
+    <p>
+      An interactive paragliding and hang gliding flight track visualizer and cartographic poster studio. Renders IGC GPS tracklogs over continuous 30m Digital Elevation Models (DEM) with dynamic 3D directional hillshading, customizable hypsometric color ramps, place name overlays, and high-resolution print export.
+    </p>
+
+    <img src="{{ '/assets/images/flight_map_studio.png' | relative_url }}" alt="Flight Map Studio Tracklog & DEM Interface" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+
+    <ul>
+      <li><strong>Continuous 30m Western US DEM</strong>: Real-time client-side tile shader computing 3D NW directional hillshading and altitude palettes directly in the browser across WA, OR, CA, NV, UT, AZ, CO, and ID.</li>
+      <li><strong>Custom Track Styling & Analytics</strong>: Vibrant outer glow, continuous Turbo altitude gradients, climb/sink vario coloring, and individual flight color assignments.</li>
+      <li><strong>Place Names & Reference Overlay</strong>: Interactive opacity slider for peaks, towns, and boundaries positioned beneath flight paths.</li>
+      <li><strong>High-DPI Poster Studio</strong>: Multi-resolution canvas export (1&times;, 2&times;, 3&times;) generating framed, print-ready topographic flight posters.</li>
     </ul>
   </section>
 

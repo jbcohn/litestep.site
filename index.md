@@ -81,6 +81,19 @@ title: Home
     </div>
 
     <div class="card">
+      <a href="https://jbcohn.github.io/flight-map-studio/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/flight_map_studio.png' | relative_url }}" alt="Flight Map Studio Tracklog & DEM Interface" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Flight Map Studio</h3>
+        <p class="card-desc">Interactive IGC flight track visualizer and poster studio over continuous 30m shaded relief DEMs.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/flight-map-studio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🗺️ Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#flight-map-studio" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
       <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
         <img src="{{ '/assets/images/ridgeline_3d_mesh.png' | relative_url }}" alt="Ridgeline 3D Explorer Mesh" class="card-img" style="object-fit: cover; background: #000;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
