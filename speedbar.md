@@ -186,9 +186,11 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
 <!-- SERVICE & WARRANTY -->
 <section style="margin: 2.5rem 0;">
   <h2>Service & Support</h2>
-  <p>
-    If you ever have trouble with setup, tuning, or maintenance, email me directly at <a href="mailto:jbcohn@gmail.com">jbcohn@gmail.com</a>. LiteStep bars are built to last through multiple seasons and gliders. If you experience premature wear or need replacement lines, let me know and I will do my best within reason to take care of you!
-  </p>
+  <div class="readability-box">
+    <p>
+      If you ever have trouble with setup, tuning, or maintenance, email me directly at <a href="mailto:jbcohn@gmail.com">jbcohn@gmail.com</a>. LiteStep bars are built to last through multiple seasons and gliders. If you experience premature wear or need replacement lines, let me know and I will do my best within reason to take care of you!
+    </p>
+  </div>
 </section>
 
 <hr>
@@ -198,36 +200,36 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
   <h2>Frequently Asked Questions</h2>
 
   <div style="margin-top: 1.5rem;">
-    <div style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem;">Q: Do you trim up the dangling lines past the stopper knots once adjusted, or leave them?</h3>
+    <div class="readability-box">
+      <h3 style="font-size: 1.15rem; color: var(--text-main);">Q: Do you trim up the dangling lines past the stopper knots once adjusted, or leave them?</h3>
       <p style="color: var(--text-muted);">
         <strong>A:</strong> I don't trim them. They don't cause any issues in flight, and leaving them gives you full flexibility to readjust the bar when switching to a new glider or harness later on.
       </p>
     </div>
 
-    <div style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem;">Q: What are the main benefits of the Comp variant over the Light?</h3>
+    <div class="readability-box">
+      <h3 style="font-size: 1.15rem; color: var(--text-main);">Q: What are the main benefits of the Comp variant over the Light?</h3>
       <p style="color: var(--text-muted);">
         <strong>A:</strong> With 35mm wide steps, the Comp version is slightly smoother to find with your heel and offers increased surface area comfort when pushing bar for hours on long competition or XC glides. The Light version functions identically and saves ~40 grams.
       </p>
     </div>
 
-    <div style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem;">Q: Why did the design switch to a single top step instead of a wide step for two feet?</h3>
+    <div class="readability-box">
+      <h3 style="font-size: 1.15rem; color: var(--text-main);">Q: Why did the design switch to a single top step instead of a wide step for two feet?</h3>
       <p style="color: var(--text-muted);">
         <strong>A:</strong> The single centered top step provides a definite improvement: it allows you to hold full bar evenly with one foot in the center, avoids asymmetric riser pulling, and makes stepping down back to the middle step effortless.
       </p>
     </div>
 
-    <div style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem;">Q: How do I connect the single footplate bungee attachment to a harness with two bungee points?</h3>
+    <div class="readability-box">
+      <h3 style="font-size: 1.15rem; color: var(--text-main);">Q: How do I connect the single footplate bungee attachment to a harness with two bungee points?</h3>
       <p style="color: var(--text-muted);">
         <strong>A:</strong> You can either attach the bungee to one side (I fly mine attached to one side and have no problem catching the bar), bridge the two harness points with a piece of line and attach to the center, or drill a clean center hole in your footplate. Adding two bungees is possible but generally adds unnecessary clutter for your feet.
       </p>
     </div>
 
-    <div style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem;">Q: There isn't a spliced loop on the end of the Light line. How do I attach it to my risers?</h3>
+    <div class="readability-box">
+      <h3 style="font-size: 1.15rem; color: var(--text-main);">Q: There isn't a spliced loop on the end of the Light line. How do I attach it to my risers?</h3>
       <p style="color: var(--text-muted);">
         <strong>A:</strong> I recommend removing metal Brummel hooks entirely. Simply tie a clean overhand stopper knot in the LiteStep Dyneema line, and use a larks-head knot from the glider riser speed line to choke around it. This is lighter, cleaner, and cannot unhook in flight.
       </p>

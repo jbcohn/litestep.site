@@ -14,7 +14,6 @@ timezone: America/Los_Angeles
 nav_links:
   - title: "Speed Bar"
     url: "/speedbar/"
-    highlight: true
   - title: "Projects"
     url: "/projects/"
   - title: "Merch"
