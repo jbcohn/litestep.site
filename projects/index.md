@@ -105,7 +105,7 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
       </div>
       <div>
         <img src="{{ '/assets/images/dem_wireframe_black.png' | relative_url }}" alt="3D DEM Wireframe Mesh" style="width: 100%; height: 240px; object-fit: cover; background: #000; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem; text-align: center;">High-density 3D wireframe elevation matrix</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem; text-align: center;">3D Ridgeline views</p>
       </div>
     </div>
 

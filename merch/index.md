@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Merch & Apparel"
-description: "Original apparel featuring California topographic elevation art, geometric fractals, and mathematical designs. Available on Amazon."
+description: "Original apparel featuring digital elevation art, geometric fractals, mathematical designs and the occasional cute dog. Available on Amazon."
 permalink: /merch/
 hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
@@ -11,29 +11,6 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 </p>
 
 <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-
-  <!-- Mt. Diablo Summit Elevation Relief (Featured Favorite) -->
-  <div class="card" style="padding: 0; overflow: hidden; border: 1.5px solid rgba(240, 146, 30, 0.4);">
-    <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}"
-          alt="Mount Diablo Elevation Relief Performance T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #f0921e; margin-bottom: 0.35rem;">⭐ Featured · California Peaks</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Mount Diablo Elevation Relief Topographic 3D Graphic Performance T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Striking elevation relief contours of Mount Diablo's iconic twin summits, rendered in vivid warm-to-cool ridgelines on premium apparel.
-      </p>
-      <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
-    </div>
-  </div>
 
   <!-- Mt. Diablo Topo Wireframe -->
   <div class="card" style="padding: 0; overflow: hidden;">
@@ -172,30 +149,6 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       </a>
     </div>
   </div>
-
-  <!-- Bay Area Ridgeline (Custom Art Print) -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #000000;">
-        <img
-          src="{{ '/assets/images/bay_area_ridgeline.png' | relative_url }}"
-          alt="Bay Area Topographic Ridgeline Art"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">California Peaks · Stacked Ridgelines</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Bay Area Topographic Ridgelines</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Continuous stacked elevation profiles of Mt. Diablo, Mt. Tamalpais, and the surrounding coastal ranges rendered in high-contrast ridgeline art.
-      </p>
-      <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        Browse LiteStep on Amazon →
-      </a>
-    </div>
-  </div>
-
 </div>
 
 <hr>

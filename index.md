@@ -134,12 +134,6 @@ title: Home
   </p>
   
   <div class="grid">
-    <a href="https://www.amazon.com/dp/B0HH7KZXGN" target="_blank" rel="noopener" class="card">
-      <img src="{{ '/assets/images/diablo_summit_relief_shirt.png' | relative_url }}" alt="Mount Diablo Elevation Relief Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Featured Design</div>
-      <h3 class="card-title">Mt. Diablo Elevation Relief</h3>
-      <p class="card-desc">Striking 3D elevation contours of Mount Diablo's iconic twin summits on premium apparel.</p>
-    </a>
 
     <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" class="card">
       <img src="{{ '/assets/images/diablo_wireframe_shirt.png' | relative_url }}" alt="Mount Diablo Topographic Wireframe Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
@@ -154,6 +148,14 @@ title: Home
       <h3 class="card-title">California Topo Ridgelines</h3>
       <p class="card-desc">Detailed vector topographic ridgeline map defining California's mountain ranges.</p>
     </a>
+
+    <a href="https://www.amazon.com/Hexagon-Fractal-Mandala-Geometric-Tri-Blend/dp/B0HDFS7DP8" target="_blank" rel="noopener" class="card">
+      <img src="{{ '/assets/images/Hex Blue Shirt.jpg' | relative_url }}" alt="Hexagon Fractal Mandala Geometric Art Shirt" class="card-img" style="object-fit: contain; background: #ffffff;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.25rem;">Geometric Art</div>
+      <h3 class="card-title">Hexagon Fractal Mandala Geometric Art</h3>
+      <p class="card-desc">Intricate hexagon fractal design spiraling into a glowing triangular center - bold geometric art in electric blue, cyan, and magenta</p>
+    </a>
+
   </div>
 </section>
 
