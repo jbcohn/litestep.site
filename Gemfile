@@ -2,8 +2,16 @@
 
 source "https://rubygems.org"
 
-# Replicates the exact build environment used by GitHub Pages
-gem "github-pages", group: :jekyll_plugins
-
-# Required for local server on Ruby 3.0+
+# Modern Jekyll compatible with Ruby 3.x and 4.x
+gem "jekyll", "~> 4.3"
 gem "webrick"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "mutex_m"
+gem "logger"
+
+# Plugins matching GitHub Pages
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
