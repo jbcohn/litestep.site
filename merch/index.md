@@ -60,7 +60,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
   <!-- Launching Soon -->
   <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0HH9X5HZF" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
+    <a href="https://www.amazon.com/Launching-Graphic-Premium-Tri-Blend-T-Shirt/dp/B0HJHHBFGL" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
       <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
         <img
           src="{{ '/assets/images/launching_soon_shirt.png' | relative_url }}"
@@ -70,12 +70,12 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       </div>
     </a>
     <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Pilots & Builders · Performance Tee</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Launching Soon Graphic Design Performance T-Shirt</h3>
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Pilots & Builders · Premium Tri-Blend</div>
+      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Launching Soon Graphic Design Premium Tri-Blend T-Shirt</h3>
       <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
         Bold comic-book typography reading "LAUNCHING SOON..." with drop shadows and forward momentum. A clever double-meaning for paraglider and hang glider pilots waiting for the right window — and startup founders working on their next big thing.
       </p>
-      <a href="https://www.amazon.com/dp/B0HH9X5HZF" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
+      <a href="https://www.amazon.com/Launching-Graphic-Premium-Tri-Blend-T-Shirt/dp/B0HJHHBFGL" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
         View on Amazon →
       </a>
     </div>
