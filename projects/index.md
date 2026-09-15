@@ -28,7 +28,7 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
       </p>
     </div>
 
-    <img src="{{ '/assets/images/flight_map_studio.png' | relative_url }}" alt="Flight Map Studio Tracklog & DEM Interface" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+    <img src="{{ '/assets/images/western_us_flight_tracks_24x36_landscape_300dpi.png' | relative_url }}" alt="Western US Flight Tracks Topographic Map" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
 
     <div class="readability-box">
       <ul>

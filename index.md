@@ -82,7 +82,7 @@ title: Home
 
     <div class="card">
       <a href="https://jbcohn.github.io/flight-map-studio/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/flight_map_studio.png' | relative_url }}" alt="Flight Map Studio Tracklog & DEM Interface" class="card-img">
+        <img src="{{ '/assets/images/western_us_flight_tracks_24x36_landscape_300dpi.png' | relative_url }}" alt="Western US Flight Tracks Topographic Map" class="card-img">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">Flight Map Studio</h3>
         <p class="card-desc">Interactive IGC flight track visualizer and poster studio over continuous 30m shaded relief DEMs.</p>
