@@ -13,11 +13,9 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
     <span>As of <strong>{{ site.data.inventory.last_updated | date: "%B %-d, %Y" }}</strong>: </span>
     <span style="display: inline-block; margin-left: 0.25rem;">
       <span style="color: {% if site.data.inventory.light_stock > 0 %}#3fb950{% else %}var(--speedbar-accent){% endif %}; font-weight: 700;">{{ site.data.inventory.light_stock }} Light</span>,
-      <span style="color: {% if site.data.inventory.comp_stock > 0 %}#3fb950{% else %}var(--speedbar-accent){% endif %}; font-weight: 700;">{{ site.data.inventory.comp_stock }} Comp</span> in stock.
+      <span style="color: {% if site.data.inventory.comp_stock > 0 %}#3fb950{% else %}var(--speedbar-accent){% endif %}; font-weight: 700;">{{ site.data.inventory.comp_stock }} Comp</span>
+      {% if site.data.inventory.status_message %}{{ site.data.inventory.status_message }}{% else %}in stock.{% endif %}
     </span>
-    {% if site.data.inventory.status_message %}
-      <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.25rem;">{{ site.data.inventory.status_message }}</div>
-    {% endif %}
   </div>
   <a href="mailto:jbcohn@gmail.com?subject=LiteStep%20Availability%20Inquiry" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.35rem 0.75rem;">Check Lead Times</a>
 </div>
