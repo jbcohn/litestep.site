@@ -43,7 +43,7 @@ title: Home
   <div class="grid">
     <div class="card">
       <a href="https://jbcohn.github.io/litestep-vj/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/litestep_vj_dancers.png' | relative_url }}" alt="LiteStep VJ Live Stage Visualizer" class="card-img" style="object-fit: contain; background: #060812;">
+        <img src="{{ '/assets/images/litestep_vj_mt_vaca.png' | relative_url }}" alt="LiteStep VJ Live Stage Visualizer - Mt. Vaca" class="card-img" style="object-fit: contain; background: #060812;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
         <h3 class="card-title">LiteStep VJ</h3>
         <p class="card-desc">Audio-reactive 3D stage visualizer featuring topographic mountains, Klüver mandalas, iridescent foam, and liquid mocap dancers.</p>
@@ -64,32 +64,6 @@ title: Home
       <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
         <a href="https://jbcohn.github.io/pg-race-analyzer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
         <a href="{{ '/projects/' | relative_url }}#race-analyzer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/form_constant_black.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img" style="background: #000; object-fit: contain;">
-        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
-        <h3 class="card-title">Form Constant Visualizer</h3>
-        <p class="card-desc">Real-time procedural visualizer for Klüver form constants, fractal mandalas, and audio-reactive geometry.</p>
-      </a>
-      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
-        <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🎨 Launch App</a>
-        <a href="{{ '/projects/' | relative_url }}#form-constants" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/xc_simulator.png' | relative_url }}" alt="Paragliding XC Simulator Interface" class="card-img">
-        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
-        <h3 class="card-title">Paragliding XC Simulator</h3>
-        <p class="card-desc">Interactive XC task planning, FAI triangle validation, and XContest flight scoring over satellite maps.</p>
-      </a>
-      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
-        <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
-        <a href="{{ '/projects/' | relative_url }}#xc-simulator" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
       </div>
     </div>
 
@@ -120,6 +94,19 @@ title: Home
     </div>
 
     <div class="card">
+      <a href="https://jbcohn.github.io/Soap-Bubble-Studio/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/bubble_surface_studio.png' | relative_url }}" alt="Soap Bubble Surface Studio" class="card-img" style="object-fit: contain; background: #060812;">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Soap Bubble Studio</h3>
+        <p class="card-desc">Real-time procedural foam simulation with Plateau borders, Michel-Lévy thin-film iridescence, interactive tools, and print export.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/Soap-Bubble-Studio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🫧 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#soap-bubble-studio" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
       <a href="https://jbcohn.github.io/Ridgeline-3D-Explorer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
         <img src="{{ '/assets/images/ridgeline_3d_mesh.png' | relative_url }}" alt="Ridgeline 3D Explorer Mesh" class="card-img" style="object-fit: cover; background: #000;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
@@ -133,15 +120,28 @@ title: Home
     </div>
 
     <div class="card">
-      <a href="https://jbcohn.github.io/Soap-Bubble-Studio/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-        <img src="{{ '/assets/images/bubble_surface_studio.png' | relative_url }}" alt="Soap Bubble Surface Studio" class="card-img" style="object-fit: contain; background: #060812;">
+      <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/form_constant_black.png' | relative_url }}" alt="Generative Geometry & Mandalas" class="card-img" style="background: #000; object-fit: contain;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
-        <h3 class="card-title">Soap Bubble Studio</h3>
-        <p class="card-desc">Real-time procedural foam simulation with Plateau borders, Michel-Lévy thin-film iridescence, interactive tools, and print export.</p>
+        <h3 class="card-title">Form Constant Visualizer</h3>
+        <p class="card-desc">Real-time procedural visualizer for Klüver form constants, fractal mandalas, and audio-reactive geometry.</p>
       </a>
       <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
-        <a href="https://jbcohn.github.io/Soap-Bubble-Studio/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🫧 Launch App</a>
-        <a href="{{ '/projects/' | relative_url }}#soap-bubble-studio" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+        <a href="https://jbcohn.github.io/Form-Constant-Visualizer/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🎨 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#form-constants" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/xc_simulator.png' | relative_url }}" alt="Paragliding XC Simulator Interface" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Paragliding XC Simulator</h3>
+        <p class="card-desc">Interactive XC task planning, FAI triangle validation, and XContest flight scoring over satellite maps.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/xc-simulator/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🚀 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#xc-simulator" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
       </div>
     </div>
   </div>
