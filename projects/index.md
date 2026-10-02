@@ -8,6 +8,42 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
 
 <div class="projects-list">
 
+  <!-- ================= LITESTEP VJ ================= -->
+  <section id="litestep-vj" style="margin-bottom: 3.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+      <h2 style="margin-top: 0; border: none; padding: 0;">LiteStep VJ — Live DJ Visualizer</h2>
+      <div class="button-group">
+        <a href="https://jbcohn.github.io/litestep-vj/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.45rem 0.9rem;">
+          🎛️ Launch LiteStep VJ &rarr;
+        </a>
+        <a href="https://github.com/jbcohn/litestep-vj" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+          GitHub Source
+        </a>
+      </div>
+    </div>
+
+    <div class="readability-box">
+      <p>
+        An audio-reactive, high-performance web-based VJ visualizer designed as an immersive live backdrop for DJ performances, concerts, and stage screens. Built with pure client-side HTML5 Canvas, Web Audio API, and Three.js WebGL with zero dependencies.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0; text-align: center;">
+      <img src="{{ '/assets/images/litestep_vj_dancers.png' | relative_url }}" alt="LiteStep VJ Liquid Mocap Bubble Dancers" style="width: 100%; max-height: 480px; object-fit: contain; background: #060812; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+    </div>
+
+    <div class="readability-box">
+      <ul>
+        <li><strong>5 Modular Audio-Reactive Scenes</strong>: Sacred geometry mandalas, 3D topographic ridgelines (DEMs), Michel-Lévy thin-film foam, 3D cloud-swept mountains (including Mt. Nebo & Mt. Diablo), and authentic AIST++ liquid mocap bubble dancers.</li>
+        <li><strong>Real-Time 4-Band Web Audio Engine</strong>: 1024-bin FFT spectrum analysis separating Sub, Bass, Mids, and Highs with kick drum transient detection and tap tempo sync.</li>
+        <li><strong>Rear Projection Mirror Mode</strong>: Instant GPU horizontal flip (<code>X</code> key) for behind-screen projection setups while preserving cockpit HUD legibility.</li>
+        <li><strong>WYSIWYG Anatomy & Choreography Studio</strong>: In-browser 3D character proportion tuner (<code>P</code> key) with 17 choreography styles and musical power-of-2 speed scaling.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr>
+
   <!-- ================= FLIGHT MAP STUDIO ================= -->
   <section id="flight-map-studio" style="margin-bottom: 3.5rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
