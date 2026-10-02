@@ -222,7 +222,7 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
   <hr>
 
   <!-- ================= XC SIMULATOR ================= -->
-  <section id="xc-simulator" style="margin-bottom: 2rem;">
+  <section id="xc-simulator" style="margin-bottom: 3.5rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
       <h2 style="margin-top: 0; border: none; padding: 0;">Paragliding XC Simulator</h2>
       <div class="button-group">
@@ -248,6 +248,41 @@ hero_image: /assets/images/paragliding_dolomites_gaggle.jpg
         <li><strong>Automatic FAI Triangle Validation</strong>: Real-time rendering of FAI turnpoint sectors ensuring shortest leg &ge; 28% perimeter constraints.</li>
         <li><strong>XContest Rules & Multipliers</strong>: Live point calculation for Free Flights (1.0 pt/km), Free Triangles (1.2–1.4 pts/km), and Closed FAI Triangles (1.6 pts/km).</li>
         <li><strong>Tracklog Import & Route Export</strong>: Load flight logs or design upcoming XC flights with interactive waypoints.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ================= PARAGLIDING TASK PLANNER ================= -->
+  <section id="task-planner" style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;">
+      <h2 style="margin-top: 0; border: none; padding: 0;">Paragliding Task Planner</h2>
+      <div class="button-group">
+        <a href="https://jbcohn.github.io/task-planner/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 0.45rem 0.9rem;">
+          🪂 Launch Task Planner &rarr;
+        </a>
+        <a href="https://github.com/jbcohn/task-planner" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.45rem 0.75rem;">
+          GitHub Source
+        </a>
+      </div>
+    </div>
+
+    <div class="readability-box">
+      <p>
+        A fast, offline-capable Progressive Web Application (PWA) for designing, optimizing, randomizing, and sharing competition and cross-country paragliding tasks. Features CIVL-compliant WGS-84 geodesic route optimization, interactive turnpoint cylinders, constraint-based task randomization, and instant QR code export to flight instruments.
+      </p>
+    </div>
+
+    <img src="{{ '/assets/images/task_planner.png' | relative_url }}" alt="Paragliding Task Planner Interface" style="width: 100%; border-radius: var(--radius-md); margin: 1rem 0; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+
+    <div class="readability-box">
+      <ul>
+        <li><strong>CIVL WGS-84 Geodesic Optimization</strong>: Computes exact shortest-path routes touching all cylinder perimeters on the WGS-84 ellipsoid using high-precision Vincenty geodesic mathematics.</li>
+        <li><strong>Constraint-Based Task Randomizer</strong>: Multi-tier solver generates diverse competition tasks to target distance specifications while enforcing flight angles (20&deg;–160&deg;), minimum leg lengths, and route dissimilarity (&ge; 80% unique).</li>
+        <li><strong>Touchpoint Route Alternatives</strong>: Click any cylinder contact point on the optimized course line to cycle through alternative catalog waypoints that maintain the identical route heading and touchpoint.</li>
+        <li><strong>Flight Instrument QR & Direct Export</strong>: Instant generation of compact XCTrack Format 2 (<code>XCTSK:...</code>) QR codes for scanning directly from paper or screens, built-in camera QR scanner, and direct file download for <code>.xctsk</code> (JSON) and <code>.cup</code> (SeeYou) formats.</li>
+        <li><strong>Full Offline PWA & Tile Caching</strong>: Service worker and IndexedDB area tile caching ensure complete functionality without internet on remote mountain launches.</li>
       </ul>
     </div>
   </section>

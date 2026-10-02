@@ -94,6 +94,19 @@ title: Home
     </div>
 
     <div class="card">
+      <a href="https://jbcohn.github.io/task-planner/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+        <img src="{{ '/assets/images/task_planner.png' | relative_url }}" alt="Paragliding Task Planner Interface" class="card-img">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
+        <h3 class="card-title">Paragliding Task Planner</h3>
+        <p class="card-desc">Fast, offline-capable competition task planner with CIVL WGS-84 route optimization, task randomizer, and XCTrack QR export.</p>
+      </a>
+      <div style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 0.75rem;">
+        <a href="https://jbcohn.github.io/task-planner/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem; flex: 1; text-align: center;">🪂 Launch App</a>
+        <a href="{{ '/projects/' | relative_url }}#task-planner" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.35rem 0.65rem;">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
       <a href="https://jbcohn.github.io/flight-map-studio/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
         <img src="{{ '/assets/images/western_us_flight_tracks_24x36_landscape_300dpi.png' | relative_url }}" alt="Western US Flight Tracks Topographic Map" class="card-img">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--speedbar-accent); margin-bottom: 0.25rem;">Live Web App</div>
