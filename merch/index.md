@@ -12,6 +12,62 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
 
+  <!-- Mount Whitney Ridgelines (Direct Printful + Stripe POD) -->
+  <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+    <a id="whitney-img-link" href="https://buy.stripe.com/test_14A5kF0JO0WT76T0IM1Jm1h" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
+      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
+        <img
+          id="whitney-shirt-img"
+          src="{{ '/assets/images/whitney_black_shirt.jpg' | relative_url }}"
+          alt="Mount Whitney Ridgelines T-Shirt"
+          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
+        >
+      </div>
+    </a>
+    <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">
+        California Peaks · Direct Print-on-Demand
+      </div>
+      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">
+        Mount Whitney Ridgelines Elevation Graphic T-Shirt
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on Bella + Canvas 3001 100% combed ringspun cotton with soft water-based inks.
+      </p>
+
+      <div style="margin-top: auto;">
+        <!-- Interactive Selectors -->
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.85rem;">
+          <div style="flex: 1;">
+            <label for="whitney-color-select" style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Color</label>
+            <select id="whitney-color-select" style="width: 100%; padding: 0.45rem 0.6rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.9rem; cursor: pointer;">
+              {% for color_item in site.data.whitney_merch_links %}
+                <option value="{{ color_item[0] }}" {% if color_item[0] == 'Black' %}selected{% endif %}>{{ color_item[0] }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div style="flex: 1;">
+            <label for="whitney-size-select" style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Size</label>
+            <select id="whitney-size-select" style="width: 100%; padding: 0.45rem 0.6rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.9rem; cursor: pointer;">
+              <!-- Populated via JavaScript -->
+            </select>
+          </div>
+        </div>
+
+        <a
+          id="whitney-buy-btn"
+          href="https://buy.stripe.com/test_14A5kF0JO0WT76T0IM1Jm1h"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+          style="width: 100%; text-align: center; display: block; box-sizing: border-box;"
+        >
+          Buy Direct — <span id="whitney-btn-price">$26.87</span> →
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Mt. Diablo Topo Wireframe -->
   <div class="card" style="padding: 0; overflow: hidden;">
     <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
@@ -162,3 +218,66 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     View All LiteStep Designs on Amazon &rarr;
   </a>
 </div>
+
+<script>
+(function() {
+  const whitneyData = {{ site.data.whitney_merch_links | jsonify }};
+  const colorSelect = document.getElementById('whitney-color-select');
+  const sizeSelect = document.getElementById('whitney-size-select');
+  const imgEl = document.getElementById('whitney-shirt-img');
+  const imgLink = document.getElementById('whitney-img-link');
+  const buyBtn = document.getElementById('whitney-buy-btn');
+  const priceSpan = document.getElementById('whitney-btn-price');
+
+  if (!colorSelect || !sizeSelect || !whitneyData) return;
+
+  function updateSizes(selectedColor, preserveSize) {
+    const colorInfo = whitneyData[selectedColor];
+    if (!colorInfo) return;
+
+    // Smoothly swap preview image
+    if (colorInfo.image && imgEl) {
+      imgEl.style.opacity = '0.3';
+      imgEl.src = "{{ '' | relative_url }}" + colorInfo.image;
+      imgEl.alt = "Mount Whitney Ridgelines T-Shirt - " + selectedColor;
+      setTimeout(() => { imgEl.style.opacity = '1'; }, 80);
+    }
+
+    // Populate sizes
+    sizeSelect.innerHTML = '';
+    const sizes = colorInfo.sizes || {};
+    let targetSize = preserveSize && sizes[preserveSize] ? preserveSize : (sizes['M'] ? 'M' : Object.keys(sizes)[0]);
+
+    for (const [sz, data] of Object.entries(sizes)) {
+      const opt = document.createElement('option');
+      opt.value = sz;
+      opt.textContent = `${sz} (${data.price})`;
+      if (sz === targetSize) opt.selected = true;
+      sizeSelect.appendChild(opt);
+    }
+
+    updateButton();
+  }
+
+  function updateButton() {
+    const currentColor = colorSelect.value;
+    const currentSize = sizeSelect.value;
+    const variantData = whitneyData[currentColor]?.sizes?.[currentSize];
+
+    if (variantData) {
+      buyBtn.href = variantData.url;
+      if (imgLink) imgLink.href = variantData.url;
+      if (priceSpan) priceSpan.textContent = variantData.price;
+    }
+  }
+
+  colorSelect.addEventListener('change', () => {
+    updateSizes(colorSelect.value, sizeSelect.value);
+  });
+
+  sizeSelect.addEventListener('change', updateButton);
+
+  // Initialize with default color & Medium size
+  updateSizes(colorSelect.value || 'Black', 'M');
+})();
+</script>
