@@ -27,16 +27,29 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     {% endunless %}
 
     <div class="card merch-card" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-      <a class="merch-img-link" href="{{ default_size_data.url }}" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-        <div style="display: flex; align-items: center; justify-content: center; height: 280px; background: #ffffff;">
-          <img
-            class="merch-shirt-img"
-            src="{{ default_color.image | relative_url }}"
-            alt="{{ prod.name }} - {{ default_color_name }}"
-            style="max-width: 100%; max-height: 270px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
-          >
-        </div>
-      </a>
+      <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 290px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
+        <img
+          class="merch-shirt-img"
+          src="{{ default_color.image | relative_url }}"
+          alt="{{ prod.name }} - {{ default_color_name }}"
+          style="max-width: 100%; max-height: 280px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
+        >
+        <button
+          type="button"
+          class="merch-zoom-badge"
+          aria-label="Zoom in on design"
+          style="position: absolute; bottom: 10px; right: 10px; background: rgba(0, 0, 0, 0.65); color: #ffffff; border: none; border-radius: 20px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; pointer-events: auto; transition: background 0.15s ease;"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          Zoom Design
+        </button>
+      </div>
+
       <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
         <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">
           {{ prod.tag }}
@@ -91,6 +104,34 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 </div>
 
+<!-- Interactive Magnifier / Zoom Modal -->
+<div id="merch-zoom-modal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.82); backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; opacity: 0; transition: opacity 0.2s ease;">
+  <div style="position: relative; max-width: 900px; width: 100%; max-height: 90vh; background: #ffffff; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+    <!-- Modal Header -->
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.25rem; border-bottom: 1px solid #e5e7eb; background: #fafafa;">
+      <div>
+        <h4 id="zoom-modal-title" style="margin: 0; font-size: 1.05rem; color: #111827; font-weight: 600;">Product Title</h4>
+        <div id="zoom-modal-subtitle" style="font-size: 0.8rem; color: #6b7280; margin-top: 0.15rem;">Selected Color · Click or drag to inspect fabric & print details</div>
+      </div>
+      <button id="zoom-modal-close" type="button" aria-label="Close zoom modal" style="background: transparent; border: none; font-size: 1.75rem; line-height: 1; cursor: pointer; color: #4b5563; padding: 0.25rem 0.5rem; border-radius: 4px;">&times;</button>
+    </div>
+
+    <!-- Modal Image Area with Magnifier Pan -->
+    <div id="zoom-image-viewport" style="position: relative; overflow: hidden; height: 60vh; min-height: 380px; max-height: 640px; display: flex; align-items: center; justify-content: center; background: #f3f4f6; cursor: crosshair;">
+      <img
+        id="zoom-modal-img"
+        src=""
+        alt="Magnified Design View"
+        style="max-width: 95%; max-height: 95%; object-fit: contain; display: block; transform-origin: center center; transition: transform 0.1s ease-out; user-select: none;"
+      >
+      <!-- Mode Toggle pill in modal -->
+      <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); background: rgba(17, 24, 39, 0.75); color: #fff; padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; pointer-events: none; backdrop-filter: blur(4px);">
+        Move cursor over image to magnify design details (2.5x)
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr style="margin: 3rem 0 2rem 0;">
 
 <div class="spec-box" style="text-align: center; padding: 2.25rem 1.5rem; margin-top: 2rem;">
@@ -110,6 +151,66 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
   const baseUrl = "{{ '' | relative_url }}";
 
+  // Modal elements
+  const modal = document.getElementById('merch-zoom-modal');
+  const modalImg = document.getElementById('zoom-modal-img');
+  const modalTitle = document.getElementById('zoom-modal-title');
+  const modalSubtitle = document.getElementById('zoom-modal-subtitle');
+  const modalClose = document.getElementById('zoom-modal-close');
+  const zoomViewport = document.getElementById('zoom-image-viewport');
+
+  function openZoomModal(title, color, imgSrc) {
+    if (!modal || !modalImg) return;
+    modalTitle.textContent = title;
+    modalSubtitle.textContent = `${color} · Pan cursor to inspect texture & graphic detail`;
+    modalImg.src = imgSrc;
+    modalImg.style.transform = 'scale(1)';
+    modal.style.display = 'flex';
+    requestAnimationFrame(() => {
+      modal.style.opacity = '1';
+    });
+  }
+
+  function closeZoomModal() {
+    if (!modal) return;
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      if (modalImg) modalImg.src = '';
+    }, 200);
+  }
+
+  if (modalClose) {
+    modalClose.addEventListener('click', closeZoomModal);
+  }
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeZoomModal();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.style.display === 'flex') {
+      closeZoomModal();
+    }
+  });
+
+  // Pan / Magnify functionality inside modal viewport
+  if (zoomViewport && modalImg) {
+    zoomViewport.addEventListener('mousemove', (e) => {
+      const rect = zoomViewport.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      modalImg.style.transformOrigin = `${x}% ${y}%`;
+      modalImg.style.transform = 'scale(2.5)';
+    });
+
+    zoomViewport.addEventListener('mouseleave', () => {
+      modalImg.style.transformOrigin = 'center center';
+      modalImg.style.transform = 'scale(1)';
+    });
+  }
+
+  // Iterate over product cards
   document.querySelectorAll('.merch-card').forEach(card => {
     const slug = card.getAttribute('data-slug');
     const prodData = catalog[slug];
@@ -118,7 +219,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     const colorSelect = card.querySelector('.merch-color-select');
     const sizeSelect = card.querySelector('.merch-size-select');
     const imgEl = card.querySelector('.merch-shirt-img');
-    const imgLink = card.querySelector('.merch-img-link');
+    const imgContainer = card.querySelector('.merch-img-container');
     const buyBtn = card.querySelector('.merch-buy-btn');
     const priceSpan = card.querySelector('.merch-btn-price');
 
@@ -160,9 +261,18 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
       if (variantData) {
         if (buyBtn) buyBtn.href = variantData.url;
-        if (imgLink) imgLink.href = variantData.url;
         if (priceSpan) priceSpan.textContent = variantData.price;
       }
+    }
+
+    // Clicking image or zoom button opens the magnifier modal for currently selected color
+    if (imgContainer) {
+      imgContainer.addEventListener('click', () => {
+        const currentColor = colorSelect.value;
+        const colorInfo = prodData.colors[currentColor];
+        const currentImgSrc = (colorInfo && colorInfo.image) ? (baseUrl + colorInfo.image) : (imgEl ? imgEl.src : '');
+        openZoomModal(prodData.name, currentColor, currentImgSrc);
+      });
     }
 
     colorSelect.addEventListener('change', () => {
