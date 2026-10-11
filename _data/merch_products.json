@@ -1,0 +1,3440 @@
+{
+  "mount_whitney_ridgelines": {
+    "id": 480089207,
+    "slug": "mount_whitney_ridgelines",
+    "name": "Mount Whitney Ridgelines Elevation Graphic T-Shirt",
+    "tag": "California Peaks \u00b7 Direct Print-on-Demand",
+    "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
+    "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
+    "colors": {
+      "Black": {
+        "name": "Black",
+        "slug": "black",
+        "image": "/assets/images/products/mount_whitney_ridgelines_black.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/aFacMY4ru0B1fMOdMi43S00",
+            "product_id": "prod_VPwFi6GFi6tx5w",
+            "sync_variant_id": "5563999989"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B63co7DG6Zp8km0Zw43S01",
+            "product_id": "prod_VPwFrt7KJDndBV",
+            "sync_variant_id": "5563999990"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cIeV6aPS1F5fMObEa43S02",
+            "product_id": "prod_VPwFwVqM13zmjY",
+            "sync_variant_id": "5563999991"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM4gscY0gzZ0RU7nU43S03",
+            "product_id": "prod_VPwFRnWkUBnExR",
+            "sync_variant_id": "5563999992"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi00c2jm6ZpcAC8rY43S04",
+            "product_id": "prod_VPwFMrx1eaO4jU",
+            "sync_variant_id": "5563999993"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/aFa6oA4ru6ZpbwydMi43S05",
+            "product_id": "prod_VPwFKSeeNQeyNx",
+            "sync_variant_id": "5563999994"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/28E28k5vy4Rh7gi23A43S06",
+            "product_id": "prod_VPwFdz2bPD9uHX",
+            "sync_variant_id": "5563999995"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/4gM6oA4ruerRbwy9w243S07",
+            "product_id": "prod_VPwFzdEoUNMuSt",
+            "sync_variant_id": "5563999996"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/cNi7sE6zC5VldEGdMi43S08",
+            "product_id": "prod_VPwFPynJfh7S6D",
+            "sync_variant_id": "5563999997"
+          }
+        }
+      },
+      "Navy": {
+        "name": "Navy",
+        "slug": "navy",
+        "image": "/assets/images/products/mount_whitney_ridgelines_navy.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm9AM6zC3Nd9oq5fM43S09",
+            "product_id": "prod_VPwFcJiDR8GjPY",
+            "sync_variant_id": "5563999998"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM6oAbTWgzZ58a23A43S0a",
+            "product_id": "prod_VPwFSlOVBBBKyc",
+            "sync_variant_id": "5563999999"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gMfZaf684Rh7gi0Zw43S0b",
+            "product_id": "prod_VPwFU801DXXNBP",
+            "sync_variant_id": "5564000000"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQ8wIe24erR302gYu43S0c",
+            "product_id": "prod_VPwFebSBjkzxme",
+            "sync_variant_id": "5564000001"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E7sE8HK0B16cedMi43S0d",
+            "product_id": "prod_VPwFy0dA4pG9m2",
+            "sync_variant_id": "5564000002"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/7sY4gs1figzZfMO5fM43S0e",
+            "product_id": "prod_VPwFkyOJ7VPi1V",
+            "sync_variant_id": "5564000003"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/00wcMY8HKdnNdEGdMi43S0f",
+            "product_id": "prod_VPwFxR8BNXblWl",
+            "sync_variant_id": "5564000004"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/6oUcMY9LOerR58aeQm43S0g",
+            "product_id": "prod_VPwFYWuPl711OX",
+            "sync_variant_id": "5564000005"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/bJe8wIbTW83t1VY37E43S0h",
+            "product_id": "prod_VPwFw8GTQcK3Xg",
+            "sync_variant_id": "5564000006"
+          }
+        }
+      },
+      "Cardinal": {
+        "name": "Cardinal",
+        "slug": "cardinal",
+        "image": "/assets/images/products/mount_whitney_ridgelines_cardinal.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQ4gse24abB8km37E43S0i",
+            "product_id": "prod_VPwFnuYTn35axt",
+            "sync_variant_id": "5564000007"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B600c6zC2J958acIe43S0j",
+            "product_id": "prod_VPwFPqJ0lkcxSv",
+            "sync_variant_id": "5564000008"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x228k3nq4RhcAC6jQ43S0k",
+            "product_id": "prod_VPwFvj0L5r822D",
+            "sync_variant_id": "5564000009"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A7sEe243Nd6ce9w243S0l",
+            "product_id": "prod_VPwFJ05GirYHCs",
+            "sync_variant_id": "5564000010"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM3co5vy0B1asu37E43S0m",
+            "product_id": "prod_VPwFa7t0VUS1sX",
+            "sync_variant_id": "5564000011"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/dRmdR26zC5Vl9oqdMi43S0n",
+            "product_id": "prod_VPwFhO38nAv6qT",
+            "sync_variant_id": "5564000012"
+          }
+        }
+      },
+      "Brown": {
+        "name": "Brown",
+        "slug": "brown",
+        "image": "/assets/images/products/mount_whitney_ridgelines_brown.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/aFa4gs5vyfvVdEGbEa43S0o",
+            "product_id": "prod_VPwFJGTQSMAsSp",
+            "sync_variant_id": "5564000013"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi7sE8HK83t3027nU43S0p",
+            "product_id": "prod_VPwF4AWj9bvn0t",
+            "sync_variant_id": "5564000014"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZu3cogacbfF9oqdMi43S0q",
+            "product_id": "prod_VPwFTm4Q8ePLmR",
+            "sync_variant_id": "5564000015"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUbIU9LO83t3028rY43S0r",
+            "product_id": "prod_VPwFblxoUb5xNc",
+            "sync_variant_id": "5564000016"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x228kbTWerR6ce0Zw43S0s",
+            "product_id": "prod_VPwGoyboNnF9vp",
+            "sync_variant_id": "5564000017"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/28E00c4ru3Ndasu23A43S0t",
+            "product_id": "prod_VPwGS5yq2kMIhE",
+            "sync_variant_id": "5564000018"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/fZu9AMcY00B16ce5fM43S0u",
+            "product_id": "prod_VPwG9o6fsq3umR",
+            "sync_variant_id": "5564000019"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/fZu28kf68bfF58a23A43S0v",
+            "product_id": "prod_VPwGMa8GJcppJY",
+            "sync_variant_id": "5564000020"
+          }
+        }
+      },
+      "Dark Grey": {
+        "name": "Dark Grey",
+        "slug": "dark_grey",
+        "image": "/assets/images/products/mount_whitney_ridgelines_dark_grey.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm9AM7DG83teIK9w243S0w",
+            "product_id": "prod_VPwG0cKCXaQ8yl",
+            "sync_variant_id": "5564000021"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRmfZa7DG83tgQSdMi43S0x",
+            "product_id": "prod_VPwGvMomKVDPUE",
+            "sync_variant_id": "5564000022"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNiaEQ1fibfFfMOcIe43S0y",
+            "product_id": "prod_VPwGml10yjS5X5",
+            "sync_variant_id": "5564000023"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUfZae246ZpeIK0Zw43S0z",
+            "product_id": "prod_VPwGaA1PpO59mn",
+            "sync_variant_id": "5564000024"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cI5kw0becjJbwy23A43S0A",
+            "product_id": "prod_VPwGzCFX5Z8Csu",
+            "sync_variant_id": "5564000025"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/9B63co0befvVcAC23A43S0B",
+            "product_id": "prod_VPwGDQyhoEzImm",
+            "sync_variant_id": "5564000026"
+          }
+        }
+      },
+      "Asphalt": {
+        "name": "Asphalt",
+        "slug": "asphalt",
+        "image": "/assets/images/products/mount_whitney_ridgelines_asphalt.jpg",
+        "sizes": {
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14AcMY9LOgzZ9oq0Zw43S0C",
+            "product_id": "prod_VPwGqrmbNZY3Oi",
+            "sync_variant_id": "5564000028"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/aFaaEQ4ru2J9bwyeQm43S0D",
+            "product_id": "prod_VPwG78N4GLsCgs",
+            "sync_variant_id": "5564000029"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUcMY1fiabBbwy6jQ43S0E",
+            "product_id": "prod_VPwGDch1Jkp4qx",
+            "sync_variant_id": "5564000030"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJeaEQ0bednN58aeQm43S0F",
+            "product_id": "prod_VPwGtJ7dAGm4ZU",
+            "sync_variant_id": "5564000032"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/fZu7sE5vyfvV9oqbEa43S0G",
+            "product_id": "prod_VPwG5DLodcRrXK",
+            "sync_variant_id": "5564000033"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/3cI28k5vybfFfMOgYu43S0H",
+            "product_id": "prod_VPwGXxqQjIiPhz",
+            "sync_variant_id": "5564000034"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/4gM00c5vy3NdeIK8rY43S0I",
+            "product_id": "prod_VPwG3uuK4EQWRj",
+            "sync_variant_id": "5564000035"
+          }
+        }
+      },
+      "Heather True Royal": {
+        "name": "Heather True Royal",
+        "slug": "heather_true_royal",
+        "image": "/assets/images/products/mount_whitney_ridgelines_heather_true_royal.jpg",
+        "sizes": {
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oU5kw4rucjJ8kmdMi43S0J",
+            "product_id": "prod_VPwGOpUwmpjbKR",
+            "sync_variant_id": "5564000036"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNibIU3nq1F59oq9w243S0K",
+            "product_id": "prod_VPwGVrOdiv2oDF",
+            "sync_variant_id": "5564000037"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQ4gs5vyfvV0RU0Zw43S0L",
+            "product_id": "prod_VPwGBjmLMmhI0V",
+            "sync_variant_id": "5564000038"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJecMYbTWabB302bEa43S0M",
+            "product_id": "prod_VPwGX5bcEmvFZu",
+            "sync_variant_id": "5564000039"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/dRmbIUaPS3NdfMO4bI43S0N",
+            "product_id": "prod_VPwGF1SueRz1uQ",
+            "sync_variant_id": "5564000040"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/bJe28kcY0abB8kmgYu43S0O",
+            "product_id": "prod_VPwGstU711sv5W",
+            "sync_variant_id": "5564000041"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/eVq6oAcY0cjJ8kmgYu43S0P",
+            "product_id": "prod_VPwGoA2YvIADmB",
+            "sync_variant_id": "5564000042"
+          }
+        }
+      },
+      "Aqua": {
+        "name": "Aqua",
+        "slug": "aqua",
+        "image": "/assets/images/products/mount_whitney_ridgelines_aqua.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w28k7DG2J90RUaA643S0Q",
+            "product_id": "prod_VPwG73irRZ3MXl",
+            "sync_variant_id": "5564000043"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZueV61fi3Nd3025fM43S0R",
+            "product_id": "prod_VPwGPEygMsZt2U",
+            "sync_variant_id": "5564000044"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00wbIU5vy2J958aaA643S0S",
+            "product_id": "prod_VPwGsIY6O71CMA",
+            "sync_variant_id": "5564000045"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14AfZa0bednNasu4bI43S0T",
+            "product_id": "prod_VPwGq1HOm7ngQO",
+            "sync_variant_id": "5564000046"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cI4gs7DG97xbwy6jQ43S0U",
+            "product_id": "prod_VPwG2Dt9ynQgK1",
+            "sync_variant_id": "5564000047"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/bJe5kw2jmerRbwy5fM43S0V",
+            "product_id": "prod_VPwG2zO7i59vqA",
+            "sync_variant_id": "5564000048"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/eVq9AM0be3Nd302dMi43S0W",
+            "product_id": "prod_VPwGklTn99IpsC",
+            "sync_variant_id": "5564000049"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/cNi4gsaPS4Rh0RU7nU43S0X",
+            "product_id": "prod_VPwGWxPDEZwJsQ",
+            "sync_variant_id": "5564000050"
+          }
+        }
+      },
+      "Ash": {
+        "name": "Ash",
+        "slug": "ash",
+        "image": "/assets/images/products/mount_whitney_ridgelines_ash.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x228k9LOfvVdEGbEa43S0Y",
+            "product_id": "prod_VPwGazEYwHEAM3",
+            "sync_variant_id": "5564000051"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQeV62jm1F5446cIe43S0Z",
+            "product_id": "prod_VPwGklomni8A1F",
+            "sync_variant_id": "5564000052"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gMcMY5vy83t1VYeQm43S10",
+            "product_id": "prod_VPwGo90Z57uxfK",
+            "sync_variant_id": "5564000053"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQ6oAbTW4Rh58acIe43S11",
+            "product_id": "prod_VPwG5XSP8CVyc2",
+            "sync_variant_id": "5564000054"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E3co4ruerR1VYbEa43S12",
+            "product_id": "prod_VPwGW1skwsliHV",
+            "sync_variant_id": "5564000055"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/bJe8wI8HK4Rh0RUeQm43S13",
+            "product_id": "prod_VPwGQqYJR0booP",
+            "sync_variant_id": "5564000056"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/dRm6oA0beabBdEGaA643S14",
+            "product_id": "prod_VPwGE3CYD1tf9O",
+            "sync_variant_id": "5564000057"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/28E7sE9LOcjJ58a4bI43S15",
+            "product_id": "prod_VPwGJGGjQD5lzu",
+            "sync_variant_id": "5564000058"
+          }
+        }
+      },
+      "Natural": {
+        "name": "Natural",
+        "slug": "natural",
+        "image": "/assets/images/products/mount_whitney_ridgelines_natural.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A9AMf68erRdEG23A43S16",
+            "product_id": "prod_VPwGu7avaW1cVi",
+            "sync_variant_id": "5564000059"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZu8wI1fibfFfMO0Zw43S17",
+            "product_id": "prod_VPwGG9bni6iBDh",
+            "sync_variant_id": "5564000060"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E28k1fi6ZpcACgYu43S18",
+            "product_id": "prod_VPwGoBPptoxcFf",
+            "sync_variant_id": "5564000061"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w28k9LOcjJ0RU37E43S19",
+            "product_id": "prod_VPwGSjKLqSFTzV",
+            "sync_variant_id": "5564000062"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sYaEQf682J9fMO8rY43S1a",
+            "product_id": "prod_VPwG0UujLJrZVj",
+            "sync_variant_id": "5564000063"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/7sY8wI0be3Nd446bEa43S1b",
+            "product_id": "prod_VPwGfUnoBg9ep6",
+            "sync_variant_id": "5564000064"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/fZu14g5vy83t7gidMi43S1c",
+            "product_id": "prod_VPwGWUfj4nuqT7",
+            "sync_variant_id": "5564000065"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/dRm28kaPScjJdEG37E43S1d",
+            "product_id": "prod_VPwG882Ip0TjpF",
+            "sync_variant_id": "5564000066"
+          }
+        }
+      }
+    }
+  },
+  "north_palisade_glaciated_af_": {
+    "id": 480350932,
+    "slug": "north_palisade_glaciated_af_",
+    "name": "North Palisade - Glaciated AF - Tri-Blend T-Shirt",
+    "tag": "High Sierra 14ers \u00b7 Direct Print-on-Demand",
+    "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Solid Black Triblend": {
+        "name": "Solid Black Triblend",
+        "slug": "solid_black_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__solid_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/8x27sE7DGgzZ7gieQm43S1e",
+            "product_id": "prod_VQ3zvj8BrvaGX3",
+            "sync_variant_id": "5565544669"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVqdR24ru1F5dEG5fM43S1f",
+            "product_id": "prod_VQ3z0l5LHvwjEi",
+            "sync_variant_id": "5565544670"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gM8wI1fiabB9oq23A43S1g",
+            "product_id": "prod_VQ3zKX38NDqXih",
+            "sync_variant_id": "5565544671"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNicMY1ficjJbwyeQm43S1h",
+            "product_id": "prod_VQ3z7v8GffbitT",
+            "sync_variant_id": "5565544672"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVq6oA1fibfF9oqbEa43S1i",
+            "product_id": "prod_VQ3zii1Y7bsbIw",
+            "sync_variant_id": "5565544673"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/14AcMY4rudnN9oqfUq43S1j",
+            "product_id": "prod_VQ3z0r4qFUdwHE",
+            "sync_variant_id": "5565544674"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/5kQ7sE3nq97x6ceeQm43S1k",
+            "product_id": "prod_VQ3zSVTrORkzix",
+            "sync_variant_id": "5565544675"
+          }
+        }
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNidR2gac97x7gicIe43S1l",
+            "product_id": "prod_VQ3zE3gjRZn8sr",
+            "sync_variant_id": "5565544676"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/14AfZaaPSfvVasu8rY43S1m",
+            "product_id": "prod_VQ3zPlS7LrUzn4",
+            "sync_variant_id": "5565544677"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/bJe4gs3nqfvV0RU6jQ43S1n",
+            "product_id": "prod_VQ3zpB5NWgEwr3",
+            "sync_variant_id": "5565544678"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/28E8wIcY04RheIK4bI43S1o",
+            "product_id": "prod_VQ3zdn5m6XXXya",
+            "sync_variant_id": "5565544679"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gM00c9LO5Vl302bEa43S1p",
+            "product_id": "prod_VQ3zDIOGp2laKX",
+            "sync_variant_id": "5565544680"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/6oU00cbTWabBgQS9w243S1q",
+            "product_id": "prod_VQ3zDM5ykBNj52",
+            "sync_variant_id": "5565544681"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/9B6cMYbTWcjJ1VYgYu43S1r",
+            "product_id": "prod_VQ3zSfnCIHR5oU",
+            "sync_variant_id": "5565544682"
+          }
+        }
+      },
+      "True Royal Triblend": {
+        "name": "True Royal Triblend",
+        "slug": "true_royal_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__true_royal_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/fZubIU1fi97x8kmcIe43S1s",
+            "product_id": "prod_VQ3zaS8GAxJrcY",
+            "sync_variant_id": "5565544683"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gM5kw0befvV1VYgYu43S1t",
+            "product_id": "prod_VQ3zVSLxfCgsGr",
+            "sync_variant_id": "5565544684"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/7sYaEQ4ruerRdEG23A43S1u",
+            "product_id": "prod_VQ3zRYSU3E5Pai",
+            "sync_variant_id": "5565544685"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVq4gs0beabBbwy5fM43S1v",
+            "product_id": "prod_VQ3zI8dFjO8pyB",
+            "sync_variant_id": "5565544686"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/6oU9AMe245VlgQS5fM43S1w",
+            "product_id": "prod_VQ3zupsGUM1RdX",
+            "sync_variant_id": "5565544687"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/5kQdR21fi1F5asu6jQ43S1x",
+            "product_id": "prod_VQ3zsrY1fyiufW",
+            "sync_variant_id": "5565544688"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/5kQ9AMf685VldEGdMi43S1y",
+            "product_id": "prod_VQ3zS6Tj8XjgW5",
+            "sync_variant_id": "5565544689"
+          }
+        }
+      },
+      "Teal Triblend": {
+        "name": "Teal Triblend",
+        "slug": "teal_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__teal_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gMbIU1fierRbwygYu43S1z",
+            "product_id": "prod_VQ3zBs0BoWP1re",
+            "sync_variant_id": "5565544690"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/5kQfZagac97x446aA643S1A",
+            "product_id": "prod_VQ3zxyV6w9Uqlc",
+            "sync_variant_id": "5565544691"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/6oU14g8HK4Rh7gi23A43S1B",
+            "product_id": "prod_VQ3zEWILLqMcfG",
+            "sync_variant_id": "5565544692"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/28EaEQ3nq0B17gi0Zw43S1C",
+            "product_id": "prod_VQ3zbo6dgTwiMs",
+            "sync_variant_id": "5565544693"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/28EcMY1fi4Rh1VYaA643S1D",
+            "product_id": "prod_VQ3zg08RlwJ4Ln",
+            "sync_variant_id": "5565544694"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/9B6cMY2jmfvV58a7nU43S1E",
+            "product_id": "prod_VQ3zFCk99DjQ8o",
+            "sync_variant_id": "5565544695"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/8x26oA9LO0B1eIKdMi43S1F",
+            "product_id": "prod_VQ3zQrnMawAEJF",
+            "sync_variant_id": "5565544696"
+          }
+        }
+      },
+      "Maroon Triblend": {
+        "name": "Maroon Triblend",
+        "slug": "maroon_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__maroon_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/7sY28k2jm1F558a6jQ43S1G",
+            "product_id": "prod_VQ3zCggfX9HZOb",
+            "sync_variant_id": "5565544697"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/dRmbIUbTW0B16ce5fM43S1H",
+            "product_id": "prod_VQ3zwHrULRmKbY",
+            "sync_variant_id": "5565544698"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/8x2eV68HK97xdEGgYu43S1I",
+            "product_id": "prod_VQ3zQ0i88dYBJR",
+            "sync_variant_id": "5565544699"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/9B600c3nq2J94466jQ43S1J",
+            "product_id": "prod_VQ3zZ8tquKD8XT",
+            "sync_variant_id": "5565544700"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNi9AMf680B14469w243S1K",
+            "product_id": "prod_VQ3ztXSwCQyUQa",
+            "sync_variant_id": "5565544701"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/4gMdR23nqfvV58a6jQ43S1L",
+            "product_id": "prod_VQ3zHW6P8Djid0",
+            "sync_variant_id": "5565544702"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/28EcMYbTWerR7gi9w243S1M",
+            "product_id": "prod_VQ3zXETh123yt8",
+            "sync_variant_id": "5565544703"
+          }
+        }
+      },
+      "Blue Triblend": {
+        "name": "Blue Triblend",
+        "slug": "blue_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__blue_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/14A7sEgac4RhfMOdMi43S1N",
+            "product_id": "prod_VQ3z7qolIyYUYM",
+            "sync_variant_id": "5565544704"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/6oU5kw4ru5Vl8km4bI43S1O",
+            "product_id": "prod_VQ3zhratkM2zQv",
+            "sync_variant_id": "5565544705"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/6oU4gs1fi83t446dMi43S1P",
+            "product_id": "prod_VQ3z9Lwz7PEz0y",
+            "sync_variant_id": "5565544706"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/9B65kw1fidnN3024bI43S1Q",
+            "product_id": "prod_VQ3zmHp9JaWVqN",
+            "sync_variant_id": "5565544707"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/fZu14g6zC4Rh0RU0Zw43S1R",
+            "product_id": "prod_VQ3zonemahSgGl",
+            "sync_variant_id": "5565544708"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/aFaeV6cY0abBasu0Zw43S1S",
+            "product_id": "prod_VQ3zcHqLnnhN48",
+            "sync_variant_id": "5565544709"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/aFa14ge243Nd6ce7nU43S1T",
+            "product_id": "prod_VQ3zGBihYaMcCc",
+            "sync_variant_id": "5565544710"
+          }
+        }
+      },
+      "Aqua Triblend": {
+        "name": "Aqua Triblend",
+        "slug": "aqua_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__aqua_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVq5kwf68fvV8km6jQ43S1U",
+            "product_id": "prod_VQ3zOVbQY6Bfi0",
+            "sync_variant_id": "5565544711"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/fZu28kbTW1F5dEGaA643S1V",
+            "product_id": "prod_VQ3zcfWycju5pu",
+            "sync_variant_id": "5565544712"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/aFabIU1fidnN44637E43S1W",
+            "product_id": "prod_VQ3zWjJGE5xd8u",
+            "sync_variant_id": "5565544713"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/9B6dR20beabBeIK6jQ43S1X",
+            "product_id": "prod_VQ3znGbvdHixfn",
+            "sync_variant_id": "5565544714"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/8x23co5vyfvV4467nU43S1Y",
+            "product_id": "prod_VQ3z5ZG2jimFpX",
+            "sync_variant_id": "5565544715"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRmfZaaPS1F59oqcIe43S1Z",
+            "product_id": "prod_VQ3zcBsPE5VJ0R",
+            "sync_variant_id": "5565544716"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/3cI00c7DG97x58abEa43S20",
+            "product_id": "prod_VQ3zWSlYodjz6W",
+            "sync_variant_id": "5565544717"
+          }
+        }
+      },
+      "Grey Triblend": {
+        "name": "Grey Triblend",
+        "slug": "grey_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__grey_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/5kQfZa5vy3NdcAC8rY43S21",
+            "product_id": "prod_VQ3zJeuKE1yzTi",
+            "sync_variant_id": "5565544718"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gMbIU0bednN8kmfUq43S22",
+            "product_id": "prod_VQ3zkd9tKbyNzh",
+            "sync_variant_id": "5565544719"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gM5kwaPS0B1fMO5fM43S23",
+            "product_id": "prod_VQ3zptZLxwmw18",
+            "sync_variant_id": "5565544720"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/5kQ28kaPS3NdcAC37E43S24",
+            "product_id": "prod_VQ3zDv9cP1WTRn",
+            "sync_variant_id": "5565544721"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/3cI6oA4ru1F5302bEa43S25",
+            "product_id": "prod_VQ40iNAZ0phQOv",
+            "sync_variant_id": "5565544722"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/9B66oA0becjJ9oq37E43S26",
+            "product_id": "prod_VQ40l72sbbxMLf",
+            "sync_variant_id": "5565544723"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/8x24gs6zCbfF58a23A43S27",
+            "product_id": "prod_VQ409l91cuPsjO",
+            "sync_variant_id": "5565544724"
+          }
+        }
+      },
+      "Olive Triblend": {
+        "name": "Olive Triblend",
+        "slug": "olive_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__olive_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVq8wIbTW1F57gi0Zw43S28",
+            "product_id": "prod_VQ40oIljL77G1H",
+            "sync_variant_id": "5565544725"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/aFa28k2jmerR8km7nU43S29",
+            "product_id": "prod_VQ40p7HR0sCWGb",
+            "sync_variant_id": "5565544726"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/aFa9AMcY0gzZdEG8rY43S2a",
+            "product_id": "prod_VQ4024B5H3g4kf",
+            "sync_variant_id": "5565544727"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNi7sEe243Nd6ce9w243S2b",
+            "product_id": "prod_VQ400fbz6fDczi",
+            "sync_variant_id": "5565544728"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNibIUf6883t6ce6jQ43S2c",
+            "product_id": "prod_VQ40Sr0O5I5iiz",
+            "sync_variant_id": "5565544729"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/bJe8wI0be5Vl1VYfUq43S2d",
+            "product_id": "prod_VQ405g8Fe0lgTC",
+            "sync_variant_id": "5565544730"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/6oU6oAaPS6Zp4469w243S2e",
+            "product_id": "prod_VQ40Mzx3c9Poa7",
+            "sync_variant_id": "5565544731"
+          }
+        }
+      },
+      "Mauve Triblend": {
+        "name": "Mauve Triblend",
+        "slug": "mauve_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__mauve_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/00wdR2f683Nd8km0Zw43S2f",
+            "product_id": "prod_VQ40S7Jwcy3MsB",
+            "sync_variant_id": "5565544732"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/4gMfZae240B10RUbEa43S2g",
+            "product_id": "prod_VQ406Hye3npzC9",
+            "sync_variant_id": "5565544733"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/3cI7sE0be0B1dEG9w243S2h",
+            "product_id": "prod_VQ40OMZ47Sj0hk",
+            "sync_variant_id": "5565544734"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/fZu4gs1fi6Zp3027nU43S2i",
+            "product_id": "prod_VQ400ccymyvF2M",
+            "sync_variant_id": "5565544735"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/8x29AMe246Zpbwy8rY43S2j",
+            "product_id": "prod_VQ40AyGK9Pturb",
+            "sync_variant_id": "5565544736"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/14A4gs7DG83tbwy8rY43S2k",
+            "product_id": "prod_VQ409lEo4Dvf2d",
+            "sync_variant_id": "5565544737"
+          }
+        }
+      },
+      "Mustard Triblend": {
+        "name": "Mustard Triblend",
+        "slug": "mustard_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__mustard_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/9B614gbTWcjJ9oq23A43S2l",
+            "product_id": "prod_VQ40Pdo23qqZeL",
+            "sync_variant_id": "5565544738"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/dRm6oA7DGgzZ30237E43S2m",
+            "product_id": "prod_VQ40eDw5Y5fh4I",
+            "sync_variant_id": "5565544739"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/7sY7sE1fi3Nd4466jQ43S2n",
+            "product_id": "prod_VQ40YLY4m5eSlV",
+            "sync_variant_id": "5565544740"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/cNi7sE3nqgzZ9oqaA643S2o",
+            "product_id": "prod_VQ40o5KzBxyk7R",
+            "sync_variant_id": "5565544741"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/fZuaEQaPSfvVdEGaA643S2p",
+            "product_id": "prod_VQ40yTCAQeLsc6",
+            "sync_variant_id": "5565544742"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w9AM4ru0B16ce8rY43S2q",
+            "product_id": "prod_VQ405u89XWwBbf",
+            "sync_variant_id": "5565544743"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/28E5kw1fi97xgQSfUq43S2r",
+            "product_id": "prod_VQ40syuyHK15R7",
+            "sync_variant_id": "5565544744"
+          }
+        }
+      },
+      "Tan Triblend": {
+        "name": "Tan Triblend",
+        "slug": "tan_triblend",
+        "image": "/assets/images/products/north_palisade_glaciated_af__tan_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/28EaEQ1ficjJ0RU4bI43S2s",
+            "product_id": "prod_VQ40SGcGCmidk1",
+            "sync_variant_id": "5565544745"
+          },
+          "S": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/eVqfZaf683NdgQSaA643S2t",
+            "product_id": "prod_VQ40ZWrT61g7Kt",
+            "sync_variant_id": "5565544746"
+          },
+          "M": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/5kQfZaf684RhdEG0Zw43S2u",
+            "product_id": "prod_VQ40z6LSZa7M9N",
+            "sync_variant_id": "5565544747"
+          },
+          "L": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/00w14g2jmfvV9oq6jQ43S2v",
+            "product_id": "prod_VQ40U9f30T9Yth",
+            "sync_variant_id": "5565544748"
+          },
+          "XL": {
+            "price": "$33.50",
+            "price_cents": 3350,
+            "url": "https://buy.stripe.com/7sY6oA1fi0B19oq4bI43S2w",
+            "product_id": "prod_VQ40Gva8FXoTq2",
+            "sync_variant_id": "5565544749"
+          },
+          "2XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00wdR2f68cjJcAC37E43S2x",
+            "product_id": "prod_VQ40qaq41bNMd7",
+            "sync_variant_id": "5565544750"
+          },
+          "3XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/6oU5kw5vyerRdEG37E43S2y",
+            "product_id": "prod_VQ40OUT4W0HRKa",
+            "sync_variant_id": "5565544751"
+          }
+        }
+      }
+    }
+  },
+  "rainbow_sunflower_tri_blend": {
+    "id": 480312304,
+    "slug": "rainbow_sunflower_tri_blend",
+    "name": "Rainbow Sunflower Tri-Blend T-Shirt",
+    "tag": "Algorithmic Art \u00b7 Direct Print-on-Demand",
+    "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Solid Black Triblend": {
+        "name": "Solid Black Triblend",
+        "slug": "solid_black_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_solid_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU4gsaPS1F51VY4bI43S2z",
+            "product_id": "prod_VQ40K0WKCjcLGD",
+            "sync_variant_id": "5565379140"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVqcMYbTWbfF7gi9w243S2A",
+            "product_id": "prod_VQ40R1shhKXq7M",
+            "sync_variant_id": "5565379141"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm28k1fi1F56ceaA643S2B",
+            "product_id": "prod_VQ40olaFxgVLCD",
+            "sync_variant_id": "5565379142"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/fZu5kw7DGcjJ58a23A43S2C",
+            "product_id": "prod_VQ40Ybto3PlWj8",
+            "sync_variant_id": "5565379143"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B67sEbTWgzZ0RU6jQ43S2D",
+            "product_id": "prod_VQ405L0p9UXhpJ",
+            "sync_variant_id": "5565379144"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/fZueV60be2J9eIKeQm43S2E",
+            "product_id": "prod_VQ40xkm4eHU85e",
+            "sync_variant_id": "5565379145"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/dRmbIUgacfvVfMObEa43S2F",
+            "product_id": "prod_VQ40SFmhsY7u8i",
+            "sync_variant_id": "5565379146"
+          }
+        }
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A7sEbTWabB0RUdMi43S2G",
+            "product_id": "prod_VQ40TEgBZoFt1O",
+            "sync_variant_id": "5565379147"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU28k4ru0B1dEG5fM43S2H",
+            "product_id": "prod_VQ40lSX8KW87Cq",
+            "sync_variant_id": "5565379148"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B614ggac5Vl9oq7nU43S2I",
+            "product_id": "prod_VQ40tzAkvnNG5K",
+            "sync_variant_id": "5565379149"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A28k5vy6ZpcACaA643S2J",
+            "product_id": "prod_VQ40WBvhJ66c0h",
+            "sync_variant_id": "5565379150"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq7sE8HK5VlbwyeQm43S2K",
+            "product_id": "prod_VQ40frypKivBEN",
+            "sync_variant_id": "5565379151"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/8x2aEQaPSabB6ce7nU43S2L",
+            "product_id": "prod_VQ40kunlF0V0xE",
+            "sync_variant_id": "5565379152"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/cNi5kw5vyabBgQS9w243S2M",
+            "product_id": "prod_VQ40s5FLlySsKz",
+            "sync_variant_id": "5565379153"
+          }
+        }
+      },
+      "True Royal Triblend": {
+        "name": "True Royal Triblend",
+        "slug": "true_royal_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_true_royal_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/cNi3cogaccjJ446eQm43S2N",
+            "product_id": "prod_VQ400xbkdFW4s1",
+            "sync_variant_id": "5565379154"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/28E14g5vy97x9oqfUq43S2O",
+            "product_id": "prod_VQ40oSAn0iAH9Y",
+            "sync_variant_id": "5565379155"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI00c0bednN8km4bI43S2P",
+            "product_id": "prod_VQ40g65PoF5NIa",
+            "sync_variant_id": "5565379156"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/cNi8wI0beerR4465fM43S2Q",
+            "product_id": "prod_VQ40gOxfOr9Nsv",
+            "sync_variant_id": "5565379157"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gMaEQe2483tbwyfUq43S2R",
+            "product_id": "prod_VQ40C1ddJgRVUq",
+            "sync_variant_id": "5565379158"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/eVq3cobTW97xgQS8rY43S2S",
+            "product_id": "prod_VQ40RaHj7HWc8w",
+            "sync_variant_id": "5565379160"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/eVq7sEf686ZpgQS5fM43S2T",
+            "product_id": "prod_VQ40rjC2NNqO2N",
+            "sync_variant_id": "5565379161"
+          }
+        }
+      },
+      "Teal Triblend": {
+        "name": "Teal Triblend",
+        "slug": "teal_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_teal_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gM5kw8HKcjJeIK7nU43S2U",
+            "product_id": "prod_VQ40o4lC8Dhdn5",
+            "sync_variant_id": "5565379162"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/8x2dR23nq4Rh3025fM43S2V",
+            "product_id": "prod_VQ40Icu3lXUDGe",
+            "sync_variant_id": "5565379163"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQ7sE7DGbfF0RUfUq43S2W",
+            "product_id": "prod_VQ40HXzPH9ctfY",
+            "sync_variant_id": "5565379164"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14AaEQ7DG5VlbwyeQm43S2X",
+            "product_id": "prod_VQ40Uh565VaQjV",
+            "sync_variant_id": "5565379165"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI00c1fi4RhdEG37E43S2Y",
+            "product_id": "prod_VQ40Iok9oimSsr",
+            "sync_variant_id": "5565379166"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/cNifZa6zCbfF8kmeQm43S2Z",
+            "product_id": "prod_VQ408SXSPESnX2",
+            "sync_variant_id": "5565379167"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/dRm5kw2jm2J99oq9w243S30",
+            "product_id": "prod_VQ40LOrE4CXJac",
+            "sync_variant_id": "5565379168"
+          }
+        }
+      },
+      "Maroon Triblend": {
+        "name": "Maroon Triblend",
+        "slug": "maroon_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_maroon_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQcMYbTW0B17gigYu43S31",
+            "product_id": "prod_VQ40UjQFTsjkve",
+            "sync_variant_id": "5565379169"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B600c8HKbfF1VY8rY43S32",
+            "product_id": "prod_VQ40cZeCF1XFr4",
+            "sync_variant_id": "5565379170"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU5kw8HK97xdEG0Zw43S33",
+            "product_id": "prod_VQ40gMSrabYLjz",
+            "sync_variant_id": "5565379171"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A7sE3nq4Rh446dMi43S34",
+            "product_id": "prod_VQ40V8KoXJxgbn",
+            "sync_variant_id": "5565379172"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B6bIU8HK2J99oqaA643S35",
+            "product_id": "prod_VQ40xfi4mSXv3F",
+            "sync_variant_id": "5565379173"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/5kQ3co3nq3NdasugYu43S36",
+            "product_id": "prod_VQ40pukCDsTAQz",
+            "sync_variant_id": "5565379174"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/3cI8wI4ru83tasu37E43S37",
+            "product_id": "prod_VQ40uAqpCRKhSG",
+            "sync_variant_id": "5565379175"
+          }
+        }
+      },
+      "Blue Triblend": {
+        "name": "Blue Triblend",
+        "slug": "blue_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_blue_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq28k2jm4RhbwydMi43S38",
+            "product_id": "prod_VQ4055iiygznQZ",
+            "sync_variant_id": "5565379176"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14AaEQ9LO3Ndasu9w243S39",
+            "product_id": "prod_VQ41a6Dtl18Fy4",
+            "sync_variant_id": "5565379177"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gM4gs7DG4Rhbwy7nU43S3a",
+            "product_id": "prod_VQ41tT1g3jsZL2",
+            "sync_variant_id": "5565379178"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJeeV6cY0bfFbwy5fM43S3b",
+            "product_id": "prod_VQ41CgF3efVB9V",
+            "sync_variant_id": "5565379179"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/fZu8wI0be83t4469w243S3c",
+            "product_id": "prod_VQ41PgONz2Z8s1",
+            "sync_variant_id": "5565379180"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/7sY7sE7DG5Vl8km6jQ43S3d",
+            "product_id": "prod_VQ41yrS0uzQQUR",
+            "sync_variant_id": "5565379181"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/bJefZagac6ZpeIKgYu43S3e",
+            "product_id": "prod_VQ41SyBhxipkbG",
+            "sync_variant_id": "5565379182"
+          }
+        }
+      },
+      "Aqua Triblend": {
+        "name": "Aqua Triblend",
+        "slug": "aqua_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_aqua_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cIaEQf68fvV8kmfUq43S3f",
+            "product_id": "prod_VQ41EXsufvPNZt",
+            "sync_variant_id": "5565379183"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/28E4gsf685VlcAC37E43S3g",
+            "product_id": "prod_VQ41zcXPuX4WJL",
+            "sync_variant_id": "5565379184"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cIdR2gacgzZasu23A43S3h",
+            "product_id": "prod_VQ414c8rfzSXVz",
+            "sync_variant_id": "5565379186"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm14gf68cjJfMO6jQ43S3i",
+            "product_id": "prod_VQ41cVvBgxcevP",
+            "sync_variant_id": "5565379187"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/fZu5kwaPSgzZ4468rY43S3j",
+            "product_id": "prod_VQ41jo3Z277c5t",
+            "sync_variant_id": "5565379188"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/eVq00cgacgzZasu4bI43S3k",
+            "product_id": "prod_VQ41hmcVDr36IX",
+            "sync_variant_id": "5565379189"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/cNidR21fi97x7gi37E43S3l",
+            "product_id": "prod_VQ41utzEFWasJ5",
+            "sync_variant_id": "5565379190"
+          }
+        }
+      },
+      "Grey Triblend": {
+        "name": "Grey Triblend",
+        "slug": "grey_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_grey_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq28k5vycjJ3020Zw43S3m",
+            "product_id": "prod_VQ41P7sItlZlXz",
+            "sync_variant_id": "5565379191"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/aFacMY7DGabBdEG23A43S3n",
+            "product_id": "prod_VQ41dHm1HQ4vxn",
+            "sync_variant_id": "5565379192"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJebIU1fi4Rh6cegYu43S3o",
+            "product_id": "prod_VQ41PNgnIkU4wq",
+            "sync_variant_id": "5565379193"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/8x27sEcY0dnNasu37E43S3p",
+            "product_id": "prod_VQ41RtjhTa70HF",
+            "sync_variant_id": "5565379194"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A00caPS0B16ce6jQ43S3q",
+            "product_id": "prod_VQ41PvZZMfALAP",
+            "sync_variant_id": "5565379195"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/dRmbIUcY03NddEGfUq43S3r",
+            "product_id": "prod_VQ413UokCuMjV6",
+            "sync_variant_id": "5565379196"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/9B6aEQ2jmbfF0RU9w243S3s",
+            "product_id": "prod_VQ41F7R9nfgAvK",
+            "sync_variant_id": "5565379197"
+          }
+        }
+      },
+      "Olive Triblend": {
+        "name": "Olive Triblend",
+        "slug": "olive_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_olive_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/7sYdR23nq0B1bwy6jQ43S3t",
+            "product_id": "prod_VQ416Loa22xY8E",
+            "sync_variant_id": "5565379198"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI6oA1fidnN8km8rY43S3u",
+            "product_id": "prod_VQ41hlVEFaleI1",
+            "sync_variant_id": "5565379199"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq3co6zC83teIK5fM43S3v",
+            "product_id": "prod_VQ41ytyEKiOOXz",
+            "sync_variant_id": "5565379200"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU5kwcY05Vl3020Zw43S3w",
+            "product_id": "prod_VQ41Hzz92veYDy",
+            "sync_variant_id": "5565379201"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQ7sE8HKdnN302bEa43S3x",
+            "product_id": "prod_VQ412TgfGPsmCP",
+            "sync_variant_id": "5565379202"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/5kQdR27DGdnNbwydMi43S3y",
+            "product_id": "prod_VQ41ps9NfStnSM",
+            "sync_variant_id": "5565379203"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/fZuaEQ9LO5Vl6ce37E43S3z",
+            "product_id": "prod_VQ41BJVbJZZiDe",
+            "sync_variant_id": "5565379204"
+          }
+        }
+      },
+      "Mauve Triblend": {
+        "name": "Mauve Triblend",
+        "slug": "mauve_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_mauve_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cIeV67DGerRbwyaA643S3A",
+            "product_id": "prod_VQ41kmW62ls3ay",
+            "sync_variant_id": "5565379205"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B67sE1fibfFdEG7nU43S3B",
+            "product_id": "prod_VQ41LVEWsD0v2K",
+            "sync_variant_id": "5565379206"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/aFacMYaPSabB6cedMi43S3C",
+            "product_id": "prod_VQ41tYjb034vSP",
+            "sync_variant_id": "5565379207"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cIdR27DGcjJgQS7nU43S3D",
+            "product_id": "prod_VQ41XUh2ZijEqj",
+            "sync_variant_id": "5565379209"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/28E8wIcY00B1bwy8rY43S3E",
+            "product_id": "prod_VQ41mpHz5llXvv",
+            "sync_variant_id": "5565379210"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/6oUbIU2jm5VlfMO37E43S3F",
+            "product_id": "prod_VQ41UVzOUEjeYg",
+            "sync_variant_id": "5565379211"
+          }
+        }
+      },
+      "Mustard Triblend": {
+        "name": "Mustard Triblend",
+        "slug": "mustard_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_mustard_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/fZu5kw8HK4RheIKeQm43S3G",
+            "product_id": "prod_VQ41fdPc5RI0sn",
+            "sync_variant_id": "5565379212"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/cNi28kcY01F54466jQ43S3H",
+            "product_id": "prod_VQ41CEeOPXZZLV",
+            "sync_variant_id": "5565379213"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/cNi3co2jm2J9302dMi43S3I",
+            "product_id": "prod_VQ41WzMSJTAkMr",
+            "sync_variant_id": "5565379214"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRmaEQ6zC5VldEG0Zw43S3J",
+            "product_id": "prod_VQ41ra2Gug3aN8",
+            "sync_variant_id": "5565379215"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A4gs1fi97xeIKdMi43S3K",
+            "product_id": "prod_VQ41ty2xnIWn3E",
+            "sync_variant_id": "5565379216"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/eVqfZa1fi0B1gQScIe43S3L",
+            "product_id": "prod_VQ41SpDeQuVYP2",
+            "sync_variant_id": "5565379217"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/cNi6oA5vy2J9fMOeQm43S3M",
+            "product_id": "prod_VQ41CuJ4m0QaAg",
+            "sync_variant_id": "5565379218"
+          }
+        }
+      },
+      "Tan Triblend": {
+        "name": "Tan Triblend",
+        "slug": "tan_triblend",
+        "image": "/assets/images/products/rainbow_sunflower_tri_blend_tan_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/8x2eV62jm0B1dEGcIe43S3N",
+            "product_id": "prod_VQ41G7K3obrYyl",
+            "sync_variant_id": "5565379219"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI28kcY0dnN7gibEa43S3O",
+            "product_id": "prod_VQ41duyy6KfLdG",
+            "sync_variant_id": "5565379220"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/00w00cgac4RhcACfUq43S3P",
+            "product_id": "prod_VQ41prLB2a44gU",
+            "sync_variant_id": "5565379221"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU6oA1fidnN9oq6jQ43S3Q",
+            "product_id": "prod_VQ41dC7bmRJg94",
+            "sync_variant_id": "5565379222"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQaEQgac6Zp4469w243S3R",
+            "product_id": "prod_VQ41NO0i4IBhZ8",
+            "sync_variant_id": "5565379223"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/9B69AM4ru3Ndasu0Zw43S3S",
+            "product_id": "prod_VQ41HAiv3cQM37",
+            "sync_variant_id": "5565379224"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/00w28k1fi6Zp1VYbEa43S3T",
+            "product_id": "prod_VQ416QK60wW7eI",
+            "sync_variant_id": "5565379225"
+          }
+        }
+      }
+    }
+  },
+  "violet_eye_hex_mandala": {
+    "id": 479899530,
+    "slug": "violet_eye_hex_mandala",
+    "name": "Violet Eye Hexagon Mandala Graphic T-Shirt",
+    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry.",
+    "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
+    "colors": {
+      "Black Heather": {
+        "name": "Black Heather",
+        "slug": "black_heather",
+        "image": "/assets/images/products/violet_eye_hex_mandala_black_heather.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi4gs8HK6Zp0RU4bI43S3U",
+            "product_id": "prod_VQ41CShmg9222E",
+            "sync_variant_id": "5563102821"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w9AM7DGgzZ0RUgYu43S3V",
+            "product_id": "prod_VQ412fGwcEi1dF",
+            "sync_variant_id": "5563102822"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVq5kw2jmfvV1VY0Zw43S3W",
+            "product_id": "prod_VQ41VxBZgsiE4K",
+            "sync_variant_id": "5563102823"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJebIUcY0cjJ8kmeQm43S3X",
+            "product_id": "prod_VQ41Q8MDff5A59",
+            "sync_variant_id": "5563102824"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi5kwf683NdgQS37E43S3Y",
+            "product_id": "prod_VQ41hOf8HWJZwr",
+            "sync_variant_id": "5563102825"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/aFaeV6f686Zp4464bI43S3Z",
+            "product_id": "prod_VQ41C2RAyuSOlO",
+            "sync_variant_id": "5563102826"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/28E00c6zC3Nd58acIe43S40",
+            "product_id": "prod_VQ41dcyEsB7mN8",
+            "sync_variant_id": "5563102827"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/eVq3co1fifvVdEGbEa43S41",
+            "product_id": "prod_VQ41ScTTbELtYa",
+            "sync_variant_id": "5563102828"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/aFaeV6gaccjJfMOgYu43S42",
+            "product_id": "prod_VQ41SMQtvrVHKU",
+            "sync_variant_id": "5563102829"
+          }
+        }
+      },
+      "Black": {
+        "name": "Black",
+        "slug": "black",
+        "image": "/assets/images/products/violet_eye_hex_mandala_black.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJe3co0be5Vl9oq0Zw43S43",
+            "product_id": "prod_VQ41WuKFbsdmsO",
+            "sync_variant_id": "5563102830"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B614gf684RhdEG5fM43S44",
+            "product_id": "prod_VQ41KxxuId625K",
+            "sync_variant_id": "5563102831"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRmdR2aPSfvV8kmdMi43S45",
+            "product_id": "prod_VQ41SdpUGh2W0M",
+            "sync_variant_id": "5563102832"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oU4gs1fiabBfMOdMi43S46",
+            "product_id": "prod_VQ41uUwtW5NpXF",
+            "sync_variant_id": "5563102833"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cI00ccY04Rhbwy9w243S47",
+            "product_id": "prod_VQ41oxAFzCyHZ5",
+            "sync_variant_id": "5563102834"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/7sYaEQaPS0B17gi0Zw43T00",
+            "product_id": "prod_VQ41WbxLWYEWHz",
+            "sync_variant_id": "5563102835"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/4gMbIUe245Vl4460Zw43T01",
+            "product_id": "prod_VQ41jirxMMpwlI",
+            "sync_variant_id": "5563102836"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/8x25kw4ru6Zp8kmaA643T02",
+            "product_id": "prod_VQ41GtD8oAjwqc",
+            "sync_variant_id": "5563102837"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/5kQ28kf683NdcAC4bI43T03",
+            "product_id": "prod_VQ418HYT5bfnNE",
+            "sync_variant_id": "5563102838"
+          }
+        }
+      },
+      "Cardinal": {
+        "name": "Cardinal",
+        "slug": "cardinal",
+        "image": "/assets/images/products/violet_eye_hex_mandala_cardinal.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6aEQ5vy5VleIK37E43T04",
+            "product_id": "prod_VQ414VZPZ3oc5Y",
+            "sync_variant_id": "5563102839"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E5kw7DG97x9oq8rY43T05",
+            "product_id": "prod_VQ41KY3UtpZhLM",
+            "sync_variant_id": "5563102840"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNicMYaPSbfFdEG0Zw43T06",
+            "product_id": "prod_VQ42prQ1ZfQDEZ",
+            "sync_variant_id": "5563102841"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM9AMcY0dnN9oq23A43T07",
+            "product_id": "prod_VQ425qaWDeA7sw",
+            "sync_variant_id": "5563102842"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVq5kw5vy6ZpfMOcIe43T08",
+            "product_id": "prod_VQ42MVKEKpQvzr",
+            "sync_variant_id": "5563102843"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/bJe3co8HKerRcAC8rY43T09",
+            "product_id": "prod_VQ42J08D4E3DVh",
+            "sync_variant_id": "5563102844"
+          }
+        }
+      },
+      "Heather Brown": {
+        "name": "Heather Brown",
+        "slug": "heather_brown",
+        "image": "/assets/images/products/violet_eye_hex_mandala_heather_brown.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6dR25vy97x1VY4bI43T0a",
+            "product_id": "prod_VQ42pTvMXIPEcV",
+            "sync_variant_id": "5563102845"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZudR26zCdnNasu23A43T0b",
+            "product_id": "prod_VQ42RCBd0MLyQo",
+            "sync_variant_id": "5563102846"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oU7sE7DG97xfMObEa43T0c",
+            "product_id": "prod_VQ424R9UhiIzCC",
+            "sync_variant_id": "5563102847"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZu3co3nqgzZbwybEa43T0d",
+            "product_id": "prod_VQ42FITrbYA2af",
+            "sync_variant_id": "5563102848"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRmcMYbTWbfF4460Zw43T0e",
+            "product_id": "prod_VQ42H65IdFcJdQ",
+            "sync_variant_id": "5563102849"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/dRmaEQ8HKbfFdEG23A43T0f",
+            "product_id": "prod_VQ42k5KWhTJQlN",
+            "sync_variant_id": "5563102850"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/5kQ6oAgacabBgQScIe43T0g",
+            "product_id": "prod_VQ42oodWbJs4YU",
+            "sync_variant_id": "5563102852"
+          }
+        }
+      },
+      "Army": {
+        "name": "Army",
+        "slug": "army",
+        "image": "/assets/images/products/violet_eye_hex_mandala_army.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sYdR22jm1F5eIK4bI43T0h",
+            "product_id": "prod_VQ42bmZEzdUr4r",
+            "sync_variant_id": "5563102853"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm9AMcY0bfF8kmbEa43T0i",
+            "product_id": "prod_VQ425vLRg0dvd1",
+            "sync_variant_id": "5563102854"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B64gs5vygzZ58a37E43T0j",
+            "product_id": "prod_VQ42L8Pctb3dDT",
+            "sync_variant_id": "5563102855"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B68wI6zC1F5dEGaA643T0k",
+            "product_id": "prod_VQ42vu72wStrU6",
+            "sync_variant_id": "5563102856"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZu14g4ruabB302gYu43T0l",
+            "product_id": "prod_VQ42QZ2JOs20Ox",
+            "sync_variant_id": "5563102857"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/aFa00caPSerR9oqgYu43T0m",
+            "product_id": "prod_VQ426M5RBus4ny",
+            "sync_variant_id": "5563102858"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/9B63co7DG97x1VYbEa43T0n",
+            "product_id": "prod_VQ42czCmZEoT5H",
+            "sync_variant_id": "5563102859"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/cNi7sEaPSgzZ0RU6jQ43T0o",
+            "product_id": "prod_VQ4258qH00RJIq",
+            "sync_variant_id": "5563102860"
+          }
+        }
+      },
+      "Soft Cream": {
+        "name": "Soft Cream",
+        "slug": "soft_cream",
+        "image": "/assets/images/products/violet_eye_hex_mandala_soft_cream.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJe14ggacdnN6ce8rY43T0p",
+            "product_id": "prod_VQ42MqjB9NSk8b",
+            "sync_variant_id": "5563102861"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNicMY8HKabB7gi5fM43T0q",
+            "product_id": "prod_VQ42CUlVgzeZFC",
+            "sync_variant_id": "5563102862"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6fZa5vy0B18km8rY43T0r",
+            "product_id": "prod_VQ42HepMyxIAuW",
+            "sync_variant_id": "5563102863"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM14gbTWcjJ9oq4bI43T0s",
+            "product_id": "prod_VQ42IqRWVsX67J",
+            "sync_variant_id": "5563102864"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x228kbTWgzZcAC9w243T0t",
+            "product_id": "prod_VQ42QnJ3x0GJiP",
+            "sync_variant_id": "5563102865"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/3cIfZagac3Nd0RUcIe43T0u",
+            "product_id": "prod_VQ42esSiGlcR5o",
+            "sync_variant_id": "5563102866"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/eVqeV69LOdnN6ceeQm43T0v",
+            "product_id": "prod_VQ42PjNZVTS4OW",
+            "sync_variant_id": "5563102867"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/4gMbIU4rudnN3029w243T0w",
+            "product_id": "prod_VQ42EA5Utc4qXs",
+            "sync_variant_id": "5563102868"
+          }
+        }
+      },
+      "Soft Pink": {
+        "name": "Soft Pink",
+        "slug": "soft_pink",
+        "image": "/assets/images/products/violet_eye_hex_mandala_soft_pink.jpg",
+        "sizes": {
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJe5kw8HK0B11VYaA643T0x",
+            "product_id": "prod_VQ42Xjtg3Vi9MQ",
+            "sync_variant_id": "5563102869"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00wbIU2jmdnN7gi37E43T0y",
+            "product_id": "prod_VQ42FaaRiPmGxb",
+            "sync_variant_id": "5563102870"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28EaEQe241F5bwy37E43T0z",
+            "product_id": "prod_VQ42IbF7h4zTod",
+            "sync_variant_id": "5563102871"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM5kwf68abBeIKgYu43T0A",
+            "product_id": "prod_VQ42k3zXGbKUo5",
+            "sync_variant_id": "5563102872"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/dRm8wI8HKbfF0RUcIe43T0B",
+            "product_id": "prod_VQ42hCuB2JZLvD",
+            "sync_variant_id": "5563102873"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/28EeV67DGcjJbwy8rY43T0C",
+            "product_id": "prod_VQ42ZyD9UYtUay",
+            "sync_variant_id": "5563102874"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/28EeV66zC2J9gQS0Zw43T0D",
+            "product_id": "prod_VQ4251A2K09Ea4",
+            "sync_variant_id": "5563102875"
+          }
+        }
+      },
+      "Silver": {
+        "name": "Silver",
+        "slug": "silver",
+        "image": "/assets/images/products/violet_eye_hex_mandala_silver.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B68wI0becjJfMO8rY43T0E",
+            "product_id": "prod_VQ42vcTIw5UDuc",
+            "sync_variant_id": "5563102876"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVq28k3nqgzZ4466jQ43T0F",
+            "product_id": "prod_VQ42SMjbpXjJ3V",
+            "sync_variant_id": "5563102877"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUdR2aPSgzZ3026jQ43T0G",
+            "product_id": "prod_VQ42S52Qi3ysLp",
+            "sync_variant_id": "5563102878"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRmcMY1fifvV0RUdMi43T0H",
+            "product_id": "prod_VQ42fb0qEe3aet",
+            "sync_variant_id": "5563102879"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A14ge243Nd3024bI43T0I",
+            "product_id": "prod_VQ42W27T4SSX4g",
+            "sync_variant_id": "5563102880"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/7sY8wIf68erR6ce4bI43T0J",
+            "product_id": "prod_VQ42Jgu8aK3iH8",
+            "sync_variant_id": "5563102881"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/eVq28k4rufvVasu4bI43T0K",
+            "product_id": "prod_VQ42e6pUwpKTS1",
+            "sync_variant_id": "5563102882"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/5kQcMY8HK0B1302fUq43T0L",
+            "product_id": "prod_VQ42jl4ZIa2p6v",
+            "sync_variant_id": "5563102883"
+          }
+        }
+      },
+      "Ash": {
+        "name": "Ash",
+        "slug": "ash",
+        "image": "/assets/images/products/violet_eye_hex_mandala_ash.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A28k5vygzZ7gi7nU43T0M",
+            "product_id": "prod_VQ42JBE0sy39zK",
+            "sync_variant_id": "5563102884"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sY8wIaPSbfF8kmeQm43T0N",
+            "product_id": "prod_VQ42m8umSqoNvt",
+            "sync_variant_id": "5563102885"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14AeV6f68cjJ7giaA643T0O",
+            "product_id": "prod_VQ42SJGLuM6Xdw",
+            "sync_variant_id": "5563102886"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZu7sE6zC6Zpasu23A43T0P",
+            "product_id": "prod_VQ42AlOZjREGbv",
+            "sync_variant_id": "5563102887"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNieV6bTW6ZpfMO23A43T0Q",
+            "product_id": "prod_VQ42O6qivnVWbV",
+            "sync_variant_id": "5563102888"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/9B6aEQ0begzZ1VY9w243T0R",
+            "product_id": "prod_VQ421ysfgrT6i0",
+            "sync_variant_id": "5563102889"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/fZueV61fi4RhgQS0Zw43T0S",
+            "product_id": "prod_VQ42MPBl9YiS9o",
+            "sync_variant_id": "5563102890"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/dRm4gs0be2J958a7nU43T0T",
+            "product_id": "prod_VQ42HkZFRK0uRZ",
+            "sync_variant_id": "5563102891"
+          }
+        }
+      },
+      "Heather Ice Blue": {
+        "name": "Heather Ice Blue",
+        "slug": "heather_ice_blue",
+        "image": "/assets/images/products/violet_eye_hex_mandala_heather_ice_blue.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sY00c1fi4Rh8kmeQm43T0U",
+            "product_id": "prod_VQ42W3QTsbcQKo",
+            "sync_variant_id": "5563102892"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E4gs5vyerR3027nU43T0V",
+            "product_id": "prod_VQ42uHy8iqSVgg",
+            "sync_variant_id": "5563102893"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00wdR2f68fvVdEGeQm43T0W",
+            "product_id": "prod_VQ42frbmXlyO3g",
+            "sync_variant_id": "5563102894"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sY8wIf683NdasucIe43T0X",
+            "product_id": "prod_VQ42tGiCdtBP54",
+            "sync_variant_id": "5563102895"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E14g2jm1F50RUaA643T0Y",
+            "product_id": "prod_VQ42BMrMdRYGrp",
+            "sync_variant_id": "5563102896"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/cNi28kgacfvV0RUcIe43T0Z",
+            "product_id": "prod_VQ42mEclVgBDGm",
+            "sync_variant_id": "5563102897"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/9B63co2jm83t3020Zw43T10",
+            "product_id": "prod_VQ42TjUs7DuBKA",
+            "sync_variant_id": "5563102898"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/dRmeV6cY0gzZgQScIe43T11",
+            "product_id": "prod_VQ42zFQqBaAvXG",
+            "sync_variant_id": "5563102899"
+          }
+        }
+      },
+      "White": {
+        "name": "White",
+        "slug": "white",
+        "image": "/assets/images/products/violet_eye_hex_mandala_white.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVqfZa1fiabB1VY9w243T12",
+            "product_id": "prod_VQ42iJuw6BRmKk",
+            "sync_variant_id": "5563102900"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVq28k8HKbfF9oq4bI43T13",
+            "product_id": "prod_VQ42FgIcM29Nx0",
+            "sync_variant_id": "5563102901"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM9AMcY0bfF7gidMi43T14",
+            "product_id": "prod_VQ42ev2hBldAQV",
+            "sync_variant_id": "5563102902"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNicMYaPSgzZ4469w243T15",
+            "product_id": "prod_VQ42wackBqEBKF",
+            "sync_variant_id": "5563102903"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x23co3nq3Nd302cIe43T16",
+            "product_id": "prod_VQ42mVeDlhYJpd",
+            "sync_variant_id": "5563102904"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/3cI14g3nqgzZeIK7nU43T17",
+            "product_id": "prod_VQ42PBpKmVyxlA",
+            "sync_variant_id": "5563102905"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/dRm14g9LO1F5dEG23A43T18",
+            "product_id": "prod_VQ42sTZJ5v6W2p",
+            "sync_variant_id": "5563102906"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/00wdR24ru97xeIK23A43T19",
+            "product_id": "prod_VQ421gFg9ONOcP",
+            "sync_variant_id": "5563102907"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/14A8wI8HKabBasu23A43T1a",
+            "product_id": "prod_VQ42zPsd1hV5q9",
+            "sync_variant_id": "5563102908"
+          }
+        }
+      }
+    }
+  },
+  "bubbles": {
+    "id": 479948902,
+    "slug": "bubbles",
+    "name": "Bubbles! Procedural Graphic T-Shirt",
+    "tag": "Mathematical Geometry \u00b7 Direct Print-on-Demand",
+    "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts.",
+    "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
+    "colors": {
+      "Black Heather": {
+        "name": "Black Heather",
+        "slug": "black_heather",
+        "image": "/assets/images/products/bubbles_black_heather.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x228k1fidnN58a0Zw43T1b",
+            "product_id": "prod_VQ42INXm3MqcBT",
+            "sync_variant_id": "5563313427"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B68wI6zCabB8kmfUq43T1c",
+            "product_id": "prod_VQ42QKuyUBFId0",
+            "sync_variant_id": "5563313428"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x29AM9LO1F51VY23A43T1d",
+            "product_id": "prod_VQ423f0osraXzI",
+            "sync_variant_id": "5563313429"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cIdR27DGbfFdEG4bI43T1e",
+            "product_id": "prod_VQ43zebDZ335I6",
+            "sync_variant_id": "5563313431"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w28kgac2J9446gYu43T1f",
+            "product_id": "prod_VQ43qLhP3owYWx",
+            "sync_variant_id": "5563313432"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/9B63cof68cjJfMO8rY43T1g",
+            "product_id": "prod_VQ439KGpZL7Wh5",
+            "sync_variant_id": "5563313433"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/4gMaEQbTW3Nd302gYu43T1h",
+            "product_id": "prod_VQ43jJfAi37fsP",
+            "sync_variant_id": "5563313434"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/dRm6oA8HK2J9fMO6jQ43T1i",
+            "product_id": "prod_VQ43zAdNUeNLtW",
+            "sync_variant_id": "5563313435"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/6oUfZa2jmerR3028rY43T1j",
+            "product_id": "prod_VQ43Bl2XEkZk6e",
+            "sync_variant_id": "5563313436"
+          }
+        }
+      },
+      "Cardinal": {
+        "name": "Cardinal",
+        "slug": "cardinal",
+        "image": "/assets/images/products/bubbles_cardinal.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJedR2e24bfF302dMi43T1k",
+            "product_id": "prod_VQ43gFwYgN18jT",
+            "sync_variant_id": "5563313437"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJe9AM1fi2J91VYeQm43T1l",
+            "product_id": "prod_VQ43Zliwdkx6cZ",
+            "sync_variant_id": "5563313438"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNifZa8HK0B18kmgYu43T1m",
+            "product_id": "prod_VQ43VE3GA6affO",
+            "sync_variant_id": "5563313439"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZucMY5vyerR1VYeQm43T1n",
+            "product_id": "prod_VQ43ZkHYRWvRnq",
+            "sync_variant_id": "5563313440"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/aFabIUf685Vl8kmeQm43T1o",
+            "product_id": "prod_VQ439V6G7IvT83",
+            "sync_variant_id": "5563313441"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/fZu7sEgac2J97gi37E43T1p",
+            "product_id": "prod_VQ43KKkhwcJjYE",
+            "sync_variant_id": "5563313442"
+          }
+        }
+      },
+      "Red": {
+        "name": "Red",
+        "slug": "red",
+        "image": "/assets/images/products/bubbles_red.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00wfZa4rucjJeIKcIe43T1q",
+            "product_id": "prod_VQ43GlfJbZ2ezd",
+            "sync_variant_id": "5563313443"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm5kwe24cjJ30223A43T1r",
+            "product_id": "prod_VQ43ixZ96TYwCp",
+            "sync_variant_id": "5563313444"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6bIU2jm97x1VYdMi43T1s",
+            "product_id": "prod_VQ43tFDW5FRnoB",
+            "sync_variant_id": "5563313445"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUfZa4ru4RhdEG5fM43T1t",
+            "product_id": "prod_VQ43BMcElsiE0L",
+            "sync_variant_id": "5563313446"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w7sE6zC0B1eIK5fM43T1u",
+            "product_id": "prod_VQ43V6rSqLCWPR",
+            "sync_variant_id": "5563313447"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/6oUdR24rugzZ0RU37E43T1v",
+            "product_id": "prod_VQ43ZTKzbSSgGc",
+            "sync_variant_id": "5563313448"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/3cIfZa9LObfFgQSeQm43T1w",
+            "product_id": "prod_VQ43BNGXujg8Ko",
+            "sync_variant_id": "5563313449"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/bJeeV60bebfFeIK5fM43T1x",
+            "product_id": "prod_VQ439t3ihFiMiT",
+            "sync_variant_id": "5563313450"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/6oU9AM4ru5VleIKeQm43T1y",
+            "product_id": "prod_VQ43ci4XJVhr1G",
+            "sync_variant_id": "5563313451"
+          }
+        }
+      },
+      "True Royal": {
+        "name": "True Royal",
+        "slug": "true_royal",
+        "image": "/assets/images/products/bubbles_true_royal.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w8wI3nqgzZ7gicIe43T1z",
+            "product_id": "prod_VQ43nUlqaZjD0k",
+            "sync_variant_id": "5563313452"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6aEQ3nqabB7gi6jQ43T1A",
+            "product_id": "prod_VQ43aOL4uvgZQF",
+            "sync_variant_id": "5563313453"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gMeV6cY03Nd58a5fM43T1B",
+            "product_id": "prod_VQ43oXrYbpL2fx",
+            "sync_variant_id": "5563313454"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sY5kwe244Rh0RU37E43T1C",
+            "product_id": "prod_VQ43aExZHN0oDK",
+            "sync_variant_id": "5563313455"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZueV68HKabBcAC0Zw43T1D",
+            "product_id": "prod_VQ43nGnY8EnvVR",
+            "sync_variant_id": "5563313456"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/5kQdR22jmcjJfMOfUq43T1E",
+            "product_id": "prod_VQ43TqiQJHpCUP",
+            "sync_variant_id": "5563313457"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/dRm4gscY03NddEG23A43T1F",
+            "product_id": "prod_VQ432pQUTMjDyY",
+            "sync_variant_id": "5563313458"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/5kQcMYcY01F56ce23A43T1G",
+            "product_id": "prod_VQ43v5XnV5HI4g",
+            "sync_variant_id": "5563313459"
+          },
+          "5XL": {
+            "price": "$34.87",
+            "price_cents": 3487,
+            "url": "https://buy.stripe.com/5kQ7sE5vyabB6ce8rY43T1H",
+            "product_id": "prod_VQ435be0eMnsie",
+            "sync_variant_id": "5563313460"
+          }
+        }
+      },
+      "Berry": {
+        "name": "Berry",
+        "slug": "berry",
+        "image": "/assets/images/products/bubbles_berry.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A8wIbTW83tfMO6jQ43T1I",
+            "product_id": "prod_VQ43JuexQQRbWl",
+            "sync_variant_id": "5563313461"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM6oAcY04Rh30237E43T1J",
+            "product_id": "prod_VQ43YGTie03rHP",
+            "sync_variant_id": "5563313462"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oU6oA6zCgzZ58agYu43T1K",
+            "product_id": "prod_VQ43mKH7npf5t0",
+            "sync_variant_id": "5563313463"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQbIU3nq3Nd6cedMi43T1L",
+            "product_id": "prod_VQ439dZzwpSW85",
+            "sync_variant_id": "5563313464"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRmfZa6zC5Vl6ce6jQ43T1M",
+            "product_id": "prod_VQ439cKGWZFMvH",
+            "sync_variant_id": "5563313465"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/00weV66zC4RhfMOfUq43T1N",
+            "product_id": "prod_VQ43MtpDemx2PI",
+            "sync_variant_id": "5563313466"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/eVq28k8HK0B130237E43T1O",
+            "product_id": "prod_VQ43o2lRRyuvVI",
+            "sync_variant_id": "5563313467"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/cNiaEQ1fi0B158a23A43T1P",
+            "product_id": "prod_VQ43zehxkD6t4j",
+            "sync_variant_id": "5563313468"
+          }
+        }
+      },
+      "Heather Clay": {
+        "name": "Heather Clay",
+        "slug": "heather_clay",
+        "image": "/assets/images/products/bubbles_heather_clay.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sYfZagacbfF58a6jQ43T1Q",
+            "product_id": "prod_VQ43rStwFOPKow",
+            "sync_variant_id": "5563313469"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM6oA3nq4RhgQSaA643T1R",
+            "product_id": "prod_VQ43z5nC7Yx6vq",
+            "sync_variant_id": "5563313470"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28EfZa1fifvV0RU23A43T1S",
+            "product_id": "prod_VQ43UDZ8QCs1sk",
+            "sync_variant_id": "5563313471"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E7sEgac97xdEG37E43T1T",
+            "product_id": "prod_VQ43rX14MbP1Qn",
+            "sync_variant_id": "5563313472"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00wdR2aPS97xbwy7nU43T1U",
+            "product_id": "prod_VQ43iccSbp0D2m",
+            "sync_variant_id": "5563313473"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/5kQ28k6zCgzZ6ce9w243T1V",
+            "product_id": "prod_VQ43dh0N01dnRr",
+            "sync_variant_id": "5563313474"
+          }
+        }
+      },
+      "Heather Slate": {
+        "name": "Heather Slate",
+        "slug": "heather_slate",
+        "image": "/assets/images/products/bubbles_heather_slate.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi00c2jm2J9bwy5fM43T1W",
+            "product_id": "prod_VQ43Y36zMd7BoJ",
+            "sync_variant_id": "5563313475"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/fZueV6gac1F558abEa43T1X",
+            "product_id": "prod_VQ43P3GjdqM7te",
+            "sync_variant_id": "5563313476"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/aFacMY1fi1F5bwy7nU43T1Y",
+            "product_id": "prod_VQ43dYtTOnkQ8V",
+            "sync_variant_id": "5563313477"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E5kw1fi97xbwyeQm43T1Z",
+            "product_id": "prod_VQ43G5SRZl8ZmV",
+            "sync_variant_id": "5563313478"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/3cIeV6e24abB0RUfUq43T20",
+            "product_id": "prod_VQ43KBMV9hh9am",
+            "sync_variant_id": "5563313479"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/14A8wIf680B19oqcIe43T21",
+            "product_id": "prod_VQ43hLWEG2ARe3",
+            "sync_variant_id": "5563313480"
+          }
+        }
+      },
+      "Olive": {
+        "name": "Olive",
+        "slug": "olive",
+        "image": "/assets/images/products/bubbles_olive.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x23coaPS6Zp3020Zw43T22",
+            "product_id": "prod_VQ43TcYhAihOuh",
+            "sync_variant_id": "5563313481"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x23cof6897xfMOaA643T23",
+            "product_id": "prod_VQ43b7A09VYMMq",
+            "sync_variant_id": "5563313482"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sYaEQbTWfvV1VY0Zw43T24",
+            "product_id": "prod_VQ43lJC8V908jY",
+            "sync_variant_id": "5563313483"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/14A14g5vy83t3029w243T25",
+            "product_id": "prod_VQ43nXL1EYfdi0",
+            "sync_variant_id": "5563313484"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/8x25kwf68erR7giaA643T26",
+            "product_id": "prod_VQ43AQIPL7jn4b",
+            "sync_variant_id": "5563313485"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/5kQ9AM5vy4Rh6ce37E43T27",
+            "product_id": "prod_VQ43YcNrpXpXpS",
+            "sync_variant_id": "5563313486"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/aFa9AMaPS1F59oq37E43T28",
+            "product_id": "prod_VQ43ee2mRMbCqu",
+            "sync_variant_id": "5563313487"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/00weV6aPSerRbwy37E43T29",
+            "product_id": "prod_VQ43pdVIlHRDYm",
+            "sync_variant_id": "5563313488"
+          }
+        }
+      },
+      "Autumn": {
+        "name": "Autumn",
+        "slug": "autumn",
+        "image": "/assets/images/products/bubbles_autumn.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM28kcY0dnNeIK23A43T2a",
+            "product_id": "prod_VQ43uKIV2UmNM1",
+            "sync_variant_id": "5563313489"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/5kQ28k9LOgzZ8kmcIe43T2b",
+            "product_id": "prod_VQ43My5zqmRg1z",
+            "sync_variant_id": "5563313490"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm00cbTWerR8km5fM43T2c",
+            "product_id": "prod_VQ43NqQoJWJe4w",
+            "sync_variant_id": "5563313491"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6eV66zCdnN446bEa43T2d",
+            "product_id": "prod_VQ43gorvJavTQA",
+            "sync_variant_id": "5563313492"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sY14gbTWfvV6ceeQm43T2e",
+            "product_id": "prod_VQ43zzTBuLdAzu",
+            "sync_variant_id": "5563313493"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/eVq8wIgacabBdEGfUq43T2f",
+            "product_id": "prod_VQ43NMsMn03hjt",
+            "sync_variant_id": "5563313494"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/6oU9AMgac1F59oq9w243T2g",
+            "product_id": "prod_VQ434NLa5BlqSy",
+            "sync_variant_id": "5563313495"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/dRmbIU6zC83teIKcIe43T2h",
+            "product_id": "prod_VQ43WhQulwUutt",
+            "sync_variant_id": "5563313496"
+          }
+        }
+      },
+      "Heather Grass Green": {
+        "name": "Heather Grass Green",
+        "slug": "heather_grass_green",
+        "image": "/assets/images/products/bubbles_heather_grass_green.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B6dR2bTW5Vl6ce8rY43T2i",
+            "product_id": "prod_VQ432frw3PBs7f",
+            "sync_variant_id": "5563313497"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B68wIgac3Nd446cIe43T2j",
+            "product_id": "prod_VQ43rhDOLEqcLK",
+            "sync_variant_id": "5563313498"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM14ggaccjJcACcIe43T2k",
+            "product_id": "prod_VQ43K7N1TouKWH",
+            "sync_variant_id": "5563313499"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi14ge244Rh6ce23A43T2l",
+            "product_id": "prod_VQ44QRjQpkFCir",
+            "sync_variant_id": "5563313500"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/4gM6oA9LO97x1VYbEa43T2m",
+            "product_id": "prod_VQ44Tr3wUXwXwf",
+            "sync_variant_id": "5563313501"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/8x228k8HK2J9cAC7nU43T2n",
+            "product_id": "prod_VQ44BMktGCsBOe",
+            "sync_variant_id": "5563313502"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/eVqaEQ0begzZasudMi43T2o",
+            "product_id": "prod_VQ44dQ0a9yi6gw",
+            "sync_variant_id": "5563313503"
+          }
+        }
+      },
+      "Heather True Royal": {
+        "name": "Heather True Royal",
+        "slug": "heather_true_royal",
+        "image": "/assets/images/products/bubbles_heather_true_royal.jpg",
+        "sizes": {
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oU14g1fi4RhgQS23A43T2p",
+            "product_id": "prod_VQ446sUm0YowCQ",
+            "sync_variant_id": "5563313504"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/28E28k7DGfvVfMOdMi43T2q",
+            "product_id": "prod_VQ44ay1xDHIepN",
+            "sync_variant_id": "5563313505"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/bJeeV67DGdnNdEG4bI43T2r",
+            "product_id": "prod_VQ44z3QK1q1wW2",
+            "sync_variant_id": "5563313506"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/dRm28k9LO0B158abEa43T2s",
+            "product_id": "prod_VQ44hEZcyymsHa",
+            "sync_variant_id": "5563313507"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/bJe7sE1fi1F558a7nU43T2t",
+            "product_id": "prod_VQ44cdZEB27dhE",
+            "sync_variant_id": "5563313508"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/3cI6oAbTW1F56cefUq43T2u",
+            "product_id": "prod_VQ44tEiBzaCacO",
+            "sync_variant_id": "5563313509"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/cNiaEQ9LO1F5gQSaA643T2v",
+            "product_id": "prod_VQ44mk6CAzx4ZV",
+            "sync_variant_id": "5563313510"
+          }
+        }
+      },
+      "Aqua": {
+        "name": "Aqua",
+        "slug": "aqua",
+        "image": "/assets/images/products/bubbles_aqua.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNi7sEgac97xfMO4bI43T2w",
+            "product_id": "prod_VQ44g5a2KqBcXa",
+            "sync_variant_id": "5563313511"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B628k8HK83tbwycIe43T2x",
+            "product_id": "prod_VQ44L4rmkIajkp",
+            "sync_variant_id": "5563313512"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUdR2e24cjJdEGeQm43T2y",
+            "product_id": "prod_VQ4492p8ysVw5B",
+            "sync_variant_id": "5563313513"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/7sYcMYaPS1F558a7nU43T2z",
+            "product_id": "prod_VQ44cFgLwX57pf",
+            "sync_variant_id": "5563313514"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/9B67sE9LOerR302bEa43T2A",
+            "product_id": "prod_VQ44595j7mK03s",
+            "sync_variant_id": "5563313515"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/28E8wI8HK83t302dMi43T2B",
+            "product_id": "prod_VQ44YGBcvh8ggF",
+            "sync_variant_id": "5563313516"
+          },
+          "3XL": {
+            "price": "$30.87",
+            "price_cents": 3087,
+            "url": "https://buy.stripe.com/4gMbIUbTWfvV7gifUq43T2C",
+            "product_id": "prod_VQ44hom9vNVS9r",
+            "sync_variant_id": "5563313517"
+          },
+          "4XL": {
+            "price": "$32.87",
+            "price_cents": 3287,
+            "url": "https://buy.stripe.com/4gMdR20be5Vl1VYgYu43T2D",
+            "product_id": "prod_VQ44mVcIOPJbCY",
+            "sync_variant_id": "5563313518"
+          }
+        }
+      },
+      "Charity Pink": {
+        "name": "Charity Pink",
+        "slug": "charity_pink",
+        "image": "/assets/images/products/bubbles_charity_pink.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/6oUeV66zCdnNasudMi43T2E",
+            "product_id": "prod_VQ44dCHRsHbVad",
+            "sync_variant_id": "5563313519"
+          },
+          "S": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/cNifZa0be0B11VYfUq43T2F",
+            "product_id": "prod_VQ44hqk1TtMcTv",
+            "sync_variant_id": "5563313520"
+          },
+          "M": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/eVq6oA9LO83t4468rY43T2G",
+            "product_id": "prod_VQ44M51D6Zsv90",
+            "sync_variant_id": "5563313521"
+          },
+          "L": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00weV6cY05VldEGbEa43T2H",
+            "product_id": "prod_VQ44OCT7R7ghA3",
+            "sync_variant_id": "5563313522"
+          },
+          "XL": {
+            "price": "$26.87",
+            "price_cents": 2687,
+            "url": "https://buy.stripe.com/00w5kw8HKbfFcACdMi43T2I",
+            "product_id": "prod_VQ449xMgjhWlQc",
+            "sync_variant_id": "5563313523"
+          },
+          "2XL": {
+            "price": "$28.87",
+            "price_cents": 2887,
+            "url": "https://buy.stripe.com/28E9AMe240B13026jQ43T2J",
+            "product_id": "prod_VQ44LIzYukjgfi",
+            "sync_variant_id": "5563313524"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,283 +1,178 @@
 ---
 layout: page
 title: "Merch & Apparel"
-description: "Original apparel featuring digital elevation art, geometric fractals, mathematical designs and the occasional cute dog. Available on Amazon."
+description: "Original apparel featuring digital elevation art, geometric fractals, and mathematical designs printed on premium Bella + Canvas tees."
 permalink: /merch/
 hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
-  Original apparel designs generated from geospatial elevation data, fractal mathematics, and algorithmic geometry. Ships via Amazon Prime.
+  Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on premium Bella + Canvas tees and shipped directly to your door with automatic sales tax calculation.
 </p>
 
-<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
 
-  <!-- Mount Whitney Ridgelines (Direct Printful + Stripe POD) -->
-  <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-    <a id="whitney-img-link" href="https://buy.stripe.com/test_14A5kF0JO0WT76T0IM1Jm1h" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          id="whitney-shirt-img"
-          src="{{ '/assets/images/whitney_black_shirt.jpg' | relative_url }}"
-          alt="Mount Whitney Ridgelines T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">
-        California Peaks · Direct Print-on-Demand
-      </div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">
-        Mount Whitney Ridgelines Elevation Graphic T-Shirt
-      </h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on Bella + Canvas 3001 100% combed ringspun cotton with soft water-based inks.
-      </p>
+  {% for product_entry in site.data.merch_products %}
+    {% assign prod_slug = product_entry[0] %}
+    {% assign prod = product_entry[1] %}
+    {% assign first_color_pair = prod.colors | first %}
+    {% assign default_color_name = first_color_pair[0] %}
+    {% assign default_color = first_color_pair[1] %}
+    {% assign default_size_data = default_color.sizes['M'] %}
+    {% assign default_size_name = 'M' %}
+    {% unless default_size_data %}
+      {% assign default_size_pair = default_color.sizes | first %}
+      {% assign default_size_name = default_size_pair[0] %}
+      {% assign default_size_data = default_size_pair[1] %}
+    {% endunless %}
 
-      <div style="margin-top: auto;">
-        <!-- Interactive Selectors -->
-        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.85rem;">
-          <div style="flex: 1;">
-            <label for="whitney-color-select" style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Color</label>
-            <select id="whitney-color-select" style="width: 100%; padding: 0.45rem 0.6rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.9rem; cursor: pointer;">
-              {% for color_item in site.data.whitney_merch_links %}
-                <option value="{{ color_item[0] }}" {% if color_item[0] == 'Black' %}selected{% endif %}>{{ color_item[0] }}</option>
-              {% endfor %}
-            </select>
-          </div>
-          <div style="flex: 1;">
-            <label for="whitney-size-select" style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Size</label>
-            <select id="whitney-size-select" style="width: 100%; padding: 0.45rem 0.6rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.9rem; cursor: pointer;">
-              <!-- Populated via JavaScript -->
-            </select>
-          </div>
+    <div class="card merch-card" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+      <a class="merch-img-link" href="{{ default_size_data.url }}" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
+        <div style="display: flex; align-items: center; justify-content: center; height: 280px; background: #ffffff;">
+          <img
+            class="merch-shirt-img"
+            src="{{ default_color.image | relative_url }}"
+            alt="{{ prod.name }} - {{ default_color_name }}"
+            style="max-width: 100%; max-height: 270px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
+          >
         </div>
-
-        <a
-          id="whitney-buy-btn"
-          href="https://buy.stripe.com/test_14A5kF0JO0WT76T0IM1Jm1h"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-primary"
-          style="width: 100%; text-align: center; display: block; box-sizing: border-box;"
-        >
-          Buy Direct — <span id="whitney-btn-price">$26.87</span> →
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mt. Diablo Topo Wireframe -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/diablo_wireframe_shirt.png' | relative_url }}"
-          alt="Mount Diablo Topographic Wireframe T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">California Peaks · Premium Tri-Blend</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Mount Diablo Topographic Wireframe Elevation 3D Graphic T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Intricate 3D terrain wireframe of California's Mount Diablo with its iconic twin summits, rendered in a vivid heat-map gradient from glowing yellow peaks through rich red slopes. Perfect for East Bay locals, hikers, trail runners, and geology enthusiasts.
-      </p>
-      <a href="https://www.amazon.com/dp/B0HGBQSQLW" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
       </a>
-    </div>
-  </div>
+      <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">
+          {{ prod.tag }}
+        </div>
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.15rem; line-height: 1.35;">
+          {{ prod.name }}
+        </h3>
+        <p style="font-size: 0.85rem; font-weight: 500; color: var(--text-color, #333); margin-bottom: 0.5rem;">
+          {{ prod.garment }}
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          {{ prod.description }}
+        </p>
 
-  <!-- Hexagon Fractal Mandala -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0HDFS7DP8" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/hexagon_mandala_shirt.png' | relative_url }}"
-          alt="Hexagon Fractal Mandala T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Geometric Art · Premium Tri-Blend</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Hexagon Fractal Mandala Geometric Art T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Intricate hexagon fractal spiraling into a glowing triangular center in electric blue, cyan, and magenta. A striking statement piece for fans of fractal art, honeycomb geometry, and abstract mathematical design.
-      </p>
-      <a href="https://www.amazon.com/dp/B0HDFS7DP8" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
-    </div>
-  </div>
+        <div style="margin-top: auto;">
+          <!-- Interactive Selectors -->
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 0.85rem;">
+            <div style="flex: 1.2;">
+              <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Color</label>
+              <select class="merch-color-select" style="width: 100%; padding: 0.45rem 0.5rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.88rem; cursor: pointer;">
+                {% for color_entry in prod.colors %}
+                  {% assign color_name = color_entry[0] %}
+                  <option value="{{ color_name }}" {% if color_name == default_color_name %}selected{% endif %}>{{ color_name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div style="flex: 0.8;">
+              <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Size</label>
+              <select class="merch-size-select" style="width: 100%; padding: 0.45rem 0.5rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.88rem; cursor: pointer;">
+                {% for size_entry in default_color.sizes %}
+                  {% assign size_name = size_entry[0] %}
+                  {% assign size_info = size_entry[1] %}
+                  <option value="{{ size_name }}" {% if size_name == default_size_name %}selected{% endif %}>{{ size_name }} ({{ size_info.price }})</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
 
-  <!-- Launching Soon -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/Launching-Graphic-Premium-Tri-Blend-T-Shirt/dp/B0HJHHBFGL" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/launching_soon_shirt.png' | relative_url }}"
-          alt="Launching Soon Graphic T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
+          <a
+            class="btn btn-primary merch-buy-btn"
+            href="{{ default_size_data.url }}"
+            target="_blank"
+            rel="noopener"
+            style="width: 100%; text-align: center; display: block; box-sizing: border-box;"
+          >
+            Buy Direct — <span class="merch-btn-price">{{ default_size_data.price }}</span> →
+          </a>
+        </div>
       </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Pilots & Builders · Premium Tri-Blend</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Launching Soon Graphic Design Premium Tri-Blend T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Bold comic-book typography reading "LAUNCHING SOON..." with drop shadows and forward momentum. A clever double-meaning for paraglider and hang glider pilots waiting for the right window — and startup founders working on their next big thing.
-      </p>
-      <a href="https://www.amazon.com/Launching-Graphic-Premium-Tri-Blend-T-Shirt/dp/B0HJHHBFGL" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
     </div>
-  </div>
+  {% endfor %}
 
-  <!-- California Ridgeline Topo -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0HF1MBXXB" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/california_ridgeline_shirt_mockup.png' | relative_url }}"
-          alt="California Topographic Ridgeline T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">California State · Premium Tri-Blend</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">California Topographic Elevation Map Ridgeline T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Detailed vector topographic ridgeline map defining California's unique geographic shape and mountain ranges. Perfect for hikers, backpackers, geographers, and anyone who loves the rugged California landscape.
-      </p>
-      <a href="https://www.amazon.com/dp/B0HF1MBXXB" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
-    </div>
-  </div>
-
-  <!-- Stay Golden -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0H8TQNBRW" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/stay_golden_shirt_mockup.png' | relative_url }}"
-          alt="Stay Golden Retriever T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Graphic Tee · Classic Design</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Stay Golden (Retriever) Graphic T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Cheerful Golden Retriever in lush grass. Available in premium tri-blend and classic fit for dog lovers, hikers, and outdoor enthusiasts.
-      </p>
-      <a href="https://www.amazon.com/dp/B0H8TQNBRW" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
-    </div>
-  </div>
-
-  <!-- Hypnotic Hexagon Optical Illusion -->
-  <div class="card" style="padding: 0; overflow: hidden;">
-    <a href="https://www.amazon.com/dp/B0HBX4VG3M" target="_blank" rel="noopener" style="display: block; text-decoration: none !important;">
-      <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-        <img
-          src="{{ '/assets/images/hypnotic_hexagon_shirt.png' | relative_url }}"
-          alt="Hypnotic Hexagon Optical Illusion T-Shirt"
-          style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-        >
-      </div>
-    </a>
-    <div style="padding: 1.25rem;">
-      <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">Optical Art · Classic Fit</div>
-      <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">Hypnotic Hexagon Optical Illusion T-Shirt</h3>
-      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Mesmerizing concentric hexagonal tunnel geometry creating an infinite depth illusion in vibrant contrasting linework.
-      </p>
-      <a href="https://www.amazon.com/dp/B0HBX4VG3M" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block; box-sizing: border-box;">
-        View on Amazon →
-      </a>
-    </div>
-  </div>
 </div>
 
-<hr>
+<hr style="margin: 3rem 0 2rem 0;">
 
 <div class="spec-box" style="text-align: center; padding: 2.25rem 1.5rem; margin-top: 2rem;">
-  <h2 style="border: none; margin-top: 0;">Explore All Designs & Latest Drops</h2>
-  <p style="max-width: 580px; margin: 0.5rem auto 1.5rem auto; color: var(--text-muted);">
-    New California peak elevation profiles, colorways, and geometric prints are regularly added to the collection on Amazon.
+  <h2 style="border: none; margin-top: 0;">Direct Print-on-Demand Fulfillment</h2>
+  <p style="max-width: 620px; margin: 0.5rem auto 1.5rem auto; color: var(--text-muted);">
+    All apparel orders are processed securely via Stripe Checkout and automatically fulfilled by Printful on premium Bella + Canvas combed ring-spun and tri-blend garments.
   </p>
-  <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1rem; padding: 0.7rem 1.75rem;">
-    View All LiteStep Designs on Amazon &rarr;
+  <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn" style="font-size: 0.95rem; padding: 0.65rem 1.5rem; border: 1px solid var(--border);">
+    View Legacy Merch on Amazon &rarr;
   </a>
 </div>
 
 <script>
 (function() {
-  const whitneyData = {{ site.data.whitney_merch_links | jsonify }};
-  const colorSelect = document.getElementById('whitney-color-select');
-  const sizeSelect = document.getElementById('whitney-size-select');
-  const imgEl = document.getElementById('whitney-shirt-img');
-  const imgLink = document.getElementById('whitney-img-link');
-  const buyBtn = document.getElementById('whitney-buy-btn');
-  const priceSpan = document.getElementById('whitney-btn-price');
+  const catalog = {{ site.data.merch_products | jsonify }};
+  if (!catalog) return;
 
-  if (!colorSelect || !sizeSelect || !whitneyData) return;
+  const baseUrl = "{{ '' | relative_url }}";
 
-  function updateSizes(selectedColor, preserveSize) {
-    const colorInfo = whitneyData[selectedColor];
-    if (!colorInfo) return;
+  document.querySelectorAll('.merch-card').forEach(card => {
+    const slug = card.getAttribute('data-slug');
+    const prodData = catalog[slug];
+    if (!prodData) return;
 
-    // Smoothly swap preview image
-    if (colorInfo.image && imgEl) {
-      imgEl.style.opacity = '0.3';
-      imgEl.src = "{{ '' | relative_url }}" + colorInfo.image;
-      imgEl.alt = "Mount Whitney Ridgelines T-Shirt - " + selectedColor;
-      setTimeout(() => { imgEl.style.opacity = '1'; }, 80);
+    const colorSelect = card.querySelector('.merch-color-select');
+    const sizeSelect = card.querySelector('.merch-size-select');
+    const imgEl = card.querySelector('.merch-shirt-img');
+    const imgLink = card.querySelector('.merch-img-link');
+    const buyBtn = card.querySelector('.merch-buy-btn');
+    const priceSpan = card.querySelector('.merch-btn-price');
+
+    if (!colorSelect || !sizeSelect) return;
+
+    function updateSizes(selectedColor, preserveSize) {
+      const colorInfo = prodData.colors[selectedColor];
+      if (!colorInfo) return;
+
+      // Swap preview image
+      if (colorInfo.image && imgEl) {
+        imgEl.style.opacity = '0.3';
+        imgEl.src = baseUrl + colorInfo.image;
+        imgEl.alt = prodData.name + ' - ' + selectedColor;
+        setTimeout(() => { imgEl.style.opacity = '1'; }, 80);
+      }
+
+      // Populate size dropdown
+      const sizes = colorInfo.sizes || {};
+      const availableSizes = Object.keys(sizes);
+      let targetSize = preserveSize && sizes[preserveSize] ? preserveSize : (sizes['M'] ? 'M' : availableSizes[0]);
+
+      sizeSelect.innerHTML = '';
+      for (const [sz, data] of Object.entries(sizes)) {
+        const opt = document.createElement('option');
+        opt.value = sz;
+        opt.textContent = `${sz} (${data.price})`;
+        if (sz === targetSize) opt.selected = true;
+        sizeSelect.appendChild(opt);
+      }
+
+      updateButton();
     }
 
-    // Populate sizes
-    sizeSelect.innerHTML = '';
-    const sizes = colorInfo.sizes || {};
-    let targetSize = preserveSize && sizes[preserveSize] ? preserveSize : (sizes['M'] ? 'M' : Object.keys(sizes)[0]);
+    function updateButton() {
+      const currentColor = colorSelect.value;
+      const currentSize = sizeSelect.value;
+      const variantData = prodData.colors[currentColor]?.sizes?.[currentSize];
 
-    for (const [sz, data] of Object.entries(sizes)) {
-      const opt = document.createElement('option');
-      opt.value = sz;
-      opt.textContent = `${sz} (${data.price})`;
-      if (sz === targetSize) opt.selected = true;
-      sizeSelect.appendChild(opt);
+      if (variantData) {
+        if (buyBtn) buyBtn.href = variantData.url;
+        if (imgLink) imgLink.href = variantData.url;
+        if (priceSpan) priceSpan.textContent = variantData.price;
+      }
     }
 
-    updateButton();
-  }
+    colorSelect.addEventListener('change', () => {
+      updateSizes(colorSelect.value, sizeSelect.value);
+    });
 
-  function updateButton() {
-    const currentColor = colorSelect.value;
-    const currentSize = sizeSelect.value;
-    const variantData = whitneyData[currentColor]?.sizes?.[currentSize];
+    sizeSelect.addEventListener('change', updateButton);
 
-    if (variantData) {
-      buyBtn.href = variantData.url;
-      if (imgLink) imgLink.href = variantData.url;
-      if (priceSpan) priceSpan.textContent = variantData.price;
-    }
-  }
-
-  colorSelect.addEventListener('change', () => {
-    updateSizes(colorSelect.value, sizeSelect.value);
+    // Initial setup with preserved default size
+    updateSizes(colorSelect.value, sizeSelect.value || 'M');
   });
-
-  sizeSelect.addEventListener('change', updateButton);
-
-  // Initialize with default color & Medium size
-  updateSizes(colorSelect.value || 'Black', 'M');
 })();
 </script>

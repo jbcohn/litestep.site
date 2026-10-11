@@ -1,14 +1,13 @@
 {
   "Black": {
-    "color": "Black",
-    "color_slug": "black",
-    "image": "/assets/images/whitney_black_shirt.jpg",
+    "name": "Black",
+    "slug": "black",
+    "image": "/assets/images/products/mount_whitney_ridgelines_black.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/aFacMY4ru0B1fMOdMi43S00",
-        "price_id": "price_1UP6N62MpV99MGg5V0voVcR4",
         "product_id": "prod_VPwFi6GFi6tx5w",
         "sync_variant_id": "5563999989"
       },
@@ -16,7 +15,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/9B63co7DG6Zp8km0Zw43S01",
-        "price_id": "price_1UP6N72MpV99MGg5MVbZQ1FV",
         "product_id": "prod_VPwFrt7KJDndBV",
         "sync_variant_id": "5563999990"
       },
@@ -24,7 +22,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/3cIeV6aPS1F5fMObEa43S02",
-        "price_id": "price_1UP6N82MpV99MGg5rBTghv41",
         "product_id": "prod_VPwFwVqM13zmjY",
         "sync_variant_id": "5563999991"
       },
@@ -32,7 +29,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/4gM4gscY0gzZ0RU7nU43S03",
-        "price_id": "price_1UP6N92MpV99MGg5Pk1T8az5",
         "product_id": "prod_VPwFRnWkUBnExR",
         "sync_variant_id": "5563999992"
       },
@@ -40,7 +36,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/cNi00c2jm6ZpcAC8rY43S04",
-        "price_id": "price_1UP6NA2MpV99MGg5nr9YjpXy",
         "product_id": "prod_VPwFMrx1eaO4jU",
         "sync_variant_id": "5563999993"
       },
@@ -48,7 +43,6 @@
         "price": "$28.87",
         "price_cents": 2887,
         "url": "https://buy.stripe.com/aFa6oA4ru6ZpbwydMi43S05",
-        "price_id": "price_1UP6NB2MpV99MGg5QUCsYSbo",
         "product_id": "prod_VPwFKSeeNQeyNx",
         "sync_variant_id": "5563999994"
       },
@@ -56,7 +50,6 @@
         "price": "$30.87",
         "price_cents": 3087,
         "url": "https://buy.stripe.com/28E28k5vy4Rh7gi23A43S06",
-        "price_id": "price_1UP6NC2MpV99MGg5CSlEIq1G",
         "product_id": "prod_VPwFdz2bPD9uHX",
         "sync_variant_id": "5563999995"
       },
@@ -64,7 +57,6 @@
         "price": "$32.87",
         "price_cents": 3287,
         "url": "https://buy.stripe.com/4gM6oA4ruerRbwy9w243S07",
-        "price_id": "price_1UP6ND2MpV99MGg5Mk73gwv6",
         "product_id": "prod_VPwFzdEoUNMuSt",
         "sync_variant_id": "5563999996"
       },
@@ -72,22 +64,20 @@
         "price": "$34.87",
         "price_cents": 3487,
         "url": "https://buy.stripe.com/cNi7sE6zC5VldEGdMi43S08",
-        "price_id": "price_1UP6NE2MpV99MGg5Phsg6cJo",
         "product_id": "prod_VPwFPynJfh7S6D",
         "sync_variant_id": "5563999997"
       }
     }
   },
   "Navy": {
-    "color": "Navy",
-    "color_slug": "navy",
-    "image": "/assets/images/whitney_navy_shirt.jpg",
+    "name": "Navy",
+    "slug": "navy",
+    "image": "/assets/images/products/mount_whitney_ridgelines_navy.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/dRm9AM6zC3Nd9oq5fM43S09",
-        "price_id": "price_1UP6NE2MpV99MGg5QAoiARuh",
         "product_id": "prod_VPwFcJiDR8GjPY",
         "sync_variant_id": "5563999998"
       },
@@ -95,7 +85,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/4gM6oAbTWgzZ58a23A43S0a",
-        "price_id": "price_1UP6NF2MpV99MGg5z3aF33Rd",
         "product_id": "prod_VPwFSlOVBBBKyc",
         "sync_variant_id": "5563999999"
       },
@@ -103,7 +92,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/4gMfZaf684Rh7gi0Zw43S0b",
-        "price_id": "price_1UP6NG2MpV99MGg5jlAyPclx",
         "product_id": "prod_VPwFU801DXXNBP",
         "sync_variant_id": "5564000000"
       },
@@ -111,7 +99,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/5kQ8wIe24erR302gYu43S0c",
-        "price_id": "price_1UP6NH2MpV99MGg5v5H0ykJq",
         "product_id": "prod_VPwFebSBjkzxme",
         "sync_variant_id": "5564000001"
       },
@@ -119,7 +106,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/28E7sE8HK0B16cedMi43S0d",
-        "price_id": "price_1UP6NI2MpV99MGg5eqTHZsml",
         "product_id": "prod_VPwFy0dA4pG9m2",
         "sync_variant_id": "5564000002"
       },
@@ -127,7 +113,6 @@
         "price": "$28.87",
         "price_cents": 2887,
         "url": "https://buy.stripe.com/7sY4gs1figzZfMO5fM43S0e",
-        "price_id": "price_1UP6NI2MpV99MGg5BmquIHlQ",
         "product_id": "prod_VPwFkyOJ7VPi1V",
         "sync_variant_id": "5564000003"
       },
@@ -135,7 +120,6 @@
         "price": "$30.87",
         "price_cents": 3087,
         "url": "https://buy.stripe.com/00wcMY8HKdnNdEGdMi43S0f",
-        "price_id": "price_1UP6NJ2MpV99MGg5ZNJpTaRM",
         "product_id": "prod_VPwFxR8BNXblWl",
         "sync_variant_id": "5564000004"
       },
@@ -143,7 +127,6 @@
         "price": "$32.87",
         "price_cents": 3287,
         "url": "https://buy.stripe.com/6oUcMY9LOerR58aeQm43S0g",
-        "price_id": "price_1UP6NK2MpV99MGg5qgtOOCHW",
         "product_id": "prod_VPwFYWuPl711OX",
         "sync_variant_id": "5564000005"
       },
@@ -151,203 +134,20 @@
         "price": "$34.87",
         "price_cents": 3487,
         "url": "https://buy.stripe.com/bJe8wIbTW83t1VY37E43S0h",
-        "price_id": "price_1UP6NL2MpV99MGg5gCmj1F6d",
         "product_id": "prod_VPwFw8GTQcK3Xg",
         "sync_variant_id": "5564000006"
       }
     }
   },
-  "Dark Grey": {
-    "color": "Dark Grey",
-    "color_slug": "dark_grey",
-    "image": "/assets/images/whitney_dark_grey_shirt.jpg",
-    "sizes": {
-      "XS": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/dRm9AM7DG83teIK9w243S0w",
-        "price_id": "price_1UP6NY2MpV99MGg5gpIHQigI",
-        "product_id": "prod_VPwG0cKCXaQ8yl",
-        "sync_variant_id": "5564000021"
-      },
-      "S": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/dRmfZa7DG83tgQSdMi43S0x",
-        "price_id": "price_1UP6NZ2MpV99MGg5NdSsAcVS",
-        "product_id": "prod_VPwGvMomKVDPUE",
-        "sync_variant_id": "5564000022"
-      },
-      "M": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/cNiaEQ1fibfFfMOcIe43S0y",
-        "price_id": "price_1UP6NZ2MpV99MGg5XPEGJQCk",
-        "product_id": "prod_VPwGml10yjS5X5",
-        "sync_variant_id": "5564000023"
-      },
-      "L": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/6oUfZae246ZpeIK0Zw43S0z",
-        "price_id": "price_1UP6Na2MpV99MGg5CLnaNoS3",
-        "product_id": "prod_VPwGaA1PpO59mn",
-        "sync_variant_id": "5564000024"
-      },
-      "XL": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/3cI5kw0becjJbwy23A43S0A",
-        "price_id": "price_1UP6Nb2MpV99MGg5oeX59AfX",
-        "product_id": "prod_VPwGzCFX5Z8Csu",
-        "sync_variant_id": "5564000025"
-      },
-      "2XL": {
-        "price": "$28.87",
-        "price_cents": 2887,
-        "url": "https://buy.stripe.com/9B63co0befvVcAC23A43S0B",
-        "price_id": "price_1UP6Nc2MpV99MGg5MXKj1Hrk",
-        "product_id": "prod_VPwGDQyhoEzImm",
-        "sync_variant_id": "5564000026"
-      }
-    }
-  },
-  "Asphalt": {
-    "color": "Asphalt",
-    "color_slug": "asphalt",
-    "image": "/assets/images/whitney_asphalt_shirt.jpg",
-    "sizes": {
-      "S": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/14AcMY9LOgzZ9oq0Zw43S0C",
-        "price_id": "price_1UP6Nd2MpV99MGg55uTc3F8k",
-        "product_id": "prod_VPwGqrmbNZY3Oi",
-        "sync_variant_id": "5564000028"
-      },
-      "M": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/aFaaEQ4ru2J9bwyeQm43S0D",
-        "price_id": "price_1UP6Ne2MpV99MGg5MGQ0NKPI",
-        "product_id": "prod_VPwG78N4GLsCgs",
-        "sync_variant_id": "5564000029"
-      },
-      "L": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/6oUcMY1fiabBbwy6jQ43S0E",
-        "price_id": "price_1UP6Nf2MpV99MGg5gQ7GmPkI",
-        "product_id": "prod_VPwGDch1Jkp4qx",
-        "sync_variant_id": "5564000030"
-      },
-      "XL": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/bJeaEQ0bednN58aeQm43S0F",
-        "price_id": "price_1UP6Ng2MpV99MGg5sZPv0AmU",
-        "product_id": "prod_VPwGtJ7dAGm4ZU",
-        "sync_variant_id": "5564000032"
-      },
-      "2XL": {
-        "price": "$28.87",
-        "price_cents": 2887,
-        "url": "https://buy.stripe.com/fZu7sE5vyfvV9oqbEa43S0G",
-        "price_id": "price_1UP6Nh2MpV99MGg5aW9Bd1Bf",
-        "product_id": "prod_VPwG5DLodcRrXK",
-        "sync_variant_id": "5564000033"
-      },
-      "3XL": {
-        "price": "$30.87",
-        "price_cents": 3087,
-        "url": "https://buy.stripe.com/3cI28k5vybfFfMOgYu43S0H",
-        "price_id": "price_1UP6Ni2MpV99MGg5bNBiAvHj",
-        "product_id": "prod_VPwGXxqQjIiPhz",
-        "sync_variant_id": "5564000034"
-      },
-      "4XL": {
-        "price": "$32.87",
-        "price_cents": 3287,
-        "url": "https://buy.stripe.com/4gM00c5vy3NdeIK8rY43S0I",
-        "price_id": "price_1UP6Nj2MpV99MGg5x1zFE1td",
-        "product_id": "prod_VPwG3uuK4EQWRj",
-        "sync_variant_id": "5564000035"
-      }
-    }
-  },
-  "Heather True Royal": {
-    "color": "Heather True Royal",
-    "color_slug": "heather_true_royal",
-    "image": "/assets/images/whitney_heather_true_royal_shirt.jpg",
-    "sizes": {
-      "S": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/6oU5kw4rucjJ8kmdMi43S0J",
-        "price_id": "price_1UP6Nj2MpV99MGg5Wvv1FoK1",
-        "product_id": "prod_VPwGOpUwmpjbKR",
-        "sync_variant_id": "5564000036"
-      },
-      "M": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/cNibIU3nq1F59oq9w243S0K",
-        "price_id": "price_1UP6Nk2MpV99MGg5LwFQYfL2",
-        "product_id": "prod_VPwGVrOdiv2oDF",
-        "sync_variant_id": "5564000037"
-      },
-      "L": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/5kQ4gs5vyfvV0RU0Zw43S0L",
-        "price_id": "price_1UP6Nl2MpV99MGg5d9FxNBVJ",
-        "product_id": "prod_VPwGBjmLMmhI0V",
-        "sync_variant_id": "5564000038"
-      },
-      "XL": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/bJecMYbTWabB302bEa43S0M",
-        "price_id": "price_1UP6Nm2MpV99MGg5FV4Y6rdh",
-        "product_id": "prod_VPwGX5bcEmvFZu",
-        "sync_variant_id": "5564000039"
-      },
-      "2XL": {
-        "price": "$28.87",
-        "price_cents": 2887,
-        "url": "https://buy.stripe.com/dRmbIUaPS3NdfMO4bI43S0N",
-        "price_id": "price_1UP6Nn2MpV99MGg5lwybATdq",
-        "product_id": "prod_VPwGF1SueRz1uQ",
-        "sync_variant_id": "5564000040"
-      },
-      "3XL": {
-        "price": "$30.87",
-        "price_cents": 3087,
-        "url": "https://buy.stripe.com/bJe28kcY0abB8kmgYu43S0O",
-        "price_id": "price_1UP6No2MpV99MGg5hU058xoG",
-        "product_id": "prod_VPwGstU711sv5W",
-        "sync_variant_id": "5564000041"
-      },
-      "4XL": {
-        "price": "$32.87",
-        "price_cents": 3287,
-        "url": "https://buy.stripe.com/eVq6oAcY0cjJ8kmgYu43S0P",
-        "price_id": "price_1UP6Np2MpV99MGg52WJ1yeMB",
-        "product_id": "prod_VPwGoA2YvIADmB",
-        "sync_variant_id": "5564000042"
-      }
-    }
-  },
   "Cardinal": {
-    "color": "Cardinal",
-    "color_slug": "cardinal",
-    "image": "/assets/images/whitney_cardinal_shirt.jpg",
+    "name": "Cardinal",
+    "slug": "cardinal",
+    "image": "/assets/images/products/mount_whitney_ridgelines_cardinal.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/5kQ4gse24abB8km37E43S0i",
-        "price_id": "price_1UP6NM2MpV99MGg5xbP3cG7P",
         "product_id": "prod_VPwFnuYTn35axt",
         "sync_variant_id": "5564000007"
       },
@@ -355,7 +155,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/9B600c6zC2J958acIe43S0j",
-        "price_id": "price_1UP6NM2MpV99MGg5ZedBvQ7I",
         "product_id": "prod_VPwFPqJ0lkcxSv",
         "sync_variant_id": "5564000008"
       },
@@ -363,7 +162,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/8x228k3nq4RhcAC6jQ43S0k",
-        "price_id": "price_1UP6NN2MpV99MGg5ePXQhW4L",
         "product_id": "prod_VPwFvj0L5r822D",
         "sync_variant_id": "5564000009"
       },
@@ -371,7 +169,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/14A7sEe243Nd6ce9w243S0l",
-        "price_id": "price_1UP6NO2MpV99MGg5gx4qGvfa",
         "product_id": "prod_VPwFJ05GirYHCs",
         "sync_variant_id": "5564000010"
       },
@@ -379,7 +176,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/4gM3co5vy0B1asu37E43S0m",
-        "price_id": "price_1UP6NP2MpV99MGg5WMa3fVBu",
         "product_id": "prod_VPwFa7t0VUS1sX",
         "sync_variant_id": "5564000011"
       },
@@ -387,22 +183,20 @@
         "price": "$28.87",
         "price_cents": 2887,
         "url": "https://buy.stripe.com/dRmdR26zC5Vl9oqdMi43S0n",
-        "price_id": "price_1UP6NQ2MpV99MGg5wp1ayLdN",
         "product_id": "prod_VPwFhO38nAv6qT",
         "sync_variant_id": "5564000012"
       }
     }
   },
   "Brown": {
-    "color": "Brown",
-    "color_slug": "brown",
-    "image": "/assets/images/whitney_brown_shirt.jpg",
+    "name": "Brown",
+    "slug": "brown",
+    "image": "/assets/images/products/mount_whitney_ridgelines_brown.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/aFa4gs5vyfvVdEGbEa43S0o",
-        "price_id": "price_1UP6NR2MpV99MGg5G8m4A9Rk",
         "product_id": "prod_VPwFJGTQSMAsSp",
         "sync_variant_id": "5564000013"
       },
@@ -410,7 +204,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/cNi7sE8HK83t3027nU43S0p",
-        "price_id": "price_1UP6NS2MpV99MGg53xca18Kp",
         "product_id": "prod_VPwF4AWj9bvn0t",
         "sync_variant_id": "5564000014"
       },
@@ -418,7 +211,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/fZu3cogacbfF9oqdMi43S0q",
-        "price_id": "price_1UP6NT2MpV99MGg5vWLut0zj",
         "product_id": "prod_VPwFTm4Q8ePLmR",
         "sync_variant_id": "5564000015"
       },
@@ -426,7 +218,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/6oUbIU9LO83t3028rY43S0r",
-        "price_id": "price_1UP6NT2MpV99MGg5AYRMJ5qi",
         "product_id": "prod_VPwFblxoUb5xNc",
         "sync_variant_id": "5564000016"
       },
@@ -434,7 +225,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/8x228kbTWerR6ce0Zw43S0s",
-        "price_id": "price_1UP6NU2MpV99MGg5SHQJubNX",
         "product_id": "prod_VPwGoyboNnF9vp",
         "sync_variant_id": "5564000017"
       },
@@ -442,7 +232,6 @@
         "price": "$28.87",
         "price_cents": 2887,
         "url": "https://buy.stripe.com/28E00c4ru3Ndasu23A43S0t",
-        "price_id": "price_1UP6NV2MpV99MGg52dfJFj3Z",
         "product_id": "prod_VPwGS5yq2kMIhE",
         "sync_variant_id": "5564000018"
       },
@@ -450,7 +239,6 @@
         "price": "$30.87",
         "price_cents": 3087,
         "url": "https://buy.stripe.com/fZu9AMcY00B16ce5fM43S0u",
-        "price_id": "price_1UP6NW2MpV99MGg5lIq9WP8X",
         "product_id": "prod_VPwG9o6fsq3umR",
         "sync_variant_id": "5564000019"
       },
@@ -458,164 +246,181 @@
         "price": "$32.87",
         "price_cents": 3287,
         "url": "https://buy.stripe.com/fZu28kf68bfF58a23A43S0v",
-        "price_id": "price_1UP6NX2MpV99MGg5L46efCBU",
         "product_id": "prod_VPwGMa8GJcppJY",
         "sync_variant_id": "5564000020"
       }
     }
   },
-  "Natural": {
-    "color": "Natural",
-    "color_slug": "natural",
-    "image": "/assets/images/whitney_natural_shirt.jpg",
+  "Dark Grey": {
+    "name": "Dark Grey",
+    "slug": "dark_grey",
+    "image": "/assets/images/products/mount_whitney_ridgelines_dark_grey.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/14A9AMf68erRdEG23A43S16",
-        "price_id": "price_1UP6O42MpV99MGg5amwqkY3O",
-        "product_id": "prod_VPwGu7avaW1cVi",
-        "sync_variant_id": "5564000059"
+        "url": "https://buy.stripe.com/dRm9AM7DG83teIK9w243S0w",
+        "product_id": "prod_VPwG0cKCXaQ8yl",
+        "sync_variant_id": "5564000021"
       },
       "S": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/fZu8wI1fibfFfMO0Zw43S17",
-        "price_id": "price_1UP6O52MpV99MGg5RnMlAd3y",
-        "product_id": "prod_VPwGG9bni6iBDh",
-        "sync_variant_id": "5564000060"
+        "url": "https://buy.stripe.com/dRmfZa7DG83tgQSdMi43S0x",
+        "product_id": "prod_VPwGvMomKVDPUE",
+        "sync_variant_id": "5564000022"
       },
       "M": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/28E28k1fi6ZpcACgYu43S18",
-        "price_id": "price_1UP6O62MpV99MGg5XjbNBJXv",
-        "product_id": "prod_VPwGoBPptoxcFf",
-        "sync_variant_id": "5564000061"
+        "url": "https://buy.stripe.com/cNiaEQ1fibfFfMOcIe43S0y",
+        "product_id": "prod_VPwGml10yjS5X5",
+        "sync_variant_id": "5564000023"
       },
       "L": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/00w28k9LOcjJ0RU37E43S19",
-        "price_id": "price_1UP6O72MpV99MGg5vk101aQ0",
-        "product_id": "prod_VPwGSjKLqSFTzV",
-        "sync_variant_id": "5564000062"
+        "url": "https://buy.stripe.com/6oUfZae246ZpeIK0Zw43S0z",
+        "product_id": "prod_VPwGaA1PpO59mn",
+        "sync_variant_id": "5564000024"
       },
       "XL": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/7sYaEQf682J9fMO8rY43S1a",
-        "price_id": "price_1UP6O82MpV99MGg5N8j7S9Q3",
-        "product_id": "prod_VPwG0UujLJrZVj",
-        "sync_variant_id": "5564000063"
+        "url": "https://buy.stripe.com/3cI5kw0becjJbwy23A43S0A",
+        "product_id": "prod_VPwGzCFX5Z8Csu",
+        "sync_variant_id": "5564000025"
       },
       "2XL": {
         "price": "$28.87",
         "price_cents": 2887,
-        "url": "https://buy.stripe.com/7sY8wI0be3Nd446bEa43S1b",
-        "price_id": "price_1UP6O82MpV99MGg5GHzSfYSi",
-        "product_id": "prod_VPwGfUnoBg9ep6",
-        "sync_variant_id": "5564000064"
-      },
-      "3XL": {
-        "price": "$30.87",
-        "price_cents": 3087,
-        "url": "https://buy.stripe.com/fZu14g5vy83t7gidMi43S1c",
-        "price_id": "price_1UP6O92MpV99MGg54ZCd8xWf",
-        "product_id": "prod_VPwGWUfj4nuqT7",
-        "sync_variant_id": "5564000065"
-      },
-      "4XL": {
-        "price": "$32.87",
-        "price_cents": 3287,
-        "url": "https://buy.stripe.com/dRm28kaPScjJdEG37E43S1d",
-        "price_id": "price_1UP6OA2MpV99MGg5rjdpc7hJ",
-        "product_id": "prod_VPwG882Ip0TjpF",
-        "sync_variant_id": "5564000066"
+        "url": "https://buy.stripe.com/9B63co0befvVcAC23A43S0B",
+        "product_id": "prod_VPwGDQyhoEzImm",
+        "sync_variant_id": "5564000026"
       }
     }
   },
-  "Ash": {
-    "color": "Ash",
-    "color_slug": "ash",
-    "image": "/assets/images/whitney_ash_shirt.jpg",
+  "Asphalt": {
+    "name": "Asphalt",
+    "slug": "asphalt",
+    "image": "/assets/images/products/mount_whitney_ridgelines_asphalt.jpg",
     "sizes": {
-      "XS": {
-        "price": "$26.87",
-        "price_cents": 2687,
-        "url": "https://buy.stripe.com/8x228k9LOfvVdEGbEa43S0Y",
-        "price_id": "price_1UP6Nx2MpV99MGg50UHHbDIi",
-        "product_id": "prod_VPwGazEYwHEAM3",
-        "sync_variant_id": "5564000051"
-      },
       "S": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/5kQeV62jm1F5446cIe43S0Z",
-        "price_id": "price_1UP6Ny2MpV99MGg5kWOUsCkR",
-        "product_id": "prod_VPwGklomni8A1F",
-        "sync_variant_id": "5564000052"
+        "url": "https://buy.stripe.com/14AcMY9LOgzZ9oq0Zw43S0C",
+        "product_id": "prod_VPwGqrmbNZY3Oi",
+        "sync_variant_id": "5564000028"
       },
       "M": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/4gMcMY5vy83t1VYeQm43S10",
-        "price_id": "price_1UP6Nz2MpV99MGg5pnopM5hG",
-        "product_id": "prod_VPwGo90Z57uxfK",
-        "sync_variant_id": "5564000053"
+        "url": "https://buy.stripe.com/aFaaEQ4ru2J9bwyeQm43S0D",
+        "product_id": "prod_VPwG78N4GLsCgs",
+        "sync_variant_id": "5564000029"
       },
       "L": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/5kQ6oAbTW4Rh58acIe43S11",
-        "price_id": "price_1UP6O02MpV99MGg5U3nNC3FS",
-        "product_id": "prod_VPwG5XSP8CVyc2",
-        "sync_variant_id": "5564000054"
+        "url": "https://buy.stripe.com/6oUcMY1fiabBbwy6jQ43S0E",
+        "product_id": "prod_VPwGDch1Jkp4qx",
+        "sync_variant_id": "5564000030"
       },
       "XL": {
         "price": "$26.87",
         "price_cents": 2687,
-        "url": "https://buy.stripe.com/28E3co4ruerR1VYbEa43S12",
-        "price_id": "price_1UP6O02MpV99MGg5QfExn9FW",
-        "product_id": "prod_VPwGW1skwsliHV",
-        "sync_variant_id": "5564000055"
+        "url": "https://buy.stripe.com/bJeaEQ0bednN58aeQm43S0F",
+        "product_id": "prod_VPwGtJ7dAGm4ZU",
+        "sync_variant_id": "5564000032"
       },
       "2XL": {
         "price": "$28.87",
         "price_cents": 2887,
-        "url": "https://buy.stripe.com/bJe8wI8HK4Rh0RUeQm43S13",
-        "price_id": "price_1UP6O12MpV99MGg50EM5QhZ2",
-        "product_id": "prod_VPwGQqYJR0booP",
-        "sync_variant_id": "5564000056"
+        "url": "https://buy.stripe.com/fZu7sE5vyfvV9oqbEa43S0G",
+        "product_id": "prod_VPwG5DLodcRrXK",
+        "sync_variant_id": "5564000033"
       },
       "3XL": {
         "price": "$30.87",
         "price_cents": 3087,
-        "url": "https://buy.stripe.com/dRm6oA0beabBdEGaA643S14",
-        "price_id": "price_1UP6O22MpV99MGg5qdnqFa7b",
-        "product_id": "prod_VPwGE3CYD1tf9O",
-        "sync_variant_id": "5564000057"
+        "url": "https://buy.stripe.com/3cI28k5vybfFfMOgYu43S0H",
+        "product_id": "prod_VPwGXxqQjIiPhz",
+        "sync_variant_id": "5564000034"
       },
       "4XL": {
         "price": "$32.87",
         "price_cents": 3287,
-        "url": "https://buy.stripe.com/28E7sE9LOcjJ58a4bI43S15",
-        "price_id": "price_1UP6O32MpV99MGg5xt7zphi6",
-        "product_id": "prod_VPwGJGGjQD5lzu",
-        "sync_variant_id": "5564000058"
+        "url": "https://buy.stripe.com/4gM00c5vy3NdeIK8rY43S0I",
+        "product_id": "prod_VPwG3uuK4EQWRj",
+        "sync_variant_id": "5564000035"
+      }
+    }
+  },
+  "Heather True Royal": {
+    "name": "Heather True Royal",
+    "slug": "heather_true_royal",
+    "image": "/assets/images/products/mount_whitney_ridgelines_heather_true_royal.jpg",
+    "sizes": {
+      "S": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/6oU5kw4rucjJ8kmdMi43S0J",
+        "product_id": "prod_VPwGOpUwmpjbKR",
+        "sync_variant_id": "5564000036"
+      },
+      "M": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/cNibIU3nq1F59oq9w243S0K",
+        "product_id": "prod_VPwGVrOdiv2oDF",
+        "sync_variant_id": "5564000037"
+      },
+      "L": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/5kQ4gs5vyfvV0RU0Zw43S0L",
+        "product_id": "prod_VPwGBjmLMmhI0V",
+        "sync_variant_id": "5564000038"
+      },
+      "XL": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/bJecMYbTWabB302bEa43S0M",
+        "product_id": "prod_VPwGX5bcEmvFZu",
+        "sync_variant_id": "5564000039"
+      },
+      "2XL": {
+        "price": "$28.87",
+        "price_cents": 2887,
+        "url": "https://buy.stripe.com/dRmbIUaPS3NdfMO4bI43S0N",
+        "product_id": "prod_VPwGF1SueRz1uQ",
+        "sync_variant_id": "5564000040"
+      },
+      "3XL": {
+        "price": "$30.87",
+        "price_cents": 3087,
+        "url": "https://buy.stripe.com/bJe28kcY0abB8kmgYu43S0O",
+        "product_id": "prod_VPwGstU711sv5W",
+        "sync_variant_id": "5564000041"
+      },
+      "4XL": {
+        "price": "$32.87",
+        "price_cents": 3287,
+        "url": "https://buy.stripe.com/eVq6oAcY0cjJ8kmgYu43S0P",
+        "product_id": "prod_VPwGoA2YvIADmB",
+        "sync_variant_id": "5564000042"
       }
     }
   },
   "Aqua": {
-    "color": "Aqua",
-    "color_slug": "aqua",
-    "image": "/assets/images/whitney_aqua_shirt.jpg",
+    "name": "Aqua",
+    "slug": "aqua",
+    "image": "/assets/images/products/mount_whitney_ridgelines_aqua.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/00w28k7DG2J90RUaA643S0Q",
-        "price_id": "price_1UP6Nq2MpV99MGg5wtMvF3bl",
         "product_id": "prod_VPwG73irRZ3MXl",
         "sync_variant_id": "5564000043"
       },
@@ -623,7 +428,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/fZueV61fi3Nd3025fM43S0R",
-        "price_id": "price_1UP6Nq2MpV99MGg5y1Kbh9hC",
         "product_id": "prod_VPwGPEygMsZt2U",
         "sync_variant_id": "5564000044"
       },
@@ -631,7 +435,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/00wbIU5vy2J958aaA643S0S",
-        "price_id": "price_1UP6Nr2MpV99MGg5jnTs7KMQ",
         "product_id": "prod_VPwGsIY6O71CMA",
         "sync_variant_id": "5564000045"
       },
@@ -639,7 +442,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/14AfZa0bednNasu4bI43S0T",
-        "price_id": "price_1UP6Ns2MpV99MGg59lXrqDiy",
         "product_id": "prod_VPwGq1HOm7ngQO",
         "sync_variant_id": "5564000046"
       },
@@ -647,7 +449,6 @@
         "price": "$26.87",
         "price_cents": 2687,
         "url": "https://buy.stripe.com/3cI4gs7DG97xbwy6jQ43S0U",
-        "price_id": "price_1UP6Nt2MpV99MGg5SPqPZMw0",
         "product_id": "prod_VPwG2Dt9ynQgK1",
         "sync_variant_id": "5564000047"
       },
@@ -655,7 +456,6 @@
         "price": "$28.87",
         "price_cents": 2887,
         "url": "https://buy.stripe.com/bJe5kw2jmerRbwy5fM43S0V",
-        "price_id": "price_1UP6Nu2MpV99MGg5uv5nTJaC",
         "product_id": "prod_VPwG2zO7i59vqA",
         "sync_variant_id": "5564000048"
       },
@@ -663,7 +463,6 @@
         "price": "$30.87",
         "price_cents": 3087,
         "url": "https://buy.stripe.com/eVq9AM0be3Nd302dMi43S0W",
-        "price_id": "price_1UP6Nv2MpV99MGg58rYylVNX",
         "product_id": "prod_VPwGklTn99IpsC",
         "sync_variant_id": "5564000049"
       },
@@ -671,9 +470,134 @@
         "price": "$32.87",
         "price_cents": 3287,
         "url": "https://buy.stripe.com/cNi4gsaPS4Rh0RU7nU43S0X",
-        "price_id": "price_1UP6Nw2MpV99MGg5FLGdSoe8",
         "product_id": "prod_VPwGWxPDEZwJsQ",
         "sync_variant_id": "5564000050"
+      }
+    }
+  },
+  "Ash": {
+    "name": "Ash",
+    "slug": "ash",
+    "image": "/assets/images/products/mount_whitney_ridgelines_ash.jpg",
+    "sizes": {
+      "XS": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/8x228k9LOfvVdEGbEa43S0Y",
+        "product_id": "prod_VPwGazEYwHEAM3",
+        "sync_variant_id": "5564000051"
+      },
+      "S": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/5kQeV62jm1F5446cIe43S0Z",
+        "product_id": "prod_VPwGklomni8A1F",
+        "sync_variant_id": "5564000052"
+      },
+      "M": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/4gMcMY5vy83t1VYeQm43S10",
+        "product_id": "prod_VPwGo90Z57uxfK",
+        "sync_variant_id": "5564000053"
+      },
+      "L": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/5kQ6oAbTW4Rh58acIe43S11",
+        "product_id": "prod_VPwG5XSP8CVyc2",
+        "sync_variant_id": "5564000054"
+      },
+      "XL": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/28E3co4ruerR1VYbEa43S12",
+        "product_id": "prod_VPwGW1skwsliHV",
+        "sync_variant_id": "5564000055"
+      },
+      "2XL": {
+        "price": "$28.87",
+        "price_cents": 2887,
+        "url": "https://buy.stripe.com/bJe8wI8HK4Rh0RUeQm43S13",
+        "product_id": "prod_VPwGQqYJR0booP",
+        "sync_variant_id": "5564000056"
+      },
+      "3XL": {
+        "price": "$30.87",
+        "price_cents": 3087,
+        "url": "https://buy.stripe.com/dRm6oA0beabBdEGaA643S14",
+        "product_id": "prod_VPwGE3CYD1tf9O",
+        "sync_variant_id": "5564000057"
+      },
+      "4XL": {
+        "price": "$32.87",
+        "price_cents": 3287,
+        "url": "https://buy.stripe.com/28E7sE9LOcjJ58a4bI43S15",
+        "product_id": "prod_VPwGJGGjQD5lzu",
+        "sync_variant_id": "5564000058"
+      }
+    }
+  },
+  "Natural": {
+    "name": "Natural",
+    "slug": "natural",
+    "image": "/assets/images/products/mount_whitney_ridgelines_natural.jpg",
+    "sizes": {
+      "XS": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/14A9AMf68erRdEG23A43S16",
+        "product_id": "prod_VPwGu7avaW1cVi",
+        "sync_variant_id": "5564000059"
+      },
+      "S": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/fZu8wI1fibfFfMO0Zw43S17",
+        "product_id": "prod_VPwGG9bni6iBDh",
+        "sync_variant_id": "5564000060"
+      },
+      "M": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/28E28k1fi6ZpcACgYu43S18",
+        "product_id": "prod_VPwGoBPptoxcFf",
+        "sync_variant_id": "5564000061"
+      },
+      "L": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/00w28k9LOcjJ0RU37E43S19",
+        "product_id": "prod_VPwGSjKLqSFTzV",
+        "sync_variant_id": "5564000062"
+      },
+      "XL": {
+        "price": "$26.87",
+        "price_cents": 2687,
+        "url": "https://buy.stripe.com/7sYaEQf682J9fMO8rY43S1a",
+        "product_id": "prod_VPwG0UujLJrZVj",
+        "sync_variant_id": "5564000063"
+      },
+      "2XL": {
+        "price": "$28.87",
+        "price_cents": 2887,
+        "url": "https://buy.stripe.com/7sY8wI0be3Nd446bEa43S1b",
+        "product_id": "prod_VPwGfUnoBg9ep6",
+        "sync_variant_id": "5564000064"
+      },
+      "3XL": {
+        "price": "$30.87",
+        "price_cents": 3087,
+        "url": "https://buy.stripe.com/fZu14g5vy83t7gidMi43S1c",
+        "product_id": "prod_VPwGWUfj4nuqT7",
+        "sync_variant_id": "5564000065"
+      },
+      "4XL": {
+        "price": "$32.87",
+        "price_cents": 3287,
+        "url": "https://buy.stripe.com/dRm28kaPScjJdEG37E43S1d",
+        "product_id": "prod_VPwG882Ip0TjpF",
+        "sync_variant_id": "5564000066"
       }
     }
   }
