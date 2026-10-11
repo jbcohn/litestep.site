@@ -195,10 +195,16 @@ for sp in store_products:
         local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
 
         preview_url = None
+        # Look for mockup preview ('preview' type), fallback to any preview_url
         for file_info in var_list[0].get("files", []):
-            if file_info.get("preview_url"):
+            if file_info.get("type") == "preview" and file_info.get("preview_url"):
                 preview_url = file_info["preview_url"]
                 break
+        if not preview_url:
+            for file_info in var_list[0].get("files", []):
+                if file_info.get("preview_url"):
+                    preview_url = file_info["preview_url"]
+                    break
 
         if preview_url and not os.path.exists(local_img_path):
             print(f"  Downloading mockup: {color} -> {local_img_rel}")
