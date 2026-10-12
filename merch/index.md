@@ -27,26 +27,44 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     {% endunless %}
 
     <div class="card merch-card" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-      <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 290px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
+      <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 320px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
         <img
           class="merch-shirt-img"
           src="{{ default_color.image | relative_url }}"
           alt="{{ prod.name }} - {{ default_color_name }}"
-          style="max-width: 100%; max-height: 280px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
+          style="max-width: 100%; max-height: 310px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
         >
+
+        {% if prod.model_image %}
+          <!-- View Toggle Button (Tee vs Model) -->
+          <button
+            type="button"
+            class="merch-view-toggle"
+            aria-label="Toggle between shirt and model view"
+            style="position: absolute; top: 12px; right: 12px; background: rgba(255, 255, 255, 0.92); color: #111827; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 20px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.15s ease;"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="toggle-label">Model View</span>
+          </button>
+        {% endif %}
+
+        <!-- Zoom Pill -->
         <button
           type="button"
           class="merch-zoom-badge"
           aria-label="Zoom in on design"
-          style="position: absolute; bottom: 10px; right: 10px; background: rgba(0, 0, 0, 0.65); color: #ffffff; border: none; border-radius: 20px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; pointer-events: auto; transition: background 0.15s ease;"
+          style="position: absolute; bottom: 10px; right: 10px; background: rgba(0, 0, 0, 0.7); color: #ffffff; border: none; border-radius: 20px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; transition: background 0.15s ease;"
         >
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             <line x1="11" y1="8" x2="11" y2="14"></line>
             <line x1="8" y1="11" x2="14" y2="11"></line>
           </svg>
-          Zoom Design
+          Zoom 3x
         </button>
       </div>
 
@@ -104,29 +122,29 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 </div>
 
-<!-- Interactive Magnifier / Zoom Modal -->
-<div id="merch-zoom-modal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.82); backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; opacity: 0; transition: opacity 0.2s ease;">
-  <div style="position: relative; max-width: 900px; width: 100%; max-height: 90vh; background: #ffffff; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+<!-- Interactive High-Res Magnifier / Zoom Modal -->
+<div id="merch-zoom-modal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; opacity: 0; transition: opacity 0.2s ease;">
+  <div style="position: relative; max-width: 950px; width: 100%; max-height: 92vh; background: #ffffff; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 25px 50px rgba(0,0,0,0.6);">
     <!-- Modal Header -->
     <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 1.25rem; border-bottom: 1px solid #e5e7eb; background: #fafafa;">
       <div>
         <h4 id="zoom-modal-title" style="margin: 0; font-size: 1.05rem; color: #111827; font-weight: 600;">Product Title</h4>
-        <div id="zoom-modal-subtitle" style="font-size: 0.8rem; color: #6b7280; margin-top: 0.15rem;">Selected Color · Click or drag to inspect fabric & print details</div>
+        <div id="zoom-modal-subtitle" style="font-size: 0.8rem; color: #6b7280; margin-top: 0.15rem;">Selected Color · High-Resolution (2000px) Inspection</div>
       </div>
       <button id="zoom-modal-close" type="button" aria-label="Close zoom modal" style="background: transparent; border: none; font-size: 1.75rem; line-height: 1; cursor: pointer; color: #4b5563; padding: 0.25rem 0.5rem; border-radius: 4px;">&times;</button>
     </div>
 
-    <!-- Modal Image Area with Magnifier Pan -->
-    <div id="zoom-image-viewport" style="position: relative; overflow: hidden; height: 60vh; min-height: 380px; max-height: 640px; display: flex; align-items: center; justify-content: center; background: #f3f4f6; cursor: crosshair;">
+    <!-- Modal Image Area with Smooth 3x Pan -->
+    <div id="zoom-image-viewport" style="position: relative; overflow: hidden; height: 65vh; min-height: 420px; max-height: 700px; display: flex; align-items: center; justify-content: center; background: #f3f4f6; cursor: crosshair;">
       <img
         id="zoom-modal-img"
         src=""
         alt="Magnified Design View"
-        style="max-width: 95%; max-height: 95%; object-fit: contain; display: block; transform-origin: center center; transition: transform 0.1s ease-out; user-select: none;"
+        style="max-width: 95%; max-height: 95%; object-fit: contain; display: block; transform-origin: center center; transition: transform 0.08s ease-out; user-select: none; image-rendering: auto;"
       >
       <!-- Mode Toggle pill in modal -->
-      <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); background: rgba(17, 24, 39, 0.75); color: #fff; padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; pointer-events: none; backdrop-filter: blur(4px);">
-        Move cursor over image to magnify design details (2.5x)
+      <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); background: rgba(17, 24, 39, 0.8); color: #fff; padding: 5px 16px; border-radius: 20px; font-size: 0.78rem; pointer-events: none; backdrop-filter: blur(4px); white-space: nowrap;">
+        Pan cursor over image for 3.2x high-resolution detail inspection
       </div>
     </div>
   </div>
@@ -162,7 +180,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
   function openZoomModal(title, color, imgSrc) {
     if (!modal || !modalImg) return;
     modalTitle.textContent = title;
-    modalSubtitle.textContent = `${color} · Pan cursor to inspect texture & graphic detail`;
+    modalSubtitle.textContent = `${color} · High-Resolution Detail (3.2x Pan Zoom)`;
     modalImg.src = imgSrc;
     modalImg.style.transform = 'scale(1)';
     modal.style.display = 'flex';
@@ -194,14 +212,14 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     }
   });
 
-  // Pan / Magnify functionality inside modal viewport
+  // Pan / Magnify functionality inside modal viewport at 3.2x zoom
   if (zoomViewport && modalImg) {
     zoomViewport.addEventListener('mousemove', (e) => {
       const rect = zoomViewport.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 100;
       const y = ((e.clientY - rect.top) / rect.height) * 100;
       modalImg.style.transformOrigin = `${x}% ${y}%`;
-      modalImg.style.transform = 'scale(2.5)';
+      modalImg.style.transform = 'scale(3.2)';
     });
 
     zoomViewport.addEventListener('mouseleave', () => {
@@ -220,21 +238,54 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     const sizeSelect = card.querySelector('.merch-size-select');
     const imgEl = card.querySelector('.merch-shirt-img');
     const imgContainer = card.querySelector('.merch-img-container');
+    const viewToggleBtn = card.querySelector('.merch-view-toggle');
     const buyBtn = card.querySelector('.merch-buy-btn');
     const priceSpan = card.querySelector('.merch-btn-price');
 
     if (!colorSelect || !sizeSelect) return;
 
+    // View state: 'color' (flat shirt for that color) or 'model' (photo of model wearing shirt)
+    let currentView = 'color';
+
+    function updateCardImage() {
+      if (!imgEl) return;
+      imgEl.style.opacity = '0.3';
+      if (currentView === 'model' && prodData.model_image) {
+        imgEl.src = baseUrl + prodData.model_image;
+        imgEl.alt = prodData.name + ' - Model View';
+      } else {
+        const currentColor = colorSelect.value;
+        const colorInfo = prodData.colors[currentColor];
+        if (colorInfo && colorInfo.image) {
+          imgEl.src = baseUrl + colorInfo.image;
+          imgEl.alt = prodData.name + ' - ' + currentColor;
+        }
+      }
+      setTimeout(() => { imgEl.style.opacity = '1'; }, 70);
+    }
+
+    if (viewToggleBtn && prodData.model_image) {
+      viewToggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // don't open zoom modal
+        const label = viewToggleBtn.querySelector('.toggle-label');
+        if (currentView === 'color') {
+          currentView = 'model';
+          if (label) label.textContent = 'Shirt View';
+        } else {
+          currentView = 'color';
+          if (label) label.textContent = 'Model View';
+        }
+        updateCardImage();
+      });
+    }
+
     function updateSizes(selectedColor, preserveSize) {
       const colorInfo = prodData.colors[selectedColor];
       if (!colorInfo) return;
 
-      // Swap preview image
-      if (colorInfo.image && imgEl) {
-        imgEl.style.opacity = '0.3';
-        imgEl.src = baseUrl + colorInfo.image;
-        imgEl.alt = prodData.name + ' - ' + selectedColor;
-        setTimeout(() => { imgEl.style.opacity = '1'; }, 80);
+      // Update image if currently in color view
+      if (currentView === 'color') {
+        updateCardImage();
       }
 
       // Populate size dropdown
@@ -265,17 +316,27 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       }
     }
 
-    // Clicking image or zoom button opens the magnifier modal for currently selected color
+    // Clicking image opens the zoom modal for the currently active view & color
     if (imgContainer) {
       imgContainer.addEventListener('click', () => {
-        const currentColor = colorSelect.value;
-        const colorInfo = prodData.colors[currentColor];
-        const currentImgSrc = (colorInfo && colorInfo.image) ? (baseUrl + colorInfo.image) : (imgEl ? imgEl.src : '');
-        openZoomModal(prodData.name, currentColor, currentImgSrc);
+        if (currentView === 'model' && prodData.model_image) {
+          openZoomModal(prodData.name, 'Model Photo', baseUrl + prodData.model_image);
+        } else {
+          const currentColor = colorSelect.value;
+          const colorInfo = prodData.colors[currentColor];
+          const currentImgSrc = (colorInfo && colorInfo.image) ? (baseUrl + colorInfo.image) : (imgEl ? imgEl.src : '');
+          openZoomModal(prodData.name, currentColor, currentImgSrc);
+        }
       });
     }
 
     colorSelect.addEventListener('change', () => {
+      // Switching color automatically shows that color's shirt view
+      if (currentView === 'model' && viewToggleBtn) {
+        currentView = 'color';
+        const label = viewToggleBtn.querySelector('.toggle-label');
+        if (label) label.textContent = 'Model View';
+      }
       updateSizes(colorSelect.value, sizeSelect.value);
     });
 

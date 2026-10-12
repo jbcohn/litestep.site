@@ -609,7 +609,8 @@
           }
         }
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney.jpg"
   },
   "north_palisade_glaciated_af_": {
     "id": 480350932,
@@ -1284,7 +1285,8 @@
           }
         }
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_palisade.jpg"
   },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
@@ -1959,7 +1961,8 @@
           }
         }
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_sunflower.jpg"
   },
   "violet_eye_hex_mandala": {
     "id": 479899530,
@@ -2655,7 +2658,8 @@
           }
         }
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_violet.jpg"
   },
   "bubbles": {
     "id": 479948902,
@@ -3435,6 +3439,7 @@
           }
         }
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_bubbles.jpg"
   }
 }
