@@ -26,12 +26,21 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       {% assign default_size_data = default_size_pair[1] %}
     {% endunless %}
 
+    {% assign initial_img = default_color.image %}
+    {% if prod.model_image %}
+      {% if default_color.model_image %}
+        {% assign initial_img = default_color.model_image %}
+      {% else %}
+        {% assign initial_img = prod.model_image %}
+      {% endif %}
+    {% endif %}
+
     <div class="card merch-card" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
       <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 320px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
         <img
           class="merch-shirt-img"
-          src="{{ default_color.image | relative_url }}"
-          alt="{{ prod.name }} - {{ default_color_name }}"
+          src="{{ initial_img | relative_url }}"
+          alt="{{ prod.name }} - {% if prod.model_image %}Model View ({{ default_color_name }}){% else %}{{ default_color_name }}{% endif %}"
           style="max-width: 100%; max-height: 310px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
         >
 
@@ -47,7 +56,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
-            <span class="toggle-label">Model View</span>
+            <span class="toggle-label">Shirt View</span>
           </button>
         {% endif %}
 
@@ -244,8 +253,8 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
     if (!colorSelect || !sizeSelect) return;
 
-    // View state: 'color' (flat shirt for that color) or 'model' (photo of model wearing shirt)
-    let currentView = 'color';
+    // View state: 'model' (default if model photo available) or 'color' (flat shirt)
+    let currentView = prodData.model_image ? 'model' : 'color';
 
     function updateCardImage() {
       if (!imgEl) return;
@@ -269,12 +278,12 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       viewToggleBtn.addEventListener('click', (e) => {
         e.stopPropagation(); // don't open zoom modal
         const label = viewToggleBtn.querySelector('.toggle-label');
-        if (currentView === 'color') {
-          currentView = 'model';
-          if (label) label.textContent = 'Shirt View';
-        } else {
+        if (currentView === 'model') {
           currentView = 'color';
           if (label) label.textContent = 'Model View';
+        } else {
+          currentView = 'model';
+          if (label) label.textContent = 'Shirt View';
         }
         updateCardImage();
       });
