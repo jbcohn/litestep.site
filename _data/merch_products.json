@@ -75,7 +75,8 @@
             "product_id": "prod_VPwFPynJfh7S6D",
             "sync_variant_id": "5563999997"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_black.jpg"
       },
       "Navy": {
         "name": "Navy",
@@ -145,7 +146,8 @@
             "product_id": "prod_VPwFw8GTQcK3Xg",
             "sync_variant_id": "5564000006"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_navy.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -194,7 +196,8 @@
             "product_id": "prod_VPwFhO38nAv6qT",
             "sync_variant_id": "5564000012"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_cardinal.jpg"
       },
       "Brown": {
         "name": "Brown",
@@ -257,7 +260,8 @@
             "product_id": "prod_VPwGMa8GJcppJY",
             "sync_variant_id": "5564000020"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_brown.jpg"
       },
       "Dark Grey": {
         "name": "Dark Grey",
@@ -306,7 +310,8 @@
             "product_id": "prod_VPwGDQyhoEzImm",
             "sync_variant_id": "5564000026"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_dark_grey.jpg"
       },
       "Asphalt": {
         "name": "Asphalt",
@@ -362,7 +367,8 @@
             "product_id": "prod_VPwG3uuK4EQWRj",
             "sync_variant_id": "5564000035"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_asphalt.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -418,7 +424,8 @@
             "product_id": "prod_VPwGoA2YvIADmB",
             "sync_variant_id": "5564000042"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_heather_true_royal.jpg"
       },
       "Aqua": {
         "name": "Aqua",
@@ -481,7 +488,8 @@
             "product_id": "prod_VPwGWxPDEZwJsQ",
             "sync_variant_id": "5564000050"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_aqua.jpg"
       },
       "Ash": {
         "name": "Ash",
@@ -544,7 +552,8 @@
             "product_id": "prod_VPwGJGGjQD5lzu",
             "sync_variant_id": "5564000058"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_ash.jpg"
       },
       "Natural": {
         "name": "Natural",
@@ -607,7 +616,8 @@
             "product_id": "prod_VPwG882Ip0TjpF",
             "sync_variant_id": "5564000066"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_whitney_natural.jpg"
       }
     },
     "model_image": "/assets/images/products/model_whitney.jpg"
@@ -1362,7 +1372,8 @@
             "product_id": "prod_VQ40SFmhsY7u8i",
             "sync_variant_id": "5565379146"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -1418,7 +1429,8 @@
             "product_id": "prod_VQ40s5FLlySsKz",
             "sync_variant_id": "5565379153"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_brown_triblend.jpg"
       },
       "True Royal Triblend": {
         "name": "True Royal Triblend",
@@ -1474,7 +1486,8 @@
             "product_id": "prod_VQ40rjC2NNqO2N",
             "sync_variant_id": "5565379161"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_true_royal_triblend.jpg"
       },
       "Teal Triblend": {
         "name": "Teal Triblend",
@@ -1530,7 +1543,8 @@
             "product_id": "prod_VQ40LOrE4CXJac",
             "sync_variant_id": "5565379168"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_teal_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -1586,7 +1600,8 @@
             "product_id": "prod_VQ40uAqpCRKhSG",
             "sync_variant_id": "5565379175"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_maroon_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -1642,7 +1657,8 @@
             "product_id": "prod_VQ41SyBhxipkbG",
             "sync_variant_id": "5565379182"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_blue_triblend.jpg"
       },
       "Aqua Triblend": {
         "name": "Aqua Triblend",
@@ -1698,7 +1714,8 @@
             "product_id": "prod_VQ41utzEFWasJ5",
             "sync_variant_id": "5565379190"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_aqua_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -1754,7 +1771,8 @@
             "product_id": "prod_VQ41F7R9nfgAvK",
             "sync_variant_id": "5565379197"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -1810,7 +1828,8 @@
             "product_id": "prod_VQ41BJVbJZZiDe",
             "sync_variant_id": "5565379204"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_olive_triblend.jpg"
       },
       "Mauve Triblend": {
         "name": "Mauve Triblend",
@@ -1859,7 +1878,8 @@
             "product_id": "prod_VQ41UVzOUEjeYg",
             "sync_variant_id": "5565379211"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_mauve_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -1915,7 +1935,8 @@
             "product_id": "prod_VQ41CuJ4m0QaAg",
             "sync_variant_id": "5565379218"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -1971,7 +1992,8 @@
             "product_id": "prod_VQ416QK60wW7eI",
             "sync_variant_id": "5565379225"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_sunflower_tan_triblend.jpg"
       }
     },
     "model_image": "/assets/images/products/model_sunflower.jpg"
@@ -2052,7 +2074,8 @@
             "product_id": "prod_VQ41SMQtvrVHKU",
             "sync_variant_id": "5563102829"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_black_heather.jpg"
       },
       "Black": {
         "name": "Black",
@@ -2122,7 +2145,8 @@
             "product_id": "prod_VQ418HYT5bfnNE",
             "sync_variant_id": "5563102838"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_black.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -2171,7 +2195,8 @@
             "product_id": "prod_VQ42J08D4E3DVh",
             "sync_variant_id": "5563102844"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_cardinal.jpg"
       },
       "Heather Brown": {
         "name": "Heather Brown",
@@ -2227,7 +2252,8 @@
             "product_id": "prod_VQ42oodWbJs4YU",
             "sync_variant_id": "5563102852"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_heather_brown.jpg"
       },
       "Army": {
         "name": "Army",
@@ -2290,7 +2316,8 @@
             "product_id": "prod_VQ4258qH00RJIq",
             "sync_variant_id": "5563102860"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_army.jpg"
       },
       "Soft Cream": {
         "name": "Soft Cream",
@@ -2353,7 +2380,8 @@
             "product_id": "prod_VQ42EA5Utc4qXs",
             "sync_variant_id": "5563102868"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_soft_cream.jpg"
       },
       "Soft Pink": {
         "name": "Soft Pink",
@@ -2409,7 +2437,8 @@
             "product_id": "prod_VQ4251A2K09Ea4",
             "sync_variant_id": "5563102875"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_soft_pink.jpg"
       },
       "Silver": {
         "name": "Silver",
@@ -2472,7 +2501,8 @@
             "product_id": "prod_VQ42jl4ZIa2p6v",
             "sync_variant_id": "5563102883"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_silver.jpg"
       },
       "Ash": {
         "name": "Ash",
@@ -2535,7 +2565,8 @@
             "product_id": "prod_VQ42HkZFRK0uRZ",
             "sync_variant_id": "5563102891"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_ash.jpg"
       },
       "Heather Ice Blue": {
         "name": "Heather Ice Blue",
@@ -2598,7 +2629,8 @@
             "product_id": "prod_VQ42zFQqBaAvXG",
             "sync_variant_id": "5563102899"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_heather_ice_blue.jpg"
       },
       "White": {
         "name": "White",
@@ -2668,7 +2700,8 @@
             "product_id": "prod_VQ42zPsd1hV5q9",
             "sync_variant_id": "5563102908"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_violet_white.jpg"
       }
     },
     "model_image": "/assets/images/products/model_violet.jpg"
@@ -2749,7 +2782,8 @@
             "product_id": "prod_VQ43Bl2XEkZk6e",
             "sync_variant_id": "5563313436"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_black_heather.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -2798,7 +2832,8 @@
             "product_id": "prod_VQ43KKkhwcJjYE",
             "sync_variant_id": "5563313442"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_cardinal.jpg"
       },
       "Red": {
         "name": "Red",
@@ -2868,7 +2903,8 @@
             "product_id": "prod_VQ43ci4XJVhr1G",
             "sync_variant_id": "5563313451"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_red.jpg"
       },
       "True Royal": {
         "name": "True Royal",
@@ -2938,7 +2974,8 @@
             "product_id": "prod_VQ435be0eMnsie",
             "sync_variant_id": "5563313460"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_true_royal.jpg"
       },
       "Berry": {
         "name": "Berry",
@@ -3001,7 +3038,8 @@
             "product_id": "prod_VQ43zehxkD6t4j",
             "sync_variant_id": "5563313468"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_berry.jpg"
       },
       "Heather Clay": {
         "name": "Heather Clay",
@@ -3050,7 +3088,8 @@
             "product_id": "prod_VQ43dh0N01dnRr",
             "sync_variant_id": "5563313474"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_heather_clay.jpg"
       },
       "Heather Slate": {
         "name": "Heather Slate",
@@ -3099,7 +3138,8 @@
             "product_id": "prod_VQ43hLWEG2ARe3",
             "sync_variant_id": "5563313480"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_heather_slate.jpg"
       },
       "Olive": {
         "name": "Olive",
@@ -3162,7 +3202,8 @@
             "product_id": "prod_VQ43pdVIlHRDYm",
             "sync_variant_id": "5563313488"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_olive.jpg"
       },
       "Autumn": {
         "name": "Autumn",
@@ -3225,7 +3266,8 @@
             "product_id": "prod_VQ43WhQulwUutt",
             "sync_variant_id": "5563313496"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_autumn.jpg"
       },
       "Heather Grass Green": {
         "name": "Heather Grass Green",
@@ -3281,7 +3323,8 @@
             "product_id": "prod_VQ44dQ0a9yi6gw",
             "sync_variant_id": "5563313503"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_heather_grass_green.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -3337,7 +3380,8 @@
             "product_id": "prod_VQ44mk6CAzx4ZV",
             "sync_variant_id": "5563313510"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_heather_true_royal.jpg"
       },
       "Aqua": {
         "name": "Aqua",
@@ -3400,7 +3444,8 @@
             "product_id": "prod_VQ44mVcIOPJbCY",
             "sync_variant_id": "5563313518"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_aqua.jpg"
       },
       "Charity Pink": {
         "name": "Charity Pink",
@@ -3449,7 +3494,8 @@
             "product_id": "prod_VQ44LIzYukjgfi",
             "sync_variant_id": "5563313524"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bubbles_charity_pink.jpg"
       }
     },
     "model_image": "/assets/images/products/model_bubbles.jpg"

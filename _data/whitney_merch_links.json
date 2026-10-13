@@ -67,7 +67,8 @@
         "product_id": "prod_VPwFPynJfh7S6D",
         "sync_variant_id": "5563999997"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_black.jpg"
   },
   "Navy": {
     "name": "Navy",
@@ -137,7 +138,8 @@
         "product_id": "prod_VPwFw8GTQcK3Xg",
         "sync_variant_id": "5564000006"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_navy.jpg"
   },
   "Cardinal": {
     "name": "Cardinal",
@@ -186,7 +188,8 @@
         "product_id": "prod_VPwFhO38nAv6qT",
         "sync_variant_id": "5564000012"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_cardinal.jpg"
   },
   "Brown": {
     "name": "Brown",
@@ -249,7 +252,8 @@
         "product_id": "prod_VPwGMa8GJcppJY",
         "sync_variant_id": "5564000020"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_brown.jpg"
   },
   "Dark Grey": {
     "name": "Dark Grey",
@@ -298,7 +302,8 @@
         "product_id": "prod_VPwGDQyhoEzImm",
         "sync_variant_id": "5564000026"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_dark_grey.jpg"
   },
   "Asphalt": {
     "name": "Asphalt",
@@ -354,7 +359,8 @@
         "product_id": "prod_VPwG3uuK4EQWRj",
         "sync_variant_id": "5564000035"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_asphalt.jpg"
   },
   "Heather True Royal": {
     "name": "Heather True Royal",
@@ -410,7 +416,8 @@
         "product_id": "prod_VPwGoA2YvIADmB",
         "sync_variant_id": "5564000042"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_heather_true_royal.jpg"
   },
   "Aqua": {
     "name": "Aqua",
@@ -473,7 +480,8 @@
         "product_id": "prod_VPwGWxPDEZwJsQ",
         "sync_variant_id": "5564000050"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_aqua.jpg"
   },
   "Ash": {
     "name": "Ash",
@@ -536,7 +544,8 @@
         "product_id": "prod_VPwGJGGjQD5lzu",
         "sync_variant_id": "5564000058"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_ash.jpg"
   },
   "Natural": {
     "name": "Natural",
@@ -599,6 +608,7 @@
         "product_id": "prod_VPwG882Ip0TjpF",
         "sync_variant_id": "5564000066"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_whitney_natural.jpg"
   }
 }

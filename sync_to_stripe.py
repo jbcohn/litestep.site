@@ -1,7 +1,10 @@
 import os
 import json
 import re
+import time
 from decimal import Decimal
+from io import BytesIO
+from PIL import Image
 import requests
 import stripe
 
@@ -38,37 +41,85 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR = os.path.join(BASE_DIR, "assets", "images", "products")
 DATA_DIR = os.path.join(BASE_DIR, "_data")
 os.makedirs(IMAGES_DIR, exist_ok=True)
-os.makedirs(DATA_DIR, exist_ok=True)
+DATA_DIR_PATH = os.path.abspath(DATA_DIR)
+os.makedirs(DATA_DIR_PATH, exist_ok=True)
 
 OUTPUT_FILE = os.path.join(DATA_DIR, "merch_products.json")
 LEGACY_WHITNEY_FILE = os.path.join(DATA_DIR, "whitney_merch_links.json")
 
-# Custom marketing descriptions & tags for specific products
+def save_clean_image(img_bytes, dest_path):
+    """
+    Saves an image as high-quality RGB JPEG (quality=95).
+    Guarantees no black backgrounds:
+    - If the image has an alpha channel, composites onto a pure white (255, 255, 255) background.
+    - If the image is a lifestyle photo without alpha, preserves the lifestyle background.
+    """
+    im = Image.open(BytesIO(img_bytes))
+    if im.mode in ('RGBA', 'LA') or (im.mode == 'P' and 'transparency' in im.info):
+        im = im.convert('RGBA')
+        bg = Image.new('RGB', im.size, (255, 255, 255))
+        bg.paste(im, mask=im.split()[3])
+        im = bg
+    elif im.mode != 'RGB':
+        im = im.convert('RGB')
+    im.save(dest_path, 'JPEG', quality=95)
+
+# Custom marketing descriptions, tags, and model mockup configurations
 PRODUCT_METADATA = {
     480089207: {  # Mount Whitney
         "display_name": "Mount Whitney Ridgelines Elevation Graphic T-Shirt",
         "tag": "California Peaks · Direct Print-on-Demand",
-        "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks."
+        "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
+        "model_prefix": "model_whitney",
+        "model_config": {
+            "option_group": "Women's 4",
+            "option": "Front",
+            "top": 300
+        }
     },
     480350932: {  # North Palisade
         "display_name": "North Palisade - Glaciated AF - Tri-Blend T-Shirt",
         "tag": "High Sierra 14ers · Direct Print-on-Demand",
-        "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric."
+        "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric.",
+        "model_prefix": "model_palisade",
+        "model_config": {
+            "option_group": "Men's 3",
+            "option": "Right Front",
+            "top": 300
+        }
     },
     480312304: {  # Rainbow Sunflower
         "display_name": "Rainbow Sunflower Tri-Blend T-Shirt",
         "tag": "Algorithmic Art · Direct Print-on-Demand",
-        "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum."
+        "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum.",
+        "model_prefix": "model_sunflower",
+        "model_config": {
+            "option_group": "Women's 4",
+            "option": "Front",
+            "top": 250
+        }
     },
     479948902: {  # Bubbles!
         "display_name": "Bubbles! Procedural Graphic T-Shirt",
         "tag": "Mathematical Geometry · Direct Print-on-Demand",
-        "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts."
+        "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts.",
+        "model_prefix": "model_bubbles",
+        "model_config": {
+            "option_group": "Men's Lifestyle",
+            "option": "Front",
+            "top": 0
+        }
     },
     479899530: {  # Violet Eye Hex Mandala
         "display_name": "Violet Eye Hexagon Mandala Graphic T-Shirt",
         "tag": "Fractal Art · Direct Print-on-Demand",
-        "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry."
+        "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry.",
+        "model_prefix": "model_violet",
+        "model_config": {
+            "option_group": "Women's Lifestyle 2",
+            "option": "Front",
+            "top": 200
+        }
     }
 }
 
@@ -81,12 +132,140 @@ def slugify(text):
 def parse_garment_name(raw_name):
     if not raw_name:
         return "Premium Unisex T-Shirt"
-    # Extract string before parentheses e.g. "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt"
     match = re.match(r'^([^(]+)', raw_name)
     if match:
         name = match.group(1).replace("with Tear Away Label", "").strip()
         return re.sub(r'\s+', ' ', name)
     return raw_name
+
+def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta):
+    """
+    Ensures high-resolution (2000px) colorway model mockups exist for each color of the product,
+    saving them with clean white or lifestyle backgrounds (no black backgrounds).
+    Returns (product_model_image_rel, dict_of_color_to_model_image_rel).
+    """
+    model_prefix = custom_meta.get("model_prefix", f"model_{prod_slug}")
+    model_cfg = custom_meta.get("model_config")
+
+    primary_rel = f"/assets/images/products/{model_prefix}.jpg"
+    primary_path = os.path.join(IMAGES_DIR, f"{model_prefix}.jpg")
+
+    color_model_images = {}
+    missing_for_task = {}  # catalog_variant_id -> color_name
+
+    for color, var_list in color_groups.items():
+        color_slug = slugify(color)
+        model_filename = f"{model_prefix}_{color_slug}.jpg"
+        model_rel = f"/assets/images/products/{model_filename}"
+        model_path = os.path.join(IMAGES_DIR, model_filename)
+
+        if os.path.exists(model_path) and os.path.getsize(model_path) > 0:
+            color_model_images[color] = model_rel
+        elif model_cfg:
+            cat_vid = var_list[0].get("variant_id")
+            if cat_vid:
+                missing_for_task[cat_vid] = color
+
+    # If any colors are missing mockups and we have a model_config, generate in batch
+    if missing_for_task and model_cfg:
+        v0 = variants[0] if variants else {}
+        cat_prod_id = v0.get("product", {}).get("product_id")
+        art_file = next((f for f in v0.get("files", []) if f.get("type") == "front_large"), None)
+        if not art_file:
+            art_file = next((f for f in v0.get("files", []) if f.get("preview_url")), None)
+
+        if cat_prod_id and art_file and art_file.get("preview_url"):
+            print(f"  Generating {len(missing_for_task)} missing 2000px model mockups for {model_prefix}...")
+            area_w = 1800 if cat_prod_id == 162 else 2250
+            area_h = 2400 if cat_prod_id == 162 else 2700
+            w = area_w
+            art_w = art_file.get("width") or 4000
+            art_h = art_file.get("height") or 4000
+            h = int(art_h * area_w / art_w)
+            if h > area_h:
+                h = area_h
+                w = int(art_w * area_h / art_h)
+            top = model_cfg.get("top", 200)
+            left = max(0, (area_w - w) // 2)
+
+            pos = {
+                "area_width": area_w,
+                "area_height": area_h,
+                "width": w,
+                "height": h,
+                "top": top,
+                "left": left
+            }
+
+            payload = {
+                "variant_ids": list(missing_for_task.keys()),
+                "format": "jpg",
+                "width": 2000,
+                "option_groups": [model_cfg["option_group"]],
+                "options": [model_cfg["option"]],
+                "files": [{
+                    "placement": "front_large",
+                    "image_url": art_file["preview_url"],
+                    "position": pos
+                }]
+            }
+
+            try:
+                task_res = requests.post(
+                    f"https://api.printful.com/mockup-generator/create-task/{cat_prod_id}",
+                    headers={
+                        "Authorization": f"Bearer {PRINTFUL_API_KEY}",
+                        "X-PF-Store-Id": PRINTFUL_STORE_ID
+                    },
+                    json=payload,
+                    timeout=20
+                ).json()
+
+                if task_res.get("code") == 200 and "task_key" in task_res.get("result", {}):
+                    tkey = task_res["result"]["task_key"]
+                    for _ in range(40):
+                        time.sleep(3)
+                        poll_res = requests.get(
+                            f"https://api.printful.com/mockup-generator/task?task_key={tkey}",
+                            headers={
+                                "Authorization": f"Bearer {PRINTFUL_API_KEY}",
+                                "X-PF-Store-Id": PRINTFUL_STORE_ID
+                            },
+                            timeout=15
+                        ).json()
+                        status = poll_res.get("result", {}).get("status")
+                        if status == "completed":
+                            for m in poll_res.get("result", {}).get("mockups", []):
+                                vid = m.get("variant_ids", [None])[0]
+                                c_name = missing_for_task.get(vid)
+                                if c_name and m.get("mockup_url"):
+                                    c_slug = slugify(c_name)
+                                    target_filename = f"{model_prefix}_{c_slug}.jpg"
+                                    target_path = os.path.join(IMAGES_DIR, target_filename)
+                                    target_rel = f"/assets/images/products/{target_filename}"
+                                    img_content = requests.get(m["mockup_url"], timeout=20).content
+                                    save_clean_image(img_content, target_path)
+                                    color_model_images[c_name] = target_rel
+                                    print(f"    ✓ Saved 2000px model: {c_name} -> {target_rel}")
+                            break
+                        elif status == "failed":
+                            print(f"    Warning: Mockup generation task failed for {model_prefix}: {poll_res}")
+                            break
+                else:
+                    print(f"    Warning: Failed to queue mockup task for {model_prefix}: {task_res}")
+            except Exception as e:
+                print(f"    Warning: Exception generating model mockups for {model_prefix}: {e}")
+
+    # Ensure primary model image exists
+    if not os.path.exists(primary_path) and color_model_images:
+        first_color_model = list(color_model_images.values())[0]
+        first_path = os.path.join(BASE_DIR, first_color_model.lstrip("/"))
+        if os.path.exists(first_path):
+            with open(first_path, "rb") as fi, open(primary_path, "wb") as fo:
+                fo.write(fi.read())
+
+    has_primary = os.path.exists(primary_path) and os.path.getsize(primary_path) > 0
+    return (primary_rel if has_primary else None, color_model_images)
 
 # 2. Fetch existing Stripe Products & Payment Links to avoid duplicates
 print("Loading existing Stripe Live catalog...")
@@ -187,6 +366,13 @@ for sp in store_products:
         color = v.get("color", "Default")
         color_groups.setdefault(color, []).append(v)
 
+    # Sync colorway model mockups (clean white or lifestyle background, 2000px)
+    primary_model_rel, color_model_rels = sync_model_mockups(
+        pid, prod_slug, variants, color_groups, custom_meta
+    )
+    if primary_model_rel:
+        prod_entry["model_image"] = primary_model_rel
+
     for color, var_list in color_groups.items():
         color_slug = slugify(color)
         
@@ -207,12 +393,11 @@ for sp in store_products:
                     break
 
         if preview_url and not os.path.exists(local_img_path):
-            print(f"  Downloading mockup: {color} -> {local_img_rel}")
+            print(f"  Downloading flat mockup: {color} -> {local_img_rel}")
             try:
                 img_res = requests.get(preview_url, timeout=15)
                 if img_res.ok:
-                    with open(local_img_path, "wb") as f:
-                        f.write(img_res.content)
+                    save_clean_image(img_res.content, local_img_path)
             except Exception as e:
                 print(f"  Warning: Image download error for {color}: {e}")
 
@@ -222,6 +407,9 @@ for sp in store_products:
             "image": local_img_rel,
             "sizes": {}
         }
+        color_model_img = color_model_rels.get(color, primary_model_rel)
+        if color_model_img:
+            prod_entry["colors"][color]["model_image"] = color_model_img
 
         for v in var_list:
             sync_variant_id = str(v["id"])
