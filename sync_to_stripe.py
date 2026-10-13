@@ -72,8 +72,8 @@ PRODUCT_METADATA = {
         "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
         "model_prefix": "model_whitney",
         "model_config": {
-            "option_group": "Women's 4",
-            "option": "Front",
+            "option_group": "Men's 4",
+            "option": "Left Front",
             "top": 300
         }
     },

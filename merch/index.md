@@ -7,10 +7,10 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
-  Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on premium Bella + Canvas tees and shipped directly to your door with automatic sales tax calculation.
+  Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on Bella + Canvas tees and shipped to your door.
 </p>
 
-<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+<div class="grid merch-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
 
   {% for product_entry in site.data.merch_products %}
     {% assign prod_slug = product_entry[0] %}
@@ -163,12 +163,9 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
 <div class="spec-box" style="text-align: center; padding: 2.25rem 1.5rem; margin-top: 2rem;">
   <h2 style="border: none; margin-top: 0;">Direct Print-on-Demand Fulfillment</h2>
-  <p style="max-width: 620px; margin: 0.5rem auto 1.5rem auto; color: var(--text-muted);">
+  <p style="max-width: 620px; margin: 0.5rem auto 0 auto; color: var(--text-muted);">
     All apparel orders are processed securely via Stripe Checkout and automatically fulfilled by Printful on premium Bella + Canvas combed ring-spun and tri-blend garments.
   </p>
-  <a href="https://www.amazon.com/s?k=litestep" target="_blank" rel="noopener" class="btn" style="font-size: 0.95rem; padding: 0.65rem 1.5rem; border: 1px solid var(--border);">
-    View Legacy Merch on Amazon &rarr;
-  </a>
 </div>
 
 <script>
@@ -235,6 +232,17 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       modalImg.style.transformOrigin = 'center center';
       modalImg.style.transform = 'scale(1)';
     });
+  }
+
+  // Show product cards in random order on each page load
+  const gridEl = document.querySelector('.merch-grid');
+  if (gridEl) {
+    const cards = Array.from(gridEl.querySelectorAll('.merch-card'));
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    cards.forEach(card => gridEl.appendChild(card));
   }
 
   // Iterate over product cards
