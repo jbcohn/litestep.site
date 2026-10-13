@@ -250,12 +250,13 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     function updateCardImage() {
       if (!imgEl) return;
       imgEl.style.opacity = '0.3';
+      const currentColor = colorSelect.value;
+      const colorInfo = prodData.colors[currentColor];
       if (currentView === 'model' && prodData.model_image) {
-        imgEl.src = baseUrl + prodData.model_image;
-        imgEl.alt = prodData.name + ' - Model View';
+        const modelSrc = (colorInfo && colorInfo.model_image) ? colorInfo.model_image : prodData.model_image;
+        imgEl.src = baseUrl + modelSrc;
+        imgEl.alt = prodData.name + ' - Model View (' + currentColor + ')';
       } else {
-        const currentColor = colorSelect.value;
-        const colorInfo = prodData.colors[currentColor];
         if (colorInfo && colorInfo.image) {
           imgEl.src = baseUrl + colorInfo.image;
           imgEl.alt = prodData.name + ' - ' + currentColor;
@@ -283,10 +284,8 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       const colorInfo = prodData.colors[selectedColor];
       if (!colorInfo) return;
 
-      // Update image if currently in color view
-      if (currentView === 'color') {
-        updateCardImage();
-      }
+      // Update image for currently active view and color
+      updateCardImage();
 
       // Populate size dropdown
       const sizes = colorInfo.sizes || {};
@@ -319,11 +318,12 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     // Clicking image opens the zoom modal for the currently active view & color
     if (imgContainer) {
       imgContainer.addEventListener('click', () => {
+        const currentColor = colorSelect.value;
+        const colorInfo = prodData.colors[currentColor];
         if (currentView === 'model' && prodData.model_image) {
-          openZoomModal(prodData.name, 'Model Photo', baseUrl + prodData.model_image);
+          const modelSrc = (colorInfo && colorInfo.model_image) ? colorInfo.model_image : prodData.model_image;
+          openZoomModal(prodData.name, 'Model Photo (' + currentColor + ')', baseUrl + modelSrc);
         } else {
-          const currentColor = colorSelect.value;
-          const colorInfo = prodData.colors[currentColor];
           const currentImgSrc = (colorInfo && colorInfo.image) ? (baseUrl + colorInfo.image) : (imgEl ? imgEl.src : '');
           openZoomModal(prodData.name, currentColor, currentImgSrc);
         }
@@ -331,12 +331,6 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     }
 
     colorSelect.addEventListener('change', () => {
-      // Switching color automatically shows that color's shirt view
-      if (currentView === 'model' && viewToggleBtn) {
-        currentView = 'color';
-        const label = viewToggleBtn.querySelector('.toggle-label');
-        if (label) label.textContent = 'Model View';
-      }
       updateSizes(colorSelect.value, sizeSelect.value);
     });
 

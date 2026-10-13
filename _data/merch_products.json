@@ -674,7 +674,8 @@
             "product_id": "prod_VQ3zSVTrORkzix",
             "sync_variant_id": "5565544675"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -730,7 +731,8 @@
             "product_id": "prod_VQ3zSfnCIHR5oU",
             "sync_variant_id": "5565544682"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_brown_triblend.jpg"
       },
       "True Royal Triblend": {
         "name": "True Royal Triblend",
@@ -786,7 +788,8 @@
             "product_id": "prod_VQ3zS6Tj8XjgW5",
             "sync_variant_id": "5565544689"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_true_royal_triblend.jpg"
       },
       "Teal Triblend": {
         "name": "Teal Triblend",
@@ -842,7 +845,8 @@
             "product_id": "prod_VQ3zQrnMawAEJF",
             "sync_variant_id": "5565544696"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_teal_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -898,7 +902,8 @@
             "product_id": "prod_VQ3zXETh123yt8",
             "sync_variant_id": "5565544703"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_maroon_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -954,7 +959,8 @@
             "product_id": "prod_VQ3zGBihYaMcCc",
             "sync_variant_id": "5565544710"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_blue_triblend.jpg"
       },
       "Aqua Triblend": {
         "name": "Aqua Triblend",
@@ -1010,7 +1016,8 @@
             "product_id": "prod_VQ3zWSlYodjz6W",
             "sync_variant_id": "5565544717"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_aqua_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -1066,7 +1073,8 @@
             "product_id": "prod_VQ409l91cuPsjO",
             "sync_variant_id": "5565544724"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -1122,7 +1130,8 @@
             "product_id": "prod_VQ40Mzx3c9Poa7",
             "sync_variant_id": "5565544731"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_olive_triblend.jpg"
       },
       "Mauve Triblend": {
         "name": "Mauve Triblend",
@@ -1171,7 +1180,8 @@
             "product_id": "prod_VQ409lEo4Dvf2d",
             "sync_variant_id": "5565544737"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_mauve_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -1227,7 +1237,8 @@
             "product_id": "prod_VQ40syuyHK15R7",
             "sync_variant_id": "5565544744"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -1283,7 +1294,8 @@
             "product_id": "prod_VQ40OUT4W0HRKa",
             "sync_variant_id": "5565544751"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_palisade_tan_triblend.jpg"
       }
     },
     "model_image": "/assets/images/products/model_palisade.jpg"
