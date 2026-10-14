@@ -1372,7 +1372,8 @@
             "product_id": "prod_VRMW9lnsQL1aSi",
             "sync_variant_id": "5573425462"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_charcoal_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -1428,7 +1429,8 @@
             "product_id": "prod_VRMXyOFrhGzlEc",
             "sync_variant_id": "5573425469"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_brown_triblend.jpg"
       },
       "Navy Triblend": {
         "name": "Navy Triblend",
@@ -1484,7 +1486,8 @@
             "product_id": "prod_VRMX1fgWpn9cmt",
             "sync_variant_id": "5573425476"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_navy_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -1540,7 +1543,8 @@
             "product_id": "prod_VRMXkE2JXlfG8g",
             "sync_variant_id": "5573425483"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_maroon_triblend.jpg"
       },
       "Clay Triblend": {
         "name": "Clay Triblend",
@@ -1596,7 +1600,8 @@
             "product_id": "prod_VRMXHsER0QU1Qm",
             "sync_variant_id": "5573425495"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_clay_triblend.jpg"
       },
       "Red Triblend": {
         "name": "Red Triblend",
@@ -1652,7 +1657,8 @@
             "product_id": "prod_VRMXWTusGkBkAj",
             "sync_variant_id": "5573425502"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_red_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -1708,7 +1714,8 @@
             "product_id": "prod_VRMXgWTs8NyFOy",
             "sync_variant_id": "5573425509"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_blue_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -1764,7 +1771,8 @@
             "product_id": "prod_VRMXMAGziST2AZ",
             "sync_variant_id": "5573425516"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -1820,9 +1828,11 @@
             "product_id": "prod_VRMXZAogI1xsIA",
             "sync_variant_id": "5573425524"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_diablo_olive_triblend.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_diablo.jpg"
   },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,

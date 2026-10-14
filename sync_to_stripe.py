@@ -128,7 +128,13 @@ PRODUCT_METADATA = {
         "display_name": "Mount Diablo Topographic Wireframe Elevation Graphic T-Shirt",
         "tag": "California Peaks · Direct Print-on-Demand",
         "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
-        "model_prefix": "model_diablo"
+        "model_prefix": "model_diablo",
+        "primary_color": "Brown Triblend",
+        "model_config": {
+            "option_group": "Men's 3",
+            "option": "Front",
+            "top": 300
+        }
     }
 }
 
@@ -290,10 +296,11 @@ def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, exis
 
     # Ensure primary model image exists
     if not os.path.exists(primary_path) and color_model_images:
-        first_color_model = list(color_model_images.values())[0]
-        first_path = os.path.join(BASE_DIR, first_color_model.lstrip("/"))
-        if os.path.exists(first_path):
-            with open(first_path, "rb") as fi, open(primary_path, "wb") as fo:
+        pref_color = custom_meta.get("primary_color")
+        chosen_color_model = color_model_images.get(pref_color) if (pref_color and pref_color in color_model_images) else list(color_model_images.values())[0]
+        chosen_path = os.path.join(BASE_DIR, chosen_color_model.lstrip("/"))
+        if os.path.exists(chosen_path):
+            with open(chosen_path, "rb") as fi, open(primary_path, "wb") as fo:
                 fo.write(fi.read())
 
     has_primary = os.path.exists(primary_path) and os.path.getsize(primary_path) > 0
