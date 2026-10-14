@@ -1310,6 +1310,520 @@
     },
     "model_image": "/assets/images/products/model_palisade.jpg"
   },
+  "mount_diablo_short_sleeve_t_shirt": {
+    "id": 481559531,
+    "slug": "mount_diablo_short_sleeve_t_shirt",
+    "name": "Mount Diablo Topographic Wireframe Elevation Graphic T-Shirt",
+    "tag": "California Peaks \u00b7 Direct Print-on-Demand",
+    "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Charcoal-Black Triblend": {
+        "name": "Charcoal-Black Triblend",
+        "slug": "charcoal_black_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/aFaeV64ru4Rh1VYaA643T2K",
+            "product_id": "prod_VRMWiWDP4LG5RQ",
+            "sync_variant_id": "5573425456"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14AaEQaPScjJ3029w243T2L",
+            "product_id": "prod_VRMW6iYkhF6roZ",
+            "sync_variant_id": "5573425457"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/7sY3co4ru2J9asuaA643T2M",
+            "product_id": "prod_VRMW0tY1sH2R6H",
+            "sync_variant_id": "5573425458"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm5kwaPS4RhgQS5fM43T2N",
+            "product_id": "prod_VRMWE0CE0CIIyo",
+            "sync_variant_id": "5573425459"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU3co5vybfF8km0Zw43T2O",
+            "product_id": "prod_VRMW906Xe1umfA",
+            "sync_variant_id": "5573425460"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/fZu6oAaPS6ZpbwyfUq43T2P",
+            "product_id": "prod_VRMWhLh254LQow",
+            "sync_variant_id": "5573425461"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/3cI5kwcY0dnN1VYcIe43T2Q",
+            "product_id": "prod_VRMW9lnsQL1aSi",
+            "sync_variant_id": "5573425462"
+          }
+        }
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/8x200c1fi6Zp4466jQ43T2R",
+            "product_id": "prod_VRMWh9PkpNT2yG",
+            "sync_variant_id": "5573425463"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq28k3nqgzZ0RUfUq43T2S",
+            "product_id": "prod_VRMWOMzI6J33JG",
+            "sync_variant_id": "5573425464"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm00c0be83t8km0Zw43T2T",
+            "product_id": "prod_VRMXfGQfSFwK6l",
+            "sync_variant_id": "5573425465"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQ00c1fifvV58a8rY43T2U",
+            "product_id": "prod_VRMX9wtXR7m6GZ",
+            "sync_variant_id": "5573425466"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq7sEcY05Vl3026jQ43T2V",
+            "product_id": "prod_VRMXYTFTZA41nH",
+            "sync_variant_id": "5573425467"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/5kQcMY5vygzZ1VYgYu43T2W",
+            "product_id": "prod_VRMXIYet4MFivS",
+            "sync_variant_id": "5573425468"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/dRmaEQbTW1F50RUcIe43T2X",
+            "product_id": "prod_VRMXyOFrhGzlEc",
+            "sync_variant_id": "5573425469"
+          }
+        }
+      },
+      "Navy Triblend": {
+        "name": "Navy Triblend",
+        "slug": "navy_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_navy_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm7sEf683NdbwydMi43T2Y",
+            "product_id": "prod_VRMXfcMRAqrmoI",
+            "sync_variant_id": "5573425470"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJecMY0bednN8km0Zw43T2Z",
+            "product_id": "prod_VRMXssHtsev02w",
+            "sync_variant_id": "5573425471"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJecMY2jm97xcAC0Zw43T30",
+            "product_id": "prod_VRMXnBegjgIXza",
+            "sync_variant_id": "5573425472"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/9B64gs6zC5Vl446dMi43T31",
+            "product_id": "prod_VRMXrToJ3bttvc",
+            "sync_variant_id": "5573425473"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14A5kwcY03Nd58aeQm43T32",
+            "product_id": "prod_VRMXzrezXVDcIu",
+            "sync_variant_id": "5573425474"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/eVq3co4ru97x58adMi43T33",
+            "product_id": "prod_VRMXcYgTwYh2Yo",
+            "sync_variant_id": "5573425475"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/14A7sE5vy4Rh4465fM43T34",
+            "product_id": "prod_VRMX1fgWpn9cmt",
+            "sync_variant_id": "5573425476"
+          }
+        }
+      },
+      "Maroon Triblend": {
+        "name": "Maroon Triblend",
+        "slug": "maroon_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_maroon_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/7sY7sEaPS3Nd58a4bI43T35",
+            "product_id": "prod_VRMXd4VR7Qv5NV",
+            "sync_variant_id": "5573425477"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gMbIU3nq3NdeIKeQm43T36",
+            "product_id": "prod_VRMX9sOseUydQm",
+            "sync_variant_id": "5573425478"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq4gs4rugzZ4466jQ43T37",
+            "product_id": "prod_VRMXOTFFgQZnIu",
+            "sync_variant_id": "5573425479"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVq7sE0be4Rh9oqdMi43T38",
+            "product_id": "prod_VRMX3xidRRBN85",
+            "sync_variant_id": "5573425480"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRmfZae2497xgQS9w243T39",
+            "product_id": "prod_VRMXnaGv7sZx3H",
+            "sync_variant_id": "5573425481"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/cNi14g2jmdnN8kmgYu43T3a",
+            "product_id": "prod_VRMXWV5Bh33RHx",
+            "sync_variant_id": "5573425482"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/9B6cMY0becjJasufUq43T3b",
+            "product_id": "prod_VRMXkE2JXlfG8g",
+            "sync_variant_id": "5573425483"
+          }
+        }
+      },
+      "Clay Triblend": {
+        "name": "Clay Triblend",
+        "slug": "clay_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_clay_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/28E7sE2jm1F54466jQ43T3c",
+            "product_id": "prod_VRMX7ex16XFngD",
+            "sync_variant_id": "5573425484"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/14AeV61fidnNdEG37E43T3d",
+            "product_id": "prod_VRMXS49o5NxbGm",
+            "sync_variant_id": "5573425485"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVqbIUaPS83tbwydMi43T3e",
+            "product_id": "prod_VRMXKXJXFlaFEa",
+            "sync_variant_id": "5573425486"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/aFa6oA6zC6Zp58a4bI43T3f",
+            "product_id": "prod_VRMXoDAPRaY2E6",
+            "sync_variant_id": "5573425487"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/00w00cgacbfF1VYbEa43T3g",
+            "product_id": "prod_VRMXxF2epdC9Am",
+            "sync_variant_id": "5573425489"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/dRmfZa7DG3Nd7gi9w243T3h",
+            "product_id": "prod_VRMXgZhBP4eGJj",
+            "sync_variant_id": "5573425492"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/6oUaEQ7DG2J96ce8rY43T3i",
+            "product_id": "prod_VRMXHsER0QU1Qm",
+            "sync_variant_id": "5573425495"
+          }
+        }
+      },
+      "Red Triblend": {
+        "name": "Red Triblend",
+        "slug": "red_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_red_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI4gs8HK97xfMOeQm43T3j",
+            "product_id": "prod_VRMXulcQujtJWJ",
+            "sync_variant_id": "5573425496"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQ8wI3nqfvVgQS6jQ43T3k",
+            "product_id": "prod_VRMX2aDtVBj7RI",
+            "sync_variant_id": "5573425497"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/fZu3co5vy5Vl8kmeQm43T3l",
+            "product_id": "prod_VRMXP56l99nMnH",
+            "sync_variant_id": "5573425498"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cI8wIaPS5Vl0RU37E43T3m",
+            "product_id": "prod_VRMXY6nVmL2SqT",
+            "sync_variant_id": "5573425499"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/28EbIU1fi4RhfMO7nU43T3n",
+            "product_id": "prod_VRMXP5WN3VVjNa",
+            "sync_variant_id": "5573425500"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/cNidR2aPS4Rh302aA643T3o",
+            "product_id": "prod_VRMX4JgamQnzlb",
+            "sync_variant_id": "5573425501"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/9B67sEaPSbfFbwygYu43T3p",
+            "product_id": "prod_VRMXWTusGkBkAj",
+            "sync_variant_id": "5573425502"
+          }
+        }
+      },
+      "Blue Triblend": {
+        "name": "Blue Triblend",
+        "slug": "blue_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_blue_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gM9AM9LO83t6ce23A43T3q",
+            "product_id": "prod_VRMXs6jR3gaIIZ",
+            "sync_variant_id": "5573425503"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJefZagac3NdgQS4bI43T3r",
+            "product_id": "prod_VRMXNM3TMB8aLF",
+            "sync_variant_id": "5573425504"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/aFa4gs9LObfFeIK7nU43T3s",
+            "product_id": "prod_VRMXY5OxJdPpVN",
+            "sync_variant_id": "5573425505"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQcMYaPS97x1VYfUq43T3t",
+            "product_id": "prod_VRMXyThidTS0x4",
+            "sync_variant_id": "5573425506"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/6oU28k0becjJ302bEa43T3u",
+            "product_id": "prod_VRMXvin70qjL8K",
+            "sync_variant_id": "5573425507"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/00wcMYgac6ZpcAC5fM43T3v",
+            "product_id": "prod_VRMXGGNFHwjFcQ",
+            "sync_variant_id": "5573425508"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/7sYcMY5vybfFfMO23A43T3w",
+            "product_id": "prod_VRMXgWTs8NyFOy",
+            "sync_variant_id": "5573425509"
+          }
+        }
+      },
+      "Grey Triblend": {
+        "name": "Grey Triblend",
+        "slug": "grey_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_grey_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/5kQfZa6zC1F5fMOaA643T3x",
+            "product_id": "prod_VRMXK3T3dq7WaF",
+            "sync_variant_id": "5573425510"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/3cIbIU2jm6ZpgQS0Zw43T3y",
+            "product_id": "prod_VRMXOfZpKdBRvt",
+            "sync_variant_id": "5573425511"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJeeV64ruabB7gifUq43T3z",
+            "product_id": "prod_VRMXa2e2rRNZQh",
+            "sync_variant_id": "5573425512"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gM4gs2jm4Rh9oq8rY43T3A",
+            "product_id": "prod_VRMXZ7xxNJlTqs",
+            "sync_variant_id": "5573425513"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJebIU5vydnN7gi8rY43T3B",
+            "product_id": "prod_VRMXu91VvXTz1w",
+            "sync_variant_id": "5573425514"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/00wcMY2jm6Zp3028rY43T3C",
+            "product_id": "prod_VRMXwP59EKN7hb",
+            "sync_variant_id": "5573425515"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/00w5kw4ru4Rh1VYgYu43T3D",
+            "product_id": "prod_VRMXMAGziST2AZ",
+            "sync_variant_id": "5573425516"
+          }
+        }
+      },
+      "Olive Triblend": {
+        "name": "Olive Triblend",
+        "slug": "olive_triblend",
+        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_olive_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/dRm6oA1fi3Nd1VYcIe43T3E",
+            "product_id": "prod_VRMXwD4BAQeODr",
+            "sync_variant_id": "5573425517"
+          },
+          "S": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/eVqfZaf685Vlbwy7nU43T3F",
+            "product_id": "prod_VRMXTMgRk9v9aQ",
+            "sync_variant_id": "5573425518"
+          },
+          "M": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/4gM5kw4rufvV8kmgYu43T3G",
+            "product_id": "prod_VRMXxPhUwIU2XO",
+            "sync_variant_id": "5573425519"
+          },
+          "L": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/00w5kw8HK83t302dMi43T3H",
+            "product_id": "prod_VRMX1XtNpDi2G0",
+            "sync_variant_id": "5573425521"
+          },
+          "XL": {
+            "price": "$33.26",
+            "price_cents": 3326,
+            "url": "https://buy.stripe.com/bJe7sE4ru1F5cACbEa43T3I",
+            "product_id": "prod_VRMXShRXVj79eA",
+            "sync_variant_id": "5573425522"
+          },
+          "2XL": {
+            "price": "$35.26",
+            "price_cents": 3526,
+            "url": "https://buy.stripe.com/4gMeV60begzZ3027nU43T3J",
+            "product_id": "prod_VRMXqSsljwN1AE",
+            "sync_variant_id": "5573425523"
+          },
+          "3XL": {
+            "price": "$37.26",
+            "price_cents": 3726,
+            "url": "https://buy.stripe.com/bJecMY1fi3NdcACbEa43T3K",
+            "product_id": "prod_VRMXZAogI1xsIA",
+            "sync_variant_id": "5573425524"
+          }
+        }
+      }
+    }
+  },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
     "slug": "rainbow_sunflower_tri_blend",

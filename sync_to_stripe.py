@@ -47,13 +47,16 @@ os.makedirs(DATA_DIR_PATH, exist_ok=True)
 OUTPUT_FILE = os.path.join(DATA_DIR, "merch_products.json")
 LEGACY_WHITNEY_FILE = os.path.join(DATA_DIR, "whitney_merch_links.json")
 
-def save_clean_image(img_bytes, dest_path):
+def save_clean_image(img_bytes, dest_path, overwrite=False):
     """
     Saves an image as high-quality RGB JPEG (quality=95).
-    Guarantees no black backgrounds:
+    Guarantees:
+    - Never overwrites an existing mockup file unless overwrite=True.
     - If the image has an alpha channel, composites onto a pure white (255, 255, 255) background.
     - If the image is a lifestyle photo without alpha, preserves the lifestyle background.
     """
+    if os.path.exists(dest_path) and os.path.getsize(dest_path) > 0 and not overwrite:
+        return
     im = Image.open(BytesIO(img_bytes))
     if im.mode in ('RGBA', 'LA') or (im.mode == 'P' and 'transparency' in im.info):
         im = im.convert('RGBA')
@@ -120,6 +123,12 @@ PRODUCT_METADATA = {
             "option": "Front",
             "top": 200
         }
+    },
+    481559531: {  # Mount Diablo
+        "display_name": "Mount Diablo Topographic Wireframe Elevation Graphic T-Shirt",
+        "tag": "California Peaks · Direct Print-on-Demand",
+        "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
+        "model_prefix": "model_diablo"
     }
 }
 
@@ -138,30 +147,53 @@ def parse_garment_name(raw_name):
         return re.sub(r'\s+', ' ', name)
     return raw_name
 
-def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta):
+def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=None):
     """
     Ensures high-resolution (2000px) colorway model mockups exist for each color of the product,
     saving them with clean white or lifestyle backgrounds (no black backgrounds).
+    Guarantees that previously chosen mockups for the store are never replaced or overwritten.
     Returns (product_model_image_rel, dict_of_color_to_model_image_rel).
     """
     model_prefix = custom_meta.get("model_prefix", f"model_{prod_slug}")
     model_cfg = custom_meta.get("model_config")
+    existing_prod_data = existing_prod_data or {}
 
-    primary_rel = f"/assets/images/products/{model_prefix}.jpg"
-    primary_path = os.path.join(IMAGES_DIR, f"{model_prefix}.jpg")
+    # Check if existing product already has a primary model image
+    prev_primary_rel = existing_prod_data.get("model_image")
+    if prev_primary_rel and os.path.exists(os.path.join(BASE_DIR, prev_primary_rel.lstrip("/"))):
+        primary_rel = prev_primary_rel
+        primary_path = os.path.join(BASE_DIR, prev_primary_rel.lstrip("/"))
+    else:
+        primary_rel = f"/assets/images/products/{model_prefix}.jpg"
+        primary_path = os.path.join(IMAGES_DIR, f"{model_prefix}.jpg")
 
     color_model_images = {}
     missing_for_task = {}  # catalog_variant_id -> color_name
 
     for color, var_list in color_groups.items():
         color_slug = slugify(color)
+
+        # 1. First priority: Check if existing catalog already specifies a model mockup for this color
+        prev_color_model = existing_prod_data.get("colors", {}).get(color, {}).get("model_image")
+        if prev_color_model:
+            prev_model_path = os.path.join(BASE_DIR, prev_color_model.lstrip("/"))
+            if os.path.exists(prev_model_path) and os.path.getsize(prev_model_path) > 0:
+                color_model_images[color] = prev_color_model
+                print(f"  [Model Mockup Preserved] {color} -> {prev_color_model}")
+                continue
+
+        # 2. Second priority: Check if file already exists locally on disk
         model_filename = f"{model_prefix}_{color_slug}.jpg"
         model_rel = f"/assets/images/products/{model_filename}"
         model_path = os.path.join(IMAGES_DIR, model_filename)
 
         if os.path.exists(model_path) and os.path.getsize(model_path) > 0:
             color_model_images[color] = model_rel
-        elif model_cfg:
+            print(f"  [Model Mockup Preserved on Disk] {color} -> {model_rel}")
+            continue
+
+        # 3. Only if missing both in catalog and on disk, and model_cfg is configured, queue for generation
+        if model_cfg:
             cat_vid = var_list[0].get("variant_id")
             if cat_vid:
                 missing_for_task[cat_vid] = color
@@ -314,10 +346,23 @@ store_products = store_res.json()["result"]
 print(f"Found {len(store_products)} products in Printful store.")
 
 active_printful_variant_ids = set()
+
+# Load existing catalog to preserve custom mockups, slugs, and data
+existing_catalog = {}
+if os.path.exists(OUTPUT_FILE):
+    try:
+        with open(OUTPUT_FILE, "r") as f:
+            existing_catalog = json.load(f)
+        print(f"Loaded existing catalog with {len(existing_catalog)} products from {OUTPUT_FILE}")
+    except Exception as e:
+        print(f"Warning loading existing catalog: {e}")
+
+existing_by_id = {prod["id"]: (slug, prod) for slug, prod in existing_catalog.items() if isinstance(prod, dict) and "id" in prod}
+
 catalog_data = {}
 
 # Preferred display order
-preferred_order = [480089207, 480350932, 480312304, 479899530, 479948902]
+preferred_order = [480089207, 480350932, 481559531, 480312304, 479899530, 479948902]
 store_products.sort(key=lambda p: preferred_order.index(p["id"]) if p["id"] in preferred_order else 999)
 
 for sp in store_products:
@@ -339,13 +384,14 @@ for sp in store_products:
     variants = p_data["sync_variants"]
     product_name = sync_prod["name"]
 
-    prod_slug = slugify(product_name.replace("Unisex t-shirt", "").replace("Short sleeve tri-blend t-shirt", "").replace("short sleeve t-shirt", ""))
+    existing_slug, existing_prod_data = existing_by_id.get(pid, (None, {}))
+    prod_slug = existing_slug if existing_slug else slugify(product_name.replace("Unisex t-shirt", "").replace("Short sleeve tri-blend t-shirt", "").replace("short sleeve t-shirt", ""))
     
     # Custom metadata or sensible defaults
     custom_meta = PRODUCT_METADATA.get(pid, {})
-    display_title = custom_meta.get("display_name", product_name)
-    tag = custom_meta.get("tag", "Original Apparel · Direct Print-on-Demand")
-    description = custom_meta.get("description", f"Original graphic design printed on demand with high-definition inks.")
+    display_title = custom_meta.get("display_name", existing_prod_data.get("name", product_name))
+    tag = custom_meta.get("tag", existing_prod_data.get("tag", "Original Apparel · Direct Print-on-Demand"))
+    description = custom_meta.get("description", existing_prod_data.get("description", f"Original graphic design printed on demand with high-definition inks."))
 
     first_var = variants[0] if variants else {}
     garment_model = parse_garment_name(first_var.get("product", {}).get("name"))
@@ -368,7 +414,7 @@ for sp in store_products:
 
     # Sync colorway model mockups (clean white or lifestyle background, 2000px)
     primary_model_rel, color_model_rels = sync_model_mockups(
-        pid, prod_slug, variants, color_groups, custom_meta
+        pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=existing_prod_data
     )
     if primary_model_rel:
         prod_entry["model_image"] = primary_model_rel
@@ -376,30 +422,38 @@ for sp in store_products:
     for color, var_list in color_groups.items():
         color_slug = slugify(color)
         
-        # Download preview image for this color
-        local_img_rel = f"/assets/images/products/{prod_slug}_{color_slug}.jpg"
-        local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
+        # 1. First priority for flat mockup: check existing catalog & verify file exists
+        prev_flat_img = existing_prod_data.get("colors", {}).get(color, {}).get("image")
+        if prev_flat_img and os.path.exists(os.path.join(BASE_DIR, prev_flat_img.lstrip("/"))):
+            local_img_rel = prev_flat_img
+            local_img_path = os.path.join(BASE_DIR, prev_flat_img.lstrip("/"))
+            print(f"  [Flat Mockup Preserved] {color} -> {local_img_rel}")
+        else:
+            local_img_rel = f"/assets/images/products/{prod_slug}_{color_slug}.jpg"
+            local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
 
-        preview_url = None
-        # Look for mockup preview ('preview' type), fallback to any preview_url
-        for file_info in var_list[0].get("files", []):
-            if file_info.get("type") == "preview" and file_info.get("preview_url"):
-                preview_url = file_info["preview_url"]
-                break
-        if not preview_url:
+            preview_url = None
+            # Look for mockup preview ('preview' type), fallback to any preview_url
             for file_info in var_list[0].get("files", []):
-                if file_info.get("preview_url"):
+                if file_info.get("type") == "preview" and file_info.get("preview_url"):
                     preview_url = file_info["preview_url"]
                     break
+            if not preview_url:
+                for file_info in var_list[0].get("files", []):
+                    if file_info.get("preview_url"):
+                        preview_url = file_info["preview_url"]
+                        break
 
-        if preview_url and not os.path.exists(local_img_path):
-            print(f"  Downloading flat mockup: {color} -> {local_img_rel}")
-            try:
-                img_res = requests.get(preview_url, timeout=15)
-                if img_res.ok:
-                    save_clean_image(img_res.content, local_img_path)
-            except Exception as e:
-                print(f"  Warning: Image download error for {color}: {e}")
+            if preview_url and not os.path.exists(local_img_path):
+                print(f"  Downloading flat mockup: {color} -> {local_img_rel}")
+                try:
+                    img_res = requests.get(preview_url, timeout=15)
+                    if img_res.ok:
+                        save_clean_image(img_res.content, local_img_path)
+                except Exception as e:
+                    print(f"  Warning: Image download error for {color}: {e}")
+            elif os.path.exists(local_img_path):
+                print(f"  [Flat Mockup on Disk Preserved] {color} -> {local_img_rel}")
 
         prod_entry["colors"][color] = {
             "name": color,
@@ -497,6 +551,14 @@ for sp in store_products:
         prod_entry["colors"][color]["sizes"] = sorted_sizes
 
     catalog_data[prod_slug] = prod_entry
+
+# Preserve any offline or un-synced products from existing catalog
+for ex_slug, ex_prod in existing_catalog.items():
+    if ex_slug not in catalog_data and isinstance(ex_prod, dict):
+        ex_id = ex_prod.get("id")
+        if not any(sp.get("id") == ex_id for sp in store_products):
+            print(f"Preserving existing catalog product: {ex_slug} (ID: {ex_id})")
+            catalog_data[ex_slug] = ex_prod
 
 # 4. Check for deleted variants in Stripe
 print("\nChecking for deleted/orphaned variants in Stripe...")
