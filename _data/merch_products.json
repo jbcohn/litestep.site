@@ -1834,6 +1834,820 @@
     },
     "model_image": "/assets/images/products/model_diablo.jpg"
   },
+  "california_shaded_elevations_short_sleeve_t_shirt": {
+    "id": 481791025,
+    "slug": "california_shaded_elevations_short_sleeve_t_shirt",
+    "name": "California Shaded Elevations Topographic Graphic T-Shirt",
+    "tag": "California Topography \u00b7 Direct Print-on-Demand",
+    "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Charcoal-Black Triblend": {
+        "name": "Charcoal-Black Triblend",
+        "slug": "charcoal_black_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRmfZa8HK6ZpdEG9w243T3L",
+            "product_id": "prod_VRl1sXOEjw4dt7",
+            "sync_variant_id": "5575052812"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/aFa3coe245VldEG23A43T3M",
+            "product_id": "prod_VRl1wjNTToPWT9",
+            "sync_variant_id": "5575052813"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/eVq3cobTWabB3020Zw43T3N",
+            "product_id": "prod_VRl1XGyMegKnrR",
+            "sync_variant_id": "5575052814"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/9B65kwe24gzZasufUq43T3O",
+            "product_id": "prod_VRl1zoYUM2u9Z2",
+            "sync_variant_id": "5575052815"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/9B6fZa8HK2J93025fM43T3P",
+            "product_id": "prod_VRl1pq7kMmoTiQ",
+            "sync_variant_id": "5575052816"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/8x24gs0be1F530237E43T3Q",
+            "product_id": "prod_VRl1p69a7k5cH3",
+            "sync_variant_id": "5575052817"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/7sY28k9LOabB9oqfUq43T3R",
+            "product_id": "prod_VRl2VXIkxvwcPG",
+            "sync_variant_id": "5575052818"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_charcoal_black_triblend.jpg"
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/aFadR2bTWbfFfMO4bI43T3S",
+            "product_id": "prod_VRl2QdEI057oHc",
+            "sync_variant_id": "5575052819"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/3cI28k6zC0B1302aA643T3T",
+            "product_id": "prod_VRl2pdzoC99R9V",
+            "sync_variant_id": "5575052820"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/fZu8wI6zCabB3029w243T3U",
+            "product_id": "prod_VRl2aBmmelXZ04",
+            "sync_variant_id": "5575052821"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/cNicMYf68erRdEG4bI43T3V",
+            "product_id": "prod_VRl2hmNWGSkGGd",
+            "sync_variant_id": "5575052822"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/aFa28k0beabBeIK4bI43T3W",
+            "product_id": "prod_VRl2yBBaUuqm7q",
+            "sync_variant_id": "5575052823"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/14A8wI0beerR4466jQ43T3X",
+            "product_id": "prod_VRl2NbE5PUx4MO",
+            "sync_variant_id": "5575052824"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/cNi14g7DG1F59oq23A43T3Y",
+            "product_id": "prod_VRl2EwJnAQ8btD",
+            "sync_variant_id": "5575052825"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_brown_triblend.jpg"
+      },
+      "Navy Triblend": {
+        "name": "Navy Triblend",
+        "slug": "navy_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_navy_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w4gs3nqbfF0RU5fM43T3Z",
+            "product_id": "prod_VRl2q3CmY38cfG",
+            "sync_variant_id": "5575052826"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRmdR2bTWabBbwybEa43T40",
+            "product_id": "prod_VRl2ddsCJ9Daz7",
+            "sync_variant_id": "5575052827"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRmaEQ9LOerR6cefUq43T41",
+            "product_id": "prod_VRl2ZJ3uz0y7TT",
+            "sync_variant_id": "5575052828"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/9B65kwbTWfvV7gicIe43T42",
+            "product_id": "prod_VRl2m3FzJOu2Wd",
+            "sync_variant_id": "5575052832"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/6oU7sE8HKabBcACcIe43T43",
+            "product_id": "prod_VRl2PYHzdZ89ag",
+            "sync_variant_id": "5575052833"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/aFaeV66zCcjJ3026jQ43T44",
+            "product_id": "prod_VRl24OpsjPeDzK",
+            "sync_variant_id": "5575052834"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/9B63co4rucjJ8km4bI43T45",
+            "product_id": "prod_VRl2K1CCTlVIqL",
+            "sync_variant_id": "5575052835"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_navy_triblend.jpg"
+      },
+      "Maroon Triblend": {
+        "name": "Maroon Triblend",
+        "slug": "maroon_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_maroon_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00wbIU1fi1F59oqeQm43T46",
+            "product_id": "prod_VRl2P7cyYU9Q0n",
+            "sync_variant_id": "5575052836"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/bJe00ccY0dnNasu5fM43T47",
+            "product_id": "prod_VRl2SU3YhO9aNX",
+            "sync_variant_id": "5575052837"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRm4gsgacabB7giaA643U00",
+            "product_id": "prod_VRl24B9qER7Sf7",
+            "sync_variant_id": "5575052838"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/8x2eV6f682J9fMO6jQ43U01",
+            "product_id": "prod_VRl2JMacL0Sfbz",
+            "sync_variant_id": "5575052839"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/bJe7sEe245VlcACgYu43U02",
+            "product_id": "prod_VRl259k7vi5rI0",
+            "sync_variant_id": "5575052840"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/14AeV6e242J99oq4bI43U03",
+            "product_id": "prod_VRl2EdFinN5kl2",
+            "sync_variant_id": "5575052841"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/cNi3co6zC0B11VY5fM43U04",
+            "product_id": "prod_VRl2ImDfjn52Xh",
+            "sync_variant_id": "5575052842"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_maroon_triblend.jpg"
+      },
+      "Clay Triblend": {
+        "name": "Clay Triblend",
+        "slug": "clay_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_clay_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/eVqfZa0begzZ6cegYu43U05",
+            "product_id": "prod_VRl2cwATgKOhxc",
+            "sync_variant_id": "5575052843"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w4gs2jmfvV0RUcIe43U06",
+            "product_id": "prod_VRl2S2cEhNY84E",
+            "sync_variant_id": "5575052844"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/7sYaEQe242J9302cIe43U07",
+            "product_id": "prod_VRl26zLJbnFXRO",
+            "sync_variant_id": "5575052845"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/cNieV6aPSabBfMO6jQ43U08",
+            "product_id": "prod_VRl2vlivPtMsKl",
+            "sync_variant_id": "5575052846"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/5kQ9AM1figzZcAC23A43U09",
+            "product_id": "prod_VRl2KqnuyYHDuh",
+            "sync_variant_id": "5575052847"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/5kQ5kw2jm97x58a0Zw43U0a",
+            "product_id": "prod_VRl2GNxqHHkXD8",
+            "sync_variant_id": "5575052848"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/cNicMY0be6ZpdEG0Zw43U0b",
+            "product_id": "prod_VRl2hxZrxUhugz",
+            "sync_variant_id": "5575052849"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_clay_triblend.jpg"
+      },
+      "Red Triblend": {
+        "name": "Red Triblend",
+        "slug": "red_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_red_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRm14gaPSabB58adMi43U0c",
+            "product_id": "prod_VRl2J8cxLPRO6F",
+            "sync_variant_id": "5575052850"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/eVq7sE2jmgzZ3025fM43U0d",
+            "product_id": "prod_VRl2Mi1V8BJm7y",
+            "sync_variant_id": "5575052851"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/14AaEQ1fifvVgQS37E43U0e",
+            "product_id": "prod_VRl2AngqFguhfG",
+            "sync_variant_id": "5575052852"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/bJe5kw7DG4Rh9oq0Zw43U0f",
+            "product_id": "prod_VRl2zL6Kxg67gW",
+            "sync_variant_id": "5575052853"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/cNifZa3nq2J96ce4bI43U0g",
+            "product_id": "prod_VRl240aEZGjVIh",
+            "sync_variant_id": "5575052854"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/cNifZa3nqbfFasu6jQ43U0h",
+            "product_id": "prod_VRl21GZXw3q73n",
+            "sync_variant_id": "5575052855"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/aFaaEQ8HK2J91VYgYu43U0i",
+            "product_id": "prod_VRl25aDztr6x7f",
+            "sync_variant_id": "5575052856"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_red_triblend.jpg"
+      },
+      "Blue Triblend": {
+        "name": "Blue Triblend",
+        "slug": "blue_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_blue_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w6oA7DGbfF9oq8rY43U0j",
+            "product_id": "prod_VRl2nixOTsk8lr",
+            "sync_variant_id": "5575052857"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/28E6oA3nq5VlbwydMi43U0k",
+            "product_id": "prod_VRl238lMxoK3xr",
+            "sync_variant_id": "5575052858"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/bJeaEQ8HK0B1eIKcIe43U0l",
+            "product_id": "prod_VRl2dbEVtHmyuP",
+            "sync_variant_id": "5575052859"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/4gM14g6zC1F5eIK37E43U0m",
+            "product_id": "prod_VRl2QjPNA555Hs",
+            "sync_variant_id": "5575052860"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/8x27sE3nqerRasu0Zw43U0n",
+            "product_id": "prod_VRl2IfDbwHw3XS",
+            "sync_variant_id": "5575052861"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/bJe8wIf68erR7gi4bI43U0o",
+            "product_id": "prod_VRl2l6b8eCpjQA",
+            "sync_variant_id": "5575052862"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/7sY7sEbTW5Vlasu23A43U0p",
+            "product_id": "prod_VRl20bU8ryNVFz",
+            "sync_variant_id": "5575052863"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_blue_triblend.jpg"
+      },
+      "Grey Triblend": {
+        "name": "Grey Triblend",
+        "slug": "grey_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_grey_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/5kQ5kwaPSgzZeIK7nU43U0q",
+            "product_id": "prod_VRl25uEieSLuhl",
+            "sync_variant_id": "5575052864"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/6oUaEQ2jmcjJcAC9w243U0r",
+            "product_id": "prod_VRl20QHloTxYn2",
+            "sync_variant_id": "5575052865"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w4gsgac97xeIK4bI43U0s",
+            "product_id": "prod_VRl2lnV4TjaEku",
+            "sync_variant_id": "5575052866"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/fZu3co1fierRcACdMi43U0t",
+            "product_id": "prod_VRl2M4nPbHI4hC",
+            "sync_variant_id": "5575052867"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/14A9AMgac1F5gQS5fM43U0u",
+            "product_id": "prod_VRl2voTfcJKYx2",
+            "sync_variant_id": "5575052869"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/3cIcMY6zC97x58a4bI43U0v",
+            "product_id": "prod_VRl2seMzarl48f",
+            "sync_variant_id": "5575052870"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/dRm6oA6zC2J9eIK37E43U0w",
+            "product_id": "prod_VRl2i0FxuhzKiY",
+            "sync_variant_id": "5575052871"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_grey_triblend.jpg"
+      },
+      "Olive Triblend": {
+        "name": "Olive Triblend",
+        "slug": "olive_triblend",
+        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_olive_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/dRm5kw5vy97xbwy8rY43U0x",
+            "product_id": "prod_VRl2hEjvEZEHfz",
+            "sync_variant_id": "5575052872"
+          },
+          "S": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/4gMdR24ruerR0RU9w243U0y",
+            "product_id": "prod_VRl2MgaXJonqjZ",
+            "sync_variant_id": "5575052873"
+          },
+          "M": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/00w28k4ruabB7gi8rY43U0z",
+            "product_id": "prod_VRl2NSjW4itOuq",
+            "sync_variant_id": "5575052874"
+          },
+          "L": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/aFa6oAe246ZpbwyfUq43U0A",
+            "product_id": "prod_VRl2SJL920xd86",
+            "sync_variant_id": "5575052875"
+          },
+          "XL": {
+            "price": "$35.50",
+            "price_cents": 3550,
+            "url": "https://buy.stripe.com/28EcMY2jmcjJ0RUaA643U0B",
+            "product_id": "prod_VRl21JPEdYnvAM",
+            "sync_variant_id": "5575052876"
+          },
+          "2XL": {
+            "price": "$37.50",
+            "price_cents": 3750,
+            "url": "https://buy.stripe.com/fZu5kw8HK1F59oq8rY43U0C",
+            "product_id": "prod_VRl2T1f9N2BBIO",
+            "sync_variant_id": "5575052877"
+          },
+          "3XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/fZueV6gacerR6cecIe43U0D",
+            "product_id": "prod_VRl23QXqfpIxjQ",
+            "sync_variant_id": "5575052879"
+          }
+        },
+        "model_image": "/assets/images/products/model_california_olive_triblend.jpg"
+      }
+    },
+    "model_image": "/assets/images/products/model_california.jpg"
+  },
+  "mount_vaca": {
+    "id": 481939533,
+    "slug": "mount_vaca",
+    "name": "Mount Vaca Ridgelines Elevation Hooded Long-Sleeve Tee",
+    "tag": "Northern California Peaks \u00b7 Direct Print-on-Demand",
+    "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
+    "garment": "Bella + Canvas 3512 Unisex Hooded Long Sleeve Tee",
+    "colors": {
+      "Charcoal-Black Triblend": {
+        "name": "Charcoal-Black Triblend",
+        "slug": "charcoal_black_triblend",
+        "image": "/assets/images/products/mount_vaca_charcoal_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/fZu14gf6883teIK23A43U0E",
+            "product_id": "prod_VRl2CJFounKTyx",
+            "sync_variant_id": "5576036346"
+          },
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/6oU7sEe24abB0RU5fM43U0F",
+            "product_id": "prod_VRl2XcGUHLW8qN",
+            "sync_variant_id": "5576036347"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/aFaeV67DG1F5302bEa43U0G",
+            "product_id": "prod_VRl20JJ4NFKZ4H",
+            "sync_variant_id": "5576036348"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/5kQaEQ2jm97x4464bI43U0H",
+            "product_id": "prod_VRl2i5CmCvLVdp",
+            "sync_variant_id": "5576036349"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/dRmbIU1fi0B1gQS4bI43U0I",
+            "product_id": "prod_VRl2AAVDf4HrMF",
+            "sync_variant_id": "5576036350"
+          },
+          "2XL": {
+            "price": "$40.01",
+            "price_cents": 4001,
+            "url": "https://buy.stripe.com/dRmbIU0beabB302gYu43U0J",
+            "product_id": "prod_VRl2G7zsWrCGuf",
+            "sync_variant_id": "5576036351"
+          }
+        }
+      },
+      "Black": {
+        "name": "Black",
+        "slug": "black",
+        "image": "/assets/images/products/mount_vaca_black.jpg",
+        "sizes": {
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/9B65kwaPS83t6ce6jQ43U0K",
+            "product_id": "prod_VRl2KyscRdEpfv",
+            "sync_variant_id": "5576036352"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/8x23coaPSdnN6ce0Zw43U0L",
+            "product_id": "prod_VRl28iS5mhgw2Q",
+            "sync_variant_id": "5576036353"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/5kQbIU9LOgzZ302bEa43U0M",
+            "product_id": "prod_VRl3SJJoyjxJQp",
+            "sync_variant_id": "5576036354"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/bJe14gbTWbfFgQS7nU43U0N",
+            "product_id": "prod_VRl3TgxeLRljRT",
+            "sync_variant_id": "5576036355"
+          },
+          "2XL": {
+            "price": "$40.01",
+            "price_cents": 4001,
+            "url": "https://buy.stripe.com/00w6oAaPSbfF6cefUq43U0O",
+            "product_id": "prod_VRl3YM3YLsuejt",
+            "sync_variant_id": "5576036356"
+          }
+        }
+      },
+      "Heather Navy": {
+        "name": "Heather Navy",
+        "slug": "heather_navy",
+        "image": "/assets/images/products/mount_vaca_heather_navy.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/dRm9AM4rugzZeIK6jQ43U0P",
+            "product_id": "prod_VRl30LFBtNMVMw",
+            "sync_variant_id": "5576036357"
+          },
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/28E6oA8HKfvV6ce7nU43U0Q",
+            "product_id": "prod_VRl38nrVoTaVlu",
+            "sync_variant_id": "5576036358"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/9B6bIU7DG5Vl58a0Zw43U0R",
+            "product_id": "prod_VRl38ZhZgzZKNr",
+            "sync_variant_id": "5576036359"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/aFa4gs3nq3Nd8kmcIe43U0S",
+            "product_id": "prod_VRl3LNy0E8h3SL",
+            "sync_variant_id": "5576036360"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/8x2fZae24bfFdEGeQm43U0T",
+            "product_id": "prod_VRl3FXsTvTBwvi",
+            "sync_variant_id": "5576036361"
+          },
+          "2XL": {
+            "price": "$40.01",
+            "price_cents": 4001,
+            "url": "https://buy.stripe.com/4gM00c3nqcjJ8kmbEa43U0U",
+            "product_id": "prod_VRl3OHtd7AZ6Jp",
+            "sync_variant_id": "5576036362"
+          }
+        }
+      },
+      "Grey Triblend": {
+        "name": "Grey Triblend",
+        "slug": "grey_triblend",
+        "image": "/assets/images/products/mount_vaca_grey_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/eVqeV6e246ZpeIKdMi43U0V",
+            "product_id": "prod_VRl3tmB9P7KzGe",
+            "sync_variant_id": "5576036364"
+          },
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/5kQbIUaPS3Nd9oq6jQ43U0W",
+            "product_id": "prod_VRl3EPgLuz0BN7",
+            "sync_variant_id": "5576036366"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/3cIeV62jm5VlbwyeQm43U0X",
+            "product_id": "prod_VRl3j9F2Y2dpZj",
+            "sync_variant_id": "5576036367"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/7sYbIU0be5Vlbwy6jQ43U0Y",
+            "product_id": "prod_VRl3LdggLk9FWo",
+            "sync_variant_id": "5576036368"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/bJe8wIcY0cjJ7gigYu43U0Z",
+            "product_id": "prod_VRl38ycbCEdc6U",
+            "sync_variant_id": "5576036369"
+          },
+          "2XL": {
+            "price": "$40.01",
+            "price_cents": 4001,
+            "url": "https://buy.stripe.com/9B66oAaPS1F54466jQ43U10",
+            "product_id": "prod_VRl3pdGPqcxkQI",
+            "sync_variant_id": "5576036370"
+          }
+        }
+      },
+      "Heather True Royal": {
+        "name": "Heather True Royal",
+        "slug": "heather_true_royal",
+        "image": "/assets/images/products/mount_vaca_heather_true_royal.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/aFaaEQ1fi6ZpcAC4bI43U11",
+            "product_id": "prod_VRl3WVwyrIhljU",
+            "sync_variant_id": "5576036371"
+          },
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/cNi8wI2jmabB446cIe43U12",
+            "product_id": "prod_VRl3wxozvQdBdU",
+            "sync_variant_id": "5576036372"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/7sY6oA9LOdnNasu5fM43U13",
+            "product_id": "prod_VRl3jF6AStKqeZ",
+            "sync_variant_id": "5576036373"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/00w3cobTW2J99oq37E43U14",
+            "product_id": "prod_VRl3wDc4g0WPV8",
+            "sync_variant_id": "5576036374"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/5kQaEQ1figzZ6ce37E43U15",
+            "product_id": "prod_VRl39WLbUwFMbE",
+            "sync_variant_id": "5576036375"
+          }
+        }
+      },
+      "White": {
+        "name": "White",
+        "slug": "white",
+        "image": "/assets/images/products/mount_vaca_white.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/8x2aEQgac0B1eIKbEa43U16",
+            "product_id": "prod_VRl3MOQEOixJVX",
+            "sync_variant_id": "5576036377"
+          },
+          "S": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/14A4gs2jm2J9bwycIe43U17",
+            "product_id": "prod_VRl3Ej0YvSeRwz",
+            "sync_variant_id": "5576036378"
+          },
+          "M": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/8x2eV6aPS5Vl1VY23A43U18",
+            "product_id": "prod_VRl31SBtK6bQ36",
+            "sync_variant_id": "5576036379"
+          },
+          "L": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/7sY3co1fifvVgQS0Zw43U19",
+            "product_id": "prod_VRl3ewIhIlx2dm",
+            "sync_variant_id": "5576036380"
+          },
+          "XL": {
+            "price": "$38.01",
+            "price_cents": 3801,
+            "url": "https://buy.stripe.com/8x2cMY1fi3Nd7gieQm43U1a",
+            "product_id": "prod_VRl3iCpEs5e3Ft",
+            "sync_variant_id": "5576036381"
+          },
+          "2XL": {
+            "price": "$40.01",
+            "price_cents": 4001,
+            "url": "https://buy.stripe.com/4gM9AMaPS1F5bwyfUq43U1b",
+            "product_id": "prod_VRl3oYMrGCM7kH",
+            "sync_variant_id": "5576036382"
+          }
+        }
+      }
+    }
+  },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
     "slug": "rainbow_sunflower_tri_blend",

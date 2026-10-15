@@ -135,6 +135,24 @@ PRODUCT_METADATA = {
             "option": "Front",
             "top": 300
         }
+    },
+    481791025: {  # California Shaded Elevations
+        "display_name": "California Shaded Elevations Topographic Graphic T-Shirt",
+        "tag": "California Topography · Direct Print-on-Demand",
+        "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
+        "model_prefix": "model_california",
+        "primary_color": "Red Triblend",
+        "model_config": {
+            "option_group": "Women's Lifestyle",
+            "option": "Front",
+            "top": 200
+        }
+    },
+    481939533: {  # Mount Vaca
+        "display_name": "Mount Vaca Ridgelines Elevation Hooded Long-Sleeve Tee",
+        "tag": "Northern California Peaks · Direct Print-on-Demand",
+        "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
+        "model_prefix": "model_vaca"
     }
 }
 
@@ -369,7 +387,7 @@ existing_by_id = {prod["id"]: (slug, prod) for slug, prod in existing_catalog.it
 catalog_data = {}
 
 # Preferred display order
-preferred_order = [480089207, 480350932, 481559531, 480312304, 479899530, 479948902]
+preferred_order = [480089207, 480350932, 481559531, 481791025, 481939533, 480312304, 479899530, 479948902]
 store_products.sort(key=lambda p: preferred_order.index(p["id"]) if p["id"] in preferred_order else 999)
 
 for sp in store_products:
@@ -392,7 +410,12 @@ for sp in store_products:
     product_name = sync_prod["name"]
 
     existing_slug, existing_prod_data = existing_by_id.get(pid, (None, {}))
-    prod_slug = existing_slug if existing_slug else slugify(product_name.replace("Unisex t-shirt", "").replace("Short sleeve tri-blend t-shirt", "").replace("short sleeve t-shirt", ""))
+    prod_slug = existing_slug if existing_slug else slugify(
+        product_name.replace("Unisex t-shirt", "")
+        .replace("Short sleeve tri-blend t-shirt", "")
+        .replace("short sleeve t-shirt", "")
+        .replace("Hooded long-sleeve tee", "")
+    )
     
     # Custom metadata or sensible defaults
     custom_meta = PRODUCT_METADATA.get(pid, {})
