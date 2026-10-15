@@ -2413,7 +2413,8 @@
             "product_id": "prod_VRl2G7zsWrCGuf",
             "sync_variant_id": "5576036351"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_charcoal_black_triblend.jpg"
       },
       "Black": {
         "name": "Black",
@@ -2455,7 +2456,8 @@
             "product_id": "prod_VRl3YM3YLsuejt",
             "sync_variant_id": "5576036356"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_black.jpg"
       },
       "Heather Navy": {
         "name": "Heather Navy",
@@ -2504,7 +2506,8 @@
             "product_id": "prod_VRl3OHtd7AZ6Jp",
             "sync_variant_id": "5576036362"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_heather_navy.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -2553,7 +2556,8 @@
             "product_id": "prod_VRl3pdGPqcxkQI",
             "sync_variant_id": "5576036370"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_grey_triblend.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -2595,7 +2599,8 @@
             "product_id": "prod_VRl39WLbUwFMbE",
             "sync_variant_id": "5576036375"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_heather_true_royal.jpg"
       },
       "White": {
         "name": "White",
@@ -2644,9 +2649,11 @@
             "product_id": "prod_VRl3oYMrGCM7kH",
             "sync_variant_id": "5576036382"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_vaca_white.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_vaca.jpg"
   },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
