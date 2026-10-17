@@ -1,0 +1,51 @@
+---
+layout: null
+permalink: /merch/google-shopping-feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Litestep Merch &amp; Apparel</title>
+    <link>https://litestep.us/merch/</link>
+    <description>Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry.</description>
+    {% for product_entry in site.data.merch_products %}
+      {% assign prod_slug = product_entry[0] %}
+      {% assign prod = product_entry[1] %}
+      {% for color_entry in prod.colors %}
+        {% assign color_name = color_entry[0] %}
+        {% assign color_data = color_entry[1] %}
+        {% assign primary_img = color_data.model_image | default: prod.model_image | default: color_data.image %}
+        {% for size_entry in color_data.sizes %}
+          {% assign size_name = size_entry[0] %}
+          {% assign size_info = size_entry[1] %}
+    <item>
+      <g:id>{{ size_info.sync_variant_id }}</g:id>
+      <g:item_group_id>{{ prod_slug }}</g:item_group_id>
+      <title>{{ prod.name | xml_escape }} - {{ color_name | xml_escape }} ({{ size_name | xml_escape }})</title>
+      <description>{{ prod.description | xml_escape }} {{ prod.garment | xml_escape }}.</description>
+      <link>https://litestep.us/merch/?product={{ prod_slug }}&amp;color={{ color_name | uri_escape }}&amp;size={{ size_name | uri_escape }}</link>
+      <g:image_link>https://litestep.us{{ primary_img }}</g:image_link>
+      {% if color_data.image and color_data.image != primary_img %}
+      <g:additional_image_link>https://litestep.us{{ color_data.image }}</g:additional_image_link>
+      {% endif %}
+      <g:availability>in_stock</g:availability>
+      <g:price>{{ size_info.price | remove: '$' }} USD</g:price>
+      <g:brand>Litestep</g:brand>
+      <g:condition>new</g:condition>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>212</g:google_product_category>
+      <g:age_group>adult</g:age_group>
+      <g:gender>unisex</g:gender>
+      <g:color>{{ color_name | xml_escape }}</g:color>
+      <g:size>{{ size_name | xml_escape }}</g:size>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard US Shipping (Free on 2+ shirts)</g:service>
+        <g:price>4.79 USD</g:price>
+      </g:shipping>
+    </item>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </channel>
+</rss>

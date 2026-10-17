@@ -1,14 +1,39 @@
 ---
 layout: page
 title: "Merch & Apparel"
-description: "Original apparel featuring digital elevation art, geometric fractals, and mathematical designs printed on premium Bella + Canvas tees."
+description: "Original apparel featuring digital elevation art, geometric fractals, and mathematical designs printed on Bella + Canvas tees."
 permalink: /merch/
 hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
-<p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+<p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.25rem;">
   Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on Bella + Canvas tees and shipped to your door.
 </p>
+
+<!-- Shipping & Multi-Item Cart Promo Banner -->
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%); border: 1px solid #bfdbfe; border-radius: 8px; padding: 0.85rem 1.25rem; margin-bottom: 2rem;">
+  <div style="display: flex; align-items: center; gap: 0.65rem; font-size: 0.95rem; color: #1e3a8a;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+      <rect x="1" y="3" width="15" height="13"></rect>
+      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+    </svg>
+    <span><strong>Mix &amp; Match Any Designs:</strong> Standard US Shipping is $4.79 — or get <strong>FREE US Shipping</strong> when you order 2 or more shirts!</span>
+  </div>
+  <button
+    type="button"
+    id="merch-header-cart-btn"
+    style="background: #111827; color: #ffffff; border: none; border-radius: 6px; padding: 0.5rem 1rem; font-size: 0.88rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; transition: opacity 0.15s ease;"
+  >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"></circle>
+      <circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <span>Cart (<span class="merch-cart-count">0</span>)</span>
+  </button>
+</div>
 
 <div class="grid merch-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
 
@@ -35,7 +60,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       {% endif %}
     {% endif %}
 
-    <div class="card merch-card" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+    <div class="card merch-card" id="{{ prod_slug }}" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.25s ease, border-color 0.25s ease;">
       <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 320px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
         <img
           class="merch-shirt-img"
@@ -115,21 +140,93 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
             </div>
           </div>
 
-          <a
-            class="btn btn-primary merch-buy-btn"
-            href="{{ default_size_data.url }}"
-            target="_blank"
-            rel="noopener"
-            style="width: 100%; text-align: center; display: block; box-sizing: border-box;"
-          >
-            Buy Direct — <span class="merch-btn-price">{{ default_size_data.price }}</span> →
-          </a>
+          <div style="display: flex; gap: 0.5rem;">
+            <button
+              type="button"
+              class="btn btn-primary merch-add-cart-btn"
+              style="flex: 1.15; text-align: center; cursor: pointer; border: none; font-size: 0.9rem; padding: 0.65rem 0.75rem;"
+            >
+              Add to Cart — <span class="merch-btn-price">{{ default_size_data.price }}</span>
+            </button>
+            <button
+              type="button"
+              class="btn merch-buy-now-btn"
+              style="flex: 0.85; text-align: center; cursor: pointer; background: transparent; border: 1px solid var(--border, #d1d5db); color: inherit; font-size: 0.88rem; font-weight: 600; padding: 0.65rem 0.6rem; border-radius: 6px;"
+              title="Instant 1-shirt checkout via Stripe"
+            >
+              Buy Now →
+            </button>
+          </div>
         </div>
       </div>
     </div>
   {% endfor %}
 
 </div>
+
+<!-- Floating Shopping Cart Pill -->
+<button
+  type="button"
+  id="merch-floating-cart-btn"
+  aria-label="Open shopping cart"
+  style="display: none; position: fixed; bottom: 24px; right: 24px; z-index: 9990; background: #111827; color: #ffffff; border: 2px solid #ffffff; border-radius: 999px; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; align-items: center; gap: 0.6rem; cursor: pointer; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); transition: transform 0.15s ease;"
+>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+  <span>Cart (<span class="merch-cart-count">0</span>)</span>
+  <span id="merch-floating-cart-total" style="background: #2563eb; padding: 2px 8px; border-radius: 999px; font-size: 0.82rem;">$0.00</span>
+</button>
+
+<!-- Slide-Out Shopping Cart Drawer -->
+<div id="merch-cart-backdrop" style="display: none; position: fixed; inset: 0; z-index: 9995; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(3px); opacity: 0; transition: opacity 0.2s ease;"></div>
+<aside id="merch-cart-drawer" aria-label="Shopping Cart" style="position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 420px; z-index: 9996; background: #ffffff; color: #111827; box-shadow: -10px 0 30px rgba(0,0,0,0.25); transform: translateX(100%); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column;">
+  <!-- Drawer Header -->
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 1.15rem 1.25rem; border-bottom: 1px solid #e5e7eb;">
+    <div style="display: flex; align-items: center; gap: 0.5rem;">
+      <h3 style="margin: 0; font-size: 1.15rem; font-weight: 700; color: #111827;">Your Cart</h3>
+      <span style="background: #f3f4f6; color: #374151; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 999px;"><span class="merch-cart-count">0</span> items</span>
+    </div>
+    <button type="button" id="merch-cart-close" aria-label="Close cart" style="background: transparent; border: none; font-size: 1.65rem; line-height: 1; color: #6b7280; cursor: pointer; padding: 0.2rem 0.4rem;">&times;</button>
+  </div>
+
+  <!-- Free Shipping Progress Banner -->
+  <div id="merch-cart-shipping-banner" style="background: #eff6ff; border-bottom: 1px solid #dbeafe; padding: 0.65rem 1.25rem; font-size: 0.85rem; color: #1e40af; text-align: center; font-weight: 500;">
+    Add 2+ shirts for <strong>FREE US Shipping</strong>!
+  </div>
+
+  <!-- Cart Items List -->
+  <div id="merch-cart-items" style="flex: 1; overflow-y: auto; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 1rem;">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- Drawer Footer -->
+  <div id="merch-cart-footer" style="border-top: 1px solid #e5e7eb; padding: 1.15rem 1.25rem; background: #f9fafb;">
+    <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #4b5563; margin-bottom: 0.4rem;">
+      <span>Subtotal</span>
+      <span id="merch-cart-subtotal" style="font-weight: 600; color: #111827;">$0.00</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #4b5563; margin-bottom: 0.85rem;">
+      <span>US Shipping</span>
+      <span id="merch-cart-shipping" style="font-weight: 600; color: #111827;">$4.79</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; font-size: 1.05rem; font-weight: 700; color: #111827; padding-top: 0.65rem; border-top: 1px solid #e5e7eb; margin-bottom: 1rem;">
+      <span>Estimated Total <span style="font-weight: 400; font-size: 0.78rem; color: #6b7280;">(before tax)</span></span>
+      <span id="merch-cart-total">$0.00</span>
+    </div>
+    <div id="merch-cart-error" style="display: none; color: #dc2626; font-size: 0.82rem; margin-bottom: 0.65rem; text-align: center;"></div>
+    <button
+      type="button"
+      id="merch-cart-checkout-btn"
+      class="btn btn-primary"
+      style="width: 100%; padding: 0.85rem 1rem; font-size: 1rem; font-weight: 700; border: none; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"
+    >
+      <span>Checkout via Stripe →</span>
+    </button>
+  </div>
+</aside>
 
 <!-- Interactive High-Res Magnifier / Zoom Modal -->
 <div id="merch-zoom-modal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 1.5rem; box-sizing: border-box; opacity: 0; transition: opacity 0.2s ease;">
@@ -168,12 +265,309 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
   </p>
 </div>
 
+<!-- Structured Data (JSON-LD) for Google Merchant Center & Rich Product Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for product_entry in site.data.merch_products %}
+      {% assign p_slug = product_entry[0] %}
+      {% assign p = product_entry[1] %}
+      {% assign c_pair = p.colors | first %}
+      {% assign c_name = c_pair[0] %}
+      {% assign c_data = c_pair[1] %}
+      {% assign s_data = c_data.sizes['M'] | default: c_data.sizes.first[1] %}
+      {
+        "@type": "Product",
+        "@id": "https://litestep.us/merch/#{{ p_slug }}",
+        "name": {{ p.name | jsonify }},
+        "description": {{ p.description | jsonify }},
+        "image": [
+          "https://litestep.us{{ p.model_image | default: c_data.image }}",
+          "https://litestep.us{{ c_data.image }}"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Litestep"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://litestep.us/merch/?product={{ p_slug }}",
+          "priceCurrency": "USD",
+          "price": "{{ s_data.price | remove: '$' }}",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.79",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            }
+          }
+        }
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 <script>
 (function() {
   const catalog = {{ site.data.merch_products | jsonify }};
   if (!catalog) return;
 
   const baseUrl = "{{ '' | relative_url }}";
+  const CHECKOUT_WORKER_URL = "https://litestep-printful-webhook.jbcohn.workers.dev/create-checkout-session";
+  const CART_STORAGE_KEY = "litestep_merch_cart_v1";
+
+  // Parse URL parameters for Google Shopping deep-linking (?product=slug&color=...&size=...)
+  const urlParams = new URLSearchParams(window.location.search);
+  const pinnedProductSlug = urlParams.get('product') || (window.location.hash ? window.location.hash.replace('#', '') : null);
+  const pinnedColorParam = urlParams.get('color');
+  const pinnedSizeParam = urlParams.get('size');
+
+  // --- Shopping Cart State Management ---
+  let cart = [];
+  try {
+    const saved = localStorage.getItem(CART_STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed)) cart = parsed;
+    }
+  } catch (e) {}
+
+  function saveCart() {
+    try {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    } catch (e) {}
+    renderCart();
+  }
+
+  function addToCart(item) {
+    const existing = cart.find(it => it.sync_variant_id === item.sync_variant_id);
+    if (existing) {
+      existing.quantity = Math.min(20, existing.quantity + (item.quantity || 1));
+    } else {
+      cart.push({
+        sync_variant_id: String(item.sync_variant_id),
+        product_id: item.product_id,
+        slug: item.slug,
+        name: item.name,
+        color: item.color,
+        size: item.size,
+        price_cents: item.price_cents,
+        image: item.image,
+        quantity: item.quantity || 1
+      });
+    }
+    saveCart();
+    openCartDrawer();
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'add_to_cart', {
+        currency: 'USD',
+        value: item.price_cents / 100,
+        items: [{
+          item_id: String(item.sync_variant_id),
+          item_name: item.name,
+          item_variant: `${item.color} / ${item.size}`,
+          price: item.price_cents / 100,
+          quantity: item.quantity || 1
+        }]
+      });
+    }
+  }
+
+  function updateCartItemQty(syncVariantId, delta) {
+    const idx = cart.findIndex(it => it.sync_variant_id === String(syncVariantId));
+    if (idx === -1) return;
+    cart[idx].quantity += delta;
+    if (cart[idx].quantity <= 0) {
+      cart.splice(idx, 1);
+    } else if (cart[idx].quantity > 20) {
+      cart[idx].quantity = 20;
+    }
+    saveCart();
+  }
+
+  // Cart UI Elements
+  const cartBackdrop = document.getElementById('merch-cart-backdrop');
+  const cartDrawer = document.getElementById('merch-cart-drawer');
+  const cartCloseBtn = document.getElementById('merch-cart-close');
+  const headerCartBtn = document.getElementById('merch-header-cart-btn');
+  const floatingCartBtn = document.getElementById('merch-floating-cart-btn');
+  const floatingCartTotal = document.getElementById('merch-floating-cart-total');
+  const cartItemsContainer = document.getElementById('merch-cart-items');
+  const cartShippingBanner = document.getElementById('merch-cart-shipping-banner');
+  const cartSubtotalEl = document.getElementById('merch-cart-subtotal');
+  const cartShippingEl = document.getElementById('merch-cart-shipping');
+  const cartTotalEl = document.getElementById('merch-cart-total');
+  const cartCheckoutBtn = document.getElementById('merch-cart-checkout-btn');
+  const cartErrorEl = document.getElementById('merch-cart-error');
+
+  function openCartDrawer() {
+    if (!cartDrawer || !cartBackdrop) return;
+    cartBackdrop.style.display = 'block';
+    requestAnimationFrame(() => {
+      cartBackdrop.style.opacity = '1';
+      cartDrawer.style.transform = 'translateX(0)';
+    });
+  }
+
+  function closeCartDrawer() {
+    if (!cartDrawer || !cartBackdrop) return;
+    cartBackdrop.style.opacity = '0';
+    cartDrawer.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      cartBackdrop.style.display = 'none';
+    }, 220);
+  }
+
+  if (headerCartBtn) headerCartBtn.addEventListener('click', openCartDrawer);
+  if (floatingCartBtn) floatingCartBtn.addEventListener('click', openCartDrawer);
+  if (cartCloseBtn) cartCloseBtn.addEventListener('click', closeCartDrawer);
+  if (cartBackdrop) cartBackdrop.addEventListener('click', closeCartDrawer);
+
+  function renderCart() {
+    const totalQty = cart.reduce((sum, it) => sum + it.quantity, 0);
+    const subtotalCents = cart.reduce((sum, it) => sum + it.price_cents * it.quantity, 0);
+    const shippingCents = totalQty === 0 ? 0 : (totalQty >= 2 ? 0 : 479);
+    const totalCents = subtotalCents + shippingCents;
+
+    document.querySelectorAll('.merch-cart-count').forEach(el => {
+      el.textContent = String(totalQty);
+    });
+
+    if (floatingCartBtn) {
+      floatingCartBtn.style.display = totalQty > 0 ? 'inline-flex' : 'none';
+    }
+    if (floatingCartTotal) {
+      floatingCartTotal.textContent = `$${(subtotalCents / 100).toFixed(2)}`;
+    }
+
+    if (cartShippingBanner) {
+      if (totalQty === 0) {
+        cartShippingBanner.style.background = '#eff6ff';
+        cartShippingBanner.style.color = '#1e40af';
+        cartShippingBanner.innerHTML = 'Order 2 or more shirts for <strong>FREE US Shipping</strong>!';
+      } else if (totalQty === 1) {
+        cartShippingBanner.style.background = '#fef3c7';
+        cartShippingBanner.style.color = '#92400e';
+        cartShippingBanner.innerHTML = 'Add <strong>1 more shirt</strong> to unlock <strong>FREE US Shipping</strong> (saves $4.79)!';
+      } else {
+        cartShippingBanner.style.background = '#dcfce7';
+        cartShippingBanner.style.color = '#166534';
+        cartShippingBanner.innerHTML = '✓ <strong>FREE US Shipping</strong> unlocked on your order!';
+      }
+    }
+
+    if (cartSubtotalEl) cartSubtotalEl.textContent = `$${(subtotalCents / 100).toFixed(2)}`;
+    if (cartShippingEl) {
+      cartShippingEl.textContent = totalQty === 0 ? '$0.00' : (shippingCents === 0 ? 'FREE' : '$4.79');
+      cartShippingEl.style.color = (totalQty >= 2) ? '#16a34a' : '#111827';
+    }
+    if (cartTotalEl) cartTotalEl.textContent = `$${(totalCents / 100).toFixed(2)}`;
+
+    if (!cartItemsContainer) return;
+    if (cart.length === 0) {
+      cartItemsContainer.innerHTML = `
+        <div style="text-align: center; padding: 3rem 1rem; color: #6b7280;">
+          <p style="margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; color: #374151;">Your cart is empty</p>
+          <p style="margin: 0; font-size: 0.88rem;">Choose any shirt design, color, and size to add it to your cart.</p>
+        </div>
+      `;
+      if (cartCheckoutBtn) cartCheckoutBtn.disabled = true;
+      return;
+    }
+
+    if (cartCheckoutBtn) cartCheckoutBtn.disabled = false;
+    cartItemsContainer.innerHTML = '';
+
+    cart.forEach(item => {
+      const row = document.createElement('div');
+      row.style.cssText = 'display: flex; gap: 0.85rem; align-items: center; padding-bottom: 0.85rem; border-bottom: 1px solid #f3f4f6;';
+      row.innerHTML = `
+        <img src="${baseUrl + item.image}" alt="${item.name}" style="width: 64px; height: 64px; object-fit: contain; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; flex-shrink: 0;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-size: 0.9rem; font-weight: 600; color: #111827; line-height: 1.25; margin-bottom: 0.2rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.name}</div>
+          <div style="font-size: 0.8rem; color: #6b7280; margin-bottom: 0.45rem;">${item.color} · Size ${item.size}</div>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: inline-flex; align-items: center; border: 1px solid #d1d5db; border-radius: 4px; overflow: hidden;">
+              <button type="button" class="cart-qty-minus" data-id="${item.sync_variant_id}" style="background: #f9fafb; border: none; padding: 2px 8px; cursor: pointer; font-weight: 700; color: #374151;">−</button>
+              <span style="padding: 2px 10px; font-size: 0.82rem; font-weight: 600; color: #111827;">${item.quantity}</span>
+              <button type="button" class="cart-qty-plus" data-id="${item.sync_variant_id}" style="background: #f9fafb; border: none; padding: 2px 8px; cursor: pointer; font-weight: 700; color: #374151;">+</button>
+            </div>
+            <div style="font-size: 0.9rem; font-weight: 700; color: #111827;">$${((item.price_cents * item.quantity) / 100).toFixed(2)}</div>
+          </div>
+        </div>
+      `;
+      cartItemsContainer.appendChild(row);
+    });
+
+    cartItemsContainer.querySelectorAll('.cart-qty-minus').forEach(btn => {
+      btn.addEventListener('click', () => updateCartItemQty(btn.getAttribute('data-id'), -1));
+    });
+    cartItemsContainer.querySelectorAll('.cart-qty-plus').forEach(btn => {
+      btn.addEventListener('click', () => updateCartItemQty(btn.getAttribute('data-id'), 1));
+    });
+  }
+
+  async function startStripeCheckout(itemsToBuy, triggerBtn) {
+    if (!itemsToBuy || itemsToBuy.length === 0) return;
+    const originalText = triggerBtn ? triggerBtn.innerHTML : '';
+    if (triggerBtn) {
+      triggerBtn.disabled = true;
+      triggerBtn.innerHTML = '<span>Redirecting to Stripe…</span>';
+    }
+    if (cartErrorEl) cartErrorEl.style.display = 'none';
+
+    try {
+      if (typeof window.gtag === 'function') {
+        const valueDollars = itemsToBuy.reduce((acc, it) => acc + (it.price_cents || 2500) * it.quantity, 0) / 100;
+        window.gtag('event', 'begin_checkout', {
+          currency: 'USD',
+          value: valueDollars
+        });
+      }
+
+      const response = await fetch(CHECKOUT_WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: itemsToBuy.map(it => ({
+            sync_variant_id: String(it.sync_variant_id),
+            quantity: it.quantity
+          }))
+        })
+      });
+
+      const data = await response.json();
+      if (!response.ok || !data.url) {
+        throw new Error(data.error || 'Could not start Stripe Checkout.');
+      }
+
+      window.location.href = data.url;
+    } catch (err) {
+      if (cartErrorEl) {
+        cartErrorEl.textContent = err.message;
+        cartErrorEl.style.display = 'block';
+      } else {
+        alert(err.message);
+      }
+      if (triggerBtn) {
+        triggerBtn.disabled = false;
+        triggerBtn.innerHTML = originalText;
+      }
+    }
+  }
+
+  if (cartCheckoutBtn) {
+    cartCheckoutBtn.addEventListener('click', () => startStripeCheckout(cart, cartCheckoutBtn));
+  }
 
   // Modal elements
   const modal = document.getElementById('merch-zoom-modal');
@@ -204,17 +598,16 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     }, 200);
   }
 
-  if (modalClose) {
-    modalClose.addEventListener('click', closeZoomModal);
-  }
+  if (modalClose) modalClose.addEventListener('click', closeZoomModal);
   if (modal) {
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeZoomModal();
     });
   }
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal && modal.style.display === 'flex') {
-      closeZoomModal();
+    if (e.key === 'Escape') {
+      if (modal && modal.style.display === 'flex') closeZoomModal();
+      closeCartDrawer();
     }
   });
 
@@ -234,13 +627,20 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     });
   }
 
-  // Show product cards in random order on each page load
+  // Show product cards in random order on page load, pinning ?product=slug first if deep-linked from Google Shopping
   const gridEl = document.querySelector('.merch-grid');
   if (gridEl) {
     const cards = Array.from(gridEl.querySelectorAll('.merch-card'));
     for (let i = cards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    if (pinnedProductSlug) {
+      const pinnedIdx = cards.findIndex(c => c.getAttribute('data-slug') === pinnedProductSlug);
+      if (pinnedIdx > 0) {
+        const [pinnedCard] = cards.splice(pinnedIdx, 1);
+        cards.unshift(pinnedCard);
+      }
     }
     cards.forEach(card => gridEl.appendChild(card));
   }
@@ -256,13 +656,24 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     const imgEl = card.querySelector('.merch-shirt-img');
     const imgContainer = card.querySelector('.merch-img-container');
     const viewToggleBtn = card.querySelector('.merch-view-toggle');
-    const buyBtn = card.querySelector('.merch-buy-btn');
+    const addCartBtn = card.querySelector('.merch-add-cart-btn');
+    const buyNowBtn = card.querySelector('.merch-buy-now-btn');
     const priceSpan = card.querySelector('.merch-btn-price');
 
     if (!colorSelect || !sizeSelect) return;
 
     // View state: 'model' (default if model photo available) or 'color' (flat shirt)
     let currentView = prodData.model_image ? 'model' : 'color';
+
+    // If deep-linked via ?product=slug, highlight and pre-select color/size if provided
+    const isPinned = (slug === pinnedProductSlug);
+    if (isPinned) {
+      card.style.borderColor = '#2563eb';
+      card.style.boxShadow = '0 0 0 2px rgba(37, 99, 235, 0.25)';
+      if (pinnedColorParam && prodData.colors[pinnedColorParam]) {
+        colorSelect.value = pinnedColorParam;
+      }
+    }
 
     function updateCardImage() {
       if (!imgEl) return;
@@ -284,7 +695,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
     if (viewToggleBtn && prodData.model_image) {
       viewToggleBtn.addEventListener('click', (e) => {
-        e.stopPropagation(); // don't open zoom modal
+        e.stopPropagation();
         const label = viewToggleBtn.querySelector('.toggle-label');
         if (currentView === 'model') {
           currentView = 'color';
@@ -301,10 +712,8 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       const colorInfo = prodData.colors[selectedColor];
       if (!colorInfo) return;
 
-      // Update image for currently active view and color
       updateCardImage();
 
-      // Populate size dropdown
       const sizes = colorInfo.sizes || {};
       const availableSizes = Object.keys(sizes);
       let targetSize = preserveSize && sizes[preserveSize] ? preserveSize : (sizes['M'] ? 'M' : availableSizes[0]);
@@ -326,13 +735,44 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       const currentSize = sizeSelect.value;
       const variantData = prodData.colors[currentColor]?.sizes?.[currentSize];
 
-      if (variantData) {
-        if (buyBtn) buyBtn.href = variantData.url;
-        if (priceSpan) priceSpan.textContent = variantData.price;
+      if (variantData && priceSpan) {
+        priceSpan.textContent = variantData.price;
       }
     }
 
-    // Clicking image opens the zoom modal for the currently active view & color
+    function getCurrentSelection() {
+      const currentColor = colorSelect.value;
+      const currentSize = sizeSelect.value;
+      const colorInfo = prodData.colors[currentColor];
+      const variantData = colorInfo?.sizes?.[currentSize];
+      if (!variantData) return null;
+      return {
+        sync_variant_id: variantData.sync_variant_id,
+        product_id: variantData.product_id,
+        slug: slug,
+        name: prodData.name,
+        color: currentColor,
+        size: currentSize,
+        price_cents: variantData.price_cents,
+        image: colorInfo.model_image || prodData.model_image || colorInfo.image,
+        quantity: 1
+      };
+    }
+
+    if (addCartBtn) {
+      addCartBtn.addEventListener('click', () => {
+        const item = getCurrentSelection();
+        if (item) addToCart(item);
+      });
+    }
+
+    if (buyNowBtn) {
+      buyNowBtn.addEventListener('click', () => {
+        const item = getCurrentSelection();
+        if (item) startStripeCheckout([item], buyNowBtn);
+      });
+    }
+
     if (imgContainer) {
       imgContainer.addEventListener('click', () => {
         const currentColor = colorSelect.value;
@@ -353,8 +793,10 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
     sizeSelect.addEventListener('change', updateButton);
 
-    // Initial setup with preserved default size
-    updateSizes(colorSelect.value, sizeSelect.value || 'M');
+    const initialTargetSize = (isPinned && pinnedSizeParam) ? pinnedSizeParam : (sizeSelect.value || 'M');
+    updateSizes(colorSelect.value, initialTargetSize);
   });
+
+  renderCart();
 })();
 </script>

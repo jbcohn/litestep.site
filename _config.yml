@@ -21,6 +21,10 @@ nav_links:
   - title: "Blog"
     url: "/blog/"
 
+# Google Analytics 4 / Google Ads Tag Configuration (e.g. "G-XXXXXXXXXX" or "AW-XXXXXXXXXX")
+google_tag_id: ""
+google_ads_conversion_send_to: "" # e.g. "AW-XXXXXXXXXX/AbCdEfGhIjKlMnOpQr"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -30,3 +34,8 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - sync_to_stripe.py
+  - scripts
+  - STRIPE_PRINTFUL_INTEGRATION_WALKTHROUGH.md
+  - "Stripe Printful Integration Notes.txt"
+
