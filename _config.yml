@@ -22,7 +22,7 @@ nav_links:
     url: "/blog/"
 
 # Google Analytics 4 / Google Ads Tag Configuration (e.g. "G-XXXXXXXXXX" or "AW-XXXXXXXXXX")
-google_tag_id: ""
+google_tag_id: "AW-18518076612"
 google_ads_conversion_send_to: "" # e.g. "AW-XXXXXXXXXX/AbCdEfGhIjKlMnOpQr"
 
 plugins:
