@@ -165,20 +165,17 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 </div>
 
 <!-- Floating Shopping Cart Pill -->
-<button
-  type="button"
-  id="merch-floating-cart-btn"
-  aria-label="Open shopping cart"
-  style="display: none; position: fixed; bottom: 24px; right: 24px; z-index: 9990; background: #111827; color: #ffffff; border: 2px solid #ffffff; border-radius: 999px; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; align-items: center; gap: 0.6rem; cursor: pointer; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); transition: transform 0.15s ease;"
->
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="9" cy="21" r="1"></circle>
-    <circle cx="20" cy="21" r="1"></circle>
-    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-  </svg>
-  <span>Cart (<span class="merch-cart-count">0</span>)</span>
-  <span id="merch-floating-cart-total" style="background: #2563eb; padding: 2px 8px; border-radius: 999px; font-size: 0.82rem;">$0.00</span>
-</button>
+<div>
+  <button type="button" id="merch-floating-cart-btn" aria-label="Open shopping cart" style="display: none; position: fixed; bottom: 24px; right: 24px; z-index: 9990; background: #111827; color: #ffffff; border: 2px solid #ffffff; border-radius: 999px; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; align-items: center; gap: 0.6rem; cursor: pointer; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); transition: transform 0.15s ease;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"></circle>
+      <circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <span>Cart (<span class="merch-cart-count">0</span>)</span>
+    <span id="merch-floating-cart-total" style="background: #2563eb; padding: 2px 8px; border-radius: 999px; font-size: 0.82rem;">$0.00</span>
+  </button>
+</div>
 
 <!-- Slide-Out Shopping Cart Drawer -->
 <div id="merch-cart-backdrop" style="display: none; position: fixed; inset: 0; z-index: 9995; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(3px); opacity: 0; transition: opacity 0.2s ease;"></div>
