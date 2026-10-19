@@ -98,7 +98,7 @@ hero_image: /assets/images/paragliding_desert_aerial.jpg
         Robust <strong>112g</strong> design with 35mm steps for maximum pushing comfort. Includes extra-long main lines for riser integration on sub style harnesses.
       </p>
       <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto;">
-        <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=180&note=1%20Comp%20Litestep%20for%20Sub" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
+        <a href="https://venmo.com/?txn=pay&audience=private&recipients=@Josh-Cohn-10&amount=180&note=1%20Comp%20Litestep" target="_blank" rel="noopener" class="btn btn-primary" style="text-align: center;">
           Venmo $180 (Non-CA)
         </a>
         <a href="https://account.venmo.com/payment-link?audience=private&amount=195&note=1%20Comp%20Litestep%20CA&recipients=%2CJosh-Cohn-10&txn=pay" target="_blank" rel="noopener" class="btn btn-secondary" style="text-align: center;">
