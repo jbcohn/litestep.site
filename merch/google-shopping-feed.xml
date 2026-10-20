@@ -40,7 +40,7 @@ permalink: /merch/google-shopping-feed.xml
       <g:size>{{ size_name | xml_escape }}</g:size>
       <g:shipping>
         <g:country>US</g:country>
-        <g:service>Standard US Shipping (Free on 2+ shirts)</g:service>
+        <g:service>Standard US Shipping (Free on 2+ items)</g:service>
         <g:price>4.79 USD</g:price>
       </g:shipping>
     </item>

@@ -153,6 +153,30 @@ PRODUCT_METADATA = {
         "tag": "Northern California Peaks · Direct Print-on-Demand",
         "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
         "model_prefix": "model_vaca"
+    },
+    483500528: {  # One-Piece Swimsuit
+        "display_name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
+        "tag": "Fractal Art · Direct Print-on-Demand",
+        "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
+        "primary_color": "White"
+    },
+    483496351: {  # Muscle Shirt
+        "display_name": "Violet Eye Hexagon Mandala Muscle Tank",
+        "tag": "Fractal Art · Direct Print-on-Demand",
+        "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
+        "primary_color": "White"
+    },
+    483495525: {  # Bodycon dress
+        "display_name": "Violet Eye Hexagon Mandala Bodycon Dress",
+        "tag": "Fractal Art · Direct Print-on-Demand",
+        "description": "Eye-catching body-hugging dress showcasing concentric hexagon fractal geometry in vivid violet and turquoise gradients.",
+        "primary_color": "White"
+    },
+    483492839: {  # Blue Hex Portal
+        "display_name": "Blue Hex Portal Graphic Tri-Blend T-Shirt",
+        "tag": "Fractal Art · Direct Print-on-Demand",
+        "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
+        "primary_color": "Solid Black Triblend"
     }
 }
 

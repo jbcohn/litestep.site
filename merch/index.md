@@ -7,7 +7,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-  Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on Bella + Canvas tees and shipped to your door.
+  Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on premium garments and shipped directly to your door.
 </p>
 
 <!-- Shipping & Multi-Item Cart Promo Banner -->
@@ -19,7 +19,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       <circle cx="5.5" cy="18.5" r="2.5"></circle>
       <circle cx="18.5" cy="18.5" r="2.5"></circle>
     </svg>
-    <span><strong>Mix &amp; Match Any Designs:</strong> Standard US Shipping is $4.79 — or get <strong>FREE US Shipping</strong> when you order 2 or more shirts!</span>
+    <span><strong>Mix &amp; Match Any Designs:</strong> Standard US Shipping is $4.79 — or get <strong>FREE US Shipping</strong> when you order 2 or more items!</span>
   </div>
   <button
     type="button"
@@ -152,7 +152,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
               type="button"
               class="btn merch-buy-now-btn"
               style="flex: 0.85; text-align: center; cursor: pointer; background: transparent; border: 1px solid var(--border, #d1d5db); color: inherit; font-size: 0.88rem; font-weight: 600; padding: 0.65rem 0.6rem; border-radius: 6px;"
-              title="Instant 1-shirt checkout via Stripe"
+              title="Instant checkout via Stripe"
             >
               Buy Now →
             </button>
@@ -191,7 +191,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
   <!-- Free Shipping Progress Banner -->
   <div id="merch-cart-shipping-banner" style="background: #eff6ff; border-bottom: 1px solid #dbeafe; padding: 0.65rem 1.25rem; font-size: 0.85rem; color: #1e40af; text-align: center; font-weight: 500;">
-    Add 2+ shirts for <strong>FREE US Shipping</strong>!
+    Add 2+ items for <strong>FREE US Shipping</strong>!
   </div>
 
   <!-- Cart Items List -->
@@ -450,11 +450,11 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       if (totalQty === 0) {
         cartShippingBanner.style.background = '#eff6ff';
         cartShippingBanner.style.color = '#1e40af';
-        cartShippingBanner.innerHTML = 'Order 2 or more shirts for <strong>FREE US Shipping</strong>!';
+        cartShippingBanner.innerHTML = 'Order 2 or more items for <strong>FREE US Shipping</strong>!';
       } else if (totalQty === 1) {
         cartShippingBanner.style.background = '#fef3c7';
         cartShippingBanner.style.color = '#92400e';
-        cartShippingBanner.innerHTML = 'Add <strong>1 more shirt</strong> to unlock <strong>FREE US Shipping</strong> (saves $4.79)!';
+        cartShippingBanner.innerHTML = 'Add <strong>1 more item</strong> to unlock <strong>FREE US Shipping</strong> (saves $4.79)!';
       } else {
         cartShippingBanner.style.background = '#dcfce7';
         cartShippingBanner.style.color = '#166534';
@@ -474,7 +474,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       cartItemsContainer.innerHTML = `
         <div style="text-align: center; padding: 3rem 1rem; color: #6b7280;">
           <p style="margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; color: #374151;">Your cart is empty</p>
-          <p style="margin: 0; font-size: 0.88rem;">Choose any shirt design, color, and size to add it to your cart.</p>
+          <p style="margin: 0; font-size: 0.88rem;">Choose any apparel design, color, and size to add it to your cart.</p>
         </div>
       `;
       if (cartCheckoutBtn) cartCheckoutBtn.disabled = true;

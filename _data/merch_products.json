@@ -2591,13 +2591,6 @@
             "url": "https://buy.stripe.com/00w3cobTW2J99oq37E43U14",
             "product_id": "prod_VRl3wDc4g0WPV8",
             "sync_variant_id": "5576036374"
-          },
-          "XL": {
-            "price": "$34.01",
-            "price_cents": 3401,
-            "url": "https://buy.stripe.com/5kQaEQ1figzZ6ce37E43U15",
-            "product_id": "prod_VRl39WLbUwFMbE",
-            "sync_variant_id": "5576036375"
           }
         },
         "model_image": "/assets/images/products/model_vaca_heather_true_royal.jpg"
@@ -4844,5 +4837,514 @@
       }
     },
     "model_image": "/assets/images/products/model_bubbles.jpg"
+  },
+  "one_piece_swimsuit": {
+    "id": 483500528,
+    "slug": "one_piece_swimsuit",
+    "name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
+    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
+    "garment": "All-Over Print One-Piece Swimsuit",
+    "colors": {
+      "White": {
+        "name": "White",
+        "slug": "white",
+        "image": "/assets/images/products/one_piece_swimsuit_white.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$36.50",
+            "price_cents": 3650,
+            "url": "https://buy.stripe.com/fZuaEQcY04Rh44623A43U1c",
+            "product_id": "prod_VTiS9EDvTDTL1W",
+            "sync_variant_id": "5585890911"
+          },
+          "S": {
+            "price": "$36.50",
+            "price_cents": 3650,
+            "url": "https://buy.stripe.com/00w14ggac97xasu9w243U1d",
+            "product_id": "prod_VTiSMWeoZxJtnB",
+            "sync_variant_id": "5585890912"
+          },
+          "M": {
+            "price": "$36.50",
+            "price_cents": 3650,
+            "url": "https://buy.stripe.com/9B68wI0befvV446bEa43U1e",
+            "product_id": "prod_VTiSXMGUCENMcS",
+            "sync_variant_id": "5585890913"
+          },
+          "L": {
+            "price": "$36.50",
+            "price_cents": 3650,
+            "url": "https://buy.stripe.com/8x214g7DG3NddEGaA643U1f",
+            "product_id": "prod_VTiSPsqrvMOkD8",
+            "sync_variant_id": "5585890914"
+          },
+          "XL": {
+            "price": "$36.50",
+            "price_cents": 3650,
+            "url": "https://buy.stripe.com/eVq4gs8HKabBgQSdMi43U1g",
+            "product_id": "prod_VTiSLLrlhvy6Jn",
+            "sync_variant_id": "5585890915"
+          },
+          "2XL": {
+            "price": "$39.50",
+            "price_cents": 3950,
+            "url": "https://buy.stripe.com/dRm3cof683Nd1VYdMi43U1h",
+            "product_id": "prod_VTiS8rpDZfcWax",
+            "sync_variant_id": "5585890916"
+          },
+          "3XL": {
+            "price": "$42.50",
+            "price_cents": 4250,
+            "url": "https://buy.stripe.com/00w00c8HKerR8km37E43U1i",
+            "product_id": "prod_VTiSbaEmZwwGEz",
+            "sync_variant_id": "5585890917"
+          }
+        }
+      }
+    }
+  },
+  "muscle_shirt": {
+    "id": 483496351,
+    "slug": "muscle_shirt",
+    "name": "Violet Eye Hexagon Mandala Muscle Tank",
+    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
+    "garment": "Bella + Canvas 3483 Muscle Tank",
+    "colors": {
+      "White": {
+        "name": "White",
+        "slug": "white",
+        "image": "/assets/images/products/muscle_shirt_white.jpg",
+        "sizes": {
+          "S": {
+            "price": "$22.00",
+            "price_cents": 2200,
+            "url": "https://buy.stripe.com/cNieV6e240B1cACaA643U1j",
+            "product_id": "prod_VTiSkMyEuZ4uCR",
+            "sync_variant_id": "5585859494"
+          },
+          "M": {
+            "price": "$22.00",
+            "price_cents": 2200,
+            "url": "https://buy.stripe.com/9B66oAcY0bfF44637E43U1k",
+            "product_id": "prod_VTiSdL8NiUWt8n",
+            "sync_variant_id": "5585859495"
+          },
+          "L": {
+            "price": "$22.00",
+            "price_cents": 2200,
+            "url": "https://buy.stripe.com/4gMbIUf68bfFdEG0Zw43U1l",
+            "product_id": "prod_VTiStJB76J5LXI",
+            "sync_variant_id": "5585859496"
+          },
+          "2XL": {
+            "price": "$25.00",
+            "price_cents": 2500,
+            "url": "https://buy.stripe.com/cNi8wIbTWcjJgQS7nU43U1m",
+            "product_id": "prod_VTiSaE33blPuOC",
+            "sync_variant_id": "5585859497"
+          }
+        }
+      }
+    }
+  },
+  "bodycon_dress": {
+    "id": 483495525,
+    "slug": "bodycon_dress",
+    "name": "Violet Eye Hexagon Mandala Bodycon Dress",
+    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "description": "Eye-catching body-hugging dress showcasing concentric hexagon fractal geometry in vivid violet and turquoise gradients.",
+    "garment": "All-Over Print Dress",
+    "colors": {
+      "White": {
+        "name": "White",
+        "slug": "white",
+        "image": "/assets/images/products/bodycon_dress_white.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$34.00",
+            "price_cents": 3400,
+            "url": "https://buy.stripe.com/dRm14g3nqabB58a37E43U1n",
+            "product_id": "prod_VTiS1Xg40xYzRd",
+            "sync_variant_id": "5585854050"
+          },
+          "S": {
+            "price": "$34.00",
+            "price_cents": 3400,
+            "url": "https://buy.stripe.com/4gM8wIbTWerRdEG9w243U1o",
+            "product_id": "prod_VTiSbiggbGAotI",
+            "sync_variant_id": "5585854051"
+          },
+          "M": {
+            "price": "$34.00",
+            "price_cents": 3400,
+            "url": "https://buy.stripe.com/aFa7sE7DGerR7gi7nU43U1p",
+            "product_id": "prod_VTiSOedOJok5zY",
+            "sync_variant_id": "5585854052"
+          },
+          "L": {
+            "price": "$34.00",
+            "price_cents": 3400,
+            "url": "https://buy.stripe.com/00w9AM5vy3Nd1VYbEa43U1q",
+            "product_id": "prod_VTiSi4vbDY9CCz",
+            "sync_variant_id": "5585854053"
+          },
+          "XL": {
+            "price": "$34.00",
+            "price_cents": 3400,
+            "url": "https://buy.stripe.com/14A6oA7DG3Nd1VYeQm43U1r",
+            "product_id": "prod_VTiSBUEtuxMfFV",
+            "sync_variant_id": "5585854054"
+          }
+        }
+      }
+    }
+  },
+  "blue_hex_portal": {
+    "id": 483492839,
+    "slug": "blue_hex_portal",
+    "name": "Blue Hex Portal Graphic Tri-Blend T-Shirt",
+    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Solid Black Triblend": {
+        "name": "Solid Black Triblend",
+        "slug": "solid_black_triblend",
+        "image": "/assets/images/products/blue_hex_portal_solid_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRm7sEaPS5VleIK9w243U1s",
+            "product_id": "prod_VTiSdosTLGF1PH",
+            "sync_variant_id": "5585834027"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/fZu6oA4rugzZ7gidMi43U1t",
+            "product_id": "prod_VTiS6IdhAtzZ0D",
+            "sync_variant_id": "5585834028"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/cNi3cof684Rhasu7nU43U1u",
+            "product_id": "prod_VTiSrjYQtGVxB4",
+            "sync_variant_id": "5585834029"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/7sYaEQ5vygzZ1VY9w243U1v",
+            "product_id": "prod_VTiSSsv1IR0XLY",
+            "sync_variant_id": "5585834030"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/7sYcMY4ru4RhdEGgYu43U1w",
+            "product_id": "prod_VTiSOYbdA3M0wA",
+            "sync_variant_id": "5585834031"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/28EdR21fifvVdEG7nU43U1x",
+            "product_id": "prod_VTiSNeYKVajRhn",
+            "sync_variant_id": "5585834032"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/fZu14gbTWcjJeIKgYu43U1y",
+            "product_id": "prod_VTiSgDPHHqdOyw",
+            "sync_variant_id": "5585834033"
+          }
+        }
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/blue_hex_portal_brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRmcMY1fiabB58a6jQ43U1z",
+            "product_id": "prod_VTiSmVMkbjG8Mr",
+            "sync_variant_id": "5585834034"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/3cI7sEbTW3Ndbwy23A43U1A",
+            "product_id": "prod_VTiSx6J7h9SNU3",
+            "sync_variant_id": "5585834035"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/aFa9AM8HKbfF58a9w243U1B",
+            "product_id": "prod_VTiS3nXGj2Pcbh",
+            "sync_variant_id": "5585834036"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/bJe3coe24cjJ8kmgYu43U1C",
+            "product_id": "prod_VTiSVunsdHUtWg",
+            "sync_variant_id": "5585834037"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/00w7sEgacerRfMObEa43U1D",
+            "product_id": "prod_VTiS7wcdTSKDxl",
+            "sync_variant_id": "5585834038"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/eVq5kwaPS5VlbwygYu43U1E",
+            "product_id": "prod_VTiS9g8VsG91eq",
+            "sync_variant_id": "5585834039"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/cNicMY8HK97xeIK5fM43U1F",
+            "product_id": "prod_VTiSCFkgz9Eucl",
+            "sync_variant_id": "5585834040"
+          }
+        }
+      },
+      "Olive Triblend": {
+        "name": "Olive Triblend",
+        "slug": "olive_triblend",
+        "image": "/assets/images/products/blue_hex_portal_olive_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/14AaEQcY00B1fMOgYu43U1G",
+            "product_id": "prod_VTiSglIJjaILbl",
+            "sync_variant_id": "5585834041"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/fZu4gs6zC3Nd6ce8rY43U1H",
+            "product_id": "prod_VTiSL31ejoKqmJ",
+            "sync_variant_id": "5585834042"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/fZu14g1fi6Zp4467nU43U1I",
+            "product_id": "prod_VTiSTCXIvW8FDS",
+            "sync_variant_id": "5585834043"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRmcMY4ru4Rh446dMi43U1J",
+            "product_id": "prod_VTiScKfgbNWg0f",
+            "sync_variant_id": "5585834044"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRmdR29LOgzZ6cegYu43U1K",
+            "product_id": "prod_VTiSGMIF1dSHyx",
+            "sync_variant_id": "5585834045"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/9B614g4ru0B19oqaA643U1L",
+            "product_id": "prod_VTiSNxsvDDnNDg",
+            "sync_variant_id": "5585834046"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/fZu7sEcY00B1gQSaA643U1M",
+            "product_id": "prod_VTiSXlNGIH31JK",
+            "sync_variant_id": "5585834047"
+          }
+        }
+      },
+      "Mustard Triblend": {
+        "name": "Mustard Triblend",
+        "slug": "mustard_triblend",
+        "image": "/assets/images/products/blue_hex_portal_mustard_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/cNi9AM9LO1F50RUdMi43U1N",
+            "product_id": "prod_VTiSqDoZhVpvd3",
+            "sync_variant_id": "5585834048"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/fZu9AMgac3Nd58adMi43U1O",
+            "product_id": "prod_VTiSFXvDFhKM7f",
+            "sync_variant_id": "5585834049"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/8x28wIe243Nd44637E43U1P",
+            "product_id": "prod_VTiSpnW8SPZ6PE",
+            "sync_variant_id": "5585834050"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/eVqcMY2jm4Rh0RU0Zw43U1Q",
+            "product_id": "prod_VTiSYy8y8lnGgk",
+            "sync_variant_id": "5585834051"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRm6oA8HKerR6ce5fM43U1R",
+            "product_id": "prod_VTiSbMnpeStPga",
+            "sync_variant_id": "5585834052"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/fZucMY1fibfFdEG5fM43U1S",
+            "product_id": "prod_VTiSFL9ipS1KS7",
+            "sync_variant_id": "5585834053"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/8x23cocY00B16cebEa43U1T",
+            "product_id": "prod_VTiSafqLxlCPxP",
+            "sync_variant_id": "5585834054"
+          }
+        }
+      },
+      "Tan Triblend": {
+        "name": "Tan Triblend",
+        "slug": "tan_triblend",
+        "image": "/assets/images/products/blue_hex_portal_tan_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/14AcMYcY0gzZdEGfUq43U1U",
+            "product_id": "prod_VTiSOlyppa1IxN",
+            "sync_variant_id": "5585834055"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/4gM28kcY02J96ce6jQ43U1V",
+            "product_id": "prod_VTiSZn11R1flTT",
+            "sync_variant_id": "5585834056"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/7sYaEQ0be6ZpcACaA643U1W",
+            "product_id": "prod_VTiSZIyabvK0UT",
+            "sync_variant_id": "5585834057"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/14AcMY7DGdnN4464bI43U1X",
+            "product_id": "prod_VTiSw8myNsnK6C",
+            "sync_variant_id": "5585834058"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/14A6oA1fibfFasueQm43U1Y",
+            "product_id": "prod_VTiS3BjXkrza6V",
+            "sync_variant_id": "5585834059"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/4gMfZaaPSabBbwyfUq43U1Z",
+            "product_id": "prod_VTiSfTMjjbiYLD",
+            "sync_variant_id": "5585834060"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/9B6cMY6zC4Rh6ce37E43U20",
+            "product_id": "prod_VTiSMOY9rL5559",
+            "sync_variant_id": "5585834061"
+          }
+        }
+      },
+      "Solid White Triblend": {
+        "name": "Solid White Triblend",
+        "slug": "solid_white_triblend",
+        "image": "/assets/images/products/blue_hex_portal_solid_white_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/5kQ4gsf684RhdEGfUq43U21",
+            "product_id": "prod_VTiSXYjs8yOpbS",
+            "sync_variant_id": "5585834062"
+          },
+          "S": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/3cI9AM9LOfvVdEG5fM43U22",
+            "product_id": "prod_VTiSaVfQilAwMM",
+            "sync_variant_id": "5585834063"
+          },
+          "M": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/00w7sE8HKbfF9oqaA643U23",
+            "product_id": "prod_VTiSiItSSKilYI",
+            "sync_variant_id": "5585834064"
+          },
+          "L": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/4gMdR28HK0B16ce4bI43U24",
+            "product_id": "prod_VTiS1JAMBsMYI3",
+            "sync_variant_id": "5585834065"
+          },
+          "XL": {
+            "price": "$24.50",
+            "price_cents": 2450,
+            "url": "https://buy.stripe.com/dRm28k3nqbfF8km37E43U25",
+            "product_id": "prod_VTiSiVgnAZtnho",
+            "sync_variant_id": "5585834066"
+          },
+          "2XL": {
+            "price": "$27.50",
+            "price_cents": 2750,
+            "url": "https://buy.stripe.com/cNi6oA5vy0B1dEG6jQ43U26",
+            "product_id": "prod_VTiSccf6vq4zDD",
+            "sync_variant_id": "5585834067"
+          },
+          "3XL": {
+            "price": "$31.00",
+            "price_cents": 3100,
+            "url": "https://buy.stripe.com/14A6oA0be4Rhbwy37E43U27",
+            "product_id": "prod_VTiStVKYaafG2r",
+            "sync_variant_id": "5585834068"
+          }
+        }
+      }
+    }
   }
 }
