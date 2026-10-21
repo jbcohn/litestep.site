@@ -132,8 +132,25 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
                 {% endfor %}
               </select>
             </div>
-            <div style="flex: 0.8;">
-              <label style="display: block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--text-muted);">Size</label>
+            <div style="flex: 0.85;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.25rem;">
+                <label style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); margin: 0;">Size</label>
+                <button
+                  type="button"
+                  class="merch-size-guide-trigger"
+                  data-garment="{{ prod.garment | escape }}"
+                  title="View {{ prod.garment | escape }} size chart and measurements"
+                  style="background: none; border: none; padding: 0; font-size: 0.72rem; color: #2563eb; font-weight: 600; text-decoration: underline; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;"
+                >
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.3 15.3l-6.6-6.6a2.4 2.4 0 0 0-3.4 0L2.7 17.3a2.4 2.4 0 0 0 0 3.4l.6.6a2.4 2.4 0 0 0 3.4 0l8.6-8.6"></path>
+                    <line x1="8.5" y1="11.5" x2="10" y2="13"></line>
+                    <line x1="12" y1="15" x2="13.5" y2="16.5"></line>
+                    <line x1="5" y1="8" x2="6.5" y2="9.5"></line>
+                  </svg>
+                  Size Guide
+                </button>
+              </div>
               <select class="merch-size-select" style="width: 100%; padding: 0.45rem 0.5rem; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-card, #fff); color: inherit; font-size: 0.88rem; cursor: pointer;">
                 {% for size_entry in default_color.sizes %}
                   {% assign size_name = size_entry[0] %}
@@ -254,6 +271,70 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
         Pan cursor over image for 3.2x high-resolution detail inspection
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Interactive Size Guide Modal -->
+<div id="merch-size-guide-modal" style="display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 1.25rem; box-sizing: border-box; opacity: 0; transition: opacity 0.2s ease;">
+  <div style="position: relative; max-width: 840px; width: 100%; max-height: 92vh; background: #ffffff; color: #111827; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);">
+    
+    <!-- Modal Header -->
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; border-bottom: 1px solid #e5e7eb; background: #fafafa;">
+      <div style="display: flex; align-items: center; gap: 0.65rem;">
+        <div style="width: 32px; height: 32px; border-radius: 6px; background: #eff6ff; color: #2563eb; display: flex; align-items: center; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.3 15.3l-6.6-6.6a2.4 2.4 0 0 0-3.4 0L2.7 17.3a2.4 2.4 0 0 0 0 3.4l.6.6a2.4 2.4 0 0 0 3.4 0l8.6-8.6"></path>
+            <line x1="8.5" y1="11.5" x2="10" y2="13"></line>
+            <line x1="12" y1="15" x2="13.5" y2="16.5"></line>
+            <line x1="5" y1="8" x2="6.5" y2="9.5"></line>
+          </svg>
+        </div>
+        <div>
+          <h3 id="size-guide-modal-title" style="margin: 0; font-size: 1.15rem; font-weight: 700; color: #111827;">Size Guide</h3>
+          <div id="size-guide-modal-subtitle" style="font-size: 0.82rem; color: #6b7280; margin-top: 0.1rem;">Garment Sizing &amp; Measurement Guide</div>
+        </div>
+      </div>
+      <button id="size-guide-modal-close" type="button" aria-label="Close size guide" style="background: transparent; border: none; font-size: 1.75rem; line-height: 1; cursor: pointer; color: #4b5563; padding: 0.25rem 0.5rem; border-radius: 4px;">&times;</button>
+    </div>
+
+    <!-- Garment Selector & Unit Switcher Controls Bar -->
+    <div style="padding: 0.85rem 1.5rem; background: #f3f4f6; border-bottom: 1px solid #e5e7eb; display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; justify-content: space-between;">
+      <!-- Garment Picker -->
+      <div style="display: flex; align-items: center; gap: 0.5rem; flex: 1; min-width: 250px;">
+        <label for="size-guide-garment-select" style="font-size: 0.8rem; font-weight: 700; color: #4b5563; text-transform: uppercase; letter-spacing: 0.03em;">Garment:</label>
+        <select id="size-guide-garment-select" style="flex: 1; padding: 0.45rem 0.65rem; border-radius: 6px; border: 1px solid #d1d5db; font-size: 0.88rem; font-weight: 500; background: #ffffff; color: #111827; cursor: pointer;">
+          <!-- Options populated from SIZE_GUIDES -->
+        </select>
+      </div>
+
+      <!-- Unit Switcher (Inches / Centimeters) -->
+      <div style="display: inline-flex; background: #e5e7eb; border-radius: 6px; padding: 2px;">
+        <button type="button" id="size-unit-inches" class="size-unit-btn" style="border: none; border-radius: 4px; padding: 5px 14px; font-size: 0.82rem; font-weight: 600; cursor: pointer; background: #ffffff; color: #111827; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.15s ease;">Inches</button>
+        <button type="button" id="size-unit-cm" class="size-unit-btn" style="border: none; border-radius: 4px; padding: 5px 14px; font-size: 0.82rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Centimeters</button>
+      </div>
+    </div>
+
+    <!-- Mode Tabs: Product Measurements vs Measure Yourself -->
+    <div style="display: flex; border-bottom: 1px solid #e5e7eb; padding: 0 1.5rem; background: #ffffff;">
+      <button type="button" id="size-mode-product" class="size-mode-tab" style="padding: 0.85rem 1.15rem; border: none; background: none; font-size: 0.92rem; font-weight: 700; color: #2563eb; border-bottom: 2px solid #2563eb; cursor: pointer; transition: color 0.15s ease;">
+        Product measurements
+      </button>
+      <button type="button" id="size-mode-body" class="size-mode-tab" style="padding: 0.85rem 1.15rem; border: none; background: none; font-size: 0.92rem; font-weight: 500; color: #6b7280; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.15s ease;">
+        Measure yourself
+      </button>
+    </div>
+
+    <!-- Scrollable Content Area -->
+    <div id="size-guide-content-area" style="overflow-y: auto; padding: 1.35rem 1.5rem; flex-grow: 1;">
+      <!-- Populated dynamically via renderSizeGuide() -->
+    </div>
+
+    <!-- Modal Footer -->
+    <div style="padding: 0.75rem 1.5rem; border-top: 1px solid #e5e7eb; background: #fafafa; display: flex; align-items: center; justify-content: space-between; font-size: 0.82rem; color: #6b7280;">
+      <span>Measurements are provided by suppliers. May vary by up to 2″ (5 cm).</span>
+      <button type="button" id="size-guide-done-btn" class="btn btn-primary" style="padding: 0.45rem 1.25rem; font-size: 0.85rem; cursor: pointer;">Done</button>
+    </div>
+
   </div>
 </div>
 
@@ -608,9 +689,261 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (modal && modal.style.display === 'flex') closeZoomModal();
+      if (sizeGuideModal && sizeGuideModal.style.display === 'flex') closeSizeGuideModal();
       closeCartDrawer();
     }
   });
+
+  // Size Guide Modal Logic
+  const sizeGuides = {{ site.data.size_guides | jsonify }};
+  const sizeGuideModal = document.getElementById('merch-size-guide-modal');
+  const sizeGuideClose = document.getElementById('size-guide-modal-close');
+  const sizeGuideDone = document.getElementById('size-guide-done-btn');
+  const sizeGuideGarmentSelect = document.getElementById('size-guide-garment-select');
+  const sizeGuideContent = document.getElementById('size-guide-content-area');
+  const btnUnitInches = document.getElementById('size-unit-inches');
+  const btnUnitCm = document.getElementById('size-unit-cm');
+  const tabModeProduct = document.getElementById('size-mode-product');
+  const tabModeBody = document.getElementById('size-mode-body');
+
+  let currentGuideGarment = sizeGuides ? Object.keys(sizeGuides)[0] : '';
+  let currentGuideUnit = 'inches'; // 'inches' | 'cm'
+  let currentGuideMode = 'product_measure'; // 'product_measure' | 'measure_yourself'
+
+  if (sizeGuideGarmentSelect && sizeGuides) {
+    sizeGuideGarmentSelect.innerHTML = '';
+    for (const gname of Object.keys(sizeGuides)) {
+      const opt = document.createElement('option');
+      opt.value = gname;
+      opt.textContent = gname;
+      sizeGuideGarmentSelect.appendChild(opt);
+    }
+    sizeGuideGarmentSelect.addEventListener('change', () => {
+      currentGuideGarment = sizeGuideGarmentSelect.value;
+      renderSizeGuideModal();
+    });
+  }
+
+  function formatGuideNum(raw) {
+    const num = parseFloat(raw);
+    if (isNaN(num)) return raw;
+    if (currentGuideUnit === 'cm') {
+      return (Math.round(num * 10) / 10).toFixed(1);
+    }
+    // format fractions for inches
+    const whole = Math.floor(num);
+    const frac = Math.round((num - whole) * 1000) / 1000;
+    if (Math.abs(frac - 0.5) < 0.01) return whole > 0 ? `${whole} ½` : '½';
+    if (Math.abs(frac - 0.25) < 0.01) return whole > 0 ? `${whole} ¼` : '¼';
+    if (Math.abs(frac - 0.75) < 0.01) return whole > 0 ? `${whole} ¾` : '¾';
+    if (Math.abs(frac - 0.125) < 0.01) return whole > 0 ? `${whole} ⅛` : '⅛';
+    if (Math.abs(frac - 0.375) < 0.01) return whole > 0 ? `${whole} ⅜` : '⅜';
+    if (Math.abs(frac - 0.625) < 0.01) return whole > 0 ? `${whole} ⅝` : '⅝';
+    if (Math.abs(frac - 0.875) < 0.01) return whole > 0 ? `${whole} ⅞` : '⅞';
+    if (frac === 0) return `${whole}`;
+    return num.toFixed(1);
+  }
+
+  function formatGuideValue(valObj) {
+    if (!valObj) return '—';
+    if (valObj.min_value && valObj.max_value) {
+      return `${formatGuideNum(valObj.min_value)} - ${formatGuideNum(valObj.max_value)}`;
+    }
+    if (valObj.value !== undefined && valObj.value !== null) {
+      return formatGuideNum(valObj.value);
+    }
+    return '—';
+  }
+
+  function renderSizeGuideModal() {
+    if (!sizeGuideContent || !sizeGuides) return;
+    const gData = sizeGuides[currentGuideGarment];
+    if (!gData) {
+      sizeGuideContent.innerHTML = '<p style="color: #6b7280; text-align: center; padding: 2rem;">Size guide not available for this item.</p>';
+      return;
+    }
+
+    // Update tab styles
+    if (tabModeProduct && tabModeBody) {
+      if (currentGuideMode === 'product_measure') {
+        tabModeProduct.style.color = '#2563eb';
+        tabModeProduct.style.fontWeight = '700';
+        tabModeProduct.style.borderBottom = '2px solid #2563eb';
+        tabModeBody.style.color = '#6b7280';
+        tabModeBody.style.fontWeight = '500';
+        tabModeBody.style.borderBottom = '2px solid transparent';
+      } else {
+        tabModeBody.style.color = '#2563eb';
+        tabModeBody.style.fontWeight = '700';
+        tabModeBody.style.borderBottom = '2px solid #2563eb';
+        tabModeProduct.style.color = '#6b7280';
+        tabModeProduct.style.fontWeight = '500';
+        tabModeProduct.style.borderBottom = '2px solid transparent';
+      }
+    }
+
+    // Update unit button styles
+    if (btnUnitInches && btnUnitCm) {
+      if (currentGuideUnit === 'inches') {
+        btnUnitInches.style.background = '#ffffff';
+        btnUnitInches.style.color = '#111827';
+        btnUnitInches.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+        btnUnitCm.style.background = 'transparent';
+        btnUnitCm.style.color = '#4b5563';
+        btnUnitCm.style.boxShadow = 'none';
+      } else {
+        btnUnitCm.style.background = '#ffffff';
+        btnUnitCm.style.color = '#111827';
+        btnUnitCm.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+        btnUnitInches.style.background = 'transparent';
+        btnUnitInches.style.color = '#4b5563';
+        btnUnitInches.style.boxShadow = 'none';
+      }
+    }
+
+    const tables = gData[currentGuideUnit] || [];
+    const activeTable = tables.find(t => t.type === currentGuideMode) || tables[0];
+    if (!activeTable) {
+      sizeGuideContent.innerHTML = '<p style="color: #6b7280; text-align: center; padding: 2rem;">Measurement table not available.</p>';
+      return;
+    }
+
+    const imgUrl = activeTable.local_image_url || activeTable.image_url;
+    const cleanDesc = activeTable.clean_description || '';
+    const measurements = activeTable.measurements || [];
+    const sizes = gData.available_sizes || [];
+
+    let tableHtml = `
+      <div style="overflow-x: auto; margin-top: 1rem; border: 1px solid #e5e7eb; border-radius: 8px;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.88rem; text-align: left;">
+          <thead>
+            <tr style="background: #f9fafb; border-bottom: 1px solid #e5e7eb;">
+              <th style="padding: 0.65rem 1rem; font-weight: 700; color: #374151; white-space: nowrap;">Size Label</th>
+    `;
+
+    measurements.forEach(m => {
+      const colLabel = m.display_label || m.type_label;
+      tableHtml += `<th style="padding: 0.65rem 1rem; font-weight: 700; color: #374151; white-space: nowrap;">${colLabel}</th>`;
+    });
+
+    tableHtml += `
+            </tr>
+          </thead>
+          <tbody>
+    `;
+
+    sizes.forEach((sz, idx) => {
+      const bg = idx % 2 === 0 ? '#ffffff' : '#f9fafb';
+      tableHtml += `<tr style="background: ${bg}; border-bottom: 1px solid #f3f4f6;">
+        <td style="padding: 0.65rem 1rem; font-weight: 700; color: #111827;">${sz}</td>`;
+
+      measurements.forEach(m => {
+        const valObj = (m.values || []).find(v => v.size === sz);
+        const displayVal = formatGuideValue(valObj);
+        tableHtml += `<td style="padding: 0.65rem 1rem; color: #4b5563; font-variant-numeric: tabular-nums;">${displayVal}</td>`;
+      });
+
+      tableHtml += `</tr>`;
+    });
+
+    tableHtml += `
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    let html = '';
+
+    if (currentGuideMode === 'product_measure') {
+      html += `
+        <div style="background: #eff6ff; border-left: 4px solid #2563eb; padding: 0.7rem 0.95rem; border-radius: 4px; margin-bottom: 1.15rem; font-size: 0.86rem; color: #1e40af;">
+          <strong>Pro tip!</strong> Measure one of your favorite products at home and compare with the measurements you see in this guide.
+        </div>
+      `;
+    }
+
+    html += `
+      <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; margin-bottom: 1.25rem; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1rem 1.25rem;">
+        ${imgUrl ? `
+          <div style="flex: 0 0 150px; max-width: 170px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.4rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+            <img src="${baseUrl + imgUrl}" alt="Measurement diagram" style="max-width: 100%; height: auto; display: block; object-fit: contain;">
+          </div>
+        ` : ''}
+        <div style="flex: 1; min-width: 240px; font-size: 0.86rem; line-height: 1.5; color: #374151;">
+          ${cleanDesc}
+        </div>
+      </div>
+    `;
+
+    html += `
+      <div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.4rem;">
+          <h4 style="margin: 0; font-size: 0.98rem; font-weight: 700; color: #111827;">Size chart</h4>
+          <span style="font-size: 0.8rem; color: #6b7280; font-weight: 500;">Unit: ${currentGuideUnit === 'inches' ? 'Inches' : 'Centimeters'}</span>
+        </div>
+        ${tableHtml}
+      </div>
+    `;
+
+    sizeGuideContent.innerHTML = html;
+  }
+
+  function openSizeGuideModal(garmentName) {
+    if (!sizeGuideModal) return;
+    if (garmentName && sizeGuides && sizeGuides[garmentName]) {
+      currentGuideGarment = garmentName;
+      if (sizeGuideGarmentSelect) sizeGuideGarmentSelect.value = garmentName;
+    }
+    renderSizeGuideModal();
+    sizeGuideModal.style.display = 'flex';
+    requestAnimationFrame(() => {
+      sizeGuideModal.style.opacity = '1';
+    });
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSizeGuideModal() {
+    if (!sizeGuideModal) return;
+    sizeGuideModal.style.opacity = '0';
+    setTimeout(() => {
+      sizeGuideModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 200);
+  }
+
+  if (sizeGuideClose) sizeGuideClose.addEventListener('click', closeSizeGuideModal);
+  if (sizeGuideDone) sizeGuideDone.addEventListener('click', closeSizeGuideModal);
+  if (sizeGuideModal) {
+    sizeGuideModal.addEventListener('click', (e) => {
+      if (e.target === sizeGuideModal) closeSizeGuideModal();
+    });
+  }
+
+  if (btnUnitInches) {
+    btnUnitInches.addEventListener('click', () => {
+      currentGuideUnit = 'inches';
+      renderSizeGuideModal();
+    });
+  }
+  if (btnUnitCm) {
+    btnUnitCm.addEventListener('click', () => {
+      currentGuideUnit = 'cm';
+      renderSizeGuideModal();
+    });
+  }
+
+  if (tabModeProduct) {
+    tabModeProduct.addEventListener('click', () => {
+      currentGuideMode = 'product_measure';
+      renderSizeGuideModal();
+    });
+  }
+  if (tabModeBody) {
+    tabModeBody.addEventListener('click', () => {
+      currentGuideMode = 'measure_yourself';
+      renderSizeGuideModal();
+    });
+  }
 
   // Pan / Magnify functionality inside modal viewport at 3.2x zoom
   if (zoomViewport && modalImg) {
@@ -772,6 +1105,14 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       buyNowBtn.addEventListener('click', () => {
         const item = getCurrentSelection();
         if (item) startStripeCheckout([item], buyNowBtn);
+      });
+    }
+
+    const sizeGuideBtn = card.querySelector('.merch-size-guide-trigger');
+    if (sizeGuideBtn) {
+      sizeGuideBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSizeGuideModal(prodData.garment);
       });
     }
 

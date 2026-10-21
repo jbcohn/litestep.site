@@ -46,6 +46,9 @@ os.makedirs(DATA_DIR_PATH, exist_ok=True)
 
 OUTPUT_FILE = os.path.join(DATA_DIR, "merch_products.json")
 LEGACY_WHITNEY_FILE = os.path.join(DATA_DIR, "whitney_merch_links.json")
+SIZE_GUIDES_FILE = os.path.join(DATA_DIR, "size_guides.json")
+SIZE_GUIDES_IMG_DIR = os.path.join(BASE_DIR, "assets", "images", "size_guides")
+os.makedirs(SIZE_GUIDES_IMG_DIR, exist_ok=True)
 
 def save_clean_image(img_bytes, dest_path, overwrite=False):
     """
@@ -235,6 +238,83 @@ def parse_garment_name(raw_name):
         name = match.group(1).replace("with Tear Away Label", "").strip()
         return re.sub(r'\s+', ' ', name)
     return raw_name
+
+def sync_garment_size_guides(garment_to_cat_id):
+    """
+    Fetches and caches Printful size tables and diagram images for all garments in the store.
+    Guarantees size_guides.json and local measurement illustrations are always current.
+    """
+    guides = {}
+    if os.path.exists(SIZE_GUIDES_FILE):
+        try:
+            with open(SIZE_GUIDES_FILE, "r") as f:
+                guides = json.load(f)
+        except Exception:
+            guides = {}
+
+    headers = {"Authorization": f"Bearer {PRINTFUL_API_KEY}"}
+    updated = False
+
+    def clean_html(html_str):
+        if not html_str: return ''
+        s = re.sub(r'\s+(style|id|dir)=\"[^\"]*\"', '', html_str)
+        s = re.sub(r'</?span[^>]*>', '', s)
+        s = re.sub(r'<h6>(.*?)</h6>', r'<div style=\"font-weight:700; color:#111827; margin-top:0.5rem; font-size:0.92rem;\">\1</div>', s)
+        s = re.sub(r'<p>\s*&nbsp;\s*</p>', '', s)
+        return re.sub(r'\s+', ' ', s).strip()
+
+    for gname, cid in garment_to_cat_id.items():
+        if gname in guides and guides[gname].get("inches"):
+            continue
+        try:
+            print(f"Fetching size guide for {gname} (Catalog ID: {cid})...")
+            r_in = requests.get(f"https://api.printful.com/products/{cid}/sizes", headers=headers, timeout=15).json().get("result", {})
+            r_cm = requests.get(f"https://api.printful.com/products/{cid}/sizes?unit=cm", headers=headers, timeout=15).json().get("result", {})
+
+            for unit_key, table_list in [("inches", r_in.get("size_tables", [])), ("cm", r_cm.get("size_tables", []))]:
+                for tbl in table_list:
+                    ttype = tbl.get("type")
+                    remote_url = tbl.get("image_url")
+                    if remote_url:
+                        fname = f"cat_{cid}_{ttype}.png"
+                        fpath = os.path.join(SIZE_GUIDES_IMG_DIR, fname)
+                        rel_path = f"/assets/images/size_guides/{fname}"
+                        if not os.path.exists(fpath):
+                            try:
+                                r_img = requests.get(remote_url, timeout=15)
+                                if r_img.status_code == 200:
+                                    with open(fpath, "wb") as img_f:
+                                        img_f.write(r_img.content)
+                            except Exception as e:
+                                print(f"  Warning downloading size guide image: {e}")
+                        tbl["local_image_url"] = rel_path
+                    if "image_description" in tbl:
+                        tbl["clean_description"] = clean_html(tbl["image_description"])
+                    if "description" in tbl:
+                        tbl["clean_notice"] = clean_html(tbl["description"])
+                    for m in tbl.get("measurements", []):
+                        lbl = m.get("type_label", "")
+                        if "Dress" in gname and tbl.get("type") == "product_measure":
+                            m["display_label"] = {"A": "A (Chest Width)", "B": "B (Waist Width)", "C": "C (Hip Width)", "D": "D (Length)"}.get(lbl, lbl)
+                        elif "Swimsuit" in gname and tbl.get("type") == "product_measure":
+                            m["display_label"] = {"A": "A (Chest Width)", "B": "B (Hip Width)", "C": "C (Length)"}.get(lbl, lbl)
+                        else:
+                            m["display_label"] = lbl
+
+            guides[gname] = {
+                "catalog_product_id": cid,
+                "available_sizes": r_in.get("available_sizes", []),
+                "inches": r_in.get("size_tables", []),
+                "cm": r_cm.get("size_tables", [])
+            }
+            updated = True
+        except Exception as e:
+            print(f"  Warning syncing size guide for {gname}: {e}")
+
+    if updated or not os.path.exists(SIZE_GUIDES_FILE):
+        with open(SIZE_GUIDES_FILE, "w") as f:
+            json.dump(guides, f, indent=2)
+        print(f"Saved size guides to: {SIZE_GUIDES_FILE}")
 
 def generate_printful_mockups(cat_prod_id, art_file, missing_for_task, cfg, target_prefix, is_model=True):
     """
@@ -490,6 +570,7 @@ if os.path.exists(OUTPUT_FILE):
 existing_by_id = {prod["id"]: (slug, prod) for slug, prod in existing_catalog.items() if isinstance(prod, dict) and "id" in prod}
 
 catalog_data = {}
+garment_to_cat_id = {}
 
 # Preferred display order
 preferred_order = [480089207, 480350932, 481559531, 481791025, 481939533, 480312304, 479899530, 479948902]
@@ -530,6 +611,9 @@ for sp in store_products:
 
     first_var = variants[0] if variants else {}
     garment_model = parse_garment_name(first_var.get("product", {}).get("name"))
+    cat_prod_id = first_var.get("product", {}).get("product_id")
+    if garment_model and cat_prod_id:
+        garment_to_cat_id[garment_model] = cat_prod_id
 
     prod_entry = {
         "id": pid,
@@ -739,6 +823,10 @@ print(f"Archived {orphans_archived} outdated products in Stripe.")
 with open(OUTPUT_FILE, "w") as f:
     json.dump(catalog_data, f, indent=2)
 print(f"\nSaved unified catalog to: {OUTPUT_FILE}")
+
+# Sync Printful garment size guides and measurement illustrations
+if garment_to_cat_id:
+    sync_garment_size_guides(garment_to_cat_id)
 
 # Export verified variant pricing lookup for Cloudflare Worker dynamic cart checkout
 WORKER_CATALOG_FILE = os.path.join(BASE_DIR, "..", "litestep-printful-webhook", "src", "catalog_prices.js")

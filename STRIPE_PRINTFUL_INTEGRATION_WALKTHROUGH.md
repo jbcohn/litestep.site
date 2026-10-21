@@ -79,7 +79,12 @@ The synchronization script ([sync_to_stripe.py](file:///Users/joshcohn/Developer
    - Queues asynchronous generation tasks (`POST /mockup-generator/create-task/{cat_prod_id}`) to produce 2000px flat garment mockups and lifestyle model mockups.
    - Automatically adapts placements: `front_large` for Bella 3001/3413 tees, `front` for muscle tanks, `default` for bodycon dresses, and `front` + `back` for one-piece swimsuits.
    - Composites alpha channels onto pure white (`#ffffff`) backgrounds to eliminate dark rendering artifacts while preserving lifestyle model photos.
-4. **Data Contract Exports**:
+4. **Garment Size Guide & Measurement Illustration Sync**:
+   - Queries Printful size specifications (`GET /products/{id}/sizes`) for all catalog garments in both inches and centimeters.
+   - Downloads diagram measurement illustrations locally to `assets/images/size_guides/`.
+   - Cleans HTML instructions and formats measurements with standard fractions (`½`, `¼`, etc.) and decimal conversions.
+   - Writes `litestep-site/_data/size_guides.json`.
+5. **Data Contract Exports**:
    - Writes `litestep-site/_data/merch_products.json` (the single source of truth for the Jekyll site).
    - Writes `litestep-printful-webhook/src/catalog_prices.js` (server-side price table used by the worker to prevent client-side cart tampering).
 
@@ -139,7 +144,15 @@ Every product card provides an interactive toggle between flat product photograp
 - Context-sensitive label: displays **"Shirt View"** for tees, tanks, and hoodies, and **"Product View"** for dresses and swimsuits.
 - State-preserving color matching: selecting a new colorway updates both the flat and model image sources simultaneously.
 
-### 4.2. Multi-Item Shopping Cart
+### 4.2. Interactive Garment Size Guides
+Every product card features a dedicated **"Size Guide"** trigger button with a ruler icon positioned immediately above the size dropdown selector:
+- **Product-Specific Sizing**: Clicking the trigger opens the guide pre-selected to that exact garment (e.g. Bella + Canvas 3001 T-Shirt, 3413 Triblend, Hooded Long Sleeve, Muscle Tank, Bodycon Dress, or Swimsuit).
+- **Dual Measurement Tabs**: Shoppers can toggle between **"Product measurements"** (measuring a flat garment at home) and **"Measure yourself"** (measuring body circumferences).
+- **Unit Toggle**: Instant switcher between **Inches** (with clean fractions like `16 ½″`) and **Centimeters** (with 1-decimal conversions).
+- **Visual Diagram & Step-by-Step Instructions**: Displays local measurement illustrations showing exactly where A Length, B Width / Chest, C Waist, and D Hips are measured.
+- **Garment Switcher**: Allows buyers to explore size charts across all catalog garments without leaving the modal.
+
+### 4.3. Multi-Item Shopping Cart
 - **Slide-Over Drawer**: Buyers can click **"Add to Cart"** to add items with selected color and size options.
 - **LocalStorage Persistence**: Cart contents persist across page refreshes (`litestep_merch_cart_v1`).
 - **Promotional Shipping Tier**:
@@ -147,10 +160,10 @@ Every product card provides an interactive toggle between flat product photograp
   - 2+ items: **FREE US Shipping** automatically unlocked with a visual progress bar.
 - **Checkout Launch**: The **"Proceed to Checkout"** button transmits cart line items to the Cloudflare Worker (`/create-checkout-session`), which verifies the pricing against `CATALOG_PRICES` and redirects the user to Stripe Checkout.
 
-### 4.3. Instant 1-Click "Buy Now"
+### 4.4. Instant 1-Click "Buy Now"
 Directly below the cart button, a secondary **"Buy Now"** button links straight to the single-item Stripe Payment Link for the chosen color and size, bypassing the cart for quick impulse purchases.
 
-### 4.4. Analytics & Google Ads Conversion Tracking
+### 4.5. Analytics & Google Ads Conversion Tracking
 - **Header Pixel**: Google Tag (`gtag.js` with ID `AW-18518076612`) is embedded in `_layouts/default.html`.
 - **E-commerce Events**:
   - `add_to_cart`: Fires whenever an item is added to the slide-over cart.
