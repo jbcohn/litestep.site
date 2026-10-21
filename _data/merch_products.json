@@ -2,8 +2,8 @@
   "mount_whitney_ridgelines": {
     "id": 480089207,
     "slug": "mount_whitney_ridgelines",
-    "name": "Mount Whitney Ridgelines Elevation Graphic T-Shirt",
-    "tag": "California Peaks \u00b7 Direct Print-on-Demand",
+    "name": "Mount Whitney Ridgelines Unisex Elevation Graphic T-Shirt",
+    "tag": "California Peaks \u00b7 Unisex Apparel",
     "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
@@ -76,7 +76,9 @@
             "sync_variant_id": "5563999997"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_black.jpg"
+        "model_image": "/assets/images/products/model_whitney_black.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_black.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_black.jpg"
       },
       "Navy": {
         "name": "Navy",
@@ -147,7 +149,9 @@
             "sync_variant_id": "5564000006"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_navy.jpg"
+        "model_image": "/assets/images/products/model_whitney_navy.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_navy.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_navy.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -197,7 +201,9 @@
             "sync_variant_id": "5564000012"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_cardinal.jpg"
+        "model_image": "/assets/images/products/model_whitney_cardinal.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_cardinal.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_cardinal.jpg"
       },
       "Brown": {
         "name": "Brown",
@@ -261,7 +267,9 @@
             "sync_variant_id": "5564000020"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_brown.jpg"
+        "model_image": "/assets/images/products/model_whitney_brown.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_brown.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_brown.jpg"
       },
       "Dark Grey": {
         "name": "Dark Grey",
@@ -311,7 +319,9 @@
             "sync_variant_id": "5564000026"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_dark_grey.jpg"
+        "model_image": "/assets/images/products/model_whitney_dark_grey.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_dark_grey.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_dark_grey.jpg"
       },
       "Asphalt": {
         "name": "Asphalt",
@@ -368,7 +378,9 @@
             "sync_variant_id": "5564000035"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_asphalt.jpg"
+        "model_image": "/assets/images/products/model_whitney_asphalt.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_asphalt.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_asphalt.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -425,7 +437,9 @@
             "sync_variant_id": "5564000042"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_heather_true_royal.jpg"
+        "model_image": "/assets/images/products/model_whitney_heather_true_royal.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_heather_true_royal.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_heather_true_royal.jpg"
       },
       "Aqua": {
         "name": "Aqua",
@@ -489,7 +503,9 @@
             "sync_variant_id": "5564000050"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_aqua.jpg"
+        "model_image": "/assets/images/products/model_whitney_aqua.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_aqua.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_aqua.jpg"
       },
       "Ash": {
         "name": "Ash",
@@ -553,7 +569,9 @@
             "sync_variant_id": "5564000058"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_ash.jpg"
+        "model_image": "/assets/images/products/model_whitney_ash.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_ash.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_ash.jpg"
       },
       "Natural": {
         "name": "Natural",
@@ -617,16 +635,21 @@
             "sync_variant_id": "5564000066"
           }
         },
-        "model_image": "/assets/images/products/model_whitney_natural.jpg"
+        "model_image": "/assets/images/products/model_whitney_natural.jpg",
+        "male_model_image": "/assets/images/products/model_whitney_natural.jpg",
+        "female_model_image": "/assets/images/products/model_whitney_female_natural.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_whitney.jpg"
+    "model_image": "/assets/images/products/model_whitney.jpg",
+    "is_unisex": true,
+    "male_model_image": "/assets/images/products/model_whitney.jpg",
+    "female_model_image": "/assets/images/products/model_whitney_female.jpg"
   },
   "north_palisade_glaciated_af_": {
     "id": 480350932,
     "slug": "north_palisade_glaciated_af_",
-    "name": "North Palisade - Glaciated AF - Tri-Blend T-Shirt",
-    "tag": "High Sierra 14ers \u00b7 Direct Print-on-Demand",
+    "name": "North Palisade - Glaciated AF - Unisex Tri-Blend T-Shirt",
+    "tag": "High Sierra 14ers \u00b7 Unisex Apparel",
     "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
@@ -685,7 +708,9 @@
             "sync_variant_id": "5565544675"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_solid_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_solid_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_solid_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -742,7 +767,9 @@
             "sync_variant_id": "5565544682"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_brown_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_brown_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_brown_triblend.jpg"
       },
       "True Royal Triblend": {
         "name": "True Royal Triblend",
@@ -799,7 +826,9 @@
             "sync_variant_id": "5565544689"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_true_royal_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_true_royal_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_true_royal_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_true_royal_triblend.jpg"
       },
       "Teal Triblend": {
         "name": "Teal Triblend",
@@ -856,7 +885,9 @@
             "sync_variant_id": "5565544696"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_teal_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_teal_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_teal_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_teal_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -913,7 +944,9 @@
             "sync_variant_id": "5565544703"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_maroon_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_maroon_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_maroon_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_maroon_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -970,7 +1003,9 @@
             "sync_variant_id": "5565544710"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_blue_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_blue_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_blue_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_blue_triblend.jpg"
       },
       "Aqua Triblend": {
         "name": "Aqua Triblend",
@@ -1027,7 +1062,9 @@
             "sync_variant_id": "5565544717"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_aqua_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_aqua_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_aqua_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_aqua_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -1084,7 +1121,9 @@
             "sync_variant_id": "5565544724"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_grey_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_grey_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_grey_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -1141,7 +1180,9 @@
             "sync_variant_id": "5565544731"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_olive_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_olive_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_olive_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_olive_triblend.jpg"
       },
       "Mauve Triblend": {
         "name": "Mauve Triblend",
@@ -1191,7 +1232,9 @@
             "sync_variant_id": "5565544737"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_mauve_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_mauve_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_mauve_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_mauve_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -1248,7 +1291,9 @@
             "sync_variant_id": "5565544744"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_mustard_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_mustard_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_mustard_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -1305,16 +1350,21 @@
             "sync_variant_id": "5565544751"
           }
         },
-        "model_image": "/assets/images/products/model_palisade_tan_triblend.jpg"
+        "model_image": "/assets/images/products/model_palisade_tan_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_palisade_tan_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_palisade_female_tan_triblend.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_palisade.jpg"
+    "model_image": "/assets/images/products/model_palisade.jpg",
+    "is_unisex": true,
+    "male_model_image": "/assets/images/products/model_palisade.jpg",
+    "female_model_image": "/assets/images/products/model_palisade_female.jpg"
   },
   "mount_diablo_short_sleeve_t_shirt": {
     "id": 481559531,
     "slug": "mount_diablo_short_sleeve_t_shirt",
-    "name": "Mount Diablo Topographic Wireframe Elevation Graphic T-Shirt",
-    "tag": "California Peaks \u00b7 Direct Print-on-Demand",
+    "name": "Mount Diablo Topographic Wireframe Unisex Elevation Graphic T-Shirt",
+    "tag": "California Peaks \u00b7 Unisex Apparel",
     "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
@@ -1373,7 +1423,9 @@
             "sync_variant_id": "5573425462"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_charcoal_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_charcoal_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_charcoal_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_charcoal_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -1430,7 +1482,9 @@
             "sync_variant_id": "5573425469"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_brown_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_brown_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_brown_triblend.jpg"
       },
       "Navy Triblend": {
         "name": "Navy Triblend",
@@ -1487,7 +1541,9 @@
             "sync_variant_id": "5573425476"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_navy_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_navy_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_navy_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_navy_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -1544,7 +1600,9 @@
             "sync_variant_id": "5573425483"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_maroon_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_maroon_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_maroon_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_maroon_triblend.jpg"
       },
       "Clay Triblend": {
         "name": "Clay Triblend",
@@ -1601,7 +1659,9 @@
             "sync_variant_id": "5573425495"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_clay_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_clay_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_clay_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_clay_triblend.jpg"
       },
       "Red Triblend": {
         "name": "Red Triblend",
@@ -1658,7 +1718,9 @@
             "sync_variant_id": "5573425502"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_red_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_red_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_red_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_red_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -1715,7 +1777,9 @@
             "sync_variant_id": "5573425509"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_blue_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_blue_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_blue_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_blue_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -1772,7 +1836,9 @@
             "sync_variant_id": "5573425516"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_grey_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_grey_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_grey_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -1829,16 +1895,21 @@
             "sync_variant_id": "5573425524"
           }
         },
-        "model_image": "/assets/images/products/model_diablo_olive_triblend.jpg"
+        "model_image": "/assets/images/products/model_diablo_olive_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_diablo_olive_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_diablo_female_olive_triblend.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_diablo.jpg"
+    "model_image": "/assets/images/products/model_diablo.jpg",
+    "is_unisex": true,
+    "male_model_image": "/assets/images/products/model_diablo.jpg",
+    "female_model_image": "/assets/images/products/model_diablo_female.jpg"
   },
   "california_shaded_elevations_short_sleeve_t_shirt": {
     "id": 481791025,
     "slug": "california_shaded_elevations_short_sleeve_t_shirt",
-    "name": "California Shaded Elevations Topographic Graphic T-Shirt",
-    "tag": "California Topography \u00b7 Direct Print-on-Demand",
+    "name": "California Shaded Elevations Topographic Unisex Graphic T-Shirt",
+    "tag": "California Topography \u00b7 Unisex Apparel",
     "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
@@ -1897,7 +1968,9 @@
             "sync_variant_id": "5575052818"
           }
         },
-        "model_image": "/assets/images/products/model_california_charcoal_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_charcoal_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_charcoal_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_charcoal_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -1954,7 +2027,9 @@
             "sync_variant_id": "5575052825"
           }
         },
-        "model_image": "/assets/images/products/model_california_brown_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_brown_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_brown_triblend.jpg"
       },
       "Navy Triblend": {
         "name": "Navy Triblend",
@@ -2011,7 +2086,9 @@
             "sync_variant_id": "5575052835"
           }
         },
-        "model_image": "/assets/images/products/model_california_navy_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_navy_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_navy_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_navy_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -2068,7 +2145,9 @@
             "sync_variant_id": "5575052842"
           }
         },
-        "model_image": "/assets/images/products/model_california_maroon_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_maroon_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_maroon_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_maroon_triblend.jpg"
       },
       "Clay Triblend": {
         "name": "Clay Triblend",
@@ -2125,7 +2204,9 @@
             "sync_variant_id": "5575052849"
           }
         },
-        "model_image": "/assets/images/products/model_california_clay_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_clay_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_clay_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_clay_triblend.jpg"
       },
       "Red Triblend": {
         "name": "Red Triblend",
@@ -2182,7 +2263,9 @@
             "sync_variant_id": "5575052856"
           }
         },
-        "model_image": "/assets/images/products/model_california_red_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_red_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_red_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_red_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -2239,7 +2322,9 @@
             "sync_variant_id": "5575052863"
           }
         },
-        "model_image": "/assets/images/products/model_california_blue_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_blue_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_blue_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_blue_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -2296,7 +2381,9 @@
             "sync_variant_id": "5575052871"
           }
         },
-        "model_image": "/assets/images/products/model_california_grey_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_grey_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_grey_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -2353,16 +2440,21 @@
             "sync_variant_id": "5575052879"
           }
         },
-        "model_image": "/assets/images/products/model_california_olive_triblend.jpg"
+        "model_image": "/assets/images/products/model_california_olive_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_california_olive_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_california_male_olive_triblend.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_california.jpg"
+    "model_image": "/assets/images/products/model_california.jpg",
+    "is_unisex": true,
+    "female_model_image": "/assets/images/products/model_california.jpg",
+    "male_model_image": "/assets/images/products/model_california_male.jpg"
   },
   "mount_vaca": {
     "id": 481939533,
     "slug": "mount_vaca",
-    "name": "Mount Vaca Ridgelines Elevation Hooded Long-Sleeve Tee",
-    "tag": "Northern California Peaks \u00b7 Direct Print-on-Demand",
+    "name": "Mount Vaca Ridgelines Unisex Elevation Hooded Long-Sleeve Tee",
+    "tag": "Northern California Peaks \u00b7 Unisex Apparel",
     "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
     "garment": "Bella + Canvas 3512 Unisex Hooded Long Sleeve Tee",
     "colors": {
@@ -2414,7 +2506,9 @@
             "sync_variant_id": "5576036351"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_charcoal_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_vaca_charcoal_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_charcoal_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_charcoal_black_triblend.jpg"
       },
       "Black": {
         "name": "Black",
@@ -2457,7 +2551,9 @@
             "sync_variant_id": "5576036356"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_black.jpg"
+        "model_image": "/assets/images/products/model_vaca_black.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_black.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_black.jpg"
       },
       "Heather Navy": {
         "name": "Heather Navy",
@@ -2507,7 +2603,9 @@
             "sync_variant_id": "5576036362"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_heather_navy.jpg"
+        "model_image": "/assets/images/products/model_vaca_heather_navy.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_heather_navy.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_heather_navy.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -2557,7 +2655,9 @@
             "sync_variant_id": "5576036370"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_grey_triblend.jpg"
+        "model_image": "/assets/images/products/model_vaca_grey_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_grey_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_grey_triblend.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -2593,7 +2693,9 @@
             "sync_variant_id": "5576036374"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_heather_true_royal.jpg"
+        "model_image": "/assets/images/products/model_vaca_heather_true_royal.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_heather_true_royal.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_heather_true_royal.jpg"
       },
       "White": {
         "name": "White",
@@ -2643,16 +2745,21 @@
             "sync_variant_id": "5576036382"
           }
         },
-        "model_image": "/assets/images/products/model_vaca_white.jpg"
+        "model_image": "/assets/images/products/model_vaca_white.jpg",
+        "male_model_image": "/assets/images/products/model_vaca_white.jpg",
+        "female_model_image": "/assets/images/products/model_vaca_female_white.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_vaca.jpg"
+    "model_image": "/assets/images/products/model_vaca.jpg",
+    "is_unisex": true,
+    "male_model_image": "/assets/images/products/model_vaca.jpg",
+    "female_model_image": "/assets/images/products/model_vaca_female.jpg"
   },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
     "slug": "rainbow_sunflower_tri_blend",
-    "name": "Rainbow Sunflower Tri-Blend T-Shirt",
-    "tag": "Algorithmic Art \u00b7 Direct Print-on-Demand",
+    "name": "Rainbow Sunflower Unisex Tri-Blend T-Shirt",
+    "tag": "Algorithmic Art \u00b7 Unisex Apparel",
     "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
@@ -2711,7 +2818,9 @@
             "sync_variant_id": "5565379146"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_solid_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_solid_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_solid_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -2768,7 +2877,9 @@
             "sync_variant_id": "5565379153"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_brown_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_brown_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_brown_triblend.jpg"
       },
       "True Royal Triblend": {
         "name": "True Royal Triblend",
@@ -2825,7 +2936,9 @@
             "sync_variant_id": "5565379161"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_true_royal_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_true_royal_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_true_royal_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_true_royal_triblend.jpg"
       },
       "Teal Triblend": {
         "name": "Teal Triblend",
@@ -2882,7 +2995,9 @@
             "sync_variant_id": "5565379168"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_teal_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_teal_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_teal_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_teal_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
@@ -2939,7 +3054,9 @@
             "sync_variant_id": "5565379175"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_maroon_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_maroon_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_maroon_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_maroon_triblend.jpg"
       },
       "Blue Triblend": {
         "name": "Blue Triblend",
@@ -2996,7 +3113,9 @@
             "sync_variant_id": "5565379182"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_blue_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_blue_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_blue_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_blue_triblend.jpg"
       },
       "Aqua Triblend": {
         "name": "Aqua Triblend",
@@ -3053,7 +3172,9 @@
             "sync_variant_id": "5565379190"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_aqua_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_aqua_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_aqua_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_aqua_triblend.jpg"
       },
       "Grey Triblend": {
         "name": "Grey Triblend",
@@ -3110,7 +3231,9 @@
             "sync_variant_id": "5565379197"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_grey_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_grey_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_grey_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_grey_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -3167,7 +3290,9 @@
             "sync_variant_id": "5565379204"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_olive_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_olive_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_olive_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_olive_triblend.jpg"
       },
       "Mauve Triblend": {
         "name": "Mauve Triblend",
@@ -3217,7 +3342,9 @@
             "sync_variant_id": "5565379211"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_mauve_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_mauve_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_mauve_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_mauve_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -3274,7 +3401,9 @@
             "sync_variant_id": "5565379218"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_mustard_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_mustard_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_mustard_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -3331,16 +3460,21 @@
             "sync_variant_id": "5565379225"
           }
         },
-        "model_image": "/assets/images/products/model_sunflower_tan_triblend.jpg"
+        "model_image": "/assets/images/products/model_sunflower_tan_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_sunflower_tan_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_sunflower_male_tan_triblend.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_sunflower.jpg"
+    "model_image": "/assets/images/products/model_sunflower.jpg",
+    "is_unisex": true,
+    "female_model_image": "/assets/images/products/model_sunflower.jpg",
+    "male_model_image": "/assets/images/products/model_sunflower_male.jpg"
   },
   "violet_eye_hex_mandala": {
     "id": 479899530,
     "slug": "violet_eye_hex_mandala",
-    "name": "Violet Eye Hexagon Mandala Graphic T-Shirt",
-    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "name": "Violet Eye Hexagon Mandala Unisex Graphic T-Shirt",
+    "tag": "Fractal Art \u00b7 Unisex Apparel",
     "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
@@ -3413,7 +3547,9 @@
             "sync_variant_id": "5563102829"
           }
         },
-        "model_image": "/assets/images/products/model_violet_black_heather.jpg"
+        "model_image": "/assets/images/products/model_violet_black_heather.jpg",
+        "female_model_image": "/assets/images/products/model_violet_black_heather.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_black_heather.jpg"
       },
       "Black": {
         "name": "Black",
@@ -3484,7 +3620,9 @@
             "sync_variant_id": "5563102838"
           }
         },
-        "model_image": "/assets/images/products/model_violet_black.jpg"
+        "model_image": "/assets/images/products/model_violet_black.jpg",
+        "female_model_image": "/assets/images/products/model_violet_black.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_black.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -3534,7 +3672,9 @@
             "sync_variant_id": "5563102844"
           }
         },
-        "model_image": "/assets/images/products/model_violet_cardinal.jpg"
+        "model_image": "/assets/images/products/model_violet_cardinal.jpg",
+        "female_model_image": "/assets/images/products/model_violet_cardinal.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_cardinal.jpg"
       },
       "Heather Brown": {
         "name": "Heather Brown",
@@ -3591,7 +3731,9 @@
             "sync_variant_id": "5563102852"
           }
         },
-        "model_image": "/assets/images/products/model_violet_heather_brown.jpg"
+        "model_image": "/assets/images/products/model_violet_heather_brown.jpg",
+        "female_model_image": "/assets/images/products/model_violet_heather_brown.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_heather_brown.jpg"
       },
       "Army": {
         "name": "Army",
@@ -3655,7 +3797,9 @@
             "sync_variant_id": "5563102860"
           }
         },
-        "model_image": "/assets/images/products/model_violet_army.jpg"
+        "model_image": "/assets/images/products/model_violet_army.jpg",
+        "female_model_image": "/assets/images/products/model_violet_army.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_army.jpg"
       },
       "Soft Cream": {
         "name": "Soft Cream",
@@ -3719,7 +3863,9 @@
             "sync_variant_id": "5563102868"
           }
         },
-        "model_image": "/assets/images/products/model_violet_soft_cream.jpg"
+        "model_image": "/assets/images/products/model_violet_soft_cream.jpg",
+        "female_model_image": "/assets/images/products/model_violet_soft_cream.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_soft_cream.jpg"
       },
       "Soft Pink": {
         "name": "Soft Pink",
@@ -3776,7 +3922,9 @@
             "sync_variant_id": "5563102875"
           }
         },
-        "model_image": "/assets/images/products/model_violet_soft_pink.jpg"
+        "model_image": "/assets/images/products/model_violet_soft_pink.jpg",
+        "female_model_image": "/assets/images/products/model_violet_soft_pink.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_soft_pink.jpg"
       },
       "Silver": {
         "name": "Silver",
@@ -3840,7 +3988,9 @@
             "sync_variant_id": "5563102883"
           }
         },
-        "model_image": "/assets/images/products/model_violet_silver.jpg"
+        "model_image": "/assets/images/products/model_violet_silver.jpg",
+        "female_model_image": "/assets/images/products/model_violet_silver.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_silver.jpg"
       },
       "Ash": {
         "name": "Ash",
@@ -3904,7 +4054,9 @@
             "sync_variant_id": "5563102891"
           }
         },
-        "model_image": "/assets/images/products/model_violet_ash.jpg"
+        "model_image": "/assets/images/products/model_violet_ash.jpg",
+        "female_model_image": "/assets/images/products/model_violet_ash.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_ash.jpg"
       },
       "Heather Ice Blue": {
         "name": "Heather Ice Blue",
@@ -3968,7 +4120,9 @@
             "sync_variant_id": "5563102899"
           }
         },
-        "model_image": "/assets/images/products/model_violet_heather_ice_blue.jpg"
+        "model_image": "/assets/images/products/model_violet_heather_ice_blue.jpg",
+        "female_model_image": "/assets/images/products/model_violet_heather_ice_blue.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_heather_ice_blue.jpg"
       },
       "White": {
         "name": "White",
@@ -4039,16 +4193,21 @@
             "sync_variant_id": "5563102908"
           }
         },
-        "model_image": "/assets/images/products/model_violet_white.jpg"
+        "model_image": "/assets/images/products/model_violet_white.jpg",
+        "female_model_image": "/assets/images/products/model_violet_white.jpg",
+        "male_model_image": "/assets/images/products/model_violet_male_white.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_violet.jpg"
+    "model_image": "/assets/images/products/model_violet.jpg",
+    "is_unisex": true,
+    "female_model_image": "/assets/images/products/model_violet.jpg",
+    "male_model_image": "/assets/images/products/model_violet_male.jpg"
   },
   "bubbles": {
     "id": 479948902,
     "slug": "bubbles",
-    "name": "Bubbles! Procedural Graphic T-Shirt",
-    "tag": "Mathematical Geometry \u00b7 Direct Print-on-Demand",
+    "name": "Bubbles! Unisex Procedural Graphic T-Shirt",
+    "tag": "Mathematical Geometry \u00b7 Unisex Apparel",
     "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
@@ -4121,7 +4280,9 @@
             "sync_variant_id": "5563313436"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_black_heather.jpg"
+        "model_image": "/assets/images/products/model_bubbles_black_heather.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_black_heather.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_black_heather.jpg"
       },
       "Cardinal": {
         "name": "Cardinal",
@@ -4171,7 +4332,9 @@
             "sync_variant_id": "5563313442"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_cardinal.jpg"
+        "model_image": "/assets/images/products/model_bubbles_cardinal.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_cardinal.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_cardinal.jpg"
       },
       "Red": {
         "name": "Red",
@@ -4242,7 +4405,9 @@
             "sync_variant_id": "5563313451"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_red.jpg"
+        "model_image": "/assets/images/products/model_bubbles_red.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_red.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_red.jpg"
       },
       "True Royal": {
         "name": "True Royal",
@@ -4313,7 +4478,9 @@
             "sync_variant_id": "5563313460"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_true_royal.jpg"
+        "model_image": "/assets/images/products/model_bubbles_true_royal.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_true_royal.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_true_royal.jpg"
       },
       "Berry": {
         "name": "Berry",
@@ -4377,7 +4544,9 @@
             "sync_variant_id": "5563313468"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_berry.jpg"
+        "model_image": "/assets/images/products/model_bubbles_berry.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_berry.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_berry.jpg"
       },
       "Heather Clay": {
         "name": "Heather Clay",
@@ -4427,7 +4596,9 @@
             "sync_variant_id": "5563313474"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_heather_clay.jpg"
+        "model_image": "/assets/images/products/model_bubbles_heather_clay.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_heather_clay.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_heather_clay.jpg"
       },
       "Heather Slate": {
         "name": "Heather Slate",
@@ -4477,7 +4648,9 @@
             "sync_variant_id": "5563313480"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_heather_slate.jpg"
+        "model_image": "/assets/images/products/model_bubbles_heather_slate.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_heather_slate.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_heather_slate.jpg"
       },
       "Olive": {
         "name": "Olive",
@@ -4541,7 +4714,9 @@
             "sync_variant_id": "5563313488"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_olive.jpg"
+        "model_image": "/assets/images/products/model_bubbles_olive.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_olive.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_olive.jpg"
       },
       "Autumn": {
         "name": "Autumn",
@@ -4605,7 +4780,9 @@
             "sync_variant_id": "5563313496"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_autumn.jpg"
+        "model_image": "/assets/images/products/model_bubbles_autumn.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_autumn.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_autumn.jpg"
       },
       "Heather Grass Green": {
         "name": "Heather Grass Green",
@@ -4662,7 +4839,9 @@
             "sync_variant_id": "5563313503"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_heather_grass_green.jpg"
+        "model_image": "/assets/images/products/model_bubbles_heather_grass_green.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_heather_grass_green.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_heather_grass_green.jpg"
       },
       "Heather True Royal": {
         "name": "Heather True Royal",
@@ -4719,7 +4898,9 @@
             "sync_variant_id": "5563313510"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_heather_true_royal.jpg"
+        "model_image": "/assets/images/products/model_bubbles_heather_true_royal.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_heather_true_royal.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_heather_true_royal.jpg"
       },
       "Aqua": {
         "name": "Aqua",
@@ -4783,7 +4964,9 @@
             "sync_variant_id": "5563313518"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_aqua.jpg"
+        "model_image": "/assets/images/products/model_bubbles_aqua.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_aqua.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_aqua.jpg"
       },
       "Charity Pink": {
         "name": "Charity Pink",
@@ -4833,10 +5016,15 @@
             "sync_variant_id": "5563313524"
           }
         },
-        "model_image": "/assets/images/products/model_bubbles_charity_pink.jpg"
+        "model_image": "/assets/images/products/model_bubbles_charity_pink.jpg",
+        "male_model_image": "/assets/images/products/model_bubbles_charity_pink.jpg",
+        "female_model_image": "/assets/images/products/model_bubbles_female_charity_pink.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_bubbles.jpg"
+    "model_image": "/assets/images/products/model_bubbles.jpg",
+    "is_unisex": true,
+    "male_model_image": "/assets/images/products/model_bubbles.jpg",
+    "female_model_image": "/assets/images/products/model_bubbles_female.jpg"
   },
   "one_piece_swimsuit": {
     "id": 483500528,
@@ -4901,16 +5089,21 @@
             "sync_variant_id": "5585890917"
           }
         },
-        "model_image": "/assets/images/products/model_one_piece_swimsuit_white.jpg"
+        "model_image": "/assets/images/products/model_one_piece_swimsuit_white.jpg",
+        "female_model_image": "/assets/images/products/model_one_piece_swimsuit_white.jpg",
+        "male_model_image": null
       }
     },
-    "model_image": "/assets/images/products/model_one_piece_swimsuit.jpg"
+    "model_image": "/assets/images/products/model_one_piece_swimsuit.jpg",
+    "is_unisex": false,
+    "female_model_image": "/assets/images/products/model_one_piece_swimsuit.jpg",
+    "male_model_image": null
   },
   "muscle_shirt": {
     "id": 483496351,
     "slug": "muscle_shirt",
-    "name": "Violet Eye Hexagon Mandala Muscle Tank",
-    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "name": "Violet Eye Hexagon Mandala Unisex Muscle Tank",
+    "tag": "Fractal Art \u00b7 Unisex Apparel",
     "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
     "garment": "Bella + Canvas 3483 Muscle Tank",
     "colors": {
@@ -4948,10 +5141,15 @@
             "sync_variant_id": "5585859497"
           }
         },
-        "model_image": "/assets/images/products/model_muscle_shirt_white.jpg"
+        "model_image": "/assets/images/products/model_muscle_shirt_white.jpg",
+        "female_model_image": "/assets/images/products/model_muscle_shirt_white.jpg",
+        "male_model_image": "/assets/images/products/model_muscle_shirt_male_white.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_muscle_shirt.jpg"
+    "model_image": "/assets/images/products/model_muscle_shirt.jpg",
+    "is_unisex": true,
+    "female_model_image": "/assets/images/products/model_muscle_shirt.jpg",
+    "male_model_image": "/assets/images/products/model_muscle_shirt_male.jpg"
   },
   "bodycon_dress": {
     "id": 483495525,
@@ -5002,16 +5200,21 @@
             "sync_variant_id": "5585854054"
           }
         },
-        "model_image": "/assets/images/products/model_bodycon_dress_white.jpg"
+        "model_image": "/assets/images/products/model_bodycon_dress_white.jpg",
+        "female_model_image": "/assets/images/products/model_bodycon_dress_white.jpg",
+        "male_model_image": null
       }
     },
-    "model_image": "/assets/images/products/model_bodycon_dress.jpg"
+    "model_image": "/assets/images/products/model_bodycon_dress.jpg",
+    "is_unisex": false,
+    "female_model_image": "/assets/images/products/model_bodycon_dress.jpg",
+    "male_model_image": null
   },
   "blue_hex_portal": {
     "id": 483492839,
     "slug": "blue_hex_portal",
-    "name": "Blue Hex Portal Graphic Tri-Blend T-Shirt",
-    "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
+    "name": "Blue Hex Portal Unisex Graphic Tri-Blend T-Shirt",
+    "tag": "Fractal Art \u00b7 Unisex Apparel",
     "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
@@ -5070,7 +5273,9 @@
             "sync_variant_id": "5585834033"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_solid_black_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_solid_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_solid_black_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -5127,7 +5332,9 @@
             "sync_variant_id": "5585834040"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_brown_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_brown_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_brown_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -5184,7 +5391,9 @@
             "sync_variant_id": "5585834047"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_olive_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_olive_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_olive_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_olive_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -5241,7 +5450,9 @@
             "sync_variant_id": "5585834054"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_mustard_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_mustard_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_mustard_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -5298,7 +5509,9 @@
             "sync_variant_id": "5585834061"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_tan_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_tan_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_tan_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_tan_triblend.jpg"
       },
       "Solid White Triblend": {
         "name": "Solid White Triblend",
@@ -5355,9 +5568,14 @@
             "sync_variant_id": "5585834068"
           }
         },
-        "model_image": "/assets/images/products/model_blue_hex_portal_solid_white_triblend.jpg"
+        "model_image": "/assets/images/products/model_blue_hex_portal_solid_white_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_blue_hex_portal_solid_white_triblend.jpg",
+        "male_model_image": "/assets/images/products/model_blue_hex_portal_male_solid_white_triblend.jpg"
       }
     },
-    "model_image": "/assets/images/products/model_blue_hex_portal.jpg"
+    "model_image": "/assets/images/products/model_blue_hex_portal.jpg",
+    "is_unisex": true,
+    "female_model_image": "/assets/images/products/model_blue_hex_portal.jpg",
+    "male_model_image": "/assets/images/products/model_blue_hex_portal_male.jpg"
   }
 }

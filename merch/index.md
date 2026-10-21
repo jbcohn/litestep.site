@@ -52,11 +52,17 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     {% endunless %}
 
     {% assign initial_img = default_color.image %}
-    {% if prod.model_image %}
-      {% if default_color.model_image %}
-        {% assign initial_img = default_color.model_image %}
-      {% else %}
-        {% assign initial_img = prod.model_image %}
+    {% if prod.is_unisex %}
+      {% if default_color.male_model_image %}
+        {% assign initial_img = default_color.male_model_image %}
+      {% elsif prod.male_model_image %}
+        {% assign initial_img = prod.male_model_image %}
+      {% endif %}
+    {% else %}
+      {% if default_color.female_model_image %}
+        {% assign initial_img = default_color.female_model_image %}
+      {% elsif prod.female_model_image %}
+        {% assign initial_img = prod.female_model_image %}
       {% endif %}
     {% endif %}
 
@@ -65,29 +71,21 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
         <img
           class="merch-shirt-img"
           src="{{ initial_img | relative_url }}"
-          alt="{{ prod.name }} - {% if prod.model_image %}Model View ({{ default_color_name }}){% else %}{{ default_color_name }}{% endif %}"
+          alt="{{ prod.name }} - {% if prod.is_unisex %}Male Model ({{ default_color_name }}){% else %}Model View ({{ default_color_name }}){% endif %}"
           style="max-width: 100%; max-height: 310px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
         >
 
-        {% if prod.model_image %}
-          {% assign toggle_view_name = 'Shirt View' %}
-          {% if prod.garment contains 'Dress' or prod.garment contains 'Swimsuit' %}
-            {% assign toggle_view_name = 'Product View' %}
+        <!-- View Switcher (Male / Female / Garment) -->
+        <div class="merch-view-switcher" style="position: absolute; top: 10px; right: 10px; display: inline-flex; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(0, 0, 0, 0.14); border-radius: 20px; padding: 2px; backdrop-filter: blur(6px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); z-index: 5;">
+          {% if prod.is_unisex %}
+            <button type="button" class="view-btn active" data-view="male" title="Show on male model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease;">Male Model</button>
+            <button type="button" class="view-btn" data-view="female" title="Show on female model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Female Model</button>
+            <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Just Garment</button>
+          {% else %}
+            <button type="button" class="view-btn active" data-view="female" title="Show on model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease;">Model View</button>
+            <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Just Garment</button>
           {% endif %}
-          <!-- View Toggle Button (Tee vs Model) -->
-          <button
-            type="button"
-            class="merch-view-toggle"
-            aria-label="Toggle between product and model view"
-            style="position: absolute; top: 12px; right: 12px; background: rgba(255, 255, 255, 0.92); color: #111827; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 20px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.15s ease;"
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-            <span class="toggle-label">{{ toggle_view_name }}</span>
-          </button>
-        {% endif %}
+        </div>
 
         <!-- Zoom Pill -->
         <button
@@ -989,15 +987,15 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     const sizeSelect = card.querySelector('.merch-size-select');
     const imgEl = card.querySelector('.merch-shirt-img');
     const imgContainer = card.querySelector('.merch-img-container');
-    const viewToggleBtn = card.querySelector('.merch-view-toggle');
+    const viewButtons = card.querySelectorAll('.view-btn');
     const addCartBtn = card.querySelector('.merch-add-cart-btn');
     const buyNowBtn = card.querySelector('.merch-buy-now-btn');
     const priceSpan = card.querySelector('.merch-btn-price');
 
     if (!colorSelect || !sizeSelect) return;
 
-    // View state: 'model' (default if model photo available) or 'color' (flat shirt)
-    let currentView = prodData.model_image ? 'model' : 'color';
+    // View state: 'male', 'female', or 'flat'
+    let currentView = prodData.is_unisex ? 'male' : 'female';
 
     // If deep-linked via ?product=slug, highlight and pre-select color/size if provided
     const isPinned = (slug === pinnedProductSlug);
@@ -1014,34 +1012,48 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       imgEl.style.opacity = '0.3';
       const currentColor = colorSelect.value;
       const colorInfo = prodData.colors[currentColor];
-      if (currentView === 'model' && prodData.model_image) {
-        const modelSrc = (colorInfo && colorInfo.model_image) ? colorInfo.model_image : prodData.model_image;
-        imgEl.src = baseUrl + modelSrc;
-        imgEl.alt = prodData.name + ' - Model View (' + currentColor + ')';
+      let targetSrc = '';
+      let targetAlt = prodData.name;
+
+      if (currentView === 'male') {
+        targetSrc = (colorInfo && colorInfo.male_model_image) ? colorInfo.male_model_image : (prodData.male_model_image || prodData.model_image);
+        targetAlt += ' - Male Model (' + currentColor + ')';
+      } else if (currentView === 'female') {
+        targetSrc = (colorInfo && colorInfo.female_model_image) ? colorInfo.female_model_image : (prodData.female_model_image || prodData.model_image);
+        targetAlt += ' - ' + (prodData.is_unisex ? 'Female Model (' : 'Model View (') + currentColor + ')';
       } else {
-        if (colorInfo && colorInfo.image) {
-          imgEl.src = baseUrl + colorInfo.image;
-          imgEl.alt = prodData.name + ' - ' + currentColor;
-        }
+        targetSrc = (colorInfo && colorInfo.image) ? colorInfo.image : (prodData.image || '');
+        targetAlt += ' - ' + currentColor + ' (Garment View)';
+      }
+
+      if (targetSrc) {
+        imgEl.src = baseUrl + targetSrc;
+        imgEl.alt = targetAlt;
       }
       setTimeout(() => { imgEl.style.opacity = '1'; }, 70);
     }
 
-    if (viewToggleBtn && prodData.model_image) {
-      const flatLabel = (prodData.garment && (prodData.garment.includes('Dress') || prodData.garment.includes('Swimsuit'))) ? 'Product View' : 'Shirt View';
-      viewToggleBtn.addEventListener('click', (e) => {
+    viewButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
         e.stopPropagation();
-        const label = viewToggleBtn.querySelector('.toggle-label');
-        if (currentView === 'model') {
-          currentView = 'color';
-          if (label) label.textContent = 'Model View';
-        } else {
-          currentView = 'model';
-          if (label) label.textContent = flatLabel;
-        }
+        const v = btn.getAttribute('data-view');
+        currentView = v;
+
+        viewButtons.forEach(b => {
+          if (b === btn) {
+            b.classList.add('active');
+            b.style.background = '#111827';
+            b.style.color = '#ffffff';
+          } else {
+            b.classList.remove('active');
+            b.style.background = 'transparent';
+            b.style.color = '#4b5563';
+          }
+        });
+
         updateCardImage();
       });
-    }
+    });
 
     function updateSizes(selectedColor, preserveSize) {
       const colorInfo = prodData.colors[selectedColor];
@@ -1081,6 +1093,17 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       const colorInfo = prodData.colors[currentColor];
       const variantData = colorInfo?.sizes?.[currentSize];
       if (!variantData) return null;
+
+      let selImg = '';
+      if (currentView === 'male') {
+        selImg = (colorInfo && colorInfo.male_model_image) || prodData.male_model_image;
+      } else if (currentView === 'female') {
+        selImg = (colorInfo && colorInfo.female_model_image) || prodData.female_model_image;
+      } else {
+        selImg = colorInfo && colorInfo.image;
+      }
+      if (!selImg) selImg = (colorInfo && colorInfo.image) || prodData.image;
+
       return {
         sync_variant_id: variantData.sync_variant_id,
         product_id: variantData.product_id,
@@ -1089,7 +1112,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
         color: currentColor,
         size: currentSize,
         price_cents: variantData.price_cents,
-        image: colorInfo.model_image || prodData.model_image || colorInfo.image,
+        image: selImg,
         quantity: 1
       };
     }
@@ -1120,12 +1143,22 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
       imgContainer.addEventListener('click', () => {
         const currentColor = colorSelect.value;
         const colorInfo = prodData.colors[currentColor];
-        if (currentView === 'model' && prodData.model_image) {
-          const modelSrc = (colorInfo && colorInfo.model_image) ? colorInfo.model_image : prodData.model_image;
-          openZoomModal(prodData.name, 'Model Photo (' + currentColor + ')', baseUrl + modelSrc);
+        let modalSrc = '';
+        let modalSubtitleText = currentColor;
+
+        if (currentView === 'male') {
+          modalSrc = (colorInfo && colorInfo.male_model_image) ? colorInfo.male_model_image : (prodData.male_model_image || prodData.model_image);
+          modalSubtitleText = 'Male Model (' + currentColor + ')';
+        } else if (currentView === 'female') {
+          modalSrc = (colorInfo && colorInfo.female_model_image) ? colorInfo.female_model_image : (prodData.female_model_image || prodData.model_image);
+          modalSubtitleText = (prodData.is_unisex ? 'Female Model (' : 'Model View (') + currentColor + ')';
         } else {
-          const currentImgSrc = (colorInfo && colorInfo.image) ? (baseUrl + colorInfo.image) : (imgEl ? imgEl.src : '');
-          openZoomModal(prodData.name, currentColor, currentImgSrc);
+          modalSrc = (colorInfo && colorInfo.image) ? colorInfo.image : '';
+          modalSubtitleText = currentColor + ' (Garment View)';
+        }
+
+        if (modalSrc) {
+          openZoomModal(prodData.name, modalSubtitleText, baseUrl + modalSrc);
         }
       });
     }

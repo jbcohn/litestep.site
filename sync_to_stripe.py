@@ -73,154 +73,129 @@ def save_clean_image(img_bytes, dest_path, overwrite=False):
 # Custom marketing descriptions, tags, and model mockup configurations
 PRODUCT_METADATA = {
     480089207: {  # Mount Whitney
-        "display_name": "Mount Whitney Ridgelines Elevation Graphic T-Shirt",
-        "tag": "California Peaks · Direct Print-on-Demand",
+        "display_name": "Mount Whitney Ridgelines Unisex Elevation Graphic T-Shirt",
+        "tag": "California Peaks · Unisex Apparel",
         "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
-        "model_prefix": "model_whitney",
-        "model_config": {
-            "option_group": "Men's 4",
-            "option": "Left Front",
-            "top": 300
-        }
+        "is_unisex": True,
+        "male_model_prefix": "model_whitney",
+        "female_model_prefix": "model_whitney_female",
+        "male_model_config": {"option_group": "Men's 4", "option": "Left Front", "top": 300},
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]}
     },
     480350932: {  # North Palisade
-        "display_name": "North Palisade - Glaciated AF - Tri-Blend T-Shirt",
-        "tag": "High Sierra 14ers · Direct Print-on-Demand",
+        "display_name": "North Palisade - Glaciated AF - Unisex Tri-Blend T-Shirt",
+        "tag": "High Sierra 14ers · Unisex Apparel",
         "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric.",
-        "model_prefix": "model_palisade",
-        "model_config": {
-            "option_group": "Men's 3",
-            "option": "Right Front",
-            "top": 300
-        }
+        "is_unisex": True,
+        "male_model_prefix": "model_palisade",
+        "female_model_prefix": "model_palisade_female",
+        "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 300},
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]}
     },
     480312304: {  # Rainbow Sunflower
-        "display_name": "Rainbow Sunflower Tri-Blend T-Shirt",
-        "tag": "Algorithmic Art · Direct Print-on-Demand",
+        "display_name": "Rainbow Sunflower Unisex Tri-Blend T-Shirt",
+        "tag": "Algorithmic Art · Unisex Apparel",
         "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum.",
-        "model_prefix": "model_sunflower",
-        "model_config": {
-            "option_group": "Women's 4",
-            "option": "Front",
-            "top": 250
-        }
+        "is_unisex": True,
+        "male_model_prefix": "model_sunflower_male",
+        "female_model_prefix": "model_sunflower",
+        "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 250}
     },
     479948902: {  # Bubbles!
-        "display_name": "Bubbles! Procedural Graphic T-Shirt",
-        "tag": "Mathematical Geometry · Direct Print-on-Demand",
+        "display_name": "Bubbles! Unisex Procedural Graphic T-Shirt",
+        "tag": "Mathematical Geometry · Unisex Apparel",
         "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts.",
-        "model_prefix": "model_bubbles",
-        "model_config": {
-            "option_group": "Men's Lifestyle",
-            "option": "Front",
-            "top": 0
-        }
+        "is_unisex": True,
+        "male_model_prefix": "model_bubbles",
+        "female_model_prefix": "model_bubbles_female",
+        "male_model_config": {"option_group": "Men's Lifestyle", "option": "Front", "top": 0},
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]}
     },
     479899530: {  # Violet Eye Hex Mandala
-        "display_name": "Violet Eye Hexagon Mandala Graphic T-Shirt",
-        "tag": "Fractal Art · Direct Print-on-Demand",
+        "display_name": "Violet Eye Hexagon Mandala Unisex Graphic T-Shirt",
+        "tag": "Fractal Art · Unisex Apparel",
         "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry.",
-        "model_prefix": "model_violet",
-        "model_config": {
-            "option_group": "Women's Lifestyle 2",
-            "option": "Front",
-            "top": 200
-        }
+        "is_unisex": True,
+        "male_model_prefix": "model_violet_male",
+        "female_model_prefix": "model_violet",
+        "male_model_config": {"option_group": "Men's 4", "option": "Left Front", "top": 200, "placements": ["front_large"]},
+        "female_model_config": {"option_group": "Women's Lifestyle 2", "option": "Front", "top": 200}
     },
     481559531: {  # Mount Diablo
-        "display_name": "Mount Diablo Topographic Wireframe Elevation Graphic T-Shirt",
-        "tag": "California Peaks · Direct Print-on-Demand",
+        "display_name": "Mount Diablo Topographic Wireframe Unisex Elevation Graphic T-Shirt",
+        "tag": "California Peaks · Unisex Apparel",
         "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
-        "model_prefix": "model_diablo",
+        "is_unisex": True,
         "primary_color": "Brown Triblend",
-        "model_config": {
-            "option_group": "Men's 3",
-            "option": "Front",
-            "top": 300
-        }
+        "male_model_prefix": "model_diablo",
+        "female_model_prefix": "model_diablo_female",
+        "male_model_config": {"option_group": "Men's 3", "option": "Front", "top": 300},
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]}
     },
     481791025: {  # California Shaded Elevations
-        "display_name": "California Shaded Elevations Topographic Graphic T-Shirt",
-        "tag": "California Topography · Direct Print-on-Demand",
+        "display_name": "California Shaded Elevations Topographic Unisex Graphic T-Shirt",
+        "tag": "California Topography · Unisex Apparel",
         "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
-        "model_prefix": "model_california",
+        "is_unisex": True,
         "primary_color": "Charcoal-Black Triblend",
-        "model_config": {
-            "option_group": "Women's Lifestyle",
-            "option": "Front",
-            "top": 200,
-            "placements": ["front_large"]
-        },
-        "flat_config": {
-            "option_group": "Flat",
-            "option": "Front",
-            "placements": ["front_large"]
-        }
+        "male_model_prefix": "model_california_male",
+        "female_model_prefix": "model_california",
+        "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "flat_config": {"option_group": "Flat", "option": "Front", "placements": ["front_large"]}
     },
     481939533: {  # Mount Vaca
-        "display_name": "Mount Vaca Ridgelines Elevation Hooded Long-Sleeve Tee",
-        "tag": "Northern California Peaks · Direct Print-on-Demand",
+        "display_name": "Mount Vaca Ridgelines Unisex Elevation Hooded Long-Sleeve Tee",
+        "tag": "Northern California Peaks · Unisex Apparel",
         "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
-        "model_prefix": "model_vaca"
+        "is_unisex": True,
+        "male_model_prefix": "model_vaca",
+        "female_model_prefix": "model_vaca_female",
+        "male_model_config": {"option_group": "Men's", "option": "Front", "top": 0, "placements": ["front"]},
+        "female_model_config": {"option_group": "Women's", "option": "Front", "top": 100, "placements": ["front"]}
     },
     483500528: {  # One-Piece Swimsuit
         "display_name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
-        "model_prefix": "model_one_piece_swimsuit",
+        "is_unisex": False,
+        "female_model_prefix": "model_one_piece_swimsuit",
         "primary_color": "White",
-        "model_config": {
-            "option_group": "Women's 2",
-            "option": "Front",
-            "placements": ["front", "back"]
-        }
+        "female_model_config": {"option_group": "Women's 2", "option": "Front", "placements": ["front", "back"]}
     },
     483496351: {  # Muscle Shirt
-        "display_name": "Violet Eye Hexagon Mandala Muscle Tank",
-        "tag": "Fractal Art · Direct Print-on-Demand",
+        "display_name": "Violet Eye Hexagon Mandala Unisex Muscle Tank",
+        "tag": "Fractal Art · Unisex Apparel",
         "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
-        "model_prefix": "model_muscle_shirt",
+        "is_unisex": True,
+        "male_model_prefix": "model_muscle_shirt_male",
+        "female_model_prefix": "model_muscle_shirt",
         "primary_color": "White",
-        "model_config": {
-            "option_group": "Women's",
-            "option": "Front",
-            "placements": ["front"]
-        },
-        "flat_config": {
-            "option_group": "Flat",
-            "option": "Front",
-            "placements": ["front"]
-        }
+        "male_model_config": {"option_group": "Men's", "option": "Front", "top": 0, "placements": ["front"]},
+        "female_model_config": {"option_group": "Women's", "option": "Front", "placements": ["front"]},
+        "flat_config": {"option_group": "Flat", "option": "Front", "placements": ["front"]}
     },
     483495525: {  # Bodycon dress
         "display_name": "Violet Eye Hexagon Mandala Bodycon Dress",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Eye-catching body-hugging dress showcasing concentric hexagon fractal geometry in vivid violet and turquoise gradients.",
-        "model_prefix": "model_bodycon_dress",
+        "is_unisex": False,
+        "female_model_prefix": "model_bodycon_dress",
         "primary_color": "White",
-        "model_config": {
-            "option_group": "Women's",
-            "option": "Front",
-            "placements": ["default"]
-        }
+        "female_model_config": {"option_group": "Women's", "option": "Front", "placements": ["default"]}
     },
     483492839: {  # Blue Hex Portal
-        "display_name": "Blue Hex Portal Graphic Tri-Blend T-Shirt",
-        "tag": "Fractal Art · Direct Print-on-Demand",
+        "display_name": "Blue Hex Portal Unisex Graphic Tri-Blend T-Shirt",
+        "tag": "Fractal Art · Unisex Apparel",
         "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
-        "model_prefix": "model_blue_hex_portal",
+        "is_unisex": True,
+        "male_model_prefix": "model_blue_hex_portal_male",
+        "female_model_prefix": "model_blue_hex_portal",
         "primary_color": "Solid Black Triblend",
-        "model_config": {
-            "option_group": "Women's Lifestyle",
-            "option": "Front",
-            "top": 200,
-            "placements": ["front_large"]
-        },
-        "flat_config": {
-            "option_group": "Flat",
-            "option": "Front",
-            "placements": ["front_large"]
-        }
+        "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "flat_config": {"option_group": "Flat", "option": "Front", "placements": ["front_large"]}
     }
 }
 
@@ -433,19 +408,19 @@ def generate_printful_mockups(cat_prod_id, art_file, missing_for_task, cfg, targ
 
     return results
 
-def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=None):
+def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=None, model_prefix_override=None, model_cfg_override=None, existing_key="model_image"):
     """
     Ensures high-resolution (2000px) colorway model mockups exist for each color of the product,
     saving them with clean white or lifestyle backgrounds (no black backgrounds).
     Guarantees that previously chosen mockups for the store are never replaced or overwritten.
     Returns (product_model_image_rel, dict_of_color_to_model_image_rel).
     """
-    model_prefix = custom_meta.get("model_prefix", f"model_{prod_slug}")
-    model_cfg = custom_meta.get("model_config")
+    model_prefix = model_prefix_override or custom_meta.get("model_prefix", f"model_{prod_slug}")
+    model_cfg = model_cfg_override or custom_meta.get("model_config")
     existing_prod_data = existing_prod_data or {}
 
     # Check if existing product already has a primary model image
-    prev_primary_rel = existing_prod_data.get("model_image")
+    prev_primary_rel = existing_prod_data.get(existing_key)
     if prev_primary_rel and os.path.exists(os.path.join(BASE_DIR, prev_primary_rel.lstrip("/"))):
         primary_rel = prev_primary_rel
         primary_path = os.path.join(BASE_DIR, prev_primary_rel.lstrip("/"))
@@ -460,7 +435,7 @@ def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, exis
         color_slug = slugify(color)
 
         # 1. First priority: Check if existing catalog already specifies a model mockup for this color
-        prev_color_model = existing_prod_data.get("colors", {}).get(color, {}).get("model_image")
+        prev_color_model = existing_prod_data.get("colors", {}).get(color, {}).get(existing_key)
         if prev_color_model:
             prev_model_path = os.path.join(BASE_DIR, prev_color_model.lstrip("/"))
             if os.path.exists(prev_model_path) and os.path.getsize(prev_model_path) > 0:
@@ -631,12 +606,41 @@ for sp in store_products:
         color = v.get("color", "Default")
         color_groups.setdefault(color, []).append(v)
 
-    # Sync colorway model mockups (clean white or lifestyle background, 2000px)
-    primary_model_rel, color_model_rels = sync_model_mockups(
-        pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=existing_prod_data
-    )
-    if primary_model_rel:
-        prod_entry["model_image"] = primary_model_rel
+    # Determine unisex status
+    is_unisex = custom_meta.get("is_unisex", True if ("Dress" not in garment_model and "Swimsuit" not in garment_model) else False)
+    prod_entry["is_unisex"] = is_unisex
+
+    # Sync male model mockups
+    male_cfg = custom_meta.get("male_model_config")
+    male_prefix = custom_meta.get("male_model_prefix", f"model_{prod_slug}_male")
+    primary_male_rel, color_male_rels = None, {}
+    if male_cfg or is_unisex:
+        primary_male_rel, color_male_rels = sync_model_mockups(
+            pid, prod_slug, variants, color_groups, custom_meta,
+            existing_prod_data=existing_prod_data,
+            model_prefix_override=male_prefix,
+            model_cfg_override=male_cfg,
+            existing_key="male_model_image"
+        )
+        if primary_male_rel:
+            prod_entry["male_model_image"] = primary_male_rel
+
+    # Sync female model mockups
+    female_cfg = custom_meta.get("female_model_config")
+    female_prefix = custom_meta.get("female_model_prefix", f"model_{prod_slug}_female")
+    primary_female_rel, color_female_rels = None, {}
+    if female_cfg or not is_unisex:
+        primary_female_rel, color_female_rels = sync_model_mockups(
+            pid, prod_slug, variants, color_groups, custom_meta,
+            existing_prod_data=existing_prod_data,
+            model_prefix_override=female_prefix,
+            model_cfg_override=female_cfg,
+            existing_key="female_model_image"
+        )
+        if primary_female_rel:
+            prod_entry["female_model_image"] = primary_female_rel
+
+    prod_entry["model_image"] = primary_male_rel or primary_female_rel
 
     # Check if flat_config is provided to generate clean flat mockups
     flat_cfg = custom_meta.get("flat_config")
@@ -701,9 +705,13 @@ for sp in store_products:
             "image": local_img_rel,
             "sizes": {}
         }
-        color_model_img = color_model_rels.get(color, primary_model_rel)
-        if color_model_img:
-            prod_entry["colors"][color]["model_image"] = color_model_img
+        if primary_male_rel or color_male_rels:
+            prod_entry["colors"][color]["male_model_image"] = color_male_rels.get(color, primary_male_rel)
+        if primary_female_rel or color_female_rels:
+            prod_entry["colors"][color]["female_model_image"] = color_female_rels.get(color, primary_female_rel)
+        prod_entry["colors"][color]["model_image"] = (
+            color_male_rels.get(color) or color_female_rels.get(color) or primary_male_rel or primary_female_rel
+        )
 
         for v in var_list:
             sync_variant_id = str(v["id"])
