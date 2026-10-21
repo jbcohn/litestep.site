@@ -1,462 +1,260 @@
 # Stripe + Cloudflare Worker + Printful Integration Walkthrough
 **Platform:** [litestep.us](https://litestep.us)  
-**Objective:** Automated, zero-subscription print-on-demand fulfillment bridge connecting static Jekyll pages, Stripe Checkout, and Printful fulfillment via an edge Cloudflare Worker.
+**Objective:** Fully automated, zero-subscription print-on-demand fulfillment bridge connecting static Jekyll pages, Stripe Checkout, and Printful fulfillment via an edge Cloudflare Worker.
 
 ---
 
 ## 1. System Overview & Architecture
 
+The architecture provides two checkout experiences while maintaining a zero-maintenance, serverless infrastructure:
+1. **1-Click Buy Now**: Direct Stripe Payment Links for single-item purchases.
+2. **Multi-Item Shopping Cart**: Client-side slide-over cart with dynamic shipping tiers (e.g. Free US shipping on 2+ items) powered by Cloudflare Worker checkout sessions.
+
 ```mermaid
 flowchart TD
-    A["litestep.us /merch Page<br/>(Interactive Color & Size Selector)"] -->|User clicks Buy Now| B["Stripe Payment Link / Checkout<br/>(Payment, Shipping Address, Billing)"]
-    B -->|Event: checkout.session.completed| C["Cloudflare Worker<br/>(litestep-printful-webhook)"]
-    subgraph Cloudflare Worker Middleware
-        C1["1. Verify Stripe-Signature<br/>(Web Crypto HMAC-SHA256)"]
-        C2["2. Fetch Session Line Items<br/>(Stripe REST API)"]
-        C3["3. Extract printful_sync_variant_id<br/>from Price/Product Metadata"]
-        C4["4. Format Shipping & Items Payload"]
-        C5["5. POST /orders to Printful API<br/>(Includes X-PF-Store-Id)"]
-        C1 --> C2 --> C3 --> C4 --> C5
+    subgraph Client ["litestep.us Storefront (Jekyll)"]
+        A["Catalog Page (/merch/)<br/>• Model vs Shirt View Toggle<br/>• Color & Size Selectors<br/>• High-Res Zoom Modal"]
+        B["Option A: Instant Buy Now<br/>(Stripe Payment Link)"]
+        C["Option B: Multi-Item Cart<br/>(LocalStorage + Slide-Over Panel)"]
+        Z["Thank You Page (/merch/thank-you/)<br/>• Google Ads Purchase Event<br/>• Order Confirmation Details"]
+        A -->|Click 'Buy Now'| B
+        A -->|Click 'Add to Cart'| C
     end
-    C --> C1
-    C5 --> D["Printful API (POST /orders)<br/>(Draft in Test Mode, Auto-Confirmed in Live)"]
-    D --> E["Printful Production & Drop-shipping<br/>(Direct tracking emailed to customer)"]
+
+    subgraph Edge ["Cloudflare Worker (litestep-printful-webhook)"]
+        W1["POST /create-checkout-session<br/>• Validates against CATALOG_PRICES<br/>• Dynamic shipping ($4.79 or Free for 2+)"]
+        W2["GET /session-status<br/>• Non-PII total & currency for analytics"]
+        W3["POST / (Webhook Receiver)<br/>• Verifies Stripe HMAC-SHA256<br/>• Expands Line Items<br/>• Maps printful_sync_variant_id"]
+    end
+
+    subgraph Stripe ["Stripe Engine"]
+        S1["Stripe Checkout<br/>(Payment, Tax, US Shipping Address)"]
+        S2["Stripe Event<br/>checkout.session.completed"]
+    end
+
+    subgraph Printful ["Printful Fulfillment"]
+        P1["POST /orders<br/>(X-PF-Store-Id: 18881050)"]
+        P2["Production & Drop-shipping<br/>(Direct tracking emailed to customer)"]
+    end
+
+    B -->|Redirect| S1
+    C -->|POST /create-checkout-session| W1
+    W1 -->|Creates Session| S1
+    S1 -->|Payment Success Redirect| Z
+    Z -->|GET /session-status| W2
+    S1 -->|Fires Webhook| S2
+    S2 -->|POST /| W3
+    W3 -->|Creates Order| P1
+    P1 --> P2
 ```
 
 ---
 
 ## 2. Credentials & Environment Reference
 
-| Service | Setting / Credential | Format / Example | Where Found |
+| Service | Setting / Credential | Format / Example | Where Found / Managed |
 | :--- | :--- | :--- | :--- |
-| **Printful** | API Access Token | `personal_token_...` | Printful Dashboard > Settings > API > Stores/Access Tokens |
+| **Printful** | API Personal Access Token | `0eSXIvdhy...` | Printful Dashboard > Settings > API > Personal Access Tokens |
 | **Printful** | Store ID | `18881050` | Printful Dashboard > Stores (or via `GET /stores`) |
 | **Stripe** | Test Secret Key | `sk_test_51...` | Stripe Dashboard (Test Mode) > Developers > API keys |
 | **Stripe** | Live Secret Key | `sk_live_51...` | Stripe Dashboard (Live Mode) > Developers > API keys |
-| **Stripe** | Webhook Signing Secret | `whsec_...` | Stripe Dashboard > Developers > Webhooks (after endpoint creation) |
-| **Cloudflare** | Wrangler CLI | Node CLI (`wrangler`) | Installed via `npm install -g wrangler` or `npx wrangler` |
+| **Stripe** | Webhook Signing Secret | `whsec_...` | Stripe Dashboard > Developers > Webhooks |
+| **Cloudflare** | Wrangler CLI | Node CLI (`wrangler`) | Run in `litestep-printful-webhook/` |
+| **Worker URL** | Production Endpoint | `https://litestep-printful-webhook.jbcohn.workers.dev` | Cloudflare Dashboard / Wrangler Deploy |
 
 ---
 
-## 3. Product Setup & Automated Stripe Catalog Sync
+## 3. Automated Catalog Synchronization (`sync_to_stripe.py`)
 
-Rather than manually entering dozens of size and color combinations into the Stripe Dashboard, products are designed in Printful and synced automatically to Stripe via a Python script.
+The synchronization script ([sync_to_stripe.py](file:///Users/joshcohn/Developer/litestep-site/sync_to_stripe.py)) serves as the central automation engine. It synchronizes the entire Printful catalog directly with Stripe, automatically generates 2000px high-resolution mockups, and outputs the structured data needed by both Jekyll and Cloudflare.
 
-### 3.1. Design in Printful
-1. Navigate to **Printful Dashboard > Stores** and open your **API Store** (e.g., Store ID `18881050`).
-2. Click **Add Product** (e.g., Bella + Canvas 3001 Unisex T-Shirt).
-3. Upload front/back print graphics, select available colors, and save.
-4. Note the generated **Sync Product ID** from the URL or API (e.g., `480089207`).
+### 3.1. Key Responsibilities
+1. **Printful Product Extraction**: Fetches all sync products and variants from the Printful API store (`GET /store/products`).
+2. **Stripe Product & Price Idempotency**:
+   - Creates or updates Stripe Products and Prices matching each color and size.
+   - Tags every Price with `metadata.printful_sync_variant_id` so the webhook worker can immediately fulfill orders.
+   - Generates active Stripe Payment Links with US shipping address collection and redirect to `/merch/thank-you/?session_id={CHECKOUT_SESSION_ID}`.
+   - Automatically archives obsolete or unlinked Stripe products.
+3. **Dual-View Mockup Generator API Automation**:
+   - Queues asynchronous generation tasks (`POST /mockup-generator/create-task/{cat_prod_id}`) to produce 2000px flat garment mockups and lifestyle model mockups.
+   - Automatically adapts placements: `front_large` for Bella 3001/3413 tees, `front` for muscle tanks, `default` for bodycon dresses, and `front` + `back` for one-piece swimsuits.
+   - Composites alpha channels onto pure white (`#ffffff`) backgrounds to eliminate dark rendering artifacts while preserving lifestyle model photos.
+4. **Data Contract Exports**:
+   - Writes `litestep-site/_data/merch_products.json` (the single source of truth for the Jekyll site).
+   - Writes `litestep-printful-webhook/src/catalog_prices.js` (server-side price table used by the worker to prevent client-side cart tampering).
 
-### 3.2. Automated Sync Script (`sync_to_stripe.py`)
-Run the synchronization script located at `litestep-site/sync_to_stripe.py`.
+### 3.2. Product Metadata Configuration (`PRODUCT_METADATA`)
+Custom marketing copy, category tags, model mockup styles, and print placement configurations are declared centrally in `sync_to_stripe.py`:
 
 ```python
-import os
-import requests
-import stripe
-from decimal import Decimal
-
-STRIPE_SECRET_KEY = "sk_test_YOUR_KEY"   # Switch to sk_live_... for production
-PRINTFUL_API_KEY = "YOUR_PRINTFUL_TOKEN"
-PRINTFUL_STORE_ID = "18881050"
-PRINTFUL_PRODUCT_ID = "480089207"
-
-stripe.api_key = STRIPE_SECRET_KEY
-
-# 1. Fetch variants from Printful
-res = requests.get(
-    f"https://api.printful.com/store/products/{PRINTFUL_PRODUCT_ID}",
-    headers={
-        "Authorization": f"Bearer {PRINTFUL_API_KEY}",
-        "X-PF-Store-Id": PRINTFUL_STORE_ID
-    }
-)
-res.raise_for_status()
-data = res.json()["result"]
-product_name = data["sync_product"]["name"]
-variants = data["sync_variants"]
-
-# 2. Group by color (Product = Color, Price = Size)
-colors = {}
-for v in variants:
-    colors.setdefault(v["color"], []).append(v)
-
-for color, color_variants in colors.items():
-    image_url = color_variants[0]["files"][1]["preview_url"] if len(color_variants[0].get("files", [])) > 1 else None
-    images = [image_url] if image_url else []
-
-    stripe_product = stripe.Product.create(
-        name=f"{product_name} - {color}",
-        description=f"Bella + Canvas 3001 Unisex Tee in {color}.",
-        images=images,
-        metadata={
-            "printful_sync_product_id": str(PRINTFUL_PRODUCT_ID),
-            "color": color
+PRODUCT_METADATA = {
+    481791025: {  # California Shaded Elevations
+        "display_name": "California Shaded Elevations Topographic Graphic T-Shirt",
+        "tag": "California Topography · Direct Print-on-Demand",
+        "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
+        "model_prefix": "model_california",
+        "primary_color": "Charcoal-Black Triblend",
+        "model_config": {
+            "option_group": "Women's Lifestyle",
+            "option": "Front",
+            "top": 200,
+            "placements": ["front_large"]
+        },
+        "flat_config": {
+            "option_group": "Flat",
+            "option": "Front",
+            "placements": ["front_large"]
         }
-    )
-
-    for v in color_variants:
-        size = v["size"]
-        sync_variant_id = str(v["id"])
-        raw_price = v.get("retail_price", "0.00")
-        price_cents = int(Decimal(raw_price) * 100)
-
-        stripe.Price.create(
-            product=stripe_product.id,
-            unit_amount=price_cents,
-            currency="usd",
-            nickname=f"Size {size}",
-            metadata={
-                "printful_sync_variant_id": sync_variant_id,
-                "size": size,
-                "color": color
-            }
-        )
-```
-
----
-
-## 4. Front-End Integration (`litestep-site/merch/index.md`)
-
-To let buyers choose their preferred color and size without cluttering the page with 70+ static buttons, embed an interactive card with a dynamic selector.
-
-```html
-<!-- Mount Whitney Ridgelines Direct Merch Card -->
-<div class="card" style="padding: 0; overflow: hidden;" id="whitney-merch-card">
-  <div style="display: flex; align-items: center; justify-content: center; height: 260px; background: #ffffff;">
-    <img
-      id="whitney-shirt-img"
-      src="/assets/images/whitney_ridgelines_black.png"
-      alt="Mount Whitney Ridgelines T-Shirt"
-      style="max-width: 100%; max-height: 250px; object-fit: contain; display: block;"
-    >
-  </div>
-  <div style="padding: 1.25rem;">
-    <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); margin-bottom: 0.35rem;">
-      Sierra Peaks · Direct Print-on-Demand
-    </div>
-    <h3 style="margin: 0 0 0.75rem 0; font-size: 1.15rem; line-height: 1.35;">
-      Mount Whitney Ridgelines Unisex T-Shirt
-    </h3>
-    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-      Stacked vector ridgelines of Mount Whitney (14,505 ft) printed on Bella + Canvas 3001 premium jersey cotton.
-    </p>
-
-    <!-- Selectors -->
-    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
-      <select id="whitney-color-select" style="flex: 1; padding: 0.5rem; border-radius: 4px; border: 1px solid var(--border);">
-        <option value="Black" selected>Color: Black</option>
-        <option value="Navy">Color: Navy</option>
-        <option value="Dark Grey">Color: Dark Grey</option>
-        <option value="Cardinal">Color: Cardinal</option>
-        <option value="Natural">Color: Natural</option>
-      </select>
-      <select id="whitney-size-select" style="flex: 1; padding: 0.5rem; border-radius: 4px; border: 1px solid var(--border);">
-        <option value="S">Size: S ($26.87)</option>
-        <option value="M" selected>Size: M ($26.87)</option>
-        <option value="L">Size: L ($26.87)</option>
-        <option value="XL">Size: XL ($26.87)</option>
-        <option value="2XL">Size: 2XL ($28.87)</option>
-      </select>
-    </div>
-
-    <!-- Buy Button -->
-    <a
-      id="whitney-buy-btn"
-      href="https://buy.stripe.com/test_DEFAULT_LINK"
-      target="_blank"
-      rel="noopener"
-      class="btn btn-primary"
-      style="width: 100%; text-align: center; display: block; box-sizing: border-box;"
-    >
-      Buy Now →
-    </a>
-  </div>
-</div>
-```
-
----
-
-## 5. Cloudflare Worker Webhook Middleware
-
-### 5.1. Wrangler Configuration (`wrangler.toml`)
-```toml
-name = "litestep-printful-webhook"
-main = "src/index.js"
-compatibility_date = "2026-01-01"
-
-[vars]
-PRINTFUL_CONFIRM_ORDERS = "false" # Set to "true" after end-to-end testing verification
-```
-
-### 5.2. Worker Implementation (`src/index.js`)
-```javascript
-/**
- * Cloudflare Worker: Stripe to Printful Order Bridge
- */
-export default {
-  async fetch(request, env) {
-    if (request.method !== "POST") {
-      return new Response("Method Not Allowed", { status: 405 });
-    }
-
-    const signatureHeader = request.headers.get("Stripe-Signature");
-    if (!signatureHeader) {
-      return new Response("Missing Stripe-Signature header", { status: 400 });
-    }
-
-    const rawBody = await request.text();
-
-    // 1. Verify Stripe HMAC-SHA256 signature
-    const isValid = await verifyStripeSignature(
-      rawBody,
-      signatureHeader,
-      env.STRIPE_WEBHOOK_SECRET,
-      300 // 5-minute replay tolerance
-    );
-
-    if (!isValid) {
-      return new Response("Invalid signature", { status: 401 });
-    }
-
-    let event;
-    try {
-      event = JSON.parse(rawBody);
-    } catch (err) {
-      return new Response("Malformed JSON", { status: 400 });
-    }
-
-    // 2. Handle completed checkout sessions
-    if (event.type === "checkout.session.completed") {
-      const session = event.data.object;
-      try {
-        await handleCheckoutCompleted(session, env);
-      } catch (err) {
-        console.error("Fulfillment processing error:", err);
-        // Returning 500 signals Stripe to retry transient upstream failures
-        return new Response(`Processing error: ${err.message}`, { status: 500 });
-      }
-    }
-
-    return new Response(JSON.stringify({ received: true }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" }
-    });
-  }
-};
-
-/**
- * Verifies Stripe signature via native Web Crypto API
- */
-async function verifyStripeSignature(payload, signatureHeader, secret, toleranceSeconds) {
-  try {
-    const parts = signatureHeader.split(",").reduce((acc, part) => {
-      const [key, val] = part.trim().split("=");
-      if (key === "t") acc.timestamp = val;
-      if (key === "v1") acc.signatures.push(val);
-      return acc;
-    }, { timestamp: null, signatures: [] });
-
-    if (!parts.timestamp || parts.signatures.length === 0) return false;
-
-    const currentTime = Math.floor(Date.now() / 1000);
-    if (Math.abs(currentTime - parseInt(parts.timestamp, 10)) > toleranceSeconds) {
-      return false;
-    }
-
-    const encoder = new TextEncoder();
-    const signedPayload = `${parts.timestamp}.${payload}`;
-    const key = await crypto.subtle.importKey(
-      "raw",
-      encoder.encode(secret),
-      { name: "HMAC", hash: "SHA-256" },
-      false,
-      ["sign"]
-    );
-
-    const expectedBuffer = await crypto.subtle.sign(
-      "HMAC",
-      key,
-      encoder.encode(signedPayload)
-    );
-
-    const expectedHex = Array.from(new Uint8Array(expectedBuffer))
-      .map(b => b.toString(16).padStart(2, "0"))
-      .join("");
-
-    return parts.signatures.some(sig => sig === expectedHex);
-  } catch (err) {
-    console.error("Signature verification error:", err);
-    return false;
-  }
-}
-
-/**
- * Retrieves line items from Stripe and creates an order in Printful
- */
-async function handleCheckoutCompleted(session, env) {
-  // Support both new Stripe API (collected_information.shipping_details) and legacy (shipping_details)
-  const shipping =
-    session.collected_information?.shipping_details ||
-    session.shipping_details ||
-    {};
-  const customer = session.customer_details || {};
-  const address = shipping.address || customer.address || {};
-
-  if (!address.line1 || !address.city) {
-    throw new Error("No valid shipping address (line1/city) found on checkout session.");
-  }
-
-  // Retrieve expanded line items
-  const stripeResponse = await fetch(
-    `https://api.stripe.com/v1/checkout/sessions/${session.id}/line_items?expand[]=data.price.product`,
-    {
-      headers: {
-        Authorization: `Bearer ${env.STRIPE_SECRET_KEY}`
-      }
-    }
-  );
-
-  if (!stripeResponse.ok) {
-    throw new Error(`Failed to retrieve line items: ${await stripeResponse.text()}`);
-  }
-
-  const lineItemsData = await stripeResponse.json();
-  const printfulItems = [];
-
-  for (const item of lineItemsData.data) {
-    const product = item.price.product;
-    const syncVariantId =
-      item.price.metadata?.printful_sync_variant_id ||
-      product.metadata?.printful_sync_variant_id;
-
-    if (!syncVariantId) {
-      throw new Error(`Item "${item.description}" lacks "printful_sync_variant_id" metadata.`);
-    }
-
-    printfulItems.push({
-      sync_variant_id: parseInt(syncVariantId, 10),
-      quantity: item.quantity
-    });
-  }
-
-  const externalId = session.payment_intent || session.id.slice(-32);
-
-  const printfulOrderPayload = {
-    confirm: env.PRINTFUL_CONFIRM_ORDERS === "true",
-    recipient: {
-      name: shippingDetails.name,
-      address1: shippingDetails.address.line1,
-      address2: shippingDetails.address.line2 || "",
-      city: shippingDetails.address.city,
-      state_code: shippingDetails.address.state,
-      country_code: shippingDetails.address.country,
-      zip: shippingDetails.address.postal_code,
-      email: session.customer_details?.email
     },
-    items: printfulItems,
-    external_id: externalId
-  };
-
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${env.PRINTFUL_API_KEY}`
-  };
-  if (env.PRINTFUL_STORE_ID) {
-    headers["X-PF-Store-Id"] = env.PRINTFUL_STORE_ID;
-  }
-
-  const printfulRes = await fetch("https://api.printful.com/orders", {
-    method: "POST",
-    headers: headers,
-    body: JSON.stringify(printfulOrderPayload)
-  });
-
-  const printfulData = await printfulRes.json();
-  if (!printfulRes.ok) {
-    if (
-      printfulData.error?.api_error_code === "OR-13" ||
-      String(printfulData.result).includes("already exists")
-    ) {
-      console.log(`Order with external_id ${externalId} already exists in Printful. Handled idempotently.`);
-      return printfulData;
+    483500528: {  # One-Piece Swimsuit
+        "display_name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
+        "tag": "Fractal Art · Direct Print-on-Demand",
+        "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
+        "model_prefix": "model_one_piece_swimsuit",
+        "primary_color": "White",
+        "model_config": {
+            "option_group": "Women's 2",
+            "option": "Front",
+            "placements": ["front", "back"]
+        }
     }
-    throw new Error(`Printful API rejected order: ${JSON.stringify(printfulData)}`);
-  }
-
-  return printfulData;
 }
+```
+
+### 3.3. Running the Sync
+```bash
+cd /Users/joshcohn/Developer/litestep-site
+# Ensure STRIPE_SECRET_KEY and PRINTFUL_API_KEY are in .env or exported
+python3 sync_to_stripe.py
 ```
 
 ---
 
-## 6. End-to-End Testing & Verification Runbook
+## 4. Front-End Storefront Architecture (`merch/index.md`)
 
-### Step 1: Deploy Worker in Test Mode
+The merch catalog at [merch/index.md](file:///Users/joshcohn/Developer/litestep-site/merch/index.md) is completely data-driven by Jekyll reading `site.data.merch_products`.
+
+### 4.1. Dual-View Mockup Toggle
+Every product card provides an interactive toggle between flat product photography and on-model lifestyle mockups:
+- Context-sensitive label: displays **"Shirt View"** for tees, tanks, and hoodies, and **"Product View"** for dresses and swimsuits.
+- State-preserving color matching: selecting a new colorway updates both the flat and model image sources simultaneously.
+
+### 4.2. Multi-Item Shopping Cart
+- **Slide-Over Drawer**: Buyers can click **"Add to Cart"** to add items with selected color and size options.
+- **LocalStorage Persistence**: Cart contents persist across page refreshes (`litestep_merch_cart_v1`).
+- **Promotional Shipping Tier**:
+  - 1 item: Standard US Shipping ($4.79).
+  - 2+ items: **FREE US Shipping** automatically unlocked with a visual progress bar.
+- **Checkout Launch**: The **"Proceed to Checkout"** button transmits cart line items to the Cloudflare Worker (`/create-checkout-session`), which verifies the pricing against `CATALOG_PRICES` and redirects the user to Stripe Checkout.
+
+### 4.3. Instant 1-Click "Buy Now"
+Directly below the cart button, a secondary **"Buy Now"** button links straight to the single-item Stripe Payment Link for the chosen color and size, bypassing the cart for quick impulse purchases.
+
+### 4.4. Analytics & Google Ads Conversion Tracking
+- **Header Pixel**: Google Tag (`gtag.js` with ID `AW-18518076612`) is embedded in `_layouts/default.html`.
+- **E-commerce Events**:
+  - `add_to_cart`: Fires whenever an item is added to the slide-over cart.
+  - `begin_checkout`: Fires when the buyer clicks checkout or a direct Payment Link.
+  - `purchase`: Fires on [/merch/thank-you/](file:///Users/joshcohn/Developer/litestep-site/merch/thank-you.md). The thank-you page retrieves order total and currency from the worker (`/session-status?session_id=...`) and deduplicates conversion reporting via `sessionStorage`.
+
+---
+
+## 5. Cloudflare Worker Edge Middleware (`litestep-printful-webhook`)
+
+Located in [`/Users/joshcohn/Developer/litestep-printful-webhook`](file:///Users/joshcohn/Developer/litestep-printful-webhook), this serverless worker runs at the Cloudflare edge with zero persistent infrastructure costs.
+
+### 5.1. Route Overview
+1. `POST /create-checkout-session`
+   - Accepts cart items `{ items: [{ sync_variant_id, quantity }] }`.
+   - Validates each variant against `CATALOG_PRICES` to prevent client-side price modification.
+   - Enforces the free shipping rule (0 cents for $\ge 2$ items, 479 cents for 1 item).
+   - Generates a Stripe Checkout Session with tax calculation and US address collection.
+2. `GET /session-status?session_id=cs_...`
+   - Safely queries Stripe API for order total, currency, and payment status.
+   - Returns non-PII financial summary to the `/merch/thank-you/` page for conversion tracking.
+3. `POST /` (Stripe Webhook Receiver)
+   - Verifies Stripe HMAC-SHA256 signature using the Web Crypto API (`crypto.subtle`).
+   - Listens for `checkout.session.completed`.
+   - Normalizes customer shipping details from both current (`collected_information.shipping_details`) and legacy Stripe payload formats.
+   - Expands line items to extract `printful_sync_variant_id`.
+   - Dispatches order to Printful API (`POST /orders`).
+   - Idempotently ignores duplicate orders (`external_id = session.id` or `payment_intent`).
+
+### 5.2. Worker Deployment & Secrets
 ```bash
-# Set secrets inside the worker directory
-wrangler secret put STRIPE_WEBHOOK_SECRET  # Webhook signing secret (whsec_...) from Stripe Test Mode
-wrangler secret put STRIPE_SECRET_KEY      # sk_test_...
-wrangler secret put PRINTFUL_API_KEY       # Printful Personal Access Token
-wrangler secret put PRINTFUL_STORE_ID      # e.g., 18881050
+cd /Users/joshcohn/Developer/litestep-printful-webhook
+
+# Configure secrets in Cloudflare
+wrangler secret put STRIPE_SECRET_KEY
+wrangler secret put STRIPE_WEBHOOK_SECRET
+wrangler secret put PRINTFUL_API_KEY
+wrangler secret put PRINTFUL_STORE_ID
 
 # Deploy
 wrangler deploy
 ```
-Copy the deployed worker URL: `https://litestep-printful-webhook.<subdomain>.workers.dev`.
-
-### Step 2: Register Stripe Webhook
-1. In Stripe Dashboard (Test Mode toggled ON), navigate to **Developers > Webhooks**.
-2. Click **Add endpoint**.
-3. Endpoint URL: `https://litestep-printful-webhook.<subdomain>.workers.dev`.
-4. Listen for events: `checkout.session.completed`.
-5. Reveal the **Signing secret** (`whsec_...`) and update via `wrangler secret put STRIPE_WEBHOOK_SECRET` if not already matching.
-
-### Step 3: Run Simulated Checkout
-1. Open your test Payment Link.
-2. Fill out name, shipping address, and test credit card (`4242 4242 4242 4242`).
-3. Complete checkout.
-
-### Step 4: Verify Order Bridge
-1. **Cloudflare:** Run `wrangler tail` or inspect Cloudflare dashboard logs; verify HTTP `200 OK`.
-2. **Printful:** Open [Printful Dashboard > Orders](https://www.printful.com/dashboard/default/orders).
-   * Confirm the new order appears in **Draft** status.
-   * Verify the correct garment, color, size, and shipping address are populated.
-
-### Step 5: Cut Over to Live Production
-1. **Stripe:** Toggle Test Mode to **Live Mode**.
-2. **Re-run Sync Script:** Set `STRIPE_SECRET_KEY = "sk_live_..."` in `sync_to_stripe.py` and run it once to create all live catalog items and links.
-3. **Register Live Webhook:** In Stripe Live Mode, create the webhook endpoint pointing to your worker and record the live `whsec_...`.
-4. **Update Worker for Production:**
-   ```bash
-   wrangler secret put STRIPE_SECRET_KEY      # sk_live_...
-   wrangler secret put STRIPE_WEBHOOK_SECRET  # live whsec_...
-   ```
-   In `wrangler.toml`, change:
-   ```toml
-   PRINTFUL_CONFIRM_ORDERS = "true"
-   ```
-   Re-deploy:
-   ```bash
-   wrangler deploy
-   ```
-5. **Update Site:** Swap test payment links with live payment links in `litestep-site/merch/index.md` and commit to Git.
 
 ---
 
-## 7. Ongoing Maintenance & Operations
+## 6. Operational Runbooks
 
-### Adding a New Design
-1. Create the product template in your Printful API Store.
-2. Update `PRINTFUL_PRODUCT_ID` in `sync_to_stripe.py` and run `python sync_to_stripe.py`.
-3. Add the new card snippet to `merch/index.md`.
-4. *No changes needed to Cloudflare Worker.*
+### 6.1. Adding a New Product to the Store
+1. **Design in Printful**:
+   - Go to Printful Dashboard > Stores > API Store (`18881050`).
+   - Create the product template, upload graphics, select colors/sizes, and save.
+   - Note the **Sync Product ID** (e.g. `483500528`).
+2. **Add Metadata Entry**:
+   - Open `sync_to_stripe.py` and add an entry under `PRODUCT_METADATA`:
+     ```python
+     483500528: {
+         "display_name": "New Product Display Title",
+         "tag": "Collection Tag · Direct Print-on-Demand",
+         "description": "Engaging product description.",
+         "model_prefix": "model_new_product",
+         "primary_color": "Black",
+         "model_config": {
+             "option_group": "Men's Lifestyle",
+             "option": "Front",
+             "placements": ["front_large"]
+         },
+         "flat_config": {
+             "option_group": "Flat",
+             "option": "Front",
+             "placements": ["front_large"]
+         }
+     }
+     ```
+3. **Execute Sync**:
+   ```bash
+   cd /Users/joshcohn/Developer/litestep-site
+   python3 sync_to_stripe.py
+   ```
+   *The script will generate mockups, update Stripe, write `_data/merch_products.json`, and update `litestep-printful-webhook/src/catalog_prices.js`.*
+4. **Deploy Updated Worker**:
+   ```bash
+   cd /Users/joshcohn/Developer/litestep-printful-webhook
+   wrangler deploy
+   ```
+5. **Commit and Push Frontend**:
+   ```bash
+   cd /Users/joshcohn/Developer/litestep-site
+   git add _data/merch_products.json assets/images/products/ sync_to_stripe.py
+   git commit -m "Add new product to catalog"
+   git push origin main
+   ```
 
-### Adjusting Prices
-* Prices in Stripe are fixed once created. To alter prices:
-  * Either adjust them directly in the Stripe Dashboard under **Product catalog**, or
-  * Update markup logic in `sync_to_stripe.py` and regenerate.
+### 6.2. Adjusting Prices or Margins
+- Prices in Stripe are immutable once created.
+- To update prices:
+  1. Modify variant retail prices in Printful or update the pricing calculation in `sync_to_stripe.py`.
+  2. Re-run `python3 sync_to_stripe.py` (creates new Stripe Prices, updates Payment Links, and updates `catalog_prices.js`).
+  3. Re-deploy the Cloudflare Worker (`wrangler deploy`).
 
-### Stock & Variant Changes
-* If a color or size goes out of stock in Printful, simply remove that option from the `<select>` element in `merch/index.md`.
+### 6.3. Toggling Between Test Mode and Live Production
+- **Test Mode**:
+  - `STRIPE_SECRET_KEY = "sk_test_..."` in `.env` and `wrangler secret put STRIPE_SECRET_KEY`.
+  - In `wrangler.toml`: `PRINTFUL_CONFIRM_ORDERS = "false"` (orders created as Drafts in Printful).
+- **Live Production**:
+  - `STRIPE_SECRET_KEY = "sk_live_..."`.
+  - In `wrangler.toml`: `PRINTFUL_CONFIRM_ORDERS = "true"` (orders automatically confirmed and sent to production).
+  - Register Stripe Webhook in Stripe Live Dashboard pointing to `https://litestep-printful-webhook.jbcohn.workers.dev`.
