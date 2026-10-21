@@ -70,18 +70,22 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
         >
 
         {% if prod.model_image %}
+          {% assign toggle_view_name = 'Shirt View' %}
+          {% if prod.garment contains 'Dress' or prod.garment contains 'Swimsuit' %}
+            {% assign toggle_view_name = 'Product View' %}
+          {% endif %}
           <!-- View Toggle Button (Tee vs Model) -->
           <button
             type="button"
             class="merch-view-toggle"
-            aria-label="Toggle between shirt and model view"
+            aria-label="Toggle between product and model view"
             style="position: absolute; top: 12px; right: 12px; background: rgba(255, 255, 255, 0.92); color: #111827; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 20px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.15s ease;"
           >
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
-            <span class="toggle-label">Shirt View</span>
+            <span class="toggle-label">{{ toggle_view_name }}</span>
           </button>
         {% endif %}
 
@@ -691,6 +695,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     }
 
     if (viewToggleBtn && prodData.model_image) {
+      const flatLabel = (prodData.garment && (prodData.garment.includes('Dress') || prodData.garment.includes('Swimsuit'))) ? 'Product View' : 'Shirt View';
       viewToggleBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const label = viewToggleBtn.querySelector('.toggle-label');
@@ -699,7 +704,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
           if (label) label.textContent = 'Model View';
         } else {
           currentView = 'model';
-          if (label) label.textContent = 'Shirt View';
+          if (label) label.textContent = flatLabel;
         }
         updateCardImage();
       });

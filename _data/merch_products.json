@@ -4900,9 +4900,11 @@
             "product_id": "prod_VTiSbaEmZwwGEz",
             "sync_variant_id": "5585890917"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_one_piece_swimsuit_white.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_one_piece_swimsuit.jpg"
   },
   "muscle_shirt": {
     "id": 483496351,
@@ -4945,9 +4947,11 @@
             "product_id": "prod_VTiSaE33blPuOC",
             "sync_variant_id": "5585859497"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_muscle_shirt_white.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_muscle_shirt.jpg"
   },
   "bodycon_dress": {
     "id": 483495525,
@@ -4997,9 +5001,11 @@
             "product_id": "prod_VTiSBUEtuxMfFV",
             "sync_variant_id": "5585854054"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_bodycon_dress_white.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_bodycon_dress.jpg"
   },
   "blue_hex_portal": {
     "id": 483492839,
@@ -5063,7 +5069,8 @@
             "product_id": "prod_VTiSgDPHHqdOyw",
             "sync_variant_id": "5585834033"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
@@ -5119,7 +5126,8 @@
             "product_id": "prod_VTiSCFkgz9Eucl",
             "sync_variant_id": "5585834040"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_brown_triblend.jpg"
       },
       "Olive Triblend": {
         "name": "Olive Triblend",
@@ -5175,7 +5183,8 @@
             "product_id": "prod_VTiSXlNGIH31JK",
             "sync_variant_id": "5585834047"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_olive_triblend.jpg"
       },
       "Mustard Triblend": {
         "name": "Mustard Triblend",
@@ -5231,7 +5240,8 @@
             "product_id": "prod_VTiSafqLxlCPxP",
             "sync_variant_id": "5585834054"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_mustard_triblend.jpg"
       },
       "Tan Triblend": {
         "name": "Tan Triblend",
@@ -5287,7 +5297,8 @@
             "product_id": "prod_VTiSMOY9rL5559",
             "sync_variant_id": "5585834061"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_tan_triblend.jpg"
       },
       "Solid White Triblend": {
         "name": "Solid White Triblend",
@@ -5343,8 +5354,10 @@
             "product_id": "prod_VTiStVKYaafG2r",
             "sync_variant_id": "5585834068"
           }
-        }
+        },
+        "model_image": "/assets/images/products/model_blue_hex_portal_solid_white_triblend.jpg"
       }
-    }
+    },
+    "model_image": "/assets/images/products/model_blue_hex_portal.jpg"
   }
 }

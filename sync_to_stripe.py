@@ -141,11 +141,17 @@ PRODUCT_METADATA = {
         "tag": "California Topography · Direct Print-on-Demand",
         "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
         "model_prefix": "model_california",
-        "primary_color": "Red Triblend",
+        "primary_color": "Charcoal-Black Triblend",
         "model_config": {
             "option_group": "Women's Lifestyle",
             "option": "Front",
-            "top": 200
+            "top": 200,
+            "placements": ["front_large"]
+        },
+        "flat_config": {
+            "option_group": "Flat",
+            "option": "Front",
+            "placements": ["front_large"]
         }
     },
     481939533: {  # Mount Vaca
@@ -158,25 +164,60 @@ PRODUCT_METADATA = {
         "display_name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
-        "primary_color": "White"
+        "model_prefix": "model_one_piece_swimsuit",
+        "primary_color": "White",
+        "model_config": {
+            "option_group": "Women's 2",
+            "option": "Front",
+            "placements": ["front", "back"]
+        }
     },
     483496351: {  # Muscle Shirt
         "display_name": "Violet Eye Hexagon Mandala Muscle Tank",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
-        "primary_color": "White"
+        "model_prefix": "model_muscle_shirt",
+        "primary_color": "White",
+        "model_config": {
+            "option_group": "Women's",
+            "option": "Front",
+            "placements": ["front"]
+        },
+        "flat_config": {
+            "option_group": "Flat",
+            "option": "Front",
+            "placements": ["front"]
+        }
     },
     483495525: {  # Bodycon dress
         "display_name": "Violet Eye Hexagon Mandala Bodycon Dress",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Eye-catching body-hugging dress showcasing concentric hexagon fractal geometry in vivid violet and turquoise gradients.",
-        "primary_color": "White"
+        "model_prefix": "model_bodycon_dress",
+        "primary_color": "White",
+        "model_config": {
+            "option_group": "Women's",
+            "option": "Front",
+            "placements": ["default"]
+        }
     },
     483492839: {  # Blue Hex Portal
         "display_name": "Blue Hex Portal Graphic Tri-Blend T-Shirt",
         "tag": "Fractal Art · Direct Print-on-Demand",
         "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
-        "primary_color": "Solid Black Triblend"
+        "model_prefix": "model_blue_hex_portal",
+        "primary_color": "Solid Black Triblend",
+        "model_config": {
+            "option_group": "Women's Lifestyle",
+            "option": "Front",
+            "top": 200,
+            "placements": ["front_large"]
+        },
+        "flat_config": {
+            "option_group": "Flat",
+            "option": "Front",
+            "placements": ["front_large"]
+        }
     }
 }
 
@@ -194,6 +235,123 @@ def parse_garment_name(raw_name):
         name = match.group(1).replace("with Tear Away Label", "").strip()
         return re.sub(r'\s+', ' ', name)
     return raw_name
+
+def generate_printful_mockups(cat_prod_id, art_file, missing_for_task, cfg, target_prefix, is_model=True):
+    """
+    Calls Printful Mockup Generator API to create 2000px mockups.
+    missing_for_task: dict of catalog_variant_id -> color_name
+    cfg: dict with 'option_group', 'option', optional 'top', 'placements'
+    target_prefix: prefix for filenames (e.g. model_prefix or prod_slug)
+    Returns dict of color_name -> target_rel_path
+    """
+    if not missing_for_task or not cfg or not art_file or not art_file.get("preview_url"):
+        return {}
+
+    placements = cfg.get("placements")
+    if not placements:
+        if cat_prod_id in (162, 71):
+            placements = ["front_large"]
+        elif cat_prod_id == 365:
+            placements = ["front"]
+        elif cat_prod_id == 198:
+            placements = ["default"]
+        elif cat_prod_id == 272:
+            placements = ["front", "back"]
+        else:
+            placements = ["front_large"]
+
+    if cat_prod_id in (162, 365):
+        area_w, area_h = 1800, 2400
+    elif cat_prod_id == 198:
+        area_w, area_h = 6975, 6000
+    elif cat_prod_id == 272:
+        area_w, area_h = 3750, 5250
+    else:
+        area_w, area_h = 2250, 2700
+
+    w = area_w
+    art_w = art_file.get("width") or 4000
+    art_h = art_file.get("height") or 4000
+    h = int(art_h * area_w / art_w)
+    if h > area_h:
+        h = area_h
+        w = int(art_w * area_h / art_h)
+    top = cfg.get("top", 0 if not is_model else 200)
+    left = max(0, (area_w - w) // 2)
+
+    files_payload = []
+    for plc in placements:
+        files_payload.append({
+            "placement": plc,
+            "image_url": art_file["preview_url"],
+            "position": {
+                "area_width": area_w,
+                "area_height": area_h,
+                "width": w,
+                "height": h,
+                "top": top,
+                "left": left
+            }
+        })
+
+    payload = {
+        "variant_ids": list(missing_for_task.keys()),
+        "format": "jpg",
+        "width": 2000,
+        "option_groups": [cfg["option_group"]],
+        "options": [cfg["option"]],
+        "files": files_payload
+    }
+
+    results = {}
+    try:
+        task_res = requests.post(
+            f"https://api.printful.com/mockup-generator/create-task/{cat_prod_id}",
+            headers={
+                "Authorization": f"Bearer {PRINTFUL_API_KEY}",
+                "X-PF-Store-Id": PRINTFUL_STORE_ID
+            },
+            json=payload,
+            timeout=20
+        ).json()
+
+        if task_res.get("code") == 200 and "task_key" in task_res.get("result", {}):
+            tkey = task_res["result"]["task_key"]
+            for _ in range(40):
+                time.sleep(3)
+                poll_res = requests.get(
+                    f"https://api.printful.com/mockup-generator/task?task_key={tkey}",
+                    headers={
+                        "Authorization": f"Bearer {PRINTFUL_API_KEY}",
+                        "X-PF-Store-Id": PRINTFUL_STORE_ID
+                    },
+                    timeout=15
+                ).json()
+                status = poll_res.get("result", {}).get("status")
+                if status == "completed":
+                    for m in poll_res.get("result", {}).get("mockups", []):
+                        vid = m.get("variant_ids", [None])[0]
+                        c_name = missing_for_task.get(vid)
+                        if c_name and m.get("mockup_url"):
+                            c_slug = slugify(c_name)
+                            target_filename = f"{target_prefix}_{c_slug}.jpg"
+                            target_path = os.path.join(IMAGES_DIR, target_filename)
+                            target_rel = f"/assets/images/products/{target_filename}"
+                            img_content = requests.get(m["mockup_url"], timeout=20).content
+                            save_clean_image(img_content, target_path)
+                            results[c_name] = target_rel
+                            kind_str = "model" if is_model else "flat"
+                            print(f"    ✓ Saved 2000px {kind_str}: {c_name} -> {target_rel}")
+                    break
+                elif status == "failed":
+                    print(f"    Warning: Mockup generation task failed for {target_prefix}: {poll_res}")
+                    break
+        else:
+            print(f"    Warning: Failed to queue mockup task for {target_prefix}: {task_res}")
+    except Exception as e:
+        print(f"    Warning: Exception generating mockups for {target_prefix}: {e}")
+
+    return results
 
 def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, existing_prod_data=None):
     """
@@ -250,91 +408,14 @@ def sync_model_mockups(pid, prod_slug, variants, color_groups, custom_meta, exis
     if missing_for_task and model_cfg:
         v0 = variants[0] if variants else {}
         cat_prod_id = v0.get("product", {}).get("product_id")
-        art_file = next((f for f in v0.get("files", []) if f.get("type") == "front_large"), None)
+        art_file = next((f for f in v0.get("files", []) if f.get("type") in ("front_large", "default", "front") and f.get("preview_url")), None)
         if not art_file:
             art_file = next((f for f in v0.get("files", []) if f.get("preview_url")), None)
 
         if cat_prod_id and art_file and art_file.get("preview_url"):
             print(f"  Generating {len(missing_for_task)} missing 2000px model mockups for {model_prefix}...")
-            area_w = 1800 if cat_prod_id == 162 else 2250
-            area_h = 2400 if cat_prod_id == 162 else 2700
-            w = area_w
-            art_w = art_file.get("width") or 4000
-            art_h = art_file.get("height") or 4000
-            h = int(art_h * area_w / art_w)
-            if h > area_h:
-                h = area_h
-                w = int(art_w * area_h / art_h)
-            top = model_cfg.get("top", 200)
-            left = max(0, (area_w - w) // 2)
-
-            pos = {
-                "area_width": area_w,
-                "area_height": area_h,
-                "width": w,
-                "height": h,
-                "top": top,
-                "left": left
-            }
-
-            payload = {
-                "variant_ids": list(missing_for_task.keys()),
-                "format": "jpg",
-                "width": 2000,
-                "option_groups": [model_cfg["option_group"]],
-                "options": [model_cfg["option"]],
-                "files": [{
-                    "placement": "front_large",
-                    "image_url": art_file["preview_url"],
-                    "position": pos
-                }]
-            }
-
-            try:
-                task_res = requests.post(
-                    f"https://api.printful.com/mockup-generator/create-task/{cat_prod_id}",
-                    headers={
-                        "Authorization": f"Bearer {PRINTFUL_API_KEY}",
-                        "X-PF-Store-Id": PRINTFUL_STORE_ID
-                    },
-                    json=payload,
-                    timeout=20
-                ).json()
-
-                if task_res.get("code") == 200 and "task_key" in task_res.get("result", {}):
-                    tkey = task_res["result"]["task_key"]
-                    for _ in range(40):
-                        time.sleep(3)
-                        poll_res = requests.get(
-                            f"https://api.printful.com/mockup-generator/task?task_key={tkey}",
-                            headers={
-                                "Authorization": f"Bearer {PRINTFUL_API_KEY}",
-                                "X-PF-Store-Id": PRINTFUL_STORE_ID
-                            },
-                            timeout=15
-                        ).json()
-                        status = poll_res.get("result", {}).get("status")
-                        if status == "completed":
-                            for m in poll_res.get("result", {}).get("mockups", []):
-                                vid = m.get("variant_ids", [None])[0]
-                                c_name = missing_for_task.get(vid)
-                                if c_name and m.get("mockup_url"):
-                                    c_slug = slugify(c_name)
-                                    target_filename = f"{model_prefix}_{c_slug}.jpg"
-                                    target_path = os.path.join(IMAGES_DIR, target_filename)
-                                    target_rel = f"/assets/images/products/{target_filename}"
-                                    img_content = requests.get(m["mockup_url"], timeout=20).content
-                                    save_clean_image(img_content, target_path)
-                                    color_model_images[c_name] = target_rel
-                                    print(f"    ✓ Saved 2000px model: {c_name} -> {target_rel}")
-                            break
-                        elif status == "failed":
-                            print(f"    Warning: Mockup generation task failed for {model_prefix}: {poll_res}")
-                            break
-                else:
-                    print(f"    Warning: Failed to queue mockup task for {model_prefix}: {task_res}")
-            except Exception as e:
-                print(f"    Warning: Exception generating model mockups for {model_prefix}: {e}")
+            new_models = generate_printful_mockups(cat_prod_id, art_file, missing_for_task, model_cfg, model_prefix, is_model=True)
+            color_model_images.update(new_models)
 
     # Ensure primary model image exists
     if not os.path.exists(primary_path) and color_model_images:
@@ -472,6 +553,27 @@ for sp in store_products:
     )
     if primary_model_rel:
         prod_entry["model_image"] = primary_model_rel
+
+    # Check if flat_config is provided to generate clean flat mockups
+    flat_cfg = custom_meta.get("flat_config")
+    if flat_cfg:
+        missing_flats = {}
+        for color, var_list in color_groups.items():
+            color_slug = slugify(color)
+            local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
+            if not os.path.exists(local_img_path) or os.path.getsize(local_img_path) == 0:
+                cat_vid = var_list[0].get("variant_id")
+                if cat_vid:
+                    missing_flats[cat_vid] = color
+        if missing_flats:
+            v0 = variants[0] if variants else {}
+            cat_prod_id = v0.get("product", {}).get("product_id")
+            art_file = next((f for f in v0.get("files", []) if f.get("type") in ("front_large", "default", "front") and f.get("preview_url")), None)
+            if not art_file:
+                art_file = next((f for f in v0.get("files", []) if f.get("preview_url")), None)
+            if cat_prod_id and art_file:
+                print(f"  Generating {len(missing_flats)} missing 2000px flat mockups for {prod_slug}...")
+                generate_printful_mockups(cat_prod_id, art_file, missing_flats, flat_cfg, prod_slug, is_model=False)
 
     for color, var_list in color_groups.items():
         color_slug = slugify(color)
