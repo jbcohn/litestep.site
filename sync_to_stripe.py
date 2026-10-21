@@ -719,37 +719,66 @@ for sp in store_products:
             size = v.get("size", "M")
 
             raw_price = v.get("retail_price", "26.87")
-            # Lower base price by $4.00 (400 cents) since shipping ($4.79 on 1 shirt, FREE on 2+) is charged separately at checkout
-            price_cents = max(100, int(Decimal(raw_price) * 100) - 400)
+            # Use Printful retail price as-is without subtractions
+            price_cents = int(Decimal(raw_price) * 100)
             amount_str = f"${(price_cents / 100):.2f}"
             currency = v.get("currency", "USD").lower()
 
             # Check if this variant already exists in Stripe
-            if sync_variant_id in existing_links_by_sync_id and sync_variant_id in existing_products_by_sync_id:
-                existing_plink = existing_links_by_sync_id[sync_variant_id]
-                existing_prod = existing_products_by_sync_id[sync_variant_id]
+            existing_plink = existing_links_by_sync_id.get(sync_variant_id)
+            existing_prod = existing_products_by_sync_id.get(sync_variant_id)
+
+            # Check if the existing payment link matches the current price
+            link_matches_price = False
+            if existing_plink and existing_prod:
+                pl_cents = existing_plink.metadata.get("price_cents")
+                if pl_cents and int(pl_cents) == price_cents:
+                    link_matches_price = True
+                else:
+                    try:
+                        li = stripe.PaymentLink.list_line_items(existing_plink.id, limit=1)
+                        if li.data and li.data[0].price and li.data[0].price.unit_amount == price_cents:
+                            link_matches_price = True
+                    except Exception:
+                        pass
+
+            if existing_plink and existing_prod and link_matches_price:
                 plink_url = existing_plink.url
                 prod_id = existing_prod.id
                 print(f"  [Cached] {color} - {size} ({amount_str}) -> {plink_url}")
             else:
-                variant_title = f"{product_name} - {color} (Size {size})"
-                print(f"  [Creating] {variant_title} ({amount_str})...")
+                prod_id = existing_prod.id if existing_prod else None
+                if not prod_id:
+                    variant_title = f"{product_name} - {color} (Size {size})"
+                    print(f"  [Creating Product] {variant_title} ({amount_str})...")
 
-                # Create Product in Stripe
-                prod_images = [preview_url] if preview_url else []
-                stripe_prod = stripe.Product.create(
-                    name=variant_title,
-                    description=f"{garment_model} in {color}, Size {size}.",
-                    images=prod_images,
-                    tax_code="txcd_30011000",
-                    metadata={
-                        "printful_sync_product_id": str(pid),
-                        "printful_sync_variant_id": sync_variant_id,
-                        "color": color,
-                        "size": size
-                    }
-                )
-                prod_id = stripe_prod.id
+                    # Create Product in Stripe
+                    prod_images = [preview_url] if preview_url else []
+                    stripe_prod = stripe.Product.create(
+                        name=variant_title,
+                        description=f"{garment_model} in {color}, Size {size}.",
+                        images=prod_images,
+                        tax_code="txcd_30011000",
+                        metadata={
+                            "printful_sync_product_id": str(pid),
+                            "printful_sync_variant_id": sync_variant_id,
+                            "color": color,
+                            "size": size
+                        }
+                    )
+                    prod_id = stripe_prod.id
+                    existing_products_by_sync_id[sync_variant_id] = stripe_prod
+
+                # If existing link has outdated price, deactivate it
+                if existing_plink and not link_matches_price:
+                    try:
+                        stripe.PaymentLink.modify(existing_plink.id, active=False)
+                        print(f"  [Price Changed] Deactivated outdated payment link for {color} - {size}")
+                    except Exception as e:
+                        print(f"  [Warning] Could not deactivate old payment link: {e}")
+
+                variant_title = f"{product_name} - {color} (Size {size})"
+                print(f"  [Updating Price & Link] {variant_title} ({amount_str})...")
 
                 # Create Price
                 stripe_price = stripe.Price.create(
@@ -760,7 +789,8 @@ for sp in store_products:
                     metadata={
                         "printful_sync_variant_id": sync_variant_id,
                         "color": color,
-                        "size": size
+                        "size": size,
+                        "price_cents": str(price_cents)
                     }
                 )
 
@@ -777,13 +807,13 @@ for sp in store_products:
                     metadata={
                         "printful_sync_variant_id": sync_variant_id,
                         "color": color,
-                        "size": size
+                        "size": size,
+                        "price_cents": str(price_cents)
                     }
                 )
                 plink_url = plink.url
                 existing_links_by_sync_id[sync_variant_id] = plink
-                existing_products_by_sync_id[sync_variant_id] = stripe_prod
-                print(f"    ✓ New Link: {plink_url}")
+                print(f"    ✓ New Link ({amount_str}): {plink_url}")
 
             prod_entry["colors"][color]["sizes"][size] = {
                 "price": amount_str,
