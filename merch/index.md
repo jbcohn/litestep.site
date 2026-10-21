@@ -6,6 +6,25 @@ permalink: /merch/
 hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 ---
 
+<style>
+  .merch-view-switcher .view-btn:hover {
+    color: #111827 !important;
+  }
+  .merch-view-switcher .view-btn.active:hover {
+    color: #ffffff !important;
+  }
+  @media (max-width: 360px) {
+    .merch-view-switcher .view-btn {
+      padding: 3px 6px !important;
+      font-size: 0.63rem !important;
+    }
+    .merch-zoom-badge {
+      padding: 3px 7px !important;
+      font-size: 0.66rem !important;
+    }
+  }
+</style>
+
 <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.25rem;">
   Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry. Printed on-demand on premium garments and shipped directly to your door.
 </p>
@@ -75,33 +94,36 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
           style="max-width: 100%; max-height: 310px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
         >
 
-        <!-- View Switcher (Male / Female / Garment) -->
-        <div class="merch-view-switcher" style="position: absolute; top: 10px; right: 10px; display: inline-flex; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(0, 0, 0, 0.14); border-radius: 20px; padding: 2px; backdrop-filter: blur(6px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); z-index: 5;">
-          {% if prod.is_unisex %}
-            <button type="button" class="view-btn active" data-view="male" title="Show on male model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease;">Male Model</button>
-            <button type="button" class="view-btn" data-view="female" title="Show on female model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Female Model</button>
-            <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Just Garment</button>
-          {% else %}
-            <button type="button" class="view-btn active" data-view="female" title="Show on model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease;">Model View</button>
-            <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease;">Just Garment</button>
-          {% endif %}
-        </div>
+        <!-- Image Controls Bar (All Buttons Along Bottom: View Switcher + Zoom) -->
+        <div class="merch-img-controls" style="position: absolute; bottom: 8px; left: 8px; right: 8px; display: flex; align-items: center; justify-content: space-between; gap: 6px; z-index: 5; pointer-events: none;">
+          <!-- View Switcher (Male / Female / Garment) -->
+          <div class="merch-view-switcher" style="pointer-events: auto; display: inline-flex; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(0, 0, 0, 0.14); border-radius: 20px; padding: 2px; backdrop-filter: blur(6px); box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            {% if prod.is_unisex %}
+              <button type="button" class="view-btn active" data-view="male" title="Show on male model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Male Model</button>
+              <button type="button" class="view-btn" data-view="female" title="Show on female model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Female Model</button>
+              <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Just Garment</button>
+            {% else %}
+              <button type="button" class="view-btn active" data-view="female" title="Show on model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Model View</button>
+              <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Just Garment</button>
+            {% endif %}
+          </div>
 
-        <!-- Zoom Pill -->
-        <button
-          type="button"
-          class="merch-zoom-badge"
-          aria-label="Zoom in on design"
-          style="position: absolute; bottom: 10px; right: 10px; background: rgba(0, 0, 0, 0.7); color: #ffffff; border: none; border-radius: 20px; padding: 4px 10px; font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; transition: background 0.15s ease;"
-        >
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            <line x1="11" y1="8" x2="11" y2="14"></line>
-            <line x1="8" y1="11" x2="14" y2="11"></line>
-          </svg>
-          Zoom 3x
-        </button>
+          <!-- Zoom Pill -->
+          <button
+            type="button"
+            class="merch-zoom-badge"
+            aria-label="Zoom in on design"
+            style="pointer-events: auto; flex-shrink: 0; background: rgba(0, 0, 0, 0.72); color: #ffffff; border: none; border-radius: 20px; padding: 4px 9px; font-size: 0.7rem; font-weight: 600; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px); cursor: pointer; transition: background 0.15s ease; white-space: nowrap;"
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+            Zoom 3x
+          </button>
+        </div>
       </div>
 
       <div style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1;">
