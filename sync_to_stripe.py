@@ -505,9 +505,9 @@ while has_more:
 has_more = True
 starting_after = None
 while has_more:
-    res = stripe.PaymentLink.list(limit=100, starting_after=starting_after)
+    res = stripe.PaymentLink.list(limit=100, starting_after=starting_after, expand=["data.line_items"])
     for pl in res.data:
-        meta = pl.metadata.to_dict()
+        meta = pl.metadata.to_dict() if hasattr(pl.metadata, "to_dict") else dict(pl.metadata or {})
         var_id = meta.get("printful_sync_variant_id")
         if var_id and pl.active:
             existing_links_by_sync_id[str(var_id)] = pl
@@ -731,16 +731,16 @@ for sp in store_products:
             # Check if the existing payment link matches the current price
             link_matches_price = False
             if existing_plink and existing_prod:
-                pl_cents = existing_plink.metadata.get("price_cents")
-                if pl_cents and int(pl_cents) == price_cents:
-                    link_matches_price = True
+                pl_cents = None
+                if hasattr(existing_plink, "line_items") and existing_plink.line_items and existing_plink.line_items.data:
+                    pl_cents = existing_plink.line_items.data[0].price.unit_amount
                 else:
-                    try:
-                        li = stripe.PaymentLink.list_line_items(existing_plink.id, limit=1)
-                        if li.data and li.data[0].price and li.data[0].price.unit_amount == price_cents:
-                            link_matches_price = True
-                    except Exception:
-                        pass
+                    pl_meta = existing_plink.metadata.to_dict() if hasattr(existing_plink.metadata, "to_dict") else dict(existing_plink.metadata or {})
+                    if pl_meta.get("price_cents"):
+                        pl_cents = int(pl_meta["price_cents"])
+
+                if pl_cents and pl_cents == price_cents:
+                    link_matches_price = True
 
             if existing_plink and existing_prod and link_matches_price:
                 plink_url = existing_plink.url
