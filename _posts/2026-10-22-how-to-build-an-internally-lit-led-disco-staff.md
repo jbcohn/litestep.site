@@ -28,13 +28,13 @@ Here is everything I used and how to put it together.
 
 All of the core components came straight off Amazon:
 
-* **The Shaft:** [TONIAL 3/4" Silver Curtain Rod (20" to 53" Telescoping & Splicing Iron Rod)](https://www.amazon.com/dp/B0CYGVYFNC&tag={{ site.amazon_tag | default: 'litestep-20' }}) (also available via [TONIAL Official](https://thetonial.com/)). Because it’s made of ferromagnetic iron and uses screw-together segments, it’s sturdy, packable, and naturally magnetic.
+* **The Shaft:** [TONIAL 3/4" Silver Curtain Rod (20" to 53" Telescoping & Splicing Iron Rod)](https://www.amazon.com/dp/B0CYGVYFNC?tag={{ site.amazon_tag | default: 'litestep-20' }}) (also available via [TONIAL Official](https://thetonial.com/)). Because it’s made of ferromagnetic iron and uses screw-together segments, it’s sturdy, packable, and naturally magnetic.
 
-* **The Sphere:** [Big Claw Machine Capsules – 6.3-Inch (160mm) Translucent Plastic Sphere](https://www.amazon.com/Capsules-Translucent-Containers-Christmas-Ornaments/dp/B0D64MG1T2/&tag={{ site.amazon_tag | default: 'litestep-20' }}) (two-piece snap-together PVC plastic sphere with one translucent yellow half and one clear half).
+* **The Sphere:** [Big Claw Machine Capsules – 6.3-Inch (160mm) Translucent Plastic Sphere](https://www.amazon.com/Capsules-Translucent-Containers-Christmas-Ornaments/dp/B0D64MG1T2/?tag={{ site.amazon_tag | default: 'litestep-20' }}) (two-piece snap-together PVC plastic sphere with one translucent yellow half and one clear half).
 
-* **The Lights:** [Two USB-Rechargeable Magnetic LED Lights (3000mAh RGB/Dimmable Puck Bulbs with Remote)](https://www.amazon.com/FUJIECO-Rechargeable-Operated-Dimmable-Non-Hardwired/dp/B0H2XRQLNK&tag={{ site.amazon_tag | default: 'litestep-20' }}).
+* **The Lights:** [Two USB-Rechargeable Magnetic LED Lights (3000mAh RGB/Dimmable Puck Bulbs with Remote)](https://www.amazon.com/FUJIECO-Rechargeable-Operated-Dimmable-Non-Hardwired/dp/B0H2XRQLNK?tag={{ site.amazon_tag | default: 'litestep-20' }}).
 
-* **The Mirror Finish:** [Self-Adhesive Disco Ball Mirror Tiles](https://link.amazon/B08BrRPLx&tag={{ site.amazon_tag | default: 'litestep-20' }}) (real glass mirror mosaic sticker rolls).
+* **The Mirror Finish:** [Self-Adhesive Disco Ball Mirror Tiles](https://link.amazon/B08BrRPLx) (real glass mirror mosaic sticker rolls).
 
 * **Finishing Touches:**
   * Custom-sewn velvet cord sleeve (huge thanks to Jenny for sewing the velvet cover!)
@@ -87,9 +87,11 @@ If dropped hard enough the ball can come apart, causing some dishevelment of the
 ## Maker References & Further Reading
 
 * **Single-Row Spiral Tiling & Internal Lighting:**
-  * [Instructables: Internally Lit LED Disco Ball Totem Projects](https://www.instructables.com/howto/disco+ball+led/)
+  * [Instructables: Discoballify Anything! (Techniques for Tiling Custom Spheres)](https://www.instructables.com/Discoballify-Anything/)
+  * [Instructables: How to Make a Glowing Staff with a Lit Plastic Globe](https://www.instructables.com/How-to-Make-a-Glowing-WizardWitch-Staff/)
   * [Brepea: How to Make a Disco Ball (Row-by-Row Pole-to-Pole Technique)](https://www.brepea.com/how-to-make-a-disco-ball-out-of-a-globe/)
 
 * **Alternative Totem & Mirror Ball Approaches:**
-  * [Reddit r/DIY: Programmable LED Disco Ball Totem Build Discussion](https://www.reddit.com/r/DIY/comments/71b9rj/i_built_a_programmable_led_disco_ball_totem_for/)
+  * [Reddit r/DIY: 540-LED Programmable Festival Sphere Totem ("Sol Crusher") Build](https://www.reddit.com/r/DIY/comments/4n3vzz/i_like_leds_so_i_put_540_of_them_on_a_ball_to/)
+  * [Reddit r/cosplayprops: DIY Disco Ball Staff Construction Discussion](https://www.reddit.com/r/cosplayprops/comments/16favre/new_to_cosplay_looking_for_help_on_disco_ball/)
   * [iHeartRaves: How to Make a Festival Totem Pole](https://iheartraves.com/blogs/post/how-to-make-a-rave-totem)
