@@ -50,17 +50,17 @@ Since a telescoping rod will naturally want to slide closed when you tap it on t
 
 The two-piece 6.3-inch plastic capsule has a translucent yellow bottom hemisphere and a clear top hemisphere. To mount it securely onto the curtain rod:
 
-1. **Bottom Hole (**$0.75\text{ in}$**):** I drilled a $0.75\text{-inch}$ **hole** dead-center in the bottom of the yellow half so the $3/4\text{-inch}$ curtain rod slides snugly right inside the sphere.
+1. **Bottom Hole (0.75 in):** I drilled a **0.75-inch hole** dead-center in the bottom of the yellow half so the 3/4-inch curtain rod slides snugly right inside the sphere.
 
-2. **Top Hole (**$\sim 0.2\text{ in}$**):** I drilled a smaller $\sim 0.2\text{-inch}$ **hole** in the top of the clear half so the top tip of the rod assembly seats cleanly at the top pole of the sphere, keeping the ball centered and wobble-free.
+2. **Top Hole (~0.2 in):** I drilled a smaller **~0.2-inch hole** in the top of the clear half so the top tip of the rod assembly seats cleanly at the top pole of the sphere, keeping the ball centered and wobble-free.
 
 ## Step 3: Mounting the Magnetic LEDs & Routing Power
 
 Here is where the iron curtain rod really shines. Because the rod passes straight through the center of the 6.3-inch ball and is magnetic, you don’t need hot glue or internal brackets to hold the lights:
 
-* Simply snap the **two USB-rechargeable magnetic LED lights directly onto opposite sides of the curtain rod** inside the capsule. Sticking them on opposite sides gives you $360^\circ$ illumination with no dark spots.
+* Simply snap the **two USB-rechargeable magnetic LED lights directly onto opposite sides of the curtain rod** inside the capsule. Sticking them on opposite sides gives you 360° illumination with no dark spots.
 
-* Before snapping the ball shut, plug two USB charging cables into the lights and **route the cords out through the** $0.75\text{-inch}$ **bottom hole** alongside the rod. That way, you never have to crack open the disco ball to recharge the batteries between nights out.
+* Before snapping the ball shut, plug two USB charging cables into the lights and **route the cords out through the 0.75-inch bottom hole** alongside the rod. That way, you never have to crack open the disco ball to recharge the batteries between nights out.
 
 * To keep the wiring clean and comfortable to hold, the charging cords run down the upper shaft inside a **custom velvet sleeve sewed by my friend Jenny**.
 
