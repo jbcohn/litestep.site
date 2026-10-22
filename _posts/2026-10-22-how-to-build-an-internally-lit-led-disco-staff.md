@@ -28,17 +28,17 @@ Here is everything I used and how to put it together.
 
 All of the core components came straight off Amazon:
 
-* **The Shaft:** [TONIAL 3/4" Silver Curtain Rod (20" to 53" Telescoping & Splicing Iron Rod)](https://www.amazon.com/s?k=TONIAL+Curtain+Rods+for+Windows+20+to+53+Inch+Silver&tag={{ site.amazon_tag | default: 'yourstoreid-20' }}) (also available via [TONIAL Official](https://thetonial.com/)). Because it’s made of ferromagnetic iron and uses screw-together segments, it’s sturdy, packable, and naturally magnetic.
+* **The Shaft:** [TONIAL 3/4" Silver Curtain Rod (20" to 53" Telescoping & Splicing Iron Rod)](https://www.amazon.com/dp/B0CYGVYFNC&tag={{ site.amazon_tag | default: 'litestep-20' }}) (also available via [TONIAL Official](https://thetonial.com/)). Because it’s made of ferromagnetic iron and uses screw-together segments, it’s sturdy, packable, and naturally magnetic.
 
-* **The Sphere:** [Big Claw Machine Capsules – 6.3-Inch (160mm) Translucent Plastic Sphere](https://www.amazon.com/s?k=Big+Claw+Machine+Capsules+6.3+inch+Translucent+Yellow&tag={{ site.amazon_tag | default: 'yourstoreid-20' }}) (two-piece snap-together PVC plastic sphere with one translucent yellow half and one clear half).
+* **The Sphere:** [Big Claw Machine Capsules – 6.3-Inch (160mm) Translucent Plastic Sphere](https://www.amazon.com/Capsules-Translucent-Containers-Christmas-Ornaments/dp/B0D64MG1T2/&tag={{ site.amazon_tag | default: 'litestep-20' }}) (two-piece snap-together PVC plastic sphere with one translucent yellow half and one clear half).
 
-* **The Lights:** [Two USB-Rechargeable Magnetic LED Lights (3000mAh RGB/Dimmable Puck Bulbs with Remote)](https://www.amazon.com/s?k=Upgrade+Rechargeable+Light+Bulbs+3000mAh+Magnetic+Remote&tag={{ site.amazon_tag | default: 'yourstoreid-20' }}).
+* **The Lights:** [Two USB-Rechargeable Magnetic LED Lights (3000mAh RGB/Dimmable Puck Bulbs with Remote)](https://www.amazon.com/FUJIECO-Rechargeable-Operated-Dimmable-Non-Hardwired/dp/B0H2XRQLNK&tag={{ site.amazon_tag | default: 'litestep-20' }}).
 
-* **The Mirror Finish:** [Self-Adhesive Disco Ball Mirror Tiles](https://www.amazon.com/s?k=Self+Adhesive+Disco+Ball+Mirror+Tiles+Roll&tag={{ site.amazon_tag | default: 'yourstoreid-20' }}) (real glass mirror mosaic sticker rolls).
+* **The Mirror Finish:** [Self-Adhesive Disco Ball Mirror Tiles](https://link.amazon/B08BrRPLx&tag={{ site.amazon_tag | default: 'litestep-20' }}) (real glass mirror mosaic sticker rolls).
 
 * **Finishing Touches:**
   * Custom-sewn velvet cord sleeve (huge thanks to Jenny for sewing the velvet cover!)
-  * [Duct Tape](https://www.amazon.com/s?k=Heavy+Duty+Duct+Tape&tag={{ site.amazon_tag | default: 'yourstoreid-20' }}) (for locking the telescoping joint)
+  * [Duct Tape](https://www.amazon.com/s?k=Heavy+Duty+Duct+Tape&tag={{ site.amazon_tag | default: 'litestep-20' }}) (for locking the telescoping joint)
 
 ## Step 1: Prepping the Curtain Rod Shaft
 
@@ -70,7 +70,7 @@ Disco ball mirror tiles come on wide backing sheets with multiple rows stuck tog
 
 * **What Didn't Work (Attempt #1):** At first, I tried sticking the mirror strips onto the 6.3-inch ball straight off the roll in multi-row sheets. Because you’re wrapping a flat grid onto a tight sphere, wide strips bunch up, fight the curvature, and don't look very nice.
 
-* **What Worked (Attempt #2):** For the second try, I **broke the sticker sheets apart into a single row of tiles** and wound that single row continuously **from the bottom of the ball to the top**.
+* **What Worked (Attempt #2):** For the second try, I **broke the sticker sheets apart into a single row of tiles** and wound that single row continuously **from the bottom of the ball to the top**. Had some help from my daughter with this part. Be careful with the squares because they are glass and the edges are a little sharp. No blood was spilled though.
 
 I tried to fill all the space, which naturally leaves plenty of small gaps between the square glass tiles as they wrap around the curved surface. Once you turn the internal LEDs on, those gaps become the best feature of the build: the bright internal light blazes out between the tiles while the glass mirrors catch and reflect light in every direction.
 
