@@ -8,8 +8,14 @@ hero_image: /assets/images/paragliding_sierra_granite.jpg
 
 # How to Build an Internally Lit LED Disco Staff from Everyday Amazon Parts
 
-![Field testing the internally lit LED disco staff at night](/assets/images/disco_staff.jpg)
-*Field testing the finished LED disco staff at night—glowing from the inside out through the gaps in the mirror tiles while keeping all charging cables tucked inside a custom velvet sleeve.*
+<figure style="float: right; max-width: 300px; width: 45%; margin: 0.25rem 0 1.25rem 1.75rem;">
+  <a href="/assets/images/disco_staff_m.png" target="_blank" rel="noopener" title="View larger photo">
+    <img src="/assets/images/disco_staff_s.png" alt="Field testing the internally lit LED disco staff at night" style="width: 100%; height: auto; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); display: block;">
+  </a>
+  <figcaption style="font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.45;">
+    Field testing the finished LED disco staff at night—glowing from the inside out through the gaps in the mirror tiles while keeping all charging cables tucked inside a custom velvet sleeve.
+  </figcaption>
+</figure>
 
 If you’ve ever wanted a festival totem or party staff that stands out at night without requiring a backpack full of heavy batteries or fragile exposed wiring, this DIY light-up disco staff hits the sweet spot.
 
