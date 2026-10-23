@@ -2,7 +2,7 @@
   "Black": {
     "name": "Black",
     "slug": "black",
-    "image": "/assets/images/products/mount_whitney_ridgelines_black.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_black.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -75,7 +75,7 @@
   "Navy": {
     "name": "Navy",
     "slug": "navy",
-    "image": "/assets/images/products/mount_whitney_ridgelines_navy.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_navy.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -148,7 +148,7 @@
   "Cardinal": {
     "name": "Cardinal",
     "slug": "cardinal",
-    "image": "/assets/images/products/mount_whitney_ridgelines_cardinal.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_cardinal.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -200,7 +200,7 @@
   "Brown": {
     "name": "Brown",
     "slug": "brown",
-    "image": "/assets/images/products/mount_whitney_ridgelines_brown.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_brown.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -266,7 +266,7 @@
   "Dark Grey": {
     "name": "Dark Grey",
     "slug": "dark_grey",
-    "image": "/assets/images/products/mount_whitney_ridgelines_dark_grey.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_dark_grey.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -318,7 +318,7 @@
   "Asphalt": {
     "name": "Asphalt",
     "slug": "asphalt",
-    "image": "/assets/images/products/mount_whitney_ridgelines_asphalt.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_asphalt.jpg",
     "sizes": {
       "S": {
         "price": "$26.87",
@@ -377,7 +377,7 @@
   "Heather True Royal": {
     "name": "Heather True Royal",
     "slug": "heather_true_royal",
-    "image": "/assets/images/products/mount_whitney_ridgelines_heather_true_royal.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_heather_true_royal.jpg",
     "sizes": {
       "S": {
         "price": "$26.87",
@@ -436,7 +436,7 @@
   "Aqua": {
     "name": "Aqua",
     "slug": "aqua",
-    "image": "/assets/images/products/mount_whitney_ridgelines_aqua.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_aqua.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -502,7 +502,7 @@
   "Ash": {
     "name": "Ash",
     "slug": "ash",
-    "image": "/assets/images/products/mount_whitney_ridgelines_ash.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_ash.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",
@@ -568,7 +568,7 @@
   "Natural": {
     "name": "Natural",
     "slug": "natural",
-    "image": "/assets/images/products/mount_whitney_ridgelines_natural.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_natural.jpg",
     "sizes": {
       "XS": {
         "price": "$26.87",

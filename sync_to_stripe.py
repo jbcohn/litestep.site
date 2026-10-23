@@ -80,7 +80,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_whitney",
         "female_model_prefix": "model_whitney_female",
         "male_model_config": {"option_group": "Men's 4", "option": "Left Front", "top": 300},
-        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]}
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     480350932: {  # North Palisade
         "display_name": "North Palisade - Glaciated AF - Unisex Tri-Blend T-Shirt",
@@ -90,7 +91,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_palisade",
         "female_model_prefix": "model_palisade_female",
         "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 300},
-        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]}
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     480312304: {  # Rainbow Sunflower
         "display_name": "Rainbow Sunflower Unisex Tri-Blend T-Shirt",
@@ -100,7 +102,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_sunflower_male",
         "female_model_prefix": "model_sunflower",
         "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
-        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 250}
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 250},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     479948902: {  # Bubbles!
         "display_name": "Bubbles! Unisex Procedural Graphic T-Shirt",
@@ -110,7 +113,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_bubbles",
         "female_model_prefix": "model_bubbles_female",
         "male_model_config": {"option_group": "Men's Lifestyle", "option": "Front", "top": 0},
-        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]}
+        "female_model_config": {"option_group": "Women's 4", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     479899530: {  # Violet Eye Hex Mandala
         "display_name": "Violet Eye Hexagon Mandala Unisex Graphic T-Shirt",
@@ -120,7 +124,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_violet_male",
         "female_model_prefix": "model_violet",
         "male_model_config": {"option_group": "Men's 4", "option": "Left Front", "top": 200, "placements": ["front_large"]},
-        "female_model_config": {"option_group": "Women's Lifestyle 2", "option": "Front", "top": 200}
+        "female_model_config": {"option_group": "Women's Lifestyle 2", "option": "Front", "top": 200},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     481559531: {  # Mount Diablo
         "display_name": "Mount Diablo Topographic Wireframe Unisex Elevation Graphic T-Shirt",
@@ -131,7 +136,8 @@ PRODUCT_METADATA = {
         "male_model_prefix": "model_diablo",
         "female_model_prefix": "model_diablo_female",
         "male_model_config": {"option_group": "Men's 3", "option": "Front", "top": 300},
-        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]}
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     481791025: {  # California Shaded Elevations
         "display_name": "California Shaded Elevations Topographic Unisex Graphic T-Shirt",
@@ -143,7 +149,7 @@ PRODUCT_METADATA = {
         "female_model_prefix": "model_california",
         "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
         "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
-        "flat_config": {"option_group": "Flat", "option": "Front", "placements": ["front_large"]}
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     },
     481939533: {  # Mount Vaca
         "display_name": "Mount Vaca Ridgelines Unisex Elevation Hooded Long-Sleeve Tee",
@@ -195,7 +201,7 @@ PRODUCT_METADATA = {
         "primary_color": "Solid Black Triblend",
         "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
         "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
-        "flat_config": {"option_group": "Flat", "option": "Front", "placements": ["front_large"]}
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     }
 }
 
@@ -642,7 +648,28 @@ for sp in store_products:
 
     prod_entry["model_image"] = primary_male_rel or primary_female_rel
 
-    # Check if flat_config is provided to generate clean flat mockups
+    # 1. Check if closeup_config is provided to generate 2000px design closeups on shirt color
+    closeup_cfg = custom_meta.get("closeup_config")
+    if closeup_cfg:
+        missing_closeups = {}
+        for color, var_list in color_groups.items():
+            color_slug = slugify(color)
+            local_closeup_path = os.path.join(IMAGES_DIR, f"closeup_{prod_slug}_{color_slug}.jpg")
+            if not os.path.exists(local_closeup_path) or os.path.getsize(local_closeup_path) == 0:
+                cat_vid = var_list[0].get("variant_id")
+                if cat_vid:
+                    missing_closeups[cat_vid] = color
+        if missing_closeups:
+            v0 = variants[0] if variants else {}
+            cat_prod_id = v0.get("product", {}).get("product_id")
+            art_file = next((f for f in v0.get("files", []) if f.get("type") in ("front_large", "default", "front") and f.get("preview_url")), None)
+            if not art_file:
+                art_file = next((f for f in v0.get("files", []) if f.get("preview_url")), None)
+            if cat_prod_id and art_file:
+                print(f"  Generating {len(missing_closeups)} missing 2000px closeup mockups for {prod_slug}...")
+                generate_printful_mockups(cat_prod_id, art_file, missing_closeups, closeup_cfg, f"closeup_{prod_slug}", is_model=False)
+
+    # 2. Check if flat_config is provided to generate clean flat mockups
     flat_cfg = custom_meta.get("flat_config")
     if flat_cfg:
         missing_flats = {}
@@ -666,38 +693,45 @@ for sp in store_products:
     for color, var_list in color_groups.items():
         color_slug = slugify(color)
         
-        # 1. First priority for flat mockup: check existing catalog & verify file exists
-        prev_flat_img = existing_prod_data.get("colors", {}).get(color, {}).get("image")
-        if prev_flat_img and os.path.exists(os.path.join(BASE_DIR, prev_flat_img.lstrip("/"))):
-            local_img_rel = prev_flat_img
-            local_img_path = os.path.join(BASE_DIR, prev_flat_img.lstrip("/"))
-            print(f"  [Flat Mockup Preserved] {color} -> {local_img_rel}")
-        else:
-            local_img_rel = f"/assets/images/products/{prod_slug}_{color_slug}.jpg"
-            local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
+        # Priority for main garment image: Check for 2000px design closeup first
+        closeup_filename = f"closeup_{prod_slug}_{color_slug}.jpg"
+        closeup_path = os.path.join(IMAGES_DIR, closeup_filename)
+        closeup_rel = f"/assets/images/products/{closeup_filename}"
 
-            preview_url = None
-            # Look for mockup preview ('preview' type), fallback to any preview_url
-            for file_info in var_list[0].get("files", []):
-                if file_info.get("type") == "preview" and file_info.get("preview_url"):
-                    preview_url = file_info["preview_url"]
-                    break
-            if not preview_url:
+        if os.path.exists(closeup_path) and os.path.getsize(closeup_path) > 0:
+            local_img_rel = closeup_rel
+            print(f"  [Closeup Mockup Preserved] {color} -> {local_img_rel}")
+        else:
+            prev_flat_img = existing_prod_data.get("colors", {}).get(color, {}).get("image")
+            if prev_flat_img and os.path.exists(os.path.join(BASE_DIR, prev_flat_img.lstrip("/"))):
+                local_img_rel = prev_flat_img
+                print(f"  [Flat Mockup Preserved] {color} -> {local_img_rel}")
+            else:
+                local_img_rel = f"/assets/images/products/{prod_slug}_{color_slug}.jpg"
+                local_img_path = os.path.join(IMAGES_DIR, f"{prod_slug}_{color_slug}.jpg")
+
+                preview_url = None
+                # Look for mockup preview ('preview' type), fallback to any preview_url
                 for file_info in var_list[0].get("files", []):
-                    if file_info.get("preview_url"):
+                    if file_info.get("type") == "preview" and file_info.get("preview_url"):
                         preview_url = file_info["preview_url"]
                         break
+                if not preview_url:
+                    for file_info in var_list[0].get("files", []):
+                        if file_info.get("preview_url"):
+                            preview_url = file_info["preview_url"]
+                            break
 
-            if preview_url and not os.path.exists(local_img_path):
-                print(f"  Downloading flat mockup: {color} -> {local_img_rel}")
-                try:
-                    img_res = requests.get(preview_url, timeout=15)
-                    if img_res.ok:
-                        save_clean_image(img_res.content, local_img_path)
-                except Exception as e:
-                    print(f"  Warning: Image download error for {color}: {e}")
-            elif os.path.exists(local_img_path):
-                print(f"  [Flat Mockup on Disk Preserved] {color} -> {local_img_rel}")
+                if preview_url and not os.path.exists(local_img_path):
+                    print(f"  Downloading flat mockup: {color} -> {local_img_rel}")
+                    try:
+                        img_res = requests.get(preview_url, timeout=15)
+                        if img_res.ok:
+                            save_clean_image(img_res.content, local_img_path)
+                    except Exception as e:
+                        print(f"  Warning: Image download error for {color}: {e}")
+                elif os.path.exists(local_img_path):
+                    print(f"  [Flat Mockup on Disk Preserved] {color} -> {local_img_rel}")
 
         prod_entry["colors"][color] = {
             "name": color,
@@ -881,6 +915,13 @@ for sp in store_products:
             if s not in sorted_sizes:
                 sorted_sizes[s] = obj
         prod_entry["colors"][color]["sizes"] = sorted_sizes
+
+    pref_color = custom_meta.get("primary_color")
+    if pref_color and pref_color in prod_entry["colors"]:
+        prod_entry["image"] = prod_entry["colors"][pref_color]["image"]
+    elif prod_entry["colors"]:
+        first_color = list(prod_entry["colors"].keys())[0]
+        prod_entry["image"] = prod_entry["colors"][first_color]["image"]
 
     catalog_data[prod_slug] = prod_entry
 

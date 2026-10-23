@@ -10,7 +10,7 @@
       "Black": {
         "name": "Black",
         "slug": "black",
-        "image": "/assets/images/products/mount_whitney_ridgelines_black.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_black.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -83,7 +83,7 @@
       "Navy": {
         "name": "Navy",
         "slug": "navy",
-        "image": "/assets/images/products/mount_whitney_ridgelines_navy.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_navy.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -156,7 +156,7 @@
       "Cardinal": {
         "name": "Cardinal",
         "slug": "cardinal",
-        "image": "/assets/images/products/mount_whitney_ridgelines_cardinal.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_cardinal.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -208,7 +208,7 @@
       "Brown": {
         "name": "Brown",
         "slug": "brown",
-        "image": "/assets/images/products/mount_whitney_ridgelines_brown.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_brown.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -274,7 +274,7 @@
       "Dark Grey": {
         "name": "Dark Grey",
         "slug": "dark_grey",
-        "image": "/assets/images/products/mount_whitney_ridgelines_dark_grey.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_dark_grey.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -326,7 +326,7 @@
       "Asphalt": {
         "name": "Asphalt",
         "slug": "asphalt",
-        "image": "/assets/images/products/mount_whitney_ridgelines_asphalt.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_asphalt.jpg",
         "sizes": {
           "S": {
             "price": "$26.87",
@@ -385,7 +385,7 @@
       "Heather True Royal": {
         "name": "Heather True Royal",
         "slug": "heather_true_royal",
-        "image": "/assets/images/products/mount_whitney_ridgelines_heather_true_royal.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_heather_true_royal.jpg",
         "sizes": {
           "S": {
             "price": "$26.87",
@@ -444,7 +444,7 @@
       "Aqua": {
         "name": "Aqua",
         "slug": "aqua",
-        "image": "/assets/images/products/mount_whitney_ridgelines_aqua.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_aqua.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -510,7 +510,7 @@
       "Ash": {
         "name": "Ash",
         "slug": "ash",
-        "image": "/assets/images/products/mount_whitney_ridgelines_ash.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_ash.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -576,7 +576,7 @@
       "Natural": {
         "name": "Natural",
         "slug": "natural",
-        "image": "/assets/images/products/mount_whitney_ridgelines_natural.jpg",
+        "image": "/assets/images/products/closeup_mount_whitney_ridgelines_natural.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -643,7 +643,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_whitney.jpg",
     "female_model_image": "/assets/images/products/model_whitney_female.jpg",
-    "model_image": "/assets/images/products/model_whitney.jpg"
+    "model_image": "/assets/images/products/model_whitney.jpg",
+    "image": "/assets/images/products/closeup_mount_whitney_ridgelines_black.jpg"
   },
   "north_palisade_glaciated_af_": {
     "id": 480350932,
@@ -656,7 +657,7 @@
       "Solid Black Triblend": {
         "name": "Solid Black Triblend",
         "slug": "solid_black_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__solid_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__solid_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -715,7 +716,7 @@
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -774,7 +775,7 @@
       "True Royal Triblend": {
         "name": "True Royal Triblend",
         "slug": "true_royal_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__true_royal_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__true_royal_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -833,7 +834,7 @@
       "Teal Triblend": {
         "name": "Teal Triblend",
         "slug": "teal_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__teal_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__teal_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -892,7 +893,7 @@
       "Maroon Triblend": {
         "name": "Maroon Triblend",
         "slug": "maroon_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__maroon_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__maroon_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -951,7 +952,7 @@
       "Blue Triblend": {
         "name": "Blue Triblend",
         "slug": "blue_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__blue_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__blue_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1010,7 +1011,7 @@
       "Aqua Triblend": {
         "name": "Aqua Triblend",
         "slug": "aqua_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__aqua_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__aqua_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1069,7 +1070,7 @@
       "Grey Triblend": {
         "name": "Grey Triblend",
         "slug": "grey_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__grey_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__grey_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1128,7 +1129,7 @@
       "Olive Triblend": {
         "name": "Olive Triblend",
         "slug": "olive_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__olive_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__olive_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1187,7 +1188,7 @@
       "Mauve Triblend": {
         "name": "Mauve Triblend",
         "slug": "mauve_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__mauve_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__mauve_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1239,7 +1240,7 @@
       "Mustard Triblend": {
         "name": "Mustard Triblend",
         "slug": "mustard_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__mustard_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__mustard_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1298,7 +1299,7 @@
       "Tan Triblend": {
         "name": "Tan Triblend",
         "slug": "tan_triblend",
-        "image": "/assets/images/products/north_palisade_glaciated_af__tan_triblend.jpg",
+        "image": "/assets/images/products/closeup_north_palisade_glaciated_af__tan_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1358,7 +1359,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_palisade.jpg",
     "female_model_image": "/assets/images/products/model_palisade_female.jpg",
-    "model_image": "/assets/images/products/model_palisade.jpg"
+    "model_image": "/assets/images/products/model_palisade.jpg",
+    "image": "/assets/images/products/closeup_north_palisade_glaciated_af__solid_black_triblend.jpg"
   },
   "mount_diablo_short_sleeve_t_shirt": {
     "id": 481559531,
@@ -1371,7 +1373,7 @@
       "Charcoal-Black Triblend": {
         "name": "Charcoal-Black Triblend",
         "slug": "charcoal_black_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1430,7 +1432,7 @@
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1489,7 +1491,7 @@
       "Navy Triblend": {
         "name": "Navy Triblend",
         "slug": "navy_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_navy_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_navy_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1548,7 +1550,7 @@
       "Maroon Triblend": {
         "name": "Maroon Triblend",
         "slug": "maroon_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_maroon_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_maroon_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1607,7 +1609,7 @@
       "Clay Triblend": {
         "name": "Clay Triblend",
         "slug": "clay_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_clay_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_clay_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1666,7 +1668,7 @@
       "Red Triblend": {
         "name": "Red Triblend",
         "slug": "red_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_red_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_red_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1725,7 +1727,7 @@
       "Blue Triblend": {
         "name": "Blue Triblend",
         "slug": "blue_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_blue_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_blue_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1784,7 +1786,7 @@
       "Grey Triblend": {
         "name": "Grey Triblend",
         "slug": "grey_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_grey_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_grey_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1843,7 +1845,7 @@
       "Olive Triblend": {
         "name": "Olive Triblend",
         "slug": "olive_triblend",
-        "image": "/assets/images/products/mount_diablo_short_sleeve_t_shirt_olive_triblend.jpg",
+        "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_olive_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1903,7 +1905,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_diablo.jpg",
     "female_model_image": "/assets/images/products/model_diablo_female.jpg",
-    "model_image": "/assets/images/products/model_diablo.jpg"
+    "model_image": "/assets/images/products/model_diablo.jpg",
+    "image": "/assets/images/products/closeup_mount_diablo_short_sleeve_t_shirt_brown_triblend.jpg"
   },
   "california_shaded_elevations_short_sleeve_t_shirt": {
     "id": 481791025,
@@ -1916,7 +1919,7 @@
       "Charcoal-Black Triblend": {
         "name": "Charcoal-Black Triblend",
         "slug": "charcoal_black_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_charcoal_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -1975,7 +1978,7 @@
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2034,7 +2037,7 @@
       "Navy Triblend": {
         "name": "Navy Triblend",
         "slug": "navy_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_navy_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_navy_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2093,7 +2096,7 @@
       "Maroon Triblend": {
         "name": "Maroon Triblend",
         "slug": "maroon_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_maroon_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_maroon_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2152,7 +2155,7 @@
       "Clay Triblend": {
         "name": "Clay Triblend",
         "slug": "clay_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_clay_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_clay_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2211,7 +2214,7 @@
       "Red Triblend": {
         "name": "Red Triblend",
         "slug": "red_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_red_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_red_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2270,7 +2273,7 @@
       "Blue Triblend": {
         "name": "Blue Triblend",
         "slug": "blue_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_blue_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_blue_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2329,7 +2332,7 @@
       "Grey Triblend": {
         "name": "Grey Triblend",
         "slug": "grey_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_grey_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_grey_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2388,7 +2391,7 @@
       "Olive Triblend": {
         "name": "Olive Triblend",
         "slug": "olive_triblend",
-        "image": "/assets/images/products/california_shaded_elevations_short_sleeve_t_shirt_olive_triblend.jpg",
+        "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_olive_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2448,7 +2451,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_california_male.jpg",
     "female_model_image": "/assets/images/products/model_california.jpg",
-    "model_image": "/assets/images/products/model_california_male.jpg"
+    "model_image": "/assets/images/products/model_california_male.jpg",
+    "image": "/assets/images/products/closeup_california_shaded_elevations_short_sleeve_t_shirt_charcoal_black_triblend.jpg"
   },
   "mount_vaca": {
     "id": 481939533,
@@ -2753,7 +2757,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_vaca.jpg",
     "female_model_image": "/assets/images/products/model_vaca_female.jpg",
-    "model_image": "/assets/images/products/model_vaca.jpg"
+    "model_image": "/assets/images/products/model_vaca.jpg",
+    "image": "/assets/images/products/mount_vaca_charcoal_black_triblend.jpg"
   },
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
@@ -2766,7 +2771,7 @@
       "Solid Black Triblend": {
         "name": "Solid Black Triblend",
         "slug": "solid_black_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_solid_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_solid_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2825,7 +2830,7 @@
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2884,7 +2889,7 @@
       "True Royal Triblend": {
         "name": "True Royal Triblend",
         "slug": "true_royal_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_true_royal_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_true_royal_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -2943,7 +2948,7 @@
       "Teal Triblend": {
         "name": "Teal Triblend",
         "slug": "teal_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_teal_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_teal_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3002,7 +3007,7 @@
       "Maroon Triblend": {
         "name": "Maroon Triblend",
         "slug": "maroon_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_maroon_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_maroon_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3061,7 +3066,7 @@
       "Blue Triblend": {
         "name": "Blue Triblend",
         "slug": "blue_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_blue_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_blue_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3120,7 +3125,7 @@
       "Aqua Triblend": {
         "name": "Aqua Triblend",
         "slug": "aqua_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_aqua_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_aqua_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3179,7 +3184,7 @@
       "Grey Triblend": {
         "name": "Grey Triblend",
         "slug": "grey_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_grey_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_grey_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3238,7 +3243,7 @@
       "Olive Triblend": {
         "name": "Olive Triblend",
         "slug": "olive_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_olive_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_olive_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3297,7 +3302,7 @@
       "Mauve Triblend": {
         "name": "Mauve Triblend",
         "slug": "mauve_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_mauve_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_mauve_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3349,7 +3354,7 @@
       "Mustard Triblend": {
         "name": "Mustard Triblend",
         "slug": "mustard_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_mustard_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_mustard_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3408,7 +3413,7 @@
       "Tan Triblend": {
         "name": "Tan Triblend",
         "slug": "tan_triblend",
-        "image": "/assets/images/products/rainbow_sunflower_tri_blend_tan_triblend.jpg",
+        "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_tan_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -3468,7 +3473,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_sunflower_male.jpg",
     "female_model_image": "/assets/images/products/model_sunflower.jpg",
-    "model_image": "/assets/images/products/model_sunflower_male.jpg"
+    "model_image": "/assets/images/products/model_sunflower_male.jpg",
+    "image": "/assets/images/products/closeup_rainbow_sunflower_tri_blend_solid_black_triblend.jpg"
   },
   "violet_eye_hex_mandala": {
     "id": 479899530,
@@ -3481,7 +3487,7 @@
       "Black Heather": {
         "name": "Black Heather",
         "slug": "black_heather",
-        "image": "/assets/images/products/violet_eye_hex_mandala_black_heather.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_black_heather.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3554,7 +3560,7 @@
       "Black": {
         "name": "Black",
         "slug": "black",
-        "image": "/assets/images/products/violet_eye_hex_mandala_black.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_black.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3627,7 +3633,7 @@
       "Cardinal": {
         "name": "Cardinal",
         "slug": "cardinal",
-        "image": "/assets/images/products/violet_eye_hex_mandala_cardinal.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_cardinal.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3679,7 +3685,7 @@
       "Heather Brown": {
         "name": "Heather Brown",
         "slug": "heather_brown",
-        "image": "/assets/images/products/violet_eye_hex_mandala_heather_brown.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_heather_brown.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3738,7 +3744,7 @@
       "Army": {
         "name": "Army",
         "slug": "army",
-        "image": "/assets/images/products/violet_eye_hex_mandala_army.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_army.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3804,7 +3810,7 @@
       "Soft Cream": {
         "name": "Soft Cream",
         "slug": "soft_cream",
-        "image": "/assets/images/products/violet_eye_hex_mandala_soft_cream.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_soft_cream.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3870,7 +3876,7 @@
       "Soft Pink": {
         "name": "Soft Pink",
         "slug": "soft_pink",
-        "image": "/assets/images/products/violet_eye_hex_mandala_soft_pink.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_soft_pink.jpg",
         "sizes": {
           "S": {
             "price": "$26.87",
@@ -3929,7 +3935,7 @@
       "Silver": {
         "name": "Silver",
         "slug": "silver",
-        "image": "/assets/images/products/violet_eye_hex_mandala_silver.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_silver.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -3995,7 +4001,7 @@
       "Ash": {
         "name": "Ash",
         "slug": "ash",
-        "image": "/assets/images/products/violet_eye_hex_mandala_ash.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_ash.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4061,7 +4067,7 @@
       "Heather Ice Blue": {
         "name": "Heather Ice Blue",
         "slug": "heather_ice_blue",
-        "image": "/assets/images/products/violet_eye_hex_mandala_heather_ice_blue.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_heather_ice_blue.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4127,7 +4133,7 @@
       "White": {
         "name": "White",
         "slug": "white",
-        "image": "/assets/images/products/violet_eye_hex_mandala_white.jpg",
+        "image": "/assets/images/products/closeup_violet_eye_hex_mandala_white.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4201,7 +4207,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_violet_male.jpg",
     "female_model_image": "/assets/images/products/model_violet.jpg",
-    "model_image": "/assets/images/products/model_violet_male.jpg"
+    "model_image": "/assets/images/products/model_violet_male.jpg",
+    "image": "/assets/images/products/closeup_violet_eye_hex_mandala_black_heather.jpg"
   },
   "bubbles": {
     "id": 479948902,
@@ -4214,7 +4221,7 @@
       "Black Heather": {
         "name": "Black Heather",
         "slug": "black_heather",
-        "image": "/assets/images/products/bubbles_black_heather.jpg",
+        "image": "/assets/images/products/closeup_bubbles_black_heather.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4287,7 +4294,7 @@
       "Cardinal": {
         "name": "Cardinal",
         "slug": "cardinal",
-        "image": "/assets/images/products/bubbles_cardinal.jpg",
+        "image": "/assets/images/products/closeup_bubbles_cardinal.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4339,7 +4346,7 @@
       "Red": {
         "name": "Red",
         "slug": "red",
-        "image": "/assets/images/products/bubbles_red.jpg",
+        "image": "/assets/images/products/closeup_bubbles_red.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4412,7 +4419,7 @@
       "True Royal": {
         "name": "True Royal",
         "slug": "true_royal",
-        "image": "/assets/images/products/bubbles_true_royal.jpg",
+        "image": "/assets/images/products/closeup_bubbles_true_royal.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4485,7 +4492,7 @@
       "Berry": {
         "name": "Berry",
         "slug": "berry",
-        "image": "/assets/images/products/bubbles_berry.jpg",
+        "image": "/assets/images/products/closeup_bubbles_berry.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4551,7 +4558,7 @@
       "Heather Clay": {
         "name": "Heather Clay",
         "slug": "heather_clay",
-        "image": "/assets/images/products/bubbles_heather_clay.jpg",
+        "image": "/assets/images/products/closeup_bubbles_heather_clay.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4603,7 +4610,7 @@
       "Heather Slate": {
         "name": "Heather Slate",
         "slug": "heather_slate",
-        "image": "/assets/images/products/bubbles_heather_slate.jpg",
+        "image": "/assets/images/products/closeup_bubbles_heather_slate.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4655,7 +4662,7 @@
       "Olive": {
         "name": "Olive",
         "slug": "olive",
-        "image": "/assets/images/products/bubbles_olive.jpg",
+        "image": "/assets/images/products/closeup_bubbles_olive.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4721,7 +4728,7 @@
       "Autumn": {
         "name": "Autumn",
         "slug": "autumn",
-        "image": "/assets/images/products/bubbles_autumn.jpg",
+        "image": "/assets/images/products/closeup_bubbles_autumn.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4787,7 +4794,7 @@
       "Heather Grass Green": {
         "name": "Heather Grass Green",
         "slug": "heather_grass_green",
-        "image": "/assets/images/products/bubbles_heather_grass_green.jpg",
+        "image": "/assets/images/products/closeup_bubbles_heather_grass_green.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4846,7 +4853,7 @@
       "Heather True Royal": {
         "name": "Heather True Royal",
         "slug": "heather_true_royal",
-        "image": "/assets/images/products/bubbles_heather_true_royal.jpg",
+        "image": "/assets/images/products/closeup_bubbles_heather_true_royal.jpg",
         "sizes": {
           "S": {
             "price": "$26.87",
@@ -4905,7 +4912,7 @@
       "Aqua": {
         "name": "Aqua",
         "slug": "aqua",
-        "image": "/assets/images/products/bubbles_aqua.jpg",
+        "image": "/assets/images/products/closeup_bubbles_aqua.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -4971,7 +4978,7 @@
       "Charity Pink": {
         "name": "Charity Pink",
         "slug": "charity_pink",
-        "image": "/assets/images/products/bubbles_charity_pink.jpg",
+        "image": "/assets/images/products/closeup_bubbles_charity_pink.jpg",
         "sizes": {
           "XS": {
             "price": "$26.87",
@@ -5024,7 +5031,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_bubbles.jpg",
     "female_model_image": "/assets/images/products/model_bubbles_female.jpg",
-    "model_image": "/assets/images/products/model_bubbles.jpg"
+    "model_image": "/assets/images/products/model_bubbles.jpg",
+    "image": "/assets/images/products/closeup_bubbles_black_heather.jpg"
   },
   "one_piece_swimsuit": {
     "id": 483500528,
@@ -5095,7 +5103,8 @@
     },
     "is_unisex": false,
     "female_model_image": "/assets/images/products/model_one_piece_swimsuit.jpg",
-    "model_image": "/assets/images/products/model_one_piece_swimsuit.jpg"
+    "model_image": "/assets/images/products/model_one_piece_swimsuit.jpg",
+    "image": "/assets/images/products/one_piece_swimsuit_white.jpg"
   },
   "muscle_shirt": {
     "id": 483496351,
@@ -5147,7 +5156,8 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_muscle_shirt_male.jpg",
     "female_model_image": "/assets/images/products/model_muscle_shirt.jpg",
-    "model_image": "/assets/images/products/model_muscle_shirt_male.jpg"
+    "model_image": "/assets/images/products/model_muscle_shirt_male.jpg",
+    "image": "/assets/images/products/muscle_shirt_white.jpg"
   },
   "bodycon_dress": {
     "id": 483495525,
@@ -5204,7 +5214,8 @@
     },
     "is_unisex": false,
     "female_model_image": "/assets/images/products/model_bodycon_dress.jpg",
-    "model_image": "/assets/images/products/model_bodycon_dress.jpg"
+    "model_image": "/assets/images/products/model_bodycon_dress.jpg",
+    "image": "/assets/images/products/bodycon_dress_white.jpg"
   },
   "blue_hex_portal": {
     "id": 483492839,
@@ -5217,7 +5228,7 @@
       "Solid Black Triblend": {
         "name": "Solid Black Triblend",
         "slug": "solid_black_triblend",
-        "image": "/assets/images/products/blue_hex_portal_solid_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_solid_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5276,7 +5287,7 @@
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/blue_hex_portal_brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5335,7 +5346,7 @@
       "Olive Triblend": {
         "name": "Olive Triblend",
         "slug": "olive_triblend",
-        "image": "/assets/images/products/blue_hex_portal_olive_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_olive_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5394,7 +5405,7 @@
       "Mustard Triblend": {
         "name": "Mustard Triblend",
         "slug": "mustard_triblend",
-        "image": "/assets/images/products/blue_hex_portal_mustard_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_mustard_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5453,7 +5464,7 @@
       "Tan Triblend": {
         "name": "Tan Triblend",
         "slug": "tan_triblend",
-        "image": "/assets/images/products/blue_hex_portal_tan_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_tan_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5512,7 +5523,7 @@
       "Solid White Triblend": {
         "name": "Solid White Triblend",
         "slug": "solid_white_triblend",
-        "image": "/assets/images/products/blue_hex_portal_solid_white_triblend.jpg",
+        "image": "/assets/images/products/closeup_blue_hex_portal_solid_white_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5572,6 +5583,7 @@
     "is_unisex": true,
     "male_model_image": "/assets/images/products/model_blue_hex_portal_male.jpg",
     "female_model_image": "/assets/images/products/model_blue_hex_portal.jpg",
-    "model_image": "/assets/images/products/model_blue_hex_portal_male.jpg"
+    "model_image": "/assets/images/products/model_blue_hex_portal_male.jpg",
+    "image": "/assets/images/products/closeup_blue_hex_portal_solid_black_triblend.jpg"
   }
 }

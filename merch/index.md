@@ -71,40 +71,27 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     {% endunless %}
 
     {% assign initial_img = default_color.image %}
-    {% if prod.is_unisex %}
-      {% if default_color.male_model_image %}
-        {% assign initial_img = default_color.male_model_image %}
-      {% elsif prod.male_model_image %}
-        {% assign initial_img = prod.male_model_image %}
-      {% endif %}
-    {% else %}
-      {% if default_color.female_model_image %}
-        {% assign initial_img = default_color.female_model_image %}
-      {% elsif prod.female_model_image %}
-        {% assign initial_img = prod.female_model_image %}
-      {% endif %}
-    {% endif %}
 
     <div class="card merch-card" id="{{ prod_slug }}" data-slug="{{ prod_slug }}" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.25s ease, border-color 0.25s ease;">
       <div class="merch-img-container" style="position: relative; display: flex; align-items: center; justify-content: center; height: 320px; background: #ffffff; cursor: pointer; overflow: hidden;" title="Click to zoom in on design">
         <img
           class="merch-shirt-img"
           src="{{ initial_img | relative_url }}"
-          alt="{{ prod.name }} - {% if prod.is_unisex %}Male Model ({{ default_color_name }}){% else %}Model View ({{ default_color_name }}){% endif %}"
+          alt="{{ prod.name }} - Close-up ({{ default_color_name }})"
           style="max-width: 100%; max-height: 310px; object-fit: contain; display: block; transition: opacity 0.2s ease;"
         >
 
         <!-- Image Controls Bar (All Buttons Along Bottom: View Switcher + Zoom) -->
         <div class="merch-img-controls" style="position: absolute; bottom: 8px; left: 8px; right: 8px; display: flex; align-items: center; justify-content: space-between; gap: 6px; z-index: 5; pointer-events: none;">
-          <!-- View Switcher (Male / Female / Garment) -->
+          <!-- View Switcher (Close-up / Male Model / Female Model) -->
           <div class="merch-view-switcher" style="pointer-events: auto; display: inline-flex; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(0, 0, 0, 0.14); border-radius: 20px; padding: 2px; backdrop-filter: blur(6px); box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
             {% if prod.is_unisex %}
-              <button type="button" class="view-btn active" data-view="male" title="Show on male model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Male Model</button>
+              <button type="button" class="view-btn active" data-view="flat" title="Show design close-up" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Close-up</button>
+              <button type="button" class="view-btn" data-view="male" title="Show on male model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Male Model</button>
               <button type="button" class="view-btn" data-view="female" title="Show on female model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Female Model</button>
-              <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Just Garment</button>
             {% else %}
-              <button type="button" class="view-btn active" data-view="female" title="Show on model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Model View</button>
-              <button type="button" class="view-btn" data-view="flat" title="Show garment flat" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Just Garment</button>
+              <button type="button" class="view-btn active" data-view="flat" title="Show design close-up" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: #111827; color: #ffffff; transition: all 0.15s ease; white-space: nowrap;">Close-up</button>
+              <button type="button" class="view-btn" data-view="female" title="Show on model" style="border: none; border-radius: 16px; padding: 3px 8px; font-size: 0.68rem; font-weight: 600; cursor: pointer; background: transparent; color: #4b5563; transition: all 0.15s ease; white-space: nowrap;">Model View</button>
             {% endif %}
           </div>
 
@@ -1016,8 +1003,8 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
 
     if (!colorSelect || !sizeSelect) return;
 
-    // View state: 'male', 'female', or 'flat'
-    let currentView = prodData.is_unisex ? 'male' : 'female';
+    // View state: 'flat' (closeup), 'male', or 'female'
+    let currentView = 'flat';
 
     // If deep-linked via ?product=slug, highlight and pre-select color/size if provided
     const isPinned = (slug === pinnedProductSlug);
@@ -1045,7 +1032,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
         targetAlt += ' - ' + (prodData.is_unisex ? 'Female Model (' : 'Model View (') + currentColor + ')';
       } else {
         targetSrc = (colorInfo && colorInfo.image) ? colorInfo.image : (prodData.image || '');
-        targetAlt += ' - ' + currentColor + ' (Garment View)';
+        targetAlt += ' - ' + currentColor + ' (Close-up View)';
       }
 
       if (targetSrc) {
@@ -1176,7 +1163,7 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
           modalSubtitleText = (prodData.is_unisex ? 'Female Model (' : 'Model View (') + currentColor + ')';
         } else {
           modalSrc = (colorInfo && colorInfo.image) ? colorInfo.image : '';
-          modalSubtitleText = currentColor + ' (Garment View)';
+          modalSubtitleText = currentColor + ' (Close-up View)';
         }
 
         if (modalSrc) {
