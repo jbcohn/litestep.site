@@ -713,14 +713,63 @@ for sp in store_products:
             color_male_rels.get(color) or color_female_rels.get(color) or primary_male_rel or primary_female_rel
         )
 
+        # Target base retail prices per Printful catalog product ID
+        # 71: Bella + Canvas 3001 (Jersey T-Shirt) -> $26.87
+        # 162: Bella + Canvas 3413 (Tri-blend shirt) -> $32.98
+        # 198: All-Over Print Bodycon dress -> $43.98
+        # 272: All-Over Print One-Piece Swimsuit -> $48.98
+        # 365: Bella + Canvas 3483 (Unisex Muscle Tank) -> $28.98
+        # 688: Bella + Canvas 3512 (Hooded Long-Sleeve Tee) -> $41.98
+        TARGET_BASE_PRICES = {
+            71: Decimal("26.87"),
+            162: Decimal("32.98"),
+            198: Decimal("43.98"),
+            272: Decimal("48.98"),
+            365: Decimal("28.98"),
+            688: Decimal("41.98")
+        }
+
+        SIZE_INCREMENTS = {
+            71: {"2XL": Decimal("2.00"), "3XL": Decimal("4.00"), "4XL": Decimal("6.00"), "5XL": Decimal("8.00")},
+            162: {"2XL": Decimal("2.00"), "3XL": Decimal("4.00")},
+            198: {},
+            272: {"2XL": Decimal("3.00"), "3XL": Decimal("6.00")},
+            365: {"2XL": Decimal("3.00")},
+            688: {"2XL": Decimal("2.00")}
+        }
+
         for v in var_list:
             sync_variant_id = str(v["id"])
             active_printful_variant_ids.add(sync_variant_id)
             size = v.get("size", "M")
 
-            raw_price = v.get("retail_price", "26.87")
-            # Use Printful retail price as-is without subtractions
-            price_cents = int(Decimal(raw_price) * 100)
+            cat_prod_id = v.get("product", {}).get("product_id")
+            if cat_prod_id in TARGET_BASE_PRICES:
+                base_p = TARGET_BASE_PRICES[cat_prod_id]
+                inc = SIZE_INCREMENTS.get(cat_prod_id, {}).get(size, Decimal("0.00"))
+                calc_price = base_p + inc
+                price_cents = int(calc_price * 100)
+            else:
+                raw_price = v.get("retail_price", "26.87")
+                price_cents = int(Decimal(raw_price) * 100)
+                calc_price = Decimal(price_cents) / 100
+
+            # Attempt to update retail price on Printful (if token has write permission)
+            try:
+                if str(v.get("retail_price")) != f"{calc_price:.2f}":
+                    requests.put(
+                        f"https://api.printful.com/store/variants/{sync_variant_id}",
+                        headers={
+                            "Authorization": f"Bearer {PRINTFUL_API_KEY}",
+                            "X-PF-Store-Id": PRINTFUL_STORE_ID,
+                            "Content-Type": "application/json"
+                        },
+                        json={"retail_price": f"{calc_price:.2f}"},
+                        timeout=3
+                    )
+            except Exception:
+                pass
+
             amount_str = f"${(price_cents / 100):.2f}"
             currency = v.get("currency", "USD").lower()
 
