@@ -11,6 +11,73 @@ permalink: /merch/google-shopping-feed.xml
     {% for product_entry in site.data.merch_products %}
       {% assign prod_slug = product_entry[0] %}
       {% assign prod = product_entry[1] %}
+      {% case prod_slug %}
+        {% when 'mount_whitney_ridgelines' %}
+          {% assign custom_label_0 = 'california_peaks' %}
+          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Whitney' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Mt Whitney 14,505 ft Sierra Nevada 14er hiking shirt, John Muir Trail (JMT) High Sierra summit graphic tee, California mountain elevation topography gift for hikers and backpackers.' %}
+        {% when 'north_palisade_glaciated_af_' %}
+          {% assign custom_label_0 = 'california_peaks' %}
+          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > North Palisade' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'North Palisade 14,248 ft Sierra Nevada 14er climbing and mountaineering shirt, Palisade Glacier High Sierra Kings Canyon topographic elevation tee, California mountain hiking gift.' %}
+        {% when 'mount_diablo_short_sleeve_t_shirt' %}
+          {% assign custom_label_0 = 'california_peaks' %}
+          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Diablo' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Mt Diablo State Park 3,849 ft Bay Area East Bay hiking and cycling trail shirt, Contra Costa California 3D topographic terrain map graphic tee.' %}
+        {% when 'california_shaded_elevations_short_sleeve_t_shirt' %}
+          {% assign custom_label_0 = 'california_peaks' %}
+          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > California Relief Map' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'California state topographic relief map shirt, Sierra Nevada and Coast Ranges shaded elevation profile graphic tee, California geography and outdoor hiking apparel.' %}
+        {% when 'mount_vaca' %}
+          {% assign custom_label_0 = 'california_peaks' %}
+          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Vaca' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Mt Vaca 2,819 ft Vaca Mountains Solano and Napa County Bay Area ridge trail shirt, California Coast Ranges elevation contour lightweight hooded long-sleeve hiking tee.' %}
+        {% when 'rainbow_sunflower_tri_blend' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Rainbow Sunflower' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Sacred geometry golden ratio Fibonacci spiral sunflower shirt, psychedelic rainbow spectrum mathematical botanical graphic tee.' %}
+        {% when 'violet_eye_hex_mandala' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Violet Eye Mandala' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala shirt, psychedelic optical art geometric festival graphic tee.' %}
+        {% when 'blue_hex_portal' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Blue Hex Portal' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Sacred geometry cyan and royal blue hexagon fractal mandala shirt, optical 3D geometric portal tri-blend graphic tee.' %}
+        {% when 'bubbles' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Bubbles Circle Packing' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Generative art Apollonian circle packing math shirt, procedural geometry graphic tee.' %}
+        {% when 'one_piece_swimsuit' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Swimwear' %}
+          {% assign google_cat = '211' %}
+          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala one-piece swimsuit, psychedelic festival swimwear.' %}
+        {% when 'muscle_shirt' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Muscle Tank' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala sleeveless muscle tank top, festival workout graphic tank.' %}
+        {% when 'bodycon_dress' %}
+          {% assign custom_label_0 = 'fractal_geometry' %}
+          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Dresses' %}
+          {% assign google_cat = '2271' %}
+          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala bodycon dress, psychedelic festival clubwear dress.' %}
+        {% else %}
+          {% assign custom_label_0 = 'other' %}
+          {% assign product_type = 'Apparel > Graphic Tees' %}
+          {% assign google_cat = '212' %}
+          {% assign seo_keywords = '' %}
+      {% endcase %}
       {% for color_entry in prod.colors %}
         {% assign color_name = color_entry[0] %}
         {% assign color_data = color_entry[1] %}
@@ -22,20 +89,26 @@ permalink: /merch/google-shopping-feed.xml
       <g:id>{{ size_info.sync_variant_id }}</g:id>
       <g:item_group_id>{{ prod_slug }}</g:item_group_id>
       <title>{{ prod.name | xml_escape }} - {{ color_name | xml_escape }} ({{ size_name | xml_escape }})</title>
-      <description>{{ prod.description | xml_escape }} {{ prod.garment | xml_escape }}.</description>
+      <description>{{ prod.description | xml_escape }} {{ seo_keywords | xml_escape }} {{ prod.garment | xml_escape }}.</description>
       <link>https://litestep.us/merch/?product={{ prod_slug }}&amp;color={{ color_name | uri_escape }}&amp;size={{ size_name | uri_escape }}</link>
       <g:image_link>https://litestep.us{{ primary_img }}</g:image_link>
       {% if color_data.image and color_data.image != primary_img %}
       <g:additional_image_link>https://litestep.us{{ color_data.image }}</g:additional_image_link>
+      {% endif %}
+      {% if color_data.female_model_image and color_data.female_model_image != primary_img %}
+      <g:additional_image_link>https://litestep.us{{ color_data.female_model_image }}</g:additional_image_link>
       {% endif %}
       <g:availability>in_stock</g:availability>
       <g:price>{{ size_info.price | remove: '$' }} USD</g:price>
       <g:brand>Litestep</g:brand>
       <g:condition>new</g:condition>
       <g:identifier_exists>no</g:identifier_exists>
-      <g:google_product_category>212</g:google_product_category>
+      <g:google_product_category>{{ google_cat }}</g:google_product_category>
+      <g:product_type>{{ product_type | xml_escape }}</g:product_type>
+      <g:custom_label_0>{{ custom_label_0 }}</g:custom_label_0>
+      <g:custom_label_1>{{ prod_slug }}</g:custom_label_1>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>{% if prod.is_unisex %}unisex{% else %}female{% endif %}</g:gender>
       <g:color>{{ color_name | xml_escape }}</g:color>
       <g:size>{{ size_name | xml_escape }}</g:size>
       <g:shipping>
