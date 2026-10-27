@@ -7,75 +7,127 @@ permalink: /merch/google-shopping-feed.xml
   <channel>
     <title>Litestep Merch &amp; Apparel</title>
     <link>https://litestep.us/merch/</link>
-    <description>Original apparel designs generated from geospatial elevation profiles, fractal mathematics, and algorithmic geometry.</description>
+    <description>Original topographic elevation and sacred geometry graphic t-shirts and apparel printed on premium Bella + Canvas garments.</description>
     {% for product_entry in site.data.merch_products %}
       {% assign prod_slug = product_entry[0] %}
       {% assign prod = product_entry[1] %}
       {% case prod_slug %}
         {% when 'mount_whitney_ridgelines' %}
           {% assign custom_label_0 = 'california_peaks' %}
-          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Whitney' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > California Mountain Elevation Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Mt Whitney 14,505 ft Sierra Nevada 14er hiking shirt, John Muir Trail (JMT) High Sierra summit graphic tee, California mountain elevation topography gift for hikers and backpackers.' %}
+          {% assign material = '100% Airlume Combed and Ring-Spun Cotton' %}
+          {% assign highlight_1 = 'Mount Whitney (14,505 ft) 3D USGS topographic elevation ridgeline graphic tee' %}
+          {% assign highlight_2 = 'Printed on premium Bella + Canvas 3001 100% combed ring-spun cotton' %}
+          {% assign highlight_3 = 'Ideal gift for Sierra Nevada hikers, JMT backpackers, and California 14er climbers' %}
+          {% assign seo_keywords = 'Mt Whitney 14,505 ft Sierra Nevada 14er hiking t-shirt, John Muir Trail (JMT) High Sierra summit graphic tee, California mountain elevation topography gift for hikers and backpackers.' %}
         {% when 'north_palisade_glaciated_af_' %}
           {% assign custom_label_0 = 'california_peaks' %}
-          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > North Palisade' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > California Mountain Elevation Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'North Palisade 14,248 ft Sierra Nevada 14er climbing and mountaineering shirt, Palisade Glacier High Sierra Kings Canyon topographic elevation tee, California mountain hiking gift.' %}
+          {% assign material = 'Tri-Blend (50% Polyester / 25% Combed Ring-Spun Cotton / 25% Rayon)' %}
+          {% assign highlight_1 = 'North Palisade (14,248 ft) and Palisade Glacier 3D topographic elevation graphic tee' %}
+          {% assign highlight_2 = 'Printed on featherlight, ultra-soft Bella + Canvas 3413 tri-blend fabric' %}
+          {% assign highlight_3 = 'Designed for High Sierra mountaineers, Kings Canyon hikers, and 14er peakbaggers' %}
+          {% assign seo_keywords = 'North Palisade 14,248 ft Sierra Nevada 14er climbing and mountaineering t-shirt, Palisade Glacier High Sierra Kings Canyon topographic elevation tee, California mountain hiking gift.' %}
         {% when 'mount_diablo_short_sleeve_t_shirt' %}
           {% assign custom_label_0 = 'california_peaks' %}
-          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Diablo' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > California Mountain Elevation Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Mt Diablo State Park 3,849 ft Bay Area East Bay hiking and cycling trail shirt, Contra Costa California 3D topographic terrain map graphic tee.' %}
+          {% assign material = 'Tri-Blend (50% Polyester / 25% Combed Ring-Spun Cotton / 25% Rayon)' %}
+          {% assign highlight_1 = 'Mount Diablo (3,849 ft) 3D topographic elevation wireframe graphic tee' %}
+          {% assign highlight_2 = 'Printed on ultra-soft, breathable Bella + Canvas 3413 tri-blend fabric' %}
+          {% assign highlight_3 = 'Great gift for San Francisco East Bay hikers, cyclists, and trail runners' %}
+          {% assign seo_keywords = 'Mt Diablo State Park 3,849 ft Bay Area East Bay hiking and cycling trail t-shirt, Contra Costa California 3D topographic terrain map graphic tee.' %}
         {% when 'california_shaded_elevations_short_sleeve_t_shirt' %}
           {% assign custom_label_0 = 'california_peaks' %}
-          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > California Relief Map' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > California Mountain Elevation Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'California state topographic relief map shirt, Sierra Nevada and Coast Ranges shaded elevation profile graphic tee, California geography and outdoor hiking apparel.' %}
+          {% assign material = 'Tri-Blend (50% Polyester / 25% Combed Ring-Spun Cotton / 25% Rayon)' %}
+          {% assign highlight_1 = 'High-resolution California state shaded relief topographic elevation map t-shirt' %}
+          {% assign highlight_2 = 'Printed on ultra-soft Bella + Canvas 3413 tri-blend fabric' %}
+          {% assign highlight_3 = 'Showcases the Sierra Nevada, Coast Ranges, Cascade peaks, and Central Valley' %}
+          {% assign seo_keywords = 'California state topographic relief map t-shirt, Sierra Nevada and Coast Ranges shaded elevation profile graphic tee, California geography and outdoor hiking apparel.' %}
         {% when 'mount_vaca' %}
           {% assign custom_label_0 = 'california_peaks' %}
-          {% assign product_type = 'Apparel > California Mountain Elevation Shirts > Mount Vaca' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > California Mountain Elevation Tees' %}
           {% assign google_cat = '212' %}
+          {% assign material = '100% Airlume Combed and Ring-Spun Cotton' %}
+          {% assign highlight_1 = 'Mount Vaca (2,819 ft) Northern California 3D topographic ridgeline graphic tee' %}
+          {% assign highlight_2 = 'Lightweight Bella + Canvas 3512 unisex hooded long-sleeve t-shirt' %}
+          {% assign highlight_3 = 'Ideal for cool trail mornings, Bay Area & Napa/Solano ridge hikes, and sun protection' %}
           {% assign seo_keywords = 'Mt Vaca 2,819 ft Vaca Mountains Solano and Napa County Bay Area ridge trail shirt, California Coast Ranges elevation contour lightweight hooded long-sleeve hiking tee.' %}
         {% when 'rainbow_sunflower_tri_blend' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Rainbow Sunflower' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > Sacred Geometry Graphic Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Sacred geometry golden ratio Fibonacci spiral sunflower shirt, psychedelic rainbow spectrum mathematical botanical graphic tee.' %}
+          {% assign material = 'Tri-Blend (50% Polyester / 25% Combed Ring-Spun Cotton / 25% Rayon)' %}
+          {% assign highlight_1 = 'Golden-ratio Fibonacci phyllotaxis spiral sunflower graphic t-shirt' %}
+          {% assign highlight_2 = 'Printed on ultra-soft, breathable Bella + Canvas 3413 tri-blend fabric' %}
+          {% assign highlight_3 = 'Vivid rainbow chromatic spectrum artwork for math, nature, and festival lovers' %}
+          {% assign seo_keywords = 'Sacred geometry golden ratio Fibonacci spiral sunflower t-shirt, psychedelic rainbow spectrum mathematical botanical graphic tee.' %}
         {% when 'violet_eye_hex_mandala' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Violet Eye Mandala' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > Sacred Geometry Graphic Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala shirt, psychedelic optical art geometric festival graphic tee.' %}
+          {% assign material = '100% Airlume Combed and Ring-Spun Cotton' %}
+          {% assign highlight_1 = 'Concentric Violet Eye hexagon fractal mandala sacred geometry graphic t-shirt' %}
+          {% assign highlight_2 = 'Printed on premium Bella + Canvas 3001 100% combed ring-spun cotton' %}
+          {% assign highlight_3 = 'High-contrast violet and cyan optical geometry artwork' %}
+          {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala t-shirt, psychedelic optical art geometric festival graphic tee.' %}
         {% when 'blue_hex_portal' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Blue Hex Portal' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > Sacred Geometry Graphic Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Sacred geometry cyan and royal blue hexagon fractal mandala shirt, optical 3D geometric portal tri-blend graphic tee.' %}
+          {% assign material = 'Tri-Blend (50% Polyester / 25% Combed Ring-Spun Cotton / 25% Rayon)' %}
+          {% assign highlight_1 = '3D optical cyan and royal blue hexagon fractal mandala graphic t-shirt' %}
+          {% assign highlight_2 = 'Printed on ultra-soft Bella + Canvas 3413 tri-blend fabric' %}
+          {% assign highlight_3 = 'Original mathematical sacred geometry portal design' %}
+          {% assign seo_keywords = 'Sacred geometry cyan and royal blue hexagon fractal mandala t-shirt, optical 3D geometric portal tri-blend graphic tee.' %}
         {% when 'bubbles' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Bubbles Circle Packing' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts > Math & Generative Art Tees' %}
           {% assign google_cat = '212' %}
-          {% assign seo_keywords = 'Generative art Apollonian circle packing math shirt, procedural geometry graphic tee.' %}
+          {% assign material = '100% Airlume Combed and Ring-Spun Cotton' %}
+          {% assign highlight_1 = 'Original Apollonian circle-packing mathematical geometry graphic t-shirt' %}
+          {% assign highlight_2 = 'Printed on premium Bella + Canvas 3001 100% combed ring-spun cotton' %}
+          {% assign highlight_3 = 'Designed for fans of fractal math, generative art, and procedural geometry' %}
+          {% assign seo_keywords = 'Generative art Apollonian circle packing math t-shirt, procedural geometry fractal graphic tee.' %}
         {% when 'one_piece_swimsuit' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Swimwear' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Swimwear > One-Piece Swimsuits' %}
           {% assign google_cat = '211' %}
+          {% assign material = '82% Polyester / 18% Spandex' %}
+          {% assign highlight_1 = 'All-over print Violet Eye sacred geometry hexagon fractal mandala swimsuit' %}
+          {% assign highlight_2 = 'Chlorine-resistant four-way stretch fabric with UPF 50+ sun protection' %}
+          {% assign highlight_3 = 'Double-layered front with cheeky fit and scoop neckline' %}
           {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala one-piece swimsuit, psychedelic festival swimwear.' %}
         {% when 'muscle_shirt' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Muscle Tank' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > Tank Tops' %}
           {% assign google_cat = '212' %}
+          {% assign material = '100% Airlume Combed and Ring-Spun Cotton' %}
+          {% assign highlight_1 = 'Sleeveless muscle tank top featuring the Violet Eye hexagon fractal mandala' %}
+          {% assign highlight_2 = 'Printed on soft, breathable Bella + Canvas 3483 100% combed ring-spun cotton' %}
+          {% assign highlight_3 = 'Relaxed armholes and unisex fit for workouts, festivals, and warm weather' %}
           {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala sleeveless muscle tank top, festival workout graphic tank.' %}
         {% when 'bodycon_dress' %}
           {% assign custom_label_0 = 'fractal_geometry' %}
-          {% assign product_type = 'Apparel > Algorithmic & Sacred Geometry > Dresses' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Dresses' %}
           {% assign google_cat = '2271' %}
+          {% assign material = '82% Polyester / 18% Spandex' %}
+          {% assign highlight_1 = 'All-over print sacred geometry hexagon fractal mandala bodycon dress' %}
+          {% assign highlight_2 = 'Smooth, four-way stretch microfiber yarn that recovers on the cross and lengthwise grains' %}
+          {% assign highlight_3 = 'Vivid violet and turquoise optical geometry for festivals and events' %}
           {% assign seo_keywords = 'Sacred geometry hexagon fractal mandala bodycon dress, psychedelic festival clubwear dress.' %}
         {% else %}
           {% assign custom_label_0 = 'other' %}
-          {% assign product_type = 'Apparel > Graphic Tees' %}
+          {% assign product_type = 'Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts' %}
           {% assign google_cat = '212' %}
+          {% assign material = 'Cotton / Tri-Blend' %}
+          {% assign highlight_1 = 'Original algorithmic and topographic graphic apparel' %}
+          {% assign highlight_2 = 'Printed on premium Bella + Canvas garments' %}
+          {% assign highlight_3 = 'Direct print-on-demand fulfillment across the US' %}
           {% assign seo_keywords = '' %}
       {% endcase %}
       {% for color_entry in prod.colors %}
@@ -89,7 +141,7 @@ permalink: /merch/google-shopping-feed.xml
       <g:id>{{ size_info.sync_variant_id }}</g:id>
       <g:item_group_id>{{ prod_slug }}</g:item_group_id>
       <title>{{ prod.name | xml_escape }} - {{ color_name | xml_escape }} ({{ size_name | xml_escape }})</title>
-      <description>{{ prod.description | xml_escape }} {{ seo_keywords | xml_escape }} {{ prod.garment | xml_escape }}.</description>
+      <description>{{ prod.description | xml_escape }} {{ seo_keywords | xml_escape }} Garment: {{ prod.garment | xml_escape }} ({{ material | xml_escape }}). Mix &amp; match any 2+ items for Free US Shipping.</description>
       <link>https://litestep.us/merch/?product={{ prod_slug }}&amp;color={{ color_name | uri_escape }}&amp;size={{ size_name | uri_escape }}</link>
       <g:image_link>https://litestep.us{{ primary_img }}</g:image_link>
       {% if color_data.image and color_data.image != primary_img %}
@@ -105,6 +157,11 @@ permalink: /merch/google-shopping-feed.xml
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>{{ google_cat }}</g:google_product_category>
       <g:product_type>{{ product_type | xml_escape }}</g:product_type>
+      <g:material>{{ material | xml_escape }}</g:material>
+      <g:product_highlight>{{ highlight_1 | xml_escape }}</g:product_highlight>
+      <g:product_highlight>{{ highlight_2 | xml_escape }}</g:product_highlight>
+      <g:product_highlight>{{ highlight_3 | xml_escape }}</g:product_highlight>
+      <g:product_highlight>Free US Shipping when you order 2 or more items ($4.79 standard shipping on single items)</g:product_highlight>
       <g:custom_label_0>{{ custom_label_0 }}</g:custom_label_0>
       <g:custom_label_1>{{ prod_slug }}</g:custom_label_1>
       <g:age_group>adult</g:age_group>

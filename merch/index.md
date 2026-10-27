@@ -379,6 +379,8 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
           "@type": "Brand",
           "name": "Litestep"
         },
+        "category": "Apparel & Accessories > Clothing > Shirts & Tops > T-Shirts",
+        "sku": "{{ s_data.sync_variant_id }}",
         "offers": {
           "@type": "Offer",
           "url": "https://litestep.us/merch/?product={{ p_slug }}",
@@ -1006,14 +1008,29 @@ hero_image: /assets/images/paragliding_plains_cloudscape.jpg
     // View state: 'flat' (closeup), 'male', or 'female'
     let currentView = 'flat';
 
-    // If deep-linked via ?product=slug, highlight and pre-select color/size if provided
+    // If deep-linked via ?product=slug, highlight, match Model View from Google Shopping ad, and pre-select color/size
     const isPinned = (slug === pinnedProductSlug);
     if (isPinned) {
+      currentView = prodData.is_unisex ? 'male' : 'female';
+      viewButtons.forEach(b => {
+        if (b.getAttribute('data-view') === currentView) {
+          b.classList.add('active');
+          b.style.background = '#111827';
+          b.style.color = '#ffffff';
+        } else {
+          b.classList.remove('active');
+          b.style.background = 'transparent';
+          b.style.color = '#4b5563';
+        }
+      });
       card.style.borderColor = '#2563eb';
       card.style.boxShadow = '0 0 0 2px rgba(37, 99, 235, 0.25)';
       if (pinnedColorParam && prodData.colors[pinnedColorParam]) {
         colorSelect.value = pinnedColorParam;
       }
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 150);
     }
 
     function updateCardImage() {
