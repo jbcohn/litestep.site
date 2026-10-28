@@ -23,7 +23,7 @@ nav_links:
 
 # Google Analytics 4 / Google Ads Tag Configuration (e.g. "G-XXXXXXXXXX" or "AW-XXXXXXXXXX")
 google_tag_id: "AW-18518076612"
-google_ads_conversion_send_to: "" # e.g. "AW-XXXXXXXXXX/AbCdEfGhIjKlMnOpQr"
+google_ads_conversion_send_to: "AW-18518076612/JYeXCOjc8qwdEMTZjf5E" # e.g. "AW-XXXXXXXXXX/AbCdEfGhIjKlMnOpQr"
 
 plugins:
   - jekyll-feed
