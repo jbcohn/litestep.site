@@ -61,6 +61,9 @@ permalink: /merch/thank-you/
         summaryBox.style.display = 'block';
       }
 
+      // Only count completed payments (skip delayed/unpaid methods)
+      if (data.payment_status !== 'paid') return;
+
       // Deduplicate purchase conversion per session_id
       const trackedKey = 'litestep_tracked_' + data.id;
       if (sessionStorage.getItem(trackedKey)) return;
