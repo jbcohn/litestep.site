@@ -5037,15 +5037,15 @@
   "long_peak_topographic_t_shirt_unisex_elevation_graphic_tee": {
     "id": 499250005,
     "slug": "long_peak_topographic_t_shirt_unisex_elevation_graphic_tee",
-    "name": "Long Peak Topographic T-Shirt - Unisex Elevation Graphic Tee ",
-    "tag": "Original Apparel \u00b7 Direct Print-on-Demand",
-    "description": "Original graphic design printed on demand with high-definition inks.",
+    "name": "Longs Peak Topographic T-Shirt - Unisex Elevation Graphic Tee",
+    "tag": "Mountain Peaks \u00b7 Unisex Apparel",
+    "description": "Topographic elevation artwork celebrating Longs Peak (14,259 ft) in Rocky Mountain National Park. Printed on ultra-soft tri-blend fabric.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Solid Black Triblend": {
         "name": "Solid Black Triblend",
         "slug": "solid_black_triblend",
-        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg",
+        "image": "/assets/images/products/closeup_long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5097,12 +5097,14 @@
             "sync_variant_id": "5668973731"
           }
         },
-        "model_image": null
+        "male_model_image": "/assets/images/products/model_long_peak_male_solid_black_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_long_peak_female_solid_black_triblend.jpg",
+        "model_image": "/assets/images/products/model_long_peak_male_solid_black_triblend.jpg"
       },
       "Brown Triblend": {
         "name": "Brown Triblend",
         "slug": "brown_triblend",
-        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_brown_triblend.jpg",
+        "image": "/assets/images/products/closeup_long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_brown_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5154,12 +5156,14 @@
             "sync_variant_id": "5668973738"
           }
         },
-        "model_image": null
+        "male_model_image": "/assets/images/products/model_long_peak_male_brown_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_long_peak_female_brown_triblend.jpg",
+        "model_image": "/assets/images/products/model_long_peak_male_brown_triblend.jpg"
       },
       "Navy Triblend": {
         "name": "Navy Triblend",
         "slug": "navy_triblend",
-        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_navy_triblend.jpg",
+        "image": "/assets/images/products/closeup_long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_navy_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5211,12 +5215,14 @@
             "sync_variant_id": "5668973745"
           }
         },
-        "model_image": null
+        "male_model_image": "/assets/images/products/model_long_peak_male_navy_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_long_peak_female_navy_triblend.jpg",
+        "model_image": "/assets/images/products/model_long_peak_male_navy_triblend.jpg"
       },
       "Maroon Triblend": {
         "name": "Maroon Triblend",
         "slug": "maroon_triblend",
-        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_maroon_triblend.jpg",
+        "image": "/assets/images/products/closeup_long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_maroon_triblend.jpg",
         "sizes": {
           "XS": {
             "price": "$32.98",
@@ -5268,12 +5274,16 @@
             "sync_variant_id": "5668973752"
           }
         },
-        "model_image": null
+        "male_model_image": "/assets/images/products/model_long_peak_male_maroon_triblend.jpg",
+        "female_model_image": "/assets/images/products/model_long_peak_female_maroon_triblend.jpg",
+        "model_image": "/assets/images/products/model_long_peak_male_maroon_triblend.jpg"
       }
     },
     "is_unisex": true,
-    "model_image": null,
-    "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg"
+    "male_model_image": "/assets/images/products/model_long_peak_male.jpg",
+    "female_model_image": "/assets/images/products/model_long_peak_female.jpg",
+    "model_image": "/assets/images/products/model_long_peak_male.jpg",
+    "image": "/assets/images/products/closeup_long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg"
   },
   "one_piece_swimsuit": {
     "id": 483500528,

@@ -202,6 +202,18 @@ PRODUCT_METADATA = {
         "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
         "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
         "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
+    },
+    499250005: {  # Longs Peak
+        "display_name": "Longs Peak Topographic T-Shirt - Unisex Elevation Graphic Tee",
+        "tag": "Mountain Peaks · Unisex Apparel",
+        "description": "Topographic elevation artwork celebrating Longs Peak (14,259 ft) in Rocky Mountain National Park. Printed on ultra-soft tri-blend fabric.",
+        "is_unisex": True,
+        "male_model_prefix": "model_long_peak_male",
+        "female_model_prefix": "model_long_peak_female",
+        "primary_color": "Solid Black Triblend",
+        "male_model_config": {"option_group": "Men's 3", "option": "Right Front", "top": 200, "placements": ["front_large"]},
+        "female_model_config": {"option_group": "Women's Lifestyle", "option": "Front", "top": 200, "placements": ["front_large"]},
+        "closeup_config": {"option_group": "Zoomed in", "option": "Front", "placements": ["front_large"], "top": 200}
     }
 }
 
