@@ -2,9 +2,9 @@
   "mount_whitney_ridgelines": {
     "id": 480089207,
     "slug": "mount_whitney_ridgelines",
-    "name": "Mount Whitney Topographic T-Shirt - Unisex Elevation Graphic Tee",
+    "name": "Mount Whitney Ridgelines Unisex Elevation Graphic T-Shirt",
     "tag": "California Peaks \u00b7 Unisex Apparel",
-    "description": "Ultra-soft 100% combed ring-spun cotton graphic t-shirt featuring 3D topographic elevation ridgelines of Mount Whitney (14,505 ft), the highest summit in California\u2019s Sierra Nevada and the John Muir Trail.",
+    "description": "Stacked algorithmic ridgeline contours of California's highest summit (14,505 ft). Printed on premium cotton with soft water-based inks.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
       "Black": {
@@ -649,9 +649,9 @@
   "north_palisade_glaciated_af_": {
     "id": 480350932,
     "slug": "north_palisade_glaciated_af_",
-    "name": "North Palisade Topographic T-Shirt - Glaciated AF Tri-Blend Tee",
+    "name": "North Palisade - Glaciated AF - Unisex Tri-Blend T-Shirt",
     "tag": "High Sierra 14ers \u00b7 Unisex Apparel",
-    "description": "Featherlight, ultra-soft tri-blend graphic t-shirt featuring 3D topographic elevation contours of North Palisade (14,248 ft) and the Palisade Glacier in California\u2019s High Sierra.",
+    "description": "Topographic elevation artwork celebrating North Palisade and the Palisade Glacier in California's High Sierra. Printed on ultra-soft tri-blend fabric.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Solid Black Triblend": {
@@ -1365,9 +1365,9 @@
   "mount_diablo_short_sleeve_t_shirt": {
     "id": 481559531,
     "slug": "mount_diablo_short_sleeve_t_shirt",
-    "name": "Mount Diablo Topographic T-Shirt - 3D Elevation Tri-Blend Tee",
+    "name": "Mount Diablo Topographic Wireframe Unisex Elevation Graphic T-Shirt",
     "tag": "California Peaks \u00b7 Unisex Apparel",
-    "description": "Ultra-soft tri-blend graphic t-shirt featuring a vivid 3D topographic elevation wireframe of Mount Diablo (3,849 ft) in the San Francisco East Bay Area.",
+    "description": "Intricate 3D terrain wireframe in vivid heat-map slopes on premium tri-blend tees.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Charcoal-Black Triblend": {
@@ -1911,9 +1911,9 @@
   "california_shaded_elevations_short_sleeve_t_shirt": {
     "id": 481791025,
     "slug": "california_shaded_elevations_short_sleeve_t_shirt",
-    "name": "California Topographic Relief Map T-Shirt - Unisex Tri-Blend Tee",
+    "name": "California Shaded Elevations Topographic Unisex Graphic T-Shirt",
     "tag": "California Topography \u00b7 Unisex Apparel",
-    "description": "Ultra-soft tri-blend graphic t-shirt showcasing a high-definition shaded relief topographic elevation map of California from the Pacific Coast to the Sierra Nevada summits.",
+    "description": "High-definition shaded relief elevation profile of California from coast to summit. Printed on ultra-soft tri-blend tees.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Charcoal-Black Triblend": {
@@ -2457,9 +2457,9 @@
   "mount_vaca": {
     "id": 481939533,
     "slug": "mount_vaca",
-    "name": "Mount Vaca Topographic Hooded T-Shirt - Unisex Long-Sleeve Tee",
+    "name": "Mount Vaca Ridgelines Unisex Elevation Hooded Long-Sleeve Tee",
     "tag": "Northern California Peaks \u00b7 Unisex Apparel",
-    "description": "Lightweight hooded long-sleeve t-shirt featuring 3D topographic elevation ridgelines of Mount Vaca (2,819 ft) in Northern California\u2019s Vaca Mountains. Ideal for cool trail mornings and sun protection.",
+    "description": "Algorithmic ridgeline contours of Mount Vaca (2,819 ft), highest summit in the Vaca Mountains. Printed on ultra-lightweight hooded tees.",
     "garment": "Bella + Canvas 3512 Unisex Hooded Long Sleeve Tee",
     "colors": {
       "Charcoal-Black Triblend": {
@@ -2763,9 +2763,9 @@
   "rainbow_sunflower_tri_blend": {
     "id": 480312304,
     "slug": "rainbow_sunflower_tri_blend",
-    "name": "Rainbow Sunflower Sacred Geometry T-Shirt - Unisex Tri-Blend Tee",
+    "name": "Rainbow Sunflower Unisex Tri-Blend T-Shirt",
     "tag": "Algorithmic Art \u00b7 Unisex Apparel",
-    "description": "Ultra-soft tri-blend graphic t-shirt featuring a golden-ratio Fibonacci spiral sunflower in a vivid rainbow color spectrum.",
+    "description": "Vibrant algorithmic floral geometry blending mathematical phyllotaxis spiral patterns with a vivid chromatic gradient spectrum.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Solid Black Triblend": {
@@ -3479,9 +3479,9 @@
   "violet_eye_hex_mandala": {
     "id": 479899530,
     "slug": "violet_eye_hex_mandala",
-    "name": "Sacred Geometry Hexagon Mandala T-Shirt - Violet Eye Cotton Tee",
+    "name": "Violet Eye Hexagon Mandala Unisex Graphic T-Shirt",
     "tag": "Fractal Art \u00b7 Unisex Apparel",
-    "description": "Premium 100% combed ring-spun cotton graphic t-shirt featuring the Violet Eye concentric hexagon fractal mandala in vivid violet and cyan.",
+    "description": "Intricate hexagon fractal mandala spiraling into an intense geometric center. A striking statement piece for fans of fractal geometry.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
       "Black Heather": {
@@ -4213,9 +4213,9 @@
   "bubbles": {
     "id": 479948902,
     "slug": "bubbles",
-    "name": "Geometric Circle Packing Math T-Shirt - Bubbles! Unisex Cotton Tee",
+    "name": "Bubbles! Unisex Procedural Graphic T-Shirt",
     "tag": "Mathematical Geometry \u00b7 Unisex Apparel",
-    "description": "Premium 100% combed ring-spun cotton graphic t-shirt featuring original Apollonian circle-packing fractal geometry and vivid color contrasts.",
+    "description": "Original generative circle packing and procedural bubble membrane geometry rendered with striking modern color contrasts.",
     "garment": "Bella + Canvas 3001 Unisex Short Sleeve Jersey T-Shirt",
     "colors": {
       "Black Heather": {
@@ -5034,12 +5034,253 @@
     "model_image": "/assets/images/products/model_bubbles.jpg",
     "image": "/assets/images/products/closeup_bubbles_black_heather.jpg"
   },
+  "long_peak_topographic_t_shirt_unisex_elevation_graphic_tee": {
+    "id": 499250005,
+    "slug": "long_peak_topographic_t_shirt_unisex_elevation_graphic_tee",
+    "name": "Long Peak Topographic T-Shirt - Unisex Elevation Graphic Tee ",
+    "tag": "Original Apparel \u00b7 Direct Print-on-Demand",
+    "description": "Original graphic design printed on demand with high-definition inks.",
+    "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
+    "colors": {
+      "Solid Black Triblend": {
+        "name": "Solid Black Triblend",
+        "slug": "solid_black_triblend",
+        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/eVq6oAbTW3Nd44637E43W0Z",
+            "product_id": "prod_VhVMCQ0IcuWtG0",
+            "sync_variant_id": "5668973725"
+          },
+          "S": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/eVq7sE8HKdnNeIKaA643W10",
+            "product_id": "prod_VhVMY5IsDwtNjL",
+            "sync_variant_id": "5668973726"
+          },
+          "M": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/9B628kgacbfF9oq0Zw43W11",
+            "product_id": "prod_VhVMgy3SuBDadm",
+            "sync_variant_id": "5668973727"
+          },
+          "L": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/bJe5kw0bebfF0RUeQm43W12",
+            "product_id": "prod_VhVMEYim6fKZcP",
+            "sync_variant_id": "5668973728"
+          },
+          "XL": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/aFaeV60beabB9oqfUq43W13",
+            "product_id": "prod_VhVMEcHdazDp96",
+            "sync_variant_id": "5668973729"
+          },
+          "2XL": {
+            "price": "$34.98",
+            "price_cents": 3498,
+            "url": "https://buy.stripe.com/fZuaEQ8HK1F59oq6jQ43W14",
+            "product_id": "prod_VhVM1gMaXtK3IC",
+            "sync_variant_id": "5668973730"
+          },
+          "3XL": {
+            "price": "$36.98",
+            "price_cents": 3698,
+            "url": "https://buy.stripe.com/8x2bIU8HK3Nd6ce4bI43W15",
+            "product_id": "prod_VhVNNFkbzNw1cT",
+            "sync_variant_id": "5668973731"
+          }
+        },
+        "model_image": null
+      },
+      "Brown Triblend": {
+        "name": "Brown Triblend",
+        "slug": "brown_triblend",
+        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_brown_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/6oUfZa3nqdnN302eQm43W16",
+            "product_id": "prod_VhVNwyoMBEI9Yk",
+            "sync_variant_id": "5668973732"
+          },
+          "S": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/aFa28ke243Nd7gifUq43W17",
+            "product_id": "prod_VhVNW6lWhyorBa",
+            "sync_variant_id": "5668973733"
+          },
+          "M": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/4gM6oA8HK5Vlasu0Zw43W18",
+            "product_id": "prod_VhVNYyPK6Y5jXc",
+            "sync_variant_id": "5668973734"
+          },
+          "L": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/4gM28k2jm4Rh446gYu43W19",
+            "product_id": "prod_VhVN2kh7r2afuZ",
+            "sync_variant_id": "5668973735"
+          },
+          "XL": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/7sY3cocY0fvV6cecIe43W1a",
+            "product_id": "prod_VhVN6cpzq3yumN",
+            "sync_variant_id": "5668973736"
+          },
+          "2XL": {
+            "price": "$34.98",
+            "price_cents": 3498,
+            "url": "https://buy.stripe.com/cNi3cobTW0B1bwybEa43W1b",
+            "product_id": "prod_VhVNsrlxpyqJyJ",
+            "sync_variant_id": "5668973737"
+          },
+          "3XL": {
+            "price": "$36.98",
+            "price_cents": 3698,
+            "url": "https://buy.stripe.com/fZubIUaPS1F5asufUq43W1c",
+            "product_id": "prod_VhVN8BAQRbD2BQ",
+            "sync_variant_id": "5668973738"
+          }
+        },
+        "model_image": null
+      },
+      "Navy Triblend": {
+        "name": "Navy Triblend",
+        "slug": "navy_triblend",
+        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_navy_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/3cI7sE7DG0B158acIe43W1d",
+            "product_id": "prod_VhVNhtjk00WG5q",
+            "sync_variant_id": "5668973739"
+          },
+          "S": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/fZu4gs8HK1F56cebEa43W1e",
+            "product_id": "prod_VhVNBvIPM4Mx9k",
+            "sync_variant_id": "5668973740"
+          },
+          "M": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/dRm14ggac97x8kmgYu43W1f",
+            "product_id": "prod_VhVNXDZS3PlBZi",
+            "sync_variant_id": "5668973741"
+          },
+          "L": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/8x200c6zCfvV9oqcIe43W1g",
+            "product_id": "prod_VhVNFsIoXG2Itz",
+            "sync_variant_id": "5668973742"
+          },
+          "XL": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/14A9AM5vyabBeIK4bI43W1h",
+            "product_id": "prod_VhVNXQG4mo7HxW",
+            "sync_variant_id": "5668973743"
+          },
+          "2XL": {
+            "price": "$34.98",
+            "price_cents": 3498,
+            "url": "https://buy.stripe.com/7sY28k2jm5Vl4467nU43W1i",
+            "product_id": "prod_VhVN3S5lJ7H37l",
+            "sync_variant_id": "5668973744"
+          },
+          "3XL": {
+            "price": "$36.98",
+            "price_cents": 3698,
+            "url": "https://buy.stripe.com/00w5kwf68dnNeIK9w243W1j",
+            "product_id": "prod_VhVNYqoX6I6LnH",
+            "sync_variant_id": "5668973745"
+          }
+        },
+        "model_image": null
+      },
+      "Maroon Triblend": {
+        "name": "Maroon Triblend",
+        "slug": "maroon_triblend",
+        "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_maroon_triblend.jpg",
+        "sizes": {
+          "XS": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/9B6aEQ6zC1F5cACeQm43W1k",
+            "product_id": "prod_VhVNkjnz1pNV7F",
+            "sync_variant_id": "5668973746"
+          },
+          "S": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/3cI9AM7DG97x44623A43W1l",
+            "product_id": "prod_VhVNFZxt7jwauv",
+            "sync_variant_id": "5668973747"
+          },
+          "M": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/aFa28k8HK5VleIKaA643W1m",
+            "product_id": "prod_VhVNyi9FnfRtbo",
+            "sync_variant_id": "5668973748"
+          },
+          "L": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/8x214g5vy2J96ce23A43W1n",
+            "product_id": "prod_VhVN8cJ5rGSQU9",
+            "sync_variant_id": "5668973749"
+          },
+          "XL": {
+            "price": "$32.98",
+            "price_cents": 3298,
+            "url": "https://buy.stripe.com/28E6oA6zC0B17gicIe43W1o",
+            "product_id": "prod_VhVN0cicsen5WG",
+            "sync_variant_id": "5668973750"
+          },
+          "2XL": {
+            "price": "$34.98",
+            "price_cents": 3498,
+            "url": "https://buy.stripe.com/7sY8wI0beerR0RU6jQ43W1p",
+            "product_id": "prod_VhVNLTirluxkjf",
+            "sync_variant_id": "5668973751"
+          },
+          "3XL": {
+            "price": "$36.98",
+            "price_cents": 3698,
+            "url": "https://buy.stripe.com/cNi28k0begzZbwyeQm43W1q",
+            "product_id": "prod_VhVNBbxSlYK1we",
+            "sync_variant_id": "5668973752"
+          }
+        },
+        "model_image": null
+      }
+    },
+    "is_unisex": true,
+    "model_image": null,
+    "image": "/assets/images/products/long_peak_topographic_t_shirt_unisex_elevation_graphic_tee_solid_black_triblend.jpg"
+  },
   "one_piece_swimsuit": {
     "id": 483500528,
     "slug": "one_piece_swimsuit",
-    "name": "Sacred Geometry Hexagon Mandala One-Piece Swimsuit - Violet Eye",
+    "name": "Violet Eye Hexagon Mandala One-Piece Swimsuit",
     "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
-    "description": "All-over print one-piece swimsuit featuring the Violet Eye concentric hexagon fractal mandala on smooth, chlorine-resistant fabric with UPF 50+ sun protection.",
+    "description": "Vivid all-over print featuring an intricate violet and cyan hexagon fractal mandala. Smooth, chlorine-resistant fabric with UPF 50+ protection.",
     "garment": "All-Over Print One-Piece Swimsuit",
     "colors": {
       "White": {
@@ -5109,9 +5350,9 @@
   "muscle_shirt": {
     "id": 483496351,
     "slug": "muscle_shirt",
-    "name": "Sacred Geometry Hexagon Mandala Muscle Tank - Unisex Sleeveless Tee",
+    "name": "Violet Eye Hexagon Mandala Unisex Muscle Tank",
     "tag": "Fractal Art \u00b7 Unisex Apparel",
-    "description": "Relaxed-fit sleeveless muscle tank top in 100% combed ring-spun cotton featuring the Violet Eye concentric hexagon fractal mandala.",
+    "description": "Sleeveless relaxed-fit muscle tank featuring the intricate Violet Eye hexagon mandala. Premium 100% combed ring-spun cotton.",
     "garment": "Bella + Canvas 3483 Muscle Tank",
     "colors": {
       "White": {
@@ -5162,9 +5403,9 @@
   "bodycon_dress": {
     "id": 483495525,
     "slug": "bodycon_dress",
-    "name": "Sacred Geometry Hexagon Mandala Bodycon Dress - Violet Eye",
+    "name": "Violet Eye Hexagon Mandala Bodycon Dress",
     "tag": "Fractal Art \u00b7 Direct Print-on-Demand",
-    "description": "All-over print fitted bodycon dress featuring concentric hexagon fractal geometry in vivid violet and turquoise gradients on soft four-way stretch fabric.",
+    "description": "Eye-catching body-hugging dress showcasing concentric hexagon fractal geometry in vivid violet and turquoise gradients.",
     "garment": "All-Over Print Dress",
     "colors": {
       "White": {
@@ -5220,9 +5461,9 @@
   "blue_hex_portal": {
     "id": 483492839,
     "slug": "blue_hex_portal",
-    "name": "Sacred Geometry Blue Hexagon T-Shirt - Portal Tri-Blend Graphic Tee",
+    "name": "Blue Hex Portal Unisex Graphic Tri-Blend T-Shirt",
     "tag": "Fractal Art \u00b7 Unisex Apparel",
-    "description": "Ultra-soft tri-blend graphic t-shirt featuring a 3D optical hexagon fractal mandala radiating in luminous cyan and royal blue.",
+    "description": "Intricate concentric hexagon fractal mandala radiating through a luminous cyan and royal blue spectrum. Printed on ultra-soft tri-blend fabric.",
     "garment": "Bella + Canvas 3413 Unisex Triblend Short Sleeve T-Shirt",
     "colors": {
       "Solid Black Triblend": {
